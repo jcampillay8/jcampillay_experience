@@ -1,0 +1,60 @@
+{% load static%} 
+
+
+
+{%block content%}
+
+
+
+<!--menu start-->
+<section id="menu">
+  <div class="container">
+    <div class="menubar">
+      <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style="display: flex; align-items: center;">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-right: 120px;">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'welcome' %}">
+            <div style="display: flex; align-items: center">
+              <span style="color:#fff; font-size: 40px; margin-left: 20px;" class="nav navbar-nav navbar-righ">Jaime Campillay</span>
+            </div>
+          </a>
+        </div><!--/.navbar-header -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+              <a href="{% url 'welcome' %}">Home
+                
+              </a>
+            </li>
+            
+            <li class="nav-item {% if request.path == '/authentication/login' %}active{% endif %}">
+              <a href="/authentication/login">Login 
+              </a>
+            </li>
+            <li class="nav-item {% if request.path == '/authentication/register' %}active{% endif %}">
+              <a href="/authentication/register">Register</a>
+            </li>
+            <li class="nav-item {% if request.path == '/authentication/request-password' %}active{% endif %}">
+              <a href="/authentication/request-password">Forgot Password</a>
+            </li>
+
+
+          </ul><!-- / ul -->
+        </div><!-- /.navbar-collapse -->
+      </nav><!--/nav -->
+    </div><!--/.menubar -->
+  </div><!-- /.container -->
+</section><!--/#menu-->
+
+<!--menu end-->
+
+
+{%endblock%}

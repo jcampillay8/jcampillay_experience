@@ -1,0 +1,28 @@
+{% load static %}
+<form method="post" id="language-form">
+    {% csrf_token %}
+    <div class="form-check d-none d-md-block">
+      <input class="form-check-input" type="radio" name="language" value="English" id="languageEnglish" onchange="document.getElementById('language-form').submit();">
+      <label class="form-check-label" for="languageEnglish">
+          English <img src="{% static 'img/usa_england.ico' %}" style="margin-left: 5px;" height="16" alt="UK Flag">
+      </label>
+  </div>
+  <div class="form-check d-none d-md-block">
+      <input class="form-check-input" type="radio" name="language" value="Spanish" id="languageSpanish" onchange="document.getElementById('language-form').submit();" checked>
+      <label class="form-check-label" for="languageSpanish">
+          Spanish <img src="{% static 'img/chile_spain.ico' %}" style="margin-left: 5px;" height="16" alt="Spain Flag">
+      </label>
+  </div>
+    <div class="form-check form-check-inline d-md-none">
+        <input class="form-check-input" type="radio" name="language" value="English" id="languageEnglish" onchange="document.getElementById('language-form').submit();">
+        <label class="form-check-label" for="languageEnglish">
+            English <img src="{% static 'img/usa_england.ico' %}" style="margin-left: 5px;" height="16" alt="UK Flag">
+        </label>
+    </div>
+    <div class="form-check form-check-inline d-md-none">
+        <input class="form-check-input" type="radio" name="language" value="Spanish" id="languageSpanish" onchange="document.getElementById('language-form').submit();" checked>
+        <label class="form-check-label" for="languageSpanish">
+            Spanish <img src="{% static 'img/chile_spain.ico' %}" style="margin-left: 5px;" height="16" alt="Spain Flag">
+        </label>
+    </div>
+</form>

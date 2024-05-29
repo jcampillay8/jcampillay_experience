@@ -1,0 +1,95 @@
+{% load static %}
+{% load i18n %}
+<style>
+    .small-icon {
+        width: 24px;
+        height: 16px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+    }
+
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-left, .header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 970px) {
+        .header .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header-right {
+            margin-top: 10px;
+        }
+    }
+</style>
+<!--header start-->
+<section class="header" >
+    <div class="container">
+        <div class="header-left">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>{{ request.user.email }}
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <a href="username:username:">
+                            {{ request.user.username }}
+                            {% if request.user.is_superuser %}
+                                (Usuario Administrador)
+                            {% elif request.user.is_staff %}
+                                (Usuario Empleado)
+                            {% else %}
+                                (Usuario Cliente)
+                            {% endif %}
+                        </a>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <div class="d-flex align-items-center">
+                        <input class="form-check-input" type="radio" name="language" value="English" id="languageEnglish" onchange="document.getElementById('language-form').submit();" checked>
+                        <span class="ms-2">{% translate "English" %}</span>
+                        <img src="{% static 'images/logo/usa_england.ico' %}" class="small-icon ms-2" alt="USA Flag">
+                    </div>
+                </li>
+                <li class="list-inline-item ms-4">
+                    <div class="d-flex align-items-center">
+                        <input class="form-check-input" type="radio" name="language" value="Spanish" id="languageSpanish" onchange="document.getElementById('language-form').submit();">
+                        <span class="ms-2">{% translate "Spanish" %}</span>
+                        <img src="{% static 'images/logo/chile_spain.ico' %}" class="small-icon ms-2" alt="Spain Flag">
+                    </div>
+                </li>
+                <li class="list-inline-item ms-4">
+                    <form action="{% url 'logout' %}" method="POST" class="logout-form d-inline">
+                        {% csrf_token %}
+                        
+                        <button class="btn " style="background: #ff561e; " type="submit"><strong><i class="fa fa-sign-out" aria-hidden="true"></i>{% translate " Logout" %}</strong></button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--header end-->

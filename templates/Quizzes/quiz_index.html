@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title%} Post {% endblock %}
+
+{%block content%}
+
+    
+    <section class="position-relative py-6">
+
+    </section>
+
+    <br>
+    <div class="col-md-2"></div>
+    <div class="row">
+        {% if user.is_authenticated and user.is_superuser %}
+            <div class="col-sm-6 col-md-4 mb-3 ml-4">
+                <a class="btn btn-warning btn-lg" href="{% url 'quiz_creation' %}">Crear Quiz {{user|capfirst}}</a>
+            </div>
+        {% endif %}
+    </div>
+    <br>
+    
+    <section >
+    
+    {% for quiz in quizzes %}
+    <div class="col-md-2"></div>
+        <div class="row">
+    <div class="col-md-8">
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                    <div class="post-img" style="width: 65%; height: 65%; display: flex; justify-content: center;">    
+                        {% if quiz.imagen.url == '/core/assets/images/quizzes' %}
+                            <img src="{% static 'not_image.jpg' %}" class="card-img-center" style="width: 65%; height: 65%;" alt="{{quiz.title}}">
+                        {% else %}
+                            <img src="{{ quiz.imagen.url }}" class="card-img-center" style="width: 50%; height: 50%;" alt="{{quiz.title}}">
+                        {% endif %}
+                    </div>
+                </div>
+                
+                <div class="col-md-6 d-flex flex-column">
+                    <div class="card-body">
+                        <h5 class="card-title">{{quiz.title}}</h5>
+                        <p class="card-text">{{quiz.description}}</p>
+                        <p class="card-text"><small class="text-muted">{% translate "Escrito por" %} {{quiz.author|capfirst}}</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        {% if user == quiz.author %}
+                            <a href="#" class="py-2 bd-highlight border text-center no-style btn btn-primary btn-lg">                        
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                </svg> {% translate "Editar" %} </a>
+                            <a href="{% url 'quiz_delete' quiz.id %}" class="py-2 bd-highlight border text-center no-style btn btn-danger btn-lg">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </svg>{% translate "Eliminar" %} </a>
+                        {% endif %}
+                        <a href="#" class="py-2 bd-highlight border text-center no-style btn btn-success btn-lg">
+                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                            </svg>{% translate "Ir a Quiz GCP Digital Leader" %} </a>
+                        <a href="#">
+                        <form class="d-flex bd-highlight" action="#" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" class="bd-highlight border text-center btn-dark btn-lg">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                </svg> Likes {{likes}}
+                            </button>
+                        </form></a>
+                    </div>
+                            
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    </div>
+    {% endfor %}
+    </section>
+    
+        <section class="container py-6" >
+            <div class="d-flex mt-3 justify-content-between">
+                {% if quizzes.has_previous %}
+                    <div><a href="?page={{ quizzes.previous_page_number }}" class="btn btn-outline-success btn-lg">{% translate "Previous" %}</a></div>
+                {% endif %}
+                {% if quizzes.has_next %}
+                    <div><a href="?page={{ quizzes.next_page_number }}" class="btn btn-outline-success btn-lg">{% translate "Next" %}</a></div>
+                {% endif %}
+            </div>
+         </section>
+         <div class="col-md-2"></div>
+         <br>
+        
+{%endblock%}
+
+

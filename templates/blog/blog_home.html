@@ -1,0 +1,261 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title%} Post {% endblock %}
+
+{%block content%}
+
+    
+    <section class="position-relative py-6">
+
+    </section>
+
+    <br>
+    <div class="col-md-2"></div>
+    <div class="row">
+        
+            <div class="col-sm-6 col-md-4 mb-3 ml-4">
+                <h1> BLOG - HOME VIEW</h1>
+            </div>
+
+    </div>
+    <br>
+    
+    <section >
+    
+        <body>        
+            <!-- Right Sidebar Container  -->
+            <section class="page-section py-4">
+                <div class="container">
+                    <div class="row">
+                        <!-- Content -->
+                        <div class="col-md-9">
+                            <div class="blog-listing">
+                                <article>
+                                    <img class="img-thumbnail" src="http://placehold.it/1280x500">
+                                    <h2>Post Format Image</h2>
+                                    <hr class="title-underline">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                                    </p>
+                                    <div class="post-meta">
+                                        <span><i class="fa fa-calendar"></i> Aug 17, 2016 - 6:53</span>
+                                        <span><i class="fa fa-user"></i> By <a href="#">John Doe</a> </span>
+                                        <span><i class="fa fa-tag"></i> <a href="#">Duis</a>, <a href="#">News</a> </span>
+                                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+                                        <a href="blog-single-post.html" class="btn btn-sm btn-primary float-end">Read more...</a>
+                                    </div>
+                                </article>
+                                <article class="post-video">
+                                    <div class="ratio ratio-16x9">
+                                        
+                                        
+                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_udFgXhvT0Q?si=lKGe7-TqjqSDGrUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <h2>Post Format - Video</h2>
+                                    <hr class="title-underline">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                                    </p>
+                                    <div class="post-meta">
+                                        <span><i class="fa fa-calendar"></i> Aug 17, 2016 - 6:53</span>
+                                        <span><i class="fa fa-user"></i> By <a href="#">John Doe</a> </span>
+                                        <span><i class="fa fa-tag"></i> <a href="#">Duis</a>, <a href="#">News</a> </span>
+                                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+                                        <a href="blog-single-post.html" class="btn btn-sm btn-primary float-end">Read more...</a>
+                                    </div>
+                                </article>
+                                <article>
+                                    <!-- <iframe width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259883503&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
+                                    
+                                    <iframe width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/awshim/beethoven-piano-sonata-no-8-pathetique-2nd-mvt-adagio-cantabile&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"></iframe>
+
+
+
+                                    <hr class="title-underline">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                                    </p>
+                                    <div class="post-meta">
+                                        <span><i class="fa fa-calendar"></i> Aug 17, 2016 - 6:53</span>
+                                        <span><i class="fa fa-user"></i> By <a href="#">John Doe</a> </span>
+                                        <span><i class="fa fa-tag"></i> <a href="#">Duis</a>, <a href="#">News</a> </span>
+                                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+                                        <a href="blog-single-post.html" class="btn btn-sm btn-primary float-end">Read more...</a>
+                                    </div>
+                                </article>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination pagination-lg">
+                                        <li class="page-item"><a class="page-link" href="#">«</a></li>
+                                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">»</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+            
+                        <!-- Sidebar -->
+                        <div class="col-md-3">
+                            <aside class="sidebar">
+                                <div class="widget">
+                                    <form>
+                                        <div class="input-group input-group-lg">
+                                            <input class="form-control" placeholder="Search..." name="s" id="s" type="text">
+                                            <button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="widget">
+                                    <h4 class="sidebar-header">Categories</h4>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-caret-right"></i> Menu 1</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-caret-right"></i> Menu 2</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-caret-right"></i> Menu 3</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-caret-right"></i> Menu 4</a></li>
+                                    </ul>
+                                </div>
+                                <div class="widget blog-widget">
+                                    <div class="tabs">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="popularPosts-tab" data-bs-toggle="tab" data-bs-target="#popularPosts" type="button" role="tab" aria-controls="popularPosts" aria-selected="true"><i class="fa fa-star"></i> Popular</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="recentPosts-tab" data-bs-toggle="tab" data-bs-target="#recentPosts" type="button" role="tab" aria-controls="recentPosts" aria-selected="false">Recent</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="popularPosts" role="tabpanel" aria-labelledby="popularPosts-tab">
+                                                <ul class="list-unstyled">
+                                                    <li class="post d-flex">
+                                                        <div class="post-image me-3">
+                                                            <div class="img-thumbnail">
+                                                                <a href="blog-single-post.html">
+                                                                    <img src="http://placehold.it/50x50" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <a href="blog-single-post.html">Nullam Vitae Nibh Un Odiosters</a>
+                                                            <div class="post-meta">
+                                                                Jan 10, 2016
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="post d-flex">
+                                                        <div class="post-image me-3">
+                                                            <div class="img-thumbnail">
+                                                                <a href="blog-single-post.html">
+                                                                    <img src="http://placehold.it/50x50" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <a href="blog-single-post.html">Vitae Nibh Un Odiosters</a>
+                                                            <div class="post-meta">
+                                                                Jan 10, 2016
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="post d-flex">
+                                                        <div class="post-image me-3">
+                                                            <div class="img-thumbnail">
+                                                                <a href="blog-single-post.html">
+                                                                    <img src="http://placehold.it/50x50" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <a href="blog-single-post.html">Odiosters Nullam Vitae</a>
+                                                            <div class="post-meta">
+                                                                Jan 10, 2016
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="recentPosts" role="tabpanel" aria-labelledby="recentPosts-tab">
+                                                <ul class="list-unstyled">
+                                                    <li class="post d-flex">
+                                                        <div class="post-image me-3">
+                                                            <div class="img-thumbnail">
+                                                                <a href="blog-single-post.html">
+                                                                    <img src="http://placehold.it/50x50" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <a href="blog-single-post.html">Lorem Vitae Nibh Un Odiosters</a>
+                                                            <div class="post-meta">
+                                                                Jan 10, 2016
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="post d-flex">
+                                                        <div class="post-image me-3">
+                                                            <div class="img-thumbnail">
+                                                                <a href="blog-single-post.html">
+                                                                    <img src="http://placehold.it/50x50" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <a href="blog-single-post.html">Lorem Vitae Nibh Un Odiosters</a>
+                                                            <div class="post-meta">
+                                                                Jan 10, 2016
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="post d-flex">
+                                                        <div class="post-image me-3">
+                                                            <div class="img-thumbnail">
+                                                                <a href="blog-single-post.html">
+                                                                    <img src="http://placehold.it/50x50" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <a href="blog-single-post.html">Lorem Odiosters Nullam Vitae</a>
+                                                            <div class="post-meta">
+                                                                Jan 10, 2016
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget tags">
+                                    <a href="#">lorem</a> <a href="#">loremipse</a> <a href="#">Esrite</a> <a href="#">remip</a> <a href="#">serte</a> <a href="#">quiaxms</a> <a href="#">loremipse</a> <a href="#">Esrite</a>
+                                </div>
+                                <div class="widget">
+                                    <h4 class="sidebar-header">About Us</h4>
+                                    <p>Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Nulla nunc dui, tristique in semper vel. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. </p>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        
+        
+        
+        
+        
+          
+        
+    </section>
+    
+        <section class="container py-6" >
+
+         </section>
+         <div class="col-md-2"></div>
+         <br>
+        
+{%endblock%}
+
+

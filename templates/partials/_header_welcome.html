@@ -1,0 +1,58 @@
+{% load static %}
+{% load i18n %}
+<!--header start-->
+<style>
+  .small-icon {
+  width: 24px;
+  height: 16px;
+}
+</style>
+<section class="header">
+    <div class="container">	
+      <div class="header-left">
+        <ul class="pull-left">
+          <li>
+            <a href="#">
+              <i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com
+            </a>
+          </li><!--/li-->
+          <li>
+            <a href="#">
+              <i class="fa fa-phone" aria-hidden="true"></i> +992 563 542
+            </a>
+          </li><!--/li-->
+  
+        </ul><!--/ul-->
+      </div><!--/.header-left -->
+      <div class="header-right pull-right">
+        <ul>
+  
+          <li>
+            <div class="social-icon">
+              <ul>
+                <li>
+                  <div style="display: flex; align-items: center;">
+                    <input class="form-check-input" type="radio" name="language" value="English" id="languageEnglish" onchange="document.getElementById('language-form').submit();"checked>
+                    <span style="margin-left: 18px;">{% translate "English" %}</span>
+                    <img src="{% static 'images/logo/usa_england.ico' %}" class="small-icon" style="margin-left: 5px;" alt="UK Flag">
+                  </div>
+                </li>
+                <li>
+                  <div style="display: flex; align-items: center; margin-left: 15px">
+                    <input class="form-check-input" type="radio" name="language" value="Spanish" id="languageSpanish" onchange="document.getElementById('language-form').submit();">
+                    <span style="margin-left: 18px;">{% translate "Spanish" %}</span>
+                    <img src="{% static 'images/logo/chile_spain.ico' %}" class="small-icon" style="margin-left: 5px;" alt="Spain Flag">
+                  </div>
+                </li>
+              </ul><!--/.ul -->
+              
+              
+              
+            </div><!--/.social-icon -->
+          </li><!--/li -->
+        </ul><!--/ul -->
+      </div><!--/.header-right -->
+    </div><!--/.container -->	
+  
+  </section><!--/.header-->	
+  <!--header end-->

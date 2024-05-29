@@ -1,0 +1,120 @@
+{% load static %}
+{% load i18n %}
+<style>
+  .hm-footer {
+    background: url('core/assets/img/footer.png') center center no-repeat;
+    background-size: contain;
+    background: #242526;
+  }
+</style>
+<!--hm-footer start-->
+<section class="hm-footer footer py-5">
+  <div class="container">
+    <div class="hm-footer-details">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="hm-footer-widget">
+            <div class="hm-foot-title">
+              <a class="navbar-brand d-flex align-items-center" href="{% url 'welcome' %}">
+                <img src="{% static 'images/logo/global_white.png' %}" alt="logo" width="50" height="50">
+                <span class="text-white fs-2 ms-3">Jaime Campillay</span>
+              </a>
+            </div>
+            <div class="hm-foot-para">
+              <p>{% blocktranslate %}Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{% endblocktranslate %}</p>
+            </div>
+            <div class="hm-foot-icon">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-12">
+          <div class="hm-footer-widget">
+            <div class="hm-foot-title">
+              <h4>{% translate "Useful Links" %}</h4>
+            </div>
+            <div class="footer-menu">
+              <ul class="list-unstyled">
+                <li><a href="{% url 'welcome' %}">{% translate "Home" %}</a></li>
+                <li><a href="#">{% translate "About" %}</a></li>
+                <li><a href="#">{% translate "Service" %}</a></li>
+                <li><a href="#">{% translate "Contact us" %}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="hm-footer-widget">
+            <div class="hm-foot-title">
+              <h4>{% translate "From the News" %}</h4>
+            </div>
+            <div class="hm-para-news">
+              <a href="#">{% blocktranslate %}"The Pros and Cons of Starting an Online Business."{% endblocktranslate %}</a>
+              <span>{% translate "12th June 2017" %}</span>
+            </div>
+            <div class="footer-line">
+              <div class="border-bottom"></div>
+            </div>
+            <div class="hm-para-news">
+              <a href="#">{% blocktranslate %}"The Pros and Cons of Starting an Online Business."{% endblocktranslate %}</a>
+              <span>{% translate "12th June 2017" %}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="hm-footer-widget">
+            <div class="hm-foot-title">
+              <h4>{% translate "Our Newsletter" %}</h4>
+            </div>
+            <div class="hm-foot-para">
+              <p class="para-news">{% blocktranslate %}Subscribe to our newsletter to get the latest News and offers.{% endblocktranslate %}</p>
+            </div>
+            <div class="hm-foot-email">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="{% translate 'Email Address' %}">
+                <button class="btn btn-primary" type="button">{% translate "Go" %}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--hm-footer end-->
+
+
+<!-- footer-copyright start -->
+<footer class="footer-copyright" style="background-color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="foot-copyright pull-left">
+          <p>
+            &copy; {% blocktranslate %} All Rights Reserved. Designed and Developed by {% endblocktranslate %}
+          </p>
+        </div><!--/.foot-copyright-->
+      </div><!--/.col-->
+      <div class="col-sm-5">
+        <div class="foot-menu pull-right
+        ">	  
+          <ul>
+            <li ><a href="#">{% translate "legal" %}</a></li>
+            <li ><a href="#">{% translate "sitemap" %}</a></li>
+            <li ><a href="#">{% translate "privacy policy" %}</a></li>
+          </ul>
+        </div><!-- /.foot-menu-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <div id="scroll-Top">
+      <i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+    </div><!--/.scroll-Top-->
+  </div><!-- /.container-->
+
+</footer><!-- /.footer-copyright-->
+<!-- footer-copyright end -->

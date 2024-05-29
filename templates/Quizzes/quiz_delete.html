@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %} Post Page {% endblock%}
+
+{% block content %}
+<section class="position-relative py-6">
+    <img class="bg-image" src="{% static 'img/Mont-Rainer.png' %}" alt="">
+  
+      <div class="container" >
+        <div class="row" >
+          <div class="col-lg-6" style="display: gird; gap: 10px; padding-top: 1rem;padding-bottom: 1rem; background-color: orange; border: 3px solid #000;">
+            <div class="bg-white rounded-lg shadow p-5"><strong class="text-uppercase text-secondary d-inline-block mb-2 text-sm">Reflection</strong>
+              <h2 class="mb-3">{% translate "Chief Seattle’s Letter 1855" %}</h2>
+              <p class="text-muted">{% blocktranslate %}Our connection with the Earth is deep and spiritual. Every corner of this earth and every living being are valuable and deserve our respect and care. Our actions should reflect our sacred duty to protect and love nature. By preserving the beauty and diversity of nature, we ensure that future generations can enjoy the same gifts we have received. The Earth is a gift to us and our descendants, and we must protect it with gratitude and commitment.{% endblocktranslate %}</p><a class="btn btn-link p-0" href="quiz.html">{% translate "Continue reading" %} <i class="fa fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-6">
+    <h1>{% translate "Estás seguro de eliminar" %} {{ quiz.titulo }} ?</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <a href="{% url 'quiz_post' quiz.id %}" class="btn btn-primary">Cancelar</a>
+        <input type="submit" value="Eliminar" class="btn btn-danger">  
+    </form>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% load i18n %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <style>
+    .menu-link.active {
+      color: #ff561e !important;
+      border-bottom: 2px solid #ff561e !important;
+      padding-bottom: 1px;
+      
+    }
+    
+    .nav-links .drop-menu{
+      width: 400px; /* Ajusta este valor según tus necesidades */
+    }
+    
+
+    
+    .mega-box .content {
+      display: flex;
+      align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    }
+    
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="font-awesome.min.css">
+</head>
+<body>
+  <nav id="menu_personalizado">
+    <div class="wrapper_personalizado">
+      <div class="logo_personalizado"><a href="{% if request.user.is_authenticated %}{% url 'home' %}{% else %}{% url 'welcome' %}{% endif %}">Jaime Campillay</a></div>
+      <input type="radio" name="slider_personalizado" id="menu-btn_personalizado">
+      <input type="radio" name="slider_personalizado" id="cancel-btn_personalizado">
+      <ul class="nav-links_personalizado">
+        <label for="cancel-btn_personalizado" class="btn cancel-btn_personalizado"><i class="fa fa-window-close"></i></label>
+        <li><a class="desktop-item menu-link {% if current_page == 'welcome' %}active{% endif %}" href="{% url 'home' %}">{% translate "Home" %} </a></li>
+        <li><a class="desktop-item menu-link {% if current_page == 'login' %}active{% endif %}" href="/authentication/login">{% translate "Login" %}</a></li>
+        <li><a class="desktop-item menu-link {% if current_page == 'register' %}active{% endif %}" href="/authentication/register">{% translate "Register" %}</a></li>
+        <li><a class="desktop-item menu-link {% if current_page == 'forgot_password' %}active{% endif %}" href="/authentication/request-password">{% translate "Forgot Password" %}</a></li>
+      </ul>
+      <label for="menu-btn_personalizado" class="btn menu-btn_personalizado"><i class="fa fa-bars"></i></label>
+    </div>
+  </nav>
+</body>
+</html>

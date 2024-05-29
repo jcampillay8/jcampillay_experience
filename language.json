@@ -1,0 +1,230 @@
+{
+    "English": {
+        "welcome":{
+            "header_welcome": {
+                "login": "Login",
+                "register": "Register",
+                "forgot_password": "Forgot Password"
+            },
+            "welcome_content":{
+                "text": "The past no longer exists, the future is uncertain, but the present is a very valuable gift, a gift that we often underestimate and don't properly appreciate. We can't change the past, and the future is uncertain, but the present, the here and now, is where we have the power to act and make decisions. It's where we can experience life fully and authentically.",
+                "button_guest": "Access as User Guest",
+                "button_authenticated": "Access as User Authenticated"
+            
+            },
+            "register": {
+                "title":"Register for a free account",
+                "show": "SHOW",
+                "boton_register":"Register",
+                "reset_password":"Reset Password",
+                "back_login": "Back to Login"
+            },
+            "login":{
+                "title": "Login to your Account",
+                "boton_login": "Login",
+                "boton_create_account": "Create an Account",
+                "boton_forgot_password": "Forgot Password"
+            },
+            "recover_password":{
+                "title":"Trouble Logging In?",
+                "instruction":"Enter your username or email and we'll send you a link to get back into your account.",
+                "send_link":"Send Link",
+                "create_new_account":"Create New Account",
+                "back_login":"Back to Login"                
+            }
+        },
+        "menu_home": {
+            "home":"Home",
+            "Home_Dropdown":{
+                "skills": "Skills",
+                "portfolio": "Portfolio",
+                "about": "About",
+                "cv": "Curriculum_Vitae",
+                "contact": "Contact"
+            },
+            "About_Me":"About Me",
+            "About_Me_Dropdown":{
+                "My_Profile":{
+                    "who_am_I": "Who am I?",
+                    "what_are_my_interest": "Whar are my interest?",
+                    "what_do_I_want_to_learn": "What do I want to learn?",
+                    "what_do_I_know_now": "What do I know now?",
+                    "what_am_I_studying_now": "What am I studying now?"
+                },
+                "blog":{
+                    "one": "Blog",
+                    "two": "Notes",
+                    "three": ""
+                },
+                "Estudies": {
+                    "one": "Show All Studies",
+                    "two": "Most Important Studies",
+                    "three": "Moderately Important Studies",
+                    "four": "Less Important Studies"
+                }
+            },
+            "Portfolio":"Portfolio",
+            "Portfolio_Dropdown":{
+                "Personal_Projects":{
+                    "four": "- Personal Website Django",
+                    "three": "- Quizzes",
+                    "two": "- Get Video 8MM",
+                    "one": "- ReportWork - Android MobileApp"                    
+                },
+                "Professional_Projects":{
+                    "six": "- Estragy Cloud - Redbanc",
+                    "five": "- ALM Tool Finance - Banco Internacional",
+                    "four": "- ETL, SQL-MS, BICE Inversiones",
+                    "three": "- RPA Automated Processes Scotiabank",
+                    "two": "- Project \"Los Bronces III\" - Anglo American",
+                    "one": "- Deployment & Administration Odoo ERP"
+                },
+                "Work_Experience":{
+                    "three": "- EY",
+                    "two": "- Techint",
+                    "one": "- Clearpix"
+                
+                }
+            },           
+            "Estudies":"Estudies",
+            "Estudies_Dropdown":{
+                "one": "Show All Studies",
+                "two": "Show Studies Level 1",
+                "three": "Show Studies Level 2",
+                "four": "Show Studies Level 3"
+                },
+            "Website_Detail":"Website Details",
+            "Website_Detail_Dropdown":{
+                    "one": "Website Information",
+                    "two": "Translation Manager"
+                    },
+            "Quizzes":"Quizzes",
+            "Quizzes_Dropdown":{
+                        "one": "GCP Cloud Digital Leader",
+                        "two": "Azure Data Fundamentals"
+                    },
+
+            "contact": "Contact"
+            },
+        "home":{
+            "skills":"SKILLS"
+            }
+        
+            
+        },
+    
+
+        
+
+  
+  
+    "Spanish": {
+        "welcome":{
+            "header_welcome": {
+                "login": "Iniciar Sesión",
+                "register": "Registrase",
+                "forgot_password": "Recuperar Contraseña"
+            },
+            "welcome_content":{
+                "text": "El pasado ya no existe, el futuro es incierto, pero el presente es un regalo muy valioso, un regalo que a menudo subestimamos y no valoramos debidamente. No podemos cambiar el pasado, y el futuro es incierto, pero el presente, el aquí y ahora, es donde tenemos el poder de actuar y tomar decisiones. Es donde podemos experimentar la vida de manera plena y auténtica.",
+                "button_guest": "Acceder Usuario Invitado",
+                "button_authenticated": "Acceder Usuario Autenticado"
+            },
+            "register":{
+                "title": "Registrarse para una cuenta gratuita",
+                "show": "MOSTRAR",
+                "boton_register": "Registrarse",
+                "reset_password": "Restablecer contraseña",
+                "back_login": "Volver a Iniciar sesión"
+            },
+            "login":{
+                "title": "Iniciar sesión en tu cuenta",
+                "boton_login": "Iniciar",
+                "boton_create_account": "Crear una cuenta",
+                "boton_forgot_password": "¿Olvidaste tu contraseña?"
+            },
+            "recover_password":{
+                "title": "¿Problemas para iniciar sesión?",
+                "instruction": "Ingresa tu nombre de usuario o correo electrónico y te enviaremos un enlace para que puedas volver a tu cuenta.",
+                "send_link": "Enviar enlace",
+                "create_new_account": "Crear una nueva cuenta",
+                "back_login": "Volver a Iniciar sesión"
+            }
+        },
+        
+        "menu_home": {
+            "home":"Hogar",
+            "Home_Dropdown": {
+                "skills": "Habilidades",
+                "portfolio": "Portafolio",
+                "about": "Acerca de",
+                "cv": "Curriculum Vitae",
+                "contact": "Contacto"
+            },
+            "About_Me":"Acerca de Mi",
+            "Estudies":"Estudies",
+            "About_Me_Dropdown":{
+                    "My_Profile":{
+                        "who_am_I": "¿Quién soy?",
+                        "what_are_my_interest": "¿Cuáles son mis intereses?",
+                        "what_do_I_want_to_learn": "¿Qué quiero aprender?",
+                        "what_do_I_know_now": "¿Qué sé ahora?",
+                        "what_am_I_studying_now": "¿Qué estoy estudiando actualmente?"
+                    },
+                    "blog":{
+                        "one": "¿Quién soy?",
+                        "two": "¿Cuáles son mis intereses?",
+                        "three": "¿Qué quiero aprender?"
+                    },
+                    "Estudies": {
+                        "one": "Show All Studies",
+                        "two": "Most Important Studies",
+                        "three": "Moderately Important Studies",
+                        "four": "Less Important Studies"
+                    }
+                },
+            "Portfolio":"Portafolio",
+            "Portfolio_Dropdown":{
+                "Personal_Projects":{
+
+                    "four": "Personal Website Django",
+                    "three": "Quizzes",
+                    "two": "Get Video 8MM",
+                    "one": "ReportWork - Android MobileApp"                    
+                },
+                "Professional_Projects":{
+                    "six": "Estragy Cloud - Redbanc",
+                    "five": "ALM Tool Finance - Banco Internacional",
+                    "four": "ETL, SQL-MS, BICE Inversiones",
+                    "three": "RPA Automated Processes Scotiabank",
+                    "two": "Project \"Los Bronces III\" - Anglo American",
+                    "one": "Deployment & Administration Odoo ERP"
+                },
+                "Work_Experience":{
+                    "three": "EY",
+                    "two": "Techint",
+                    "one": "Clearpix"
+                
+                }
+            },   
+            
+            "Website_Detail":"SitioWeb Detalle",
+            "Website_Detail_Dropdown":{
+                    "one": "Información Sitio Web",
+                    "two": "Administrador de Traducción"
+                    },
+            "Quizzes":"Quizzes",
+            "Quizzes_Dropdown":{
+                "one": "GCP Cloud Digital Leader",
+                "two": "Azure Data Fundamentals"
+            },
+            "contact": "Contacto"
+        } ,
+
+        "home":{
+            "skills":"HABILIDADES"
+        }      
+    }
+
+
+}

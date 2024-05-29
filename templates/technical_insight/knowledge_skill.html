@@ -1,0 +1,636 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{%block content%}
+
+
+
+    <title> TITULO {% block title %} {% endblock %}</title>
+    
+<!-- header-slider-area start -->
+<!-- header-slider-area start -->
+<section class="header-slider-area">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+  
+      
+               
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="single-slide-item slide-1">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="single-slide-item-content">
+                    <h2>{% translate "Bienvenido" %}<br> {{ request.user.first_name }} {{ request.user.last_name }}</h2>
+                    <p>
+                      {% blocktranslate %} We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems. {% endblocktranslate %}
+                    </p>
+                    
+                  </div><!-- /.single-slide-item-content-->
+                </div><!-- /.col-->
+              </div><!-- /.row-->
+            </div><!-- /.container-->
+          </div><!-- /.single-slide-item-->
+        </div><!-- /.item .active-->
+  
+        <div class="container" style="margin-top: 50px;">
+            <div class="service-details">
+                <div class="section-header text-center">
+                    <h2>{% translate "Technical Knowledge and Skills" %}</h2>
+                    <p>
+                        {% blocktranslate %} Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. {% endblocktranslate %}
+                    </p>
+                </div><!--/.section-header-->
+                <div class="service-content-one">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Python</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">PostgreSQL</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Django Framework</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-one-->
+                <div class="service-content-two">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg" />
+      
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">{% translate "Arch Linux" %}</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">{% translate "Git" %}</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">{% translate "GitHub" %}</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-two-->
+                <div class="service-content-one">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Anaconda</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Arduino</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Bash</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-one-->
+                <div class="service-content-two">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">SQL Server</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">AWS</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Azure</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-two-->
+                <div class="service-content-one">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Bootstrap</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Cloudflare</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Json</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-one-->
+                <div class="service-content-two">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">HTML5</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">CSS3</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">JavaScript</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-two-->
+                <div class="service-content-one">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">jQuery</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Jupyter</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Linux</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-one-->
+                <div class="service-content-two">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Markdown</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">NGINX</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">NPM</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-two-->
+                <div class="service-content-one">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Numpy</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Pandas</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Plotly</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-one-->
+                <div class="service-content-two">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Postman</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Vim</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">VSCode</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-two-->
+            </div><!--/.service-details-->
+        </div><!--/.container-->
+        <div class="text-center" style="margin-top: 30px;">
+            <button type="button" class="btn btn-warning">VIEW MORE PROJECTS <i class="fa fa-arrow-right"></i></button>
+        </div>
+
+
+
+      {%endblock%}
+

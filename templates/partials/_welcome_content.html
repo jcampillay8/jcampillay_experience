@@ -1,0 +1,59 @@
+{% extends 'welcome.html' %} 
+{% load i18n %}
+{% load static%} {%block title%} | Login to Account
+
+{%endblock%} 
+
+{%block content%}
+<style>
+  h2 {
+      -webkit-text-stroke: 0.4px black;
+      color:whitesmoke;
+  }
+  </style>
+<!-- header-slider-area start -->
+<section class="header-slider-area">
+  <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+    {% csrf_token%}
+    
+    {% include 'partials/_alerts.html'%}
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="single-slide-item slide-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="single-slide-item-content">
+                  <h2>{% translate "Hi!" %}</h2> <br> <h2>{% translate "I'm Jaime Campillay" %}</h2> <br> <h2 class="cover-heading" id="typewriter"></h2>
+                  <p style="-webkit-text-stroke: 0.1px black; color:whitesmoke;">
+                    {% blocktranslate %} We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems. {% endblocktranslate %} 
+                  </p>
+                  <button type="button" class="slide-btn">
+                    {% translate "Guest User" %}
+                    </button>
+                    <button type="button"  class="slide-btn">
+                      {% translate "Authenticated User" %}
+                    </button>
+                  
+                </div><!-- /.single-slide-item-content-->
+              </div><!-- /.col-->
+            </div><!-- /.row-->
+          </div><!-- /.container-->
+        </div><!-- /.single-slide-item-->
+      </div><!-- /.item .active-->
+
+
+</section><!-- /.header-slider-area-->
+<!-- header-slider-area end -->
+
+
+
+
+{%endblock%}

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{%block content%}
+
+
+
+    <title> TITULO {% block title %} {% endblock %}</title>
+    
+<!-- header-slider-area start -->
+<!-- header-slider-area start -->
+<section class="header-slider-area">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+  
+      
+               
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="single-slide-item slide-1">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="single-slide-item-content">
+                    <h2>{% translate "Bienvenido" %}<br> {{ request.user.first_name }} {{ request.user.last_name }}</h2>
+                    <p>
+                      {% blocktranslate %} We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems. {% endblocktranslate %}
+                    </p>
+                    
+                  </div><!-- /.single-slide-item-content-->
+                </div><!-- /.col-->
+              </div><!-- /.row-->
+            </div><!-- /.container-->
+          </div><!-- /.single-slide-item-->
+        </div><!-- /.item .active-->
+  
+
+  
+  </section><!-- /.header-slider-area-->
+
+
+
+
+<div class="container-fluid bg-light py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center" style="max-width: 500px;">
+            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Case Study</div>
+            <h1 class="mb-4">Explore Our Recent AI Case Studies</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="{% static 'images/about/about_me_1.jpg' %}" alt="">
+                    <a class="case-overlay text-decoration-none d-block position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center bg-dark bg-opacity-50 text-white p-3" href="">
+                        <small>Robotic Automation</small>
+                        <h5 class="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita</h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="{% static 'images/about/about_me_2.jpg' %}" alt="">
+                    <a class="case-overlay text-decoration-none d-block position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center bg-dark bg-opacity-50 text-white p-3" href="">
+                        <small>Machine learning</small>
+                        <h5 class="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita</h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="{% static 'images/about/about_me_3.jpg' %}" alt="">
+                    <a class="case-overlay text-decoration-none d-block position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center bg-dark bg-opacity-50 text-white p-3" href="">
+                        <small>Predictive Analysis</small>
+                        <h5 class="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita</h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+      {%endblock%}
+
