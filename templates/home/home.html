@@ -229,18 +229,19 @@
     
     <!-- /3 Column Portfolio -->
     
-    <div class="container filter">
+    <div class="container">
         <div class="filter-section">
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
-                    <h1>3 Column Portfolio</h1>
+                    <h1>Projects Portfolio</h1>
                     <div class="filter-container isotopeFilters">
                         <ul class="list-inline filter d-flex justify-content-center align-items-center">
                             <li class="active"><a href="#" data-filter="*">All</a><span>/</span></li>
-                            <li><a href="#" data-filter=".illustrations">Illustrations</a><span>/</span></li>
-                            <li><a href="#" data-filter=".photography">Photography</a><span>/</span></li>
+                            <li><a href="#" data-filter=".Process_Automation">Process Automation</a><span>/</span></li>
+                            <li><a href="#" data-filter=".Engineering">Engineering</a><span>/</span></li>
                             <li><a href="#" data-filter=".websites">Websites</a><span>/</span></li>
-                            <li><a href="#" data-filter=".art">Art</a></li>
+                            <li><a href="#" data-filter=".software_development">Software Development</a><span>/</span></li>
+                            <li><a href="#" data-filter=".machine_learning">Machine Learning</a></li>
                         </ul>
                     </div>
                 </div>
@@ -248,10 +249,34 @@
         </div>
 
         <div class="portfolio-section port-col d-flex flex-wrap justify-content-center">                
-            <div class="col-md-4 col-sm-6 isotopeSelector photography">
+            <div class="col-md-4 col-sm-6 isotopeSelector Engineering software_development websites">
                 <article class="">
                     <figure>
-                        <img src="http://placehold.it/625x450" alt="">
+                        <img src="{% static 'images/project/banner-slide-9.jpg' %}" alt="">
+                        <div class="overlay-background">
+                            <div class="inner"></div>
+                        </div>
+                        <div class="overlay">                            
+                            <div class="row margin-0 project-content">
+                                <div class="col-md-12 info-head text-center">
+                                    <h3>Portfolio Website</h3>                       
+                                </div>
+                                <div class="col-md-12 info">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                    <a title="Project Link" href="{% url 'projects_describe' id=9 %}">
+                                        <i class="fa fa-arrow-right fa-border fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </article>
+            </div>
+
+            <div class="col-md-4 col-sm-6 isotopeSelector Engineering">
+                <article class="">
+                    <figure>
+                        <img src="{% static 'images/project/banner-slide-4.jpg' %}" alt="">
                         <div class="overlay-background">
                             <div class="inner"></div>
                         </div>
@@ -259,17 +284,14 @@
                             <div class="inner-overlay">
                                 <div class="row margin-0 project-content">
                                     <div class="col-md-12 info-head text-center">
-                                        <h3>Project Title</h3>
-                                        <h4>Category</h4>
+                                        <h3>Cloud Strategy</h3>
                                     </div>
                                     <div class="col-md-12 info">
                                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
                                         <p>
-                                            <a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450">
-                                                <i class="fa fa-search fa-border fa-2x"></i>
-                                            </a>
-                                            <a title="Project Link" href="portfolio-item.html">
-                                                <i class="fa fa-link fa-border fa-2x"></i>
+
+                                            <a title="Project Link" href="{% url 'projects_describe' id=8 %}">
+                                                <i class="fa fa-arrow-right fa-border fa-2x"></i>
                                             </a>
                                         </p>
                                     </div>
@@ -280,173 +302,125 @@
                 </article>
             </div>
 
-                    <div class="col-md-4 col-sm-6 isotopeSelector photography illustrations">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head text-center">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p>
-                                                    <a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450">
-                                                        <i class="fa fa-search fa-border fa-2x"></i>
-                                                    </a>
-                                                    <a title="Project Link" href="portfolio-item.html">
-                                                        <i class="fa fa-link fa-border fa-2x"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
+            <div class="col-md-4 col-sm-6 isotopeSelector Engineering software_development websites">
+                <article class="">
+                    <figure>
+                        <img src="{% static 'images/project/banner-slide-5.jpg' %}" alt="">
+                        <div class="overlay-background">
+                            <div class="inner"></div>
+                        </div>
+                        <div class="overlay">
+                            <div class="inner-overlay">
+                                <div class="row margin-0 project-content">
+                                    <div class="col-md-12 info-head text-center">
+                                        <h3>Financial Tool International Bank</h3>
+                                    </div>
+                                    <div class="col-md-12 info">
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                        <p>
+                                            <a title="Project Link" href="{% url 'projects_describe' id=7 %}">
+                                                <i class="fa fa-arrow-right fa-border fa-2x"></i>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
-                            </figure>
-                        </article>
-                    </div>
+                            </div>
+                        </div>
+                    </figure>
+                </article>
+            </div>
 
-                    <div class="col-md-4 col-sm-6 isotopeSelector art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head text-center">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p>
-                                                    <a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450">
-                                                        <i class="fa fa-search fa-border fa-2x"></i>
-                                                    </a>
-                                                    <a title="Project Link" href="portfolio-item.html">
-                                                        <i class="fa fa-link fa-border fa-2x"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
+            <div class="col-md-4 col-sm-6 isotopeSelector Engineering software_development">
+                <article class="">
+                    <figure>
+                        <img src="{% static 'images/project/banner-slide-3.jpg' %}" alt="">
+                        <div class="overlay-background">
+                            <div class="inner"></div>
+                        </div>
+                        <div class="overlay">
+                            <div class="inner-overlay">
+                                <div class="row margin-0 project-content">
+                                    <div class="col-md-12 info-head text-center">
+                                        <h3>ETL SQL BICE & FACTSET</h3>
+                                    </div>
+                                    <div class="col-md-12 info">
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                        <p>
+                                            <a title="Project Link" href="{% url 'projects_describe' id=6 %}">
+                                                <i class="fa fa-arrow-right fa-border fa-2x"></i>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
-                            </figure>
-                        </article>
-                    </div>
+                            </div>
+                        </div>
+                    </figure>
+                </article>
+            </div>
 
-                    <div class="col-md-4 col-sm-6 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head text-center">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p>
-                                                    <a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450">
-                                                        <i class="fa fa-search fa-border fa-2x"></i>
-                                                    </a>
-                                                    <a title="Project Link" href="portfolio-item.html">
-                                                        <i class="fa fa-link fa-border fa-2x"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
+            <div class="col-md-4 col-sm-6 isotopeSelector Process_Automation software_development">
+                <article class="">
+                    <figure>
+                        <img src="{% static 'images/project/banner-slide-2.jpg' %}" alt="">
+                        <div class="overlay-background">
+                            <div class="inner"></div>
+                        </div>
+                        <div class="overlay">
+                            <div class="inner-overlay">
+                                <div class="row margin-0 project-content">
+                                    <div class="col-md-12 info-head text-center">
+                                        <h3>Automatización Hipotecario Garantía</h3>
+                                    </div>
+                                    <div class="col-md-12 info">
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                        <p>
+                                            <a title="Project Link" href="{% url 'projects_describe' id=5 %}">
+                                                <i class="fa fa-arrow-right fa-border fa-2x"></i>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
-                            </figure>
-                        </article>
-                    </div>
+                            </div>
+                        </div>
+                    </figure>
+                </article>
+            </div>
 
-                    <div class="col-md-4 col-sm-6 isotopeSelector photography websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head text-center">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p>
-                                                    <a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450">
-                                                        <i class="fa fa-search fa-border fa-2x"></i>
-                                                    </a>
-                                                    <a title="Project Link" href="portfolio-item.html">
-                                                        <i class="fa fa-link fa-border fa-2x"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
+            <div class="col-md-4 col-sm-6 isotopeSelector Process_Automation software_development">
+                <article class="">
+                    <figure>
+                        <img src="{% static 'images/project/banner-slide-6.jpg' %}" alt="">
+                        <div class="overlay-background">
+                            <div class="inner"></div>
+                        </div>
+                        <div class="overlay">
+                            <div class="inner-overlay">
+                                <div class="row margin-0 project-content">
+                                    <div class="col-md-12 info-head text-center">
+                                        <h3>Automatización Linea Seguro</h3>
+                                    </div>
+                                    <div class="col-md-12 info">
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                        <p>
+                                            <a title="Project Link" href="{% url 'projects_describe' id=4 %}">
+                                                <i class="fa fa-arrow-right fa-border fa-2x"></i>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
-                            </figure>
-                        </article>
-                    </div>
+                            </div>
+                        </div>
+                    </figure>
+                </article>
+            </div>
 
-                    <div class="col-md-4 col-sm-6 isotopeSelector photography art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head text-center">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p>
-                                                    <a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450">
-                                                        <i class="fa fa-search fa-border fa-2x"></i>
-                                                    </a>
-                                                    <a title="Project Link" href="portfolio-item.html">
-                                                        <i class="fa fa-link fa-border fa-2x"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-            
-        
-    </div>
-    <!-- END Columns Portfolio -->
 
-    <div class="text-center">
+        </div>
+                <!-- END Columns Portfolio -->
+    <div class="text-center" style="margin-top: 25px;">
         <button type="button" class="btn" style="background: #ff561e; color:white"><strong>VIEW MORE </strong><i class="fa fa-arrow-right"></i></button>
+    </div>
+        
     </div>
 
 </section>
@@ -500,169 +474,319 @@
                         <div class="col-md-5 col-sm-12">
                             <div class="single-about-history">
                                 <div class="about-history-img">
-                                    <img src="assets/images/about/ab1.jpg" alt="about" class="img-fluid">
+                                    <img src="{% static 'images/banner/santiago.jpg' %}" alt="about" class="img-fluid">
                                 </div><!--/.about-history-img-->
                             </div><!--/.single-about-history-->
                         </div><!--/.col-->
                     
                         <div class="offset-md-1 col-md-6 col-sm-12">
-                            <div class="single-about-history">
-                                <div class="about-history-txt">
-                                    <h2>{% translate "our history" %}</h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolor sit amet, consectetur adiping elit, sed do eiusmod tempor incidd ut labore rhei  et dolore magna aliqua. Ut enim ad  veniam, quis laboris nisi ut aliquip ex ea commodo. Duis aute irure dolor in repre voluptate in the velit esse.{% endblocktranslate %}
-                                    </p>
-                    
-                                    <div class="main-timeline">
-                    
-                                        <div class="row">
-                                            <div class="col-md-2 col-sm-2">
-                                                <div class="experience-time">
-                                                    <h3>2002</h3>
-                                                </div><!--/.experience-time-->
-                                            </div><!--/.col-->
-                                            <div class="col-md-10 col-sm-10">
-                                                <div class="timeline">
-                                                    
-                                                    <div class="timeline-content">
-                                                        <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                        
-                                                        <ul class="description">
-                                                            <li>{% blocktranslate %}Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.{% endblocktranslate %}</li>
-                    
-                                                        </ul>
-                                                    </div><!--/.timeline-content-->
-                                                </div><!--/.timeline-->
-                                            </div><!--/.col-->
-                                        </div><!--/.row-->
-                    
-                                        <div class="row">
-                                            <div class="col-md-2 col-sm-2">
-                                                <div class="experience-time">
-                                                    <h3>2007</h3>
-                                                </div><!--/.experience-time-->
-                                            </div><!--/.col-->
-                                            <div class="col-md-10 col-sm-10">
-                                                <div class="timeline">
-                                                    
-                                                    <div class="timeline-content">
-                                                        <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                        
-                                                        <ul class="description">
-                                                            <li>{% blocktranslate %}Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.{% endblocktranslate %}</li>
-                                                        </ul>
-                                                    </div><!--/.timeline-content-->
-                                                </div><!--/.timeline-->
-                                            </div><!--/.col-->
-                                        </div><!--/.row-->
-                    
-                                        <div class="row">
-                                            <div class="col-md-2 col-sm-2">
-                                                <div class="experience-time">
-                                                    <h3>2012</h3>
-                                                </div><!--/.experience-time-->
-                                            </div><!--/.col-->
-                                            <div class="col-md-10 col-sm-10">
-                                                <div class="timeline">
-                                                    
-                                                    <div class="timeline-content">
-                                                        <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                        
-                                                        <ul class="description">
-                                                            <li>{% blocktranslate %}Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.{% endblocktranslate %}</li>
-                    
-                                                        </ul>
-                                                    </div><!--/.timeline-content-->
-                                                </div><!--/.timeline-->
-                                            </div><!--/.col-->
-                                        </div><!--/.row-->
-                    
-                                        <div class="row">
-                                            <div class="col-md-2 col-sm-2">
-                                                <div class="experience-time">
-                                                    <h3>2016</h3>
-                                                </div><!--/.experience-time-->
-                                            </div><!--/.col-->
-                                            <div class="col-md-10 col-sm-10">
-                                                <div class="timeline">
-                                                    
-                                                    <div class="timeline-content">
-                                                        <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                        
-                                                        <ul class="description">
-                                                            <li>{% blocktranslate %}Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.{% endblocktranslate %}</li>
-                                                        </ul>
-                                                    </div><!--/.timeline-content-->
-                                                </div><!--/.timeline-->
-                                            </div><!--/.col-->
-                                        </div><!--/.row-->
-                                    </div><!--.main-timeline-->
-                                </div><!--/.about-history-txt-->
-                            </div><!--/.single-about-history-->
+                            <section class="main-block">
+                                <h2>
+                                  <i class="fa fa-suitcase"></i> experiencia
+                                </h2>
+                                <section class="blocks">
+                                  <div class="date">
+                                    <strong><span>2023</span> - <span>2024</span></strong>
+                                  </div>
+                                  <div class="decorator">
+                                  </div>
+                                  <div class="details">
+                                    <header>
+                                      <h3>Data Engineer</h3>
+                                      <span class="place"><strong>EY Chile - Latino América</strong></span>
+                                      <span class="location"><strong>(remoto/presencial) - Santiago, Chile</strong></span>
+                                    </header>
+                                    <div>
+                                      <ul>
+                                        <li>Como Ingeniero de Datos aporte con los diseños, construcción y mantención de infraestructura de datos, asegurando su organización y accesibilidad. Me encargé de la extracción, transformación y carga (ETL) de datos, integrando diversas fuentes y garantizando su calidad y la optimización de consultas a bases de datos para mejorar el rendimiento. Además colaboré con el desarrollo y gestión de pipelines de datos para facilitar el flujo continuo de información.</li>
+                                      </ul>
+                                      </div>
+                                  </div>
+                                </section>
+                                <br>
+                                <section class="blocks">
+                                    <div class="date">
+                                      <strong><span>2021</span> - <span>2022</span></strong>
+                                    </div>
+                                    <div class="decorator">
+                                    </div>
+                                    <div class="details">
+                                      <header>
+                                        <h3>RPA Developer</h3>
+                                        <span class="place"><strong>EY Chile - Latino América</strong></span>
+                                        <span class="location"><strong>(remoto/presencial) - Santiago, Chile</strong></span>
+                                      </header>
+                                      <div>
+                                        <ul>
+                                          <li>Evaluar, diseñar, proponer y crear soluciones a trabajos altamente repetitivos, voluminosos, predecibles y no obstante necesarios para el correcto funcionamiento del negocio, mediante la programación RPA. Implementa y gestiona la automatización de procesos utilizando herramientas de Robotic Process Automation (RPA) para mejorar la eficiencia y reducir errores. Desarrolla scripts y bots que automatizan tareas rutinarias, asegurando que los procesos sean ejecutados de manera consistente y precisa. Colabora con equipos de diferentes departamentos para identificar oportunidades de automatización, optimizando así los flujos de trabajo y liberando tiempo para actividades de mayor valor agregado. </li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                  </section>
+                              </section>
                         </div><!--/.col-->
                     </div><!--/.row-->
                     
                     <div class="row">
                         <div class="about-vission-content d-flex flex-wrap">
                             <div class="col-md-6 col-sm-12 order-md-1 order-2">
-                                <div class="single-about-history">
-                                    <div class="about-history-txt">
-                                        <h2>{% translate "vision and mission" %}</h2>
-                                        <p>
-                                            {% blocktranslate %}Lorem ipsum dolor sit amet, consectetur adiping elit, sed do eiusmod tempor incidd ut labore rhei et dolore magna aliqua. Ut enim ad veniam, quis laboris nisi ut aliquip ex ea commodo. Duis aute irure dolor in repre voluptate in the velit esse.{% endblocktranslate %}
-                                        </p>
-                                        <div class="main-timeline xtra-timeline">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="timeline timeline-ml-20">
-                                                        <div class="timeline-content">
-                                                            <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                            <ul class="description">
-                                                                <li>{% blocktranslate %}Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.{% endblocktranslate %}</li>
-                                                            </ul>
-                                                        </div><!--/.timeline-content-->
-                                                    </div><!--/.timeline-->
-                                                </div><!--/.col-->
-                                            </div><!--/.row-->
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="timeline timeline-ml-20">
-                                                        <div class="timeline-content">
-                                                            <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                            <ul class="description">
-                                                                <li>{% blocktranslate %}Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.{% endblocktranslate %}</li>
-                                                            </ul>
-                                                        </div><!--/.timeline-content-->
-                                                    </div><!--/.timeline-->
-                                                </div><!--/.col-->
-                                            </div><!--/.row-->
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="timeline timeline-ml-20">
-                                                        <div class="timeline-content">
-                                                            <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                            <ul class="description">
-                                                                <li>{% blocktranslate %}Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.{% endblocktranslate %}</li>
-                                                            </ul>
-                                                        </div><!--/.timeline-content-->
-                                                    </div><!--/.timeline-->
-                                                </div><!--/.col-->
-                                            </div><!--/.row-->
-                                        </div><!--.main-timeline-->
-                                    </div><!--/.about-history-txt-->
-                                </div><!--/.single-about-history-->
+                                <section class="blocks">
+                                    <div class="date">
+                                      <strong><span>2019</span> - <span>2020</span></strong>
+                                    </div>
+                                    <div class="decorator">
+                                    </div>
+                                    <div class="details">
+                                      <header>
+                                        <h3>Ingeniero - Analista Programador</h3>
+                                        <span class="place"><strong>TECHINT Ingeniería y Construcción: </strong></span>
+                                        <span class="location"><strong>Mina Los Bronces, Región Metropolitana Chile</strong></span>
+                                      </header>
+                                      <div>
+                                        <ul>
+                                          
+                                          <li>Monitorear y Supervisar avances físicos de obra, hacer Informes (diarios y mensuales) sobre el desempeño de estos, principalmente avance obras físicas vs HH y HM consumidas del proyecto, y el informe mensual 'Estado de Pago' que requería de harta documentación firmada como respaldo y las cuentas claras y precisas para su aprobación final, lo cuál se traducia en el pago para la empresa Techint por parte de Anglo American, y la liquídez del proyecto para el pago de todos los trabajadores del proyecto.</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </section>
+                                  <br>
+                                  <section class="blocks">
+                                    <div class="date">
+                                      <strong><span>2017</span> - <span>2018</span></strong>
+                                    </div>
+                                    <div class="decorator">
+                                    </div>
+                                    <div class="details">
+                                      <header>
+                                        <h3>Emprendimiento - Pyme</h3>
+                                        <span class="place"><strong>Cleapix: </strong></span>
+                                        <span class="location"><strong>Valparaíso, Quinta Región Chile</strong></span>
+                                      </header>
+                                      <div>
+                                        <ul>
+                                          
+                                          <li>Proyecto de implementación de Odoo en una pyme de Valparaíso dedicada a la venta de prendas de vestir personalizadas y otros objetos, optimizando la gestión de inventarios, ventas, compras y contabilidad para mejorar la eficiencia operativa y la productividad.</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </section>
                             </div><!--/.col-->
                             <div class="col-md-5 col-sm-12 order-md-2 order-1 offset-md-1">
                                 <div class="single-about-history">
                                     <div class="about-history-img">
-                                        <img src="assets/images/about/ab2.jpg" alt="about" class="img-fluid">
+                                        <img src="{% static 'images/banner/santiago_1400.jpg' %}" alt="about" class="img-fluid" style="width: 760px; height: 540px; object-fit: cover;">
+
                                     </div><!--/.about-history-img-->
                                 </div><!--/.single-about-history-->
                             </div><!--/.col-->
                         </div><!--/.about-vission-content-->
                     </div><!--/.row-->
+<!--about-history start-->
+<div class="about-history">
+    <div class="container">
+        <div class="about-history-content">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="single-about-history">
+                        <div class="about-history-img">
+                            <img src="assets/images/about/ab1.jpg" alt="about" class="img-fluid">
+                        </div><!--/.about-history-img-->
+                    </div><!--/.single-about-history-->
+                </div><!--/.col-->
+
+                <div class="col-md-6 offset-md-1 col-sm-12">
+                    <div class="single-about-history">
+                        <div class="main-block">
+                            <h2>
+                                <i class="fa fa-graduation-cap"></i> {% translate 'Education' %}
+                              </h2>
+                            <p>
+                                {% translate 'Major educational achievements include obtaining academic degrees and acquiring advanced skills in key areas such as programming, data science, English, and cloud fundamentals.' %}
+                            </p>
+
+                            <div class="main-timeline">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="experience-time">
+                                            <h3>2023</h3>
+                                        </div><!--/.experience-time-->
+                                    </div><!--/.col-->
+                                    <div class="col-md-10 col-sm-10">
+                                        <div class="timeline">
+                                            <div class="timeline-content">
+                                                <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                                <ul class="description">
+                                                    <li>Microsoft Certified - Azure Fundamentals</li>
+                                                </ul>
+                                            </div><!--/.timeline-content-->
+                                        </div><!--/.timeline-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="experience-time">
+                                            <h3>2023</h3>
+                                        </div><!--/.experience-time-->
+                                    </div><!--/.col-->
+                                    <div class="col-md-10 col-sm-10">
+                                        <div class="timeline">
+                                            <div class="timeline-content">
+                                                <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                                <ul class="description">
+                                                    <li>EY Analytics - Data Science Bronze Badge</li>
+                                                </ul>
+                                            </div><!--/.timeline-content-->
+                                        </div><!--/.timeline-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="experience-time">
+                                            <h3>2022</h3>
+                                        </div><!--/.experience-time-->
+                                    </div><!--/.col-->
+                                    <div class="col-md-10 col-sm-10">
+                                        <div class="timeline">
+                                            <div class="timeline-content">
+                                                <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                                <ul class="description">
+                                                    <li>Eclass - Level B1 English</li>
+                                                </ul>
+                                            </div><!--/.timeline-content-->
+                                        </div><!--/.timeline-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="experience-time">
+                                            <h3>2021</h3>
+                                        </div><!--/.experience-time-->
+                                    </div><!--/.col-->
+                                    <div class="col-md-10 col-sm-10">
+                                        <div class="timeline">
+                                            <div class="timeline-content">
+                                                <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                                <ul class="description">
+                                                    <li>Coding Dojo Bootcamp - Python Full Stack Developer</li>
+                                                </ul>
+                                            </div><!--/.timeline-content-->
+                                        </div><!--/.timeline-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="experience-time">
+                                            <h3>2019</h3>
+                                        </div><!--/.experience-time-->
+                                    </div><!--/.col-->
+                                    <div class="col-md-10 col-sm-10">
+                                        <div class="timeline">
+                                            <div class="timeline-content">
+                                                <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                                <ul class="description">
+                                                    <li>Universidad del Desarrollo - Magister Ingeniería Industrial y Sistemas</li>
+                                                </ul>
+                                            </div><!--/.timeline-content-->
+                                        </div><!--/.timeline-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="experience-time">
+                                            <h3>2017</h3>
+                                        </div><!--/.experience-time-->
+                                    </div><!--/.col-->
+                                    <div class="col-md-10 col-sm-10">
+                                        <div class="timeline">
+                                            <div class="timeline-content">
+                                                <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                                <ul class="description">
+                                                    <li>Universidad Andrés Bello - Ingeniería Civil Industrial</li>
+                                                </ul>
+                                            </div><!--/.timeline-content-->
+                                        </div><!--/.timeline-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.main-timeline-->
+                        </div><!--/.about-history-txt-->
+                    </div><!--/.single-about-history-->
+                </div><!--/.col-->
+            </div><!--/.row-->
+            
+
+        </div><!--/.about-history-content-->
+    </div><!--/.container-->
+</div><!--/.about-history-->
+<!--about-history end-->
+
                     
-                    
+<div class="row">
+    <div class="about-vission-content d-flex flex-wrap">
+        <div class="col-md-6 col-sm-12 order-md-1 order-0">
+            <div class="single-about-history">
+                <div class="main-block">
+                    <h2><i class="fa fa-university"></i>{% translate " vision and mission" %}</h2>
+                    <!-- <p>
+                        {% blocktranslate %}Mis motivaciones para mejorar constantemente se basan en los siguientes tres pilares:{% endblocktranslate %}
+                    </p> -->
+                    <div class="main-timeline xtra-timeline" style="padding-top: -20px;">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="timeline timeline-ml-20">
+                                    <div class="timeline-content">
+                                        <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                        <ul class="description">
+                                            <li>{% blocktranslate %}Aprender y utilizar Machine Learning y la Inteligencia Artificial es uno de mis principales objetivos. Me esfuerzo por dominar estas tecnologías emergentespara desarrollar soluciones que transformen y mejoren la calidad de vida de las personas.{% endblocktranslate %}</li>
+                                        </ul>
+                                    </div><!--/.timeline-content-->
+                                </div><!--/.timeline-->
+                            </div><!--/.col-->
+                        </div><!--/.row-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="timeline timeline-ml-20">
+                                    <div class="timeline-content">
+                                        <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                        <ul class="description">
+                                            <li>{% blocktranslate %}Dominar el idioma inglés para colaborar eficazmente a nivel global. Trabajo constantemente en mejorar mis habilidades lingüísticas para comunicarme y trabajar junto a profesionales de todo el mundo.{% endblocktranslate %}</li>
+                                        </ul>
+                                    </div><!--/.timeline-content-->
+                                </div><!--/.timeline-->
+                            </div><!--/.col-->
+                        </div><!--/.row-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="timeline timeline-ml-20">
+                                    <div class="timeline-content">
+                                        <h4 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+                                        <ul class="description">
+                                            <li>{% blocktranslate %}Conocer y trabajar junto a equipos de personas de diferentes lugares, culturas y conocimientos es fundamental para enriquecer mis experiencias y habilidades. Valoro la diversidad y busco siempre colaborar en un ambiente inclusivo.{% endblocktranslate %}</li>
+                                        </ul>
+                                    </div><!--/.timeline-content-->
+                                </div><!--/.timeline-->
+                            </div><!--/.col-->
+                        </div><!--/.row-->
+                    </div><!--.main-timeline-->
+                </div><!--/.about-history-txt-->
+            </div><!--/.single-about-history-->
+        </div><!--/.col-->
+        <div class="col-md-5 col-sm-12 order-md-2 order-1 offset-md-1">
+            <div class="single-about-history">
+                <div class="about-history-img">
+                    <img src="{% static 'images/about/ab2.jpg' %}" alt="about" class="img-fluid">
+                </div><!--/.about-history-img-->
+            </div><!--/.single-about-history-->
+        </div><!--/.col-->
+    </div><!--/.about-vission-content-->
+</div><!--/.row-->
+
+
 				</div><!--/.about-history-content-->
 			</div><!--/.container-->
 
@@ -757,16 +881,26 @@
                             <p>
                                 Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
                             </p>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="usr" placeholder="NAME">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="EMAIL">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="5" id="message" placeholder="MESSAGE"></textarea>
-                            </div>
-                            <button type="button" class="btn btn-primary">SEND <i class="fa fa-envelope"></i></button>
+                            {% if messages %}
+                                <div class="alert alert-info" role="alert">
+                                    {% for message in messages %}
+                                        {{ message }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            <form method="post" action="{% url 'contact' %}">
+                                {% csrf_token %}
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="usr" name="name" placeholder="NAME" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" id="message" name="message" placeholder="MESSAGE" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">SEND <i class="fa fa-envelope"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -774,6 +908,7 @@
         </div>
     </div>
 </section>
+
 
 
 

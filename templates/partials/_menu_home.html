@@ -188,9 +188,9 @@
             </ul>
           </li>
           <li class="mega_personalizado">
-            <a href="#" class="desktop-item_personalizado">{% translate "Portfolio" %}</a>
+            <a href="#" class="desktop-item menu-link {% if 'portfolio_home' in current_pages %}active{% endif %}">{% translate "Portfolio" %}</a>
             <input type="checkbox" id="showMega_personalizado">
-            <label for="showMega_personalizado" class="mobile-item_personalizado">{% translate "Portfolio" %}</label>
+            <label for="showMega_personalizado" class="mobile-item_personalizado {% if 'portfolio' in current_pages %}active{% endif %}">{% translate "Portfolio" %}</label>
             <div class="mega-box_personalizado">
               <div class="content_personalizado">
                 <div class="row_personalizado">
@@ -206,7 +206,9 @@
                   </ul>
                 </div>
                 <div class="row_personalizado">
-                  <header>{% translate "Professional Projects" %}</header>
+                  <header>
+                    <a class="desktop-item menu-link {% if 'portfolio' in current_pages %}active{% endif %}" href="{% url 'professional_project_home' %}">{% translate "Professional Projects" %}</a>
+                </header>
                   <ul class="mega-links_personalizado">
                     <li><a href="#">{% translate "Estrategy Cloud" %}</a></li>
                     <li><a href="#">{% translate "Python Tool Finance" %}</a></li>

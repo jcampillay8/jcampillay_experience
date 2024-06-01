@@ -8,5 +8,5 @@ urlpatterns = [
     path("", views.welcome, name="welcome"),
     path("home", views.home, name="home"),
     path('guest_login/', views.guest_login, name='guest_login'),
-
+    path('contact/', views.contact, name='contact'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

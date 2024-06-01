@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{%block content%}
+
+
+
+    <title> TITULO {% block title %} {% endblock %}</title>
+    
+        <div class="container">
+<!-- Container -->
+<div class="row">
+    <div class="about-vission-content d-flex flex-wrap">
+        <div class="col-md-6 col-sm-12 order-md-1 order-2">
+            <section class="main-block">
+                <h2>
+                  <i class="fa fa-folder-open"></i> {% translate 'Project Portfolio' %}
+                </h2>
+                <br>
+                <section class="blocks">
+                  <div class="date">
+                    <strong><span>{{start_date}}</span></strong> - <strong><span>{{end_date}}</span></strong>
+                  </div>
+                  <div class="decorator">
+                  </div>
+                  <div class="details">
+                    <header>
+                      <h3>{{project_name}}</h3>
+                      <strong><span class="place">{{company_name}}</span></strong>
+                    </header>
+                    <br>
+                    <div>
+                      <ul>
+                        <li><span>{% translate 'Descripción:' %}</span>{% blocktranslate %} {{description_project}}{% endblocktranslate %}</li>
+                        <br>
+                        <li><span>{% translate 'Tecnologías usadas:' %}</span> {{technology_list}} </li>
+                      </ul>
+                    </div>
+                  </div>          
+                </section>  
+                <br>
+
+
+                <br>
+                
+              </section>
+        </div><!--/.col-->
+        <div class="col-md-5 col-sm-12 order-md-2 order-1 offset-md-1">
+            <div class="single-about-history">
+                <div class="about-history-img">
+                    <img src="{% static image_path %}" alt="about" class="img-fluid" style="width: 760px; height: 540px; object-fit: cover;">
+
+                </div><!--/.about-history-img-->
+            </div><!--/.single-about-history-->
+        </div><!--/.col-->
+    </div><!--/.about-vission-content-->
+</div><!--/.row-->
+</div>
+
+<section class="page-section padding-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4>{% translate 'Company Description' %}</h4>
+            </div>
+            <br>
+            <div class="col-md-6">
+                <p>{% blocktranslate %} {{company_description_part_1}} {% endblocktranslate %}</p>
+            </div>
+            <div class="col-md-6">
+                <p>{% blocktranslate %} {{company_description_part_2}} {% endblocktranslate %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      {%endblock%}
+

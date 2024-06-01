@@ -128,25 +128,31 @@
     <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
 
     <script>
-      $(document).ready(function() {
-          var $grid = $('.portfolio-section').isotope({
-              itemSelector: '.isotopeSelector',
-              layoutMode: 'fitRows'
-          });
-  
-          // Filter items on click
-          $('.filter a').click(function() {
-              var filterValue = $(this).attr('data-filter');
-              $grid.isotope({ filter: filterValue });
-  
-              // Update active class on filter buttons
-              $('.filter a').removeClass('active');
-              $(this).addClass('active');
-  
-              return false;
-          });
-      });
-  </script>
+        $(document).ready(function() {
+            var $grid = $('.portfolio-section').isotope({
+                itemSelector: '.isotopeSelector',
+                layoutMode: 'fitRows'
+            });
+    
+            // Filter items on click
+            $('.filter a').click(function() {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+    
+                // Update active class on filter buttons
+                $('.filter a').removeClass('active');
+                $(this).addClass('active');
+    
+                return false;
+            });
+    
+            // Permitir la navegación normal en enlaces de proyecto
+            $('.portfolio-section').on('click', 'a.fa-link', function(event) {
+                // Permitir la navegación normal del enlace
+            });
+        });
+    </script>
+    
 
 </body>
 
