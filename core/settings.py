@@ -56,7 +56,7 @@ THIRD_PARTY_APPS = [
     #'ckeditor',
     #'ckeditor_uploader',
     'livereload',
-    #'guest_user',
+    'guest_user',
     # 'cms',
     'six',
     'widget_tweaks',
@@ -142,6 +142,12 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
 ]
 
+AUTHENTICATION_BACKENDS = [
+    # ...
+    'django.contrib.auth.backends.ModelBackend',
+    'guest_user.backends.GuestBackend',
+    # ...
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/

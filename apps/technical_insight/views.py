@@ -18,6 +18,58 @@ def technical_insight(request):
 def knowledge_skills(request):
     return render(request, 'technical_insight/knowledge_skill.html',{'current_pages': ['about_me_home','technical_insight']})
 
+@login_required(login_url='login')
+def knowledge_skills_describe(request, id):
+
+    if id == 49:
+        # Obtén la URL completa proyecto --> Portfolio Website
+        knowledge_skills_url = reverse('knowledge_skills_describe', args=[9])
+        context = {
+            'current_pages': ['about_me_home','technical_insight'],
+            'knowledge_skills_url': knowledge_skills_url,
+            'title_technology' : 'Python 3',
+            'publication_date' : '02-06-2024',
+            'author' : 'Jaime Campillay',
+            'type_technology' : _('Program Language'),
+            'title2_technology' : _('Why Python?'),
+            'technology_image' : 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'
+          
+            # 'end_date' : 2024,
+            # 'start_date' : 2024,
+            # 'project_name' : _('Website Portfolio with Django'),
+            # 'company_name' : _('Entrepreneurship'),
+            # 'description_project' : _(''' Este proyecto de emprendimiento consiste en un sitio web desarrollado con Django, destinado a ofrecer servicios de desarrollo web personalizados. El sitio web proporciona una plataforma integral donde se muestran los servicios ofrecidos, incluyendo diseño y desarrollo de sitios web, integración de bases de datos y creación de aplicaciones web interactivas.
+            # El sitio web también presenta una sección detallada de los proyectos realizados, destacando las tecnologías utilizadas como Django, Python, PostgreSQL, HTML, CSS y JavaScript. Estos proyectos demuestran la capacidad para resolver problemas complejos y entregar soluciones eficientes.
+            # Además, el sitio incluye una sección "Sobre Mí", que ofrece información sobre el desarrollador, sus intereses en ingeniería, naturaleza, senderismo y música, proporcionando una conexión personal con los visitantes. La sección de contacto facilita la comunicación con los clientes, y los gráficos y visualizaciones se utilizan para ilustrar datos y logros de manera clara y atractiva. Este sitio web no solo muestra el trabajo y las habilidades del desarrollador, sino que también ofrece una experiencia completa y accesible para los usuarios.'''),
+            # 'technology_list' : 'Python, Django, Dash & Plotly, JavaScript, HTML5, CSS3, Bootstrap 5, jQuery, FontAwesome, Ajax, PostgreSQL, AWS EC2, AWS S3, AWS DRS, Git, Json, Vim, Linux',
+            # 'company_description_part_1' : _(''),
+            # 'company_description_part_2' : _(''),
+            # 'image_path' : "images/project/banner-slide-9.jpg"
+        }
+        return render(request, 'technical_insight/knowledge_skills_describe.html', context)
+        
+    elif id == 8:
+        # Obtén la URL completa proyecto --> Cloud Strategy - Redbanc
+        project_url = reverse('projects_describe', args=[8])
+        context = {
+            'current_pages': ['portfolio', 'portfolio_home'],
+            'project_url': project_url,
+            # 'end_date' : 2023,
+            # 'start_date' : 2023,
+            # 'project_name' : _('Cloud Strategy'),
+            # 'company_name' : _('Redbanc'),
+            # 'description_project' : _('El proyecto de asesoría "Estrategia Nube" para Redbanc se centra en la migración de sus operaciones de infraestructura On Premise a la nube, evaluando factores como seguridad, escalabilidad, flexibilidad y costos. Se destacan ventajas como la capacidad de escalar recursos según demanda, reducción de costos operativos, y mejora en la disponibilidad del servicio. La estrategia más viable para Redbanc es una migración híbrida, combinando recursos On Premise y en la nube, utilizando servicios de nube pública para cargas fluctuantes y privada para datos sensibles. Esto incluye tecnologías como Docker y Kubernetes para facilitar la portabilidad y gestión de aplicaciones, asegurando la integridad y seguridad de las operaciones críticas mientras se optimiza la infraestructura tecnológica y la capacidad de respuesta al mercado.'),
+            # 'technology_list' : 'Python, Power Point',
+            # 'company_description_part_1' : _('Redbanc es una empresa chilena especializada en la provisión de servicios de interconexión y procesamiento de transacciones electrónicas. Fundada en 1987, Redbanc se ha convertido en una pieza fundamental del sistema financiero chileno, ofreciendo una infraestructura robusta y segura para la operación de cajeros automáticos y otros servicios de pago electrónico. La compañía facilita la integración de diversas instituciones financieras, permitiendo a los usuarios realizar transacciones bancarias de manera eficiente y segura.'),
+            # 'company_description_part_2' : _('Con una red extensa de cajeros automáticos a nivel nacional, Redbanc se dedica a garantizar la disponibilidad y el buen funcionamiento de estos dispositivos, mejorando así la accesibilidad a los servicios bancarios para todos los chilenos. Su estrategia se basa en la innovación tecnológica y en el mantenimiento de altos estándares de seguridad y calidad. Además, Redbanc colabora activamente con las instituciones financieras del país para desarrollar soluciones que respondan a las necesidades cambiantes del mercado, contribuyendo al desarrollo y modernización del sistema financiero chileno.'),
+            # 'image_path' : "images/project/banner-slide-4.jpg"
+        }
+        return render(request, 'portfolio/project_describe.html', context)
+
+    else:
+        # Otra lógica para proyectos diferentes
+        return render(request, 'technical_insight/technical_insight_home.html', context)
+
 
 @login_required(login_url='login')
 def professional_project_home(request):

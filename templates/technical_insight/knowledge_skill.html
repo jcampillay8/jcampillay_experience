@@ -11,33 +11,13 @@
 <!-- header-slider-area start -->
 <!-- header-slider-area start -->
 <section class="header-slider-area">
-    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
-  
-      
-               
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class="single-slide-item slide-1">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="single-slide-item-content">
-                    <h2>{% translate "Bienvenido" %}<br> {{ request.user.first_name }} {{ request.user.last_name }}</h2>
-                    <p>
-                      {% blocktranslate %} We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems. {% endblocktranslate %}
-                    </p>
-                    
-                  </div><!-- /.single-slide-item-content-->
-                </div><!-- /.col-->
-              </div><!-- /.row-->
-            </div><!-- /.container-->
-          </div><!-- /.single-slide-item-->
-        </div><!-- /.item .active-->
-  
-        <div class="container" style="margin-top: 50px;">
+    <div class="carousel-inner" role="listbox">
+
+
+        <div class="container" style="margin-top: 50px;" >
             <div class="service-details">
-                <div class="section-header text-center">
-                    <h2>{% translate "Technical Knowledge and Skills" %}</h2>
+                <div class="section-header text-center" >
+                    <h2 style="color: #ff561e !important;" id=" Preferidas y Usualmente Ocupo">{% translate "Preferidas y Usualmente Ocupo" %}</h2>
                     <p>
                         {% blocktranslate %} Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. {% endblocktranslate %}
                     </p>
@@ -51,12 +31,12 @@
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">Python</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=49 %}">Python</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=49 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -69,12 +49,12 @@
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">PostgreSQL</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=48 %}">PostgreSQL</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=48 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -87,12 +67,70 @@
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">Django Framework</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=47 %}">Django Framework</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=47 %}" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-one-->
+                <div class="service-content-one">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="{% url 'knowledge_skills_describe' id=46 %}">Numpy</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="{% url 'knowledge_skills_describe' id=46 %}" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="{% url 'knowledge_skills_describe' id=45 %}">Pandas</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="{% url 'knowledge_skills_describe' id=45 %}" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="{% url 'knowledge_skills_describe' id=44 %}">Plotly</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+                                    <a href="{% url 'knowledge_skills_describe' id=44 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -111,12 +149,12 @@
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">{% translate "Arch Linux" %}</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=43 %}">{% translate "Arch Linux" %}</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=43 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -129,12 +167,12 @@
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">{% translate "Git" %}</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=42 %}">{% translate "Git" %}</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=42 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -147,12 +185,12 @@
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">{% translate "GitHub" %}</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=41 %}">{% translate "GitHub" %}</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=41 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -160,253 +198,23 @@
                         </div><!--/.col-->
                     </div><!--/.row-->
                 </div><!--/.service-content-two-->
+
+
                 <div class="service-content-one">
                     <div class="row">
                         <div class="col-sm-4 col-xs-12">
                             <div class="service-single text-center">
                                 <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" />
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">Anaconda</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=40 %}">Markdown</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Arduino</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Bash</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                    </div><!--/.row-->
-                </div><!--/.service-content-one-->
-                <div class="service-content-two">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">SQL Server</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">AWS</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Azure</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                    </div><!--/.row-->
-                </div><!--/.service-content-two-->
-                <div class="service-content-one">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Bootstrap</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Cloudflare</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Json</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                    </div><!--/.row-->
-                </div><!--/.service-content-one-->
-                <div class="service-content-two">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">HTML5</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">CSS3</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">JavaScript</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                    </div><!--/.row-->
-                </div><!--/.service-content-two-->
-                <div class="service-content-one">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">jQuery</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=40 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -419,12 +227,12 @@
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">Jupyter</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=39 %}">Jupyter</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=39 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -433,16 +241,16 @@
                         <div class="col-sm-4 col-xs-12">
                             <div class="service-single text-center">
                                 <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" />
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">Linux</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=39 %}">Json</a>
                                     </h2>
                                     <p>
                                         {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=39 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
@@ -450,160 +258,9 @@
                         </div><!--/.col-->
                     </div><!--/.row-->
                 </div><!--/.service-content-one-->
-                <div class="service-content-two">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Markdown</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">NGINX</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">NPM</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                    </div><!--/.row-->
-                </div><!--/.service-content-two-->
+
                 <div class="service-content-one">
                     <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Numpy</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Pandas</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Plotly</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                    </div><!--/.row-->
-                </div><!--/.service-content-one-->
-                <div class="service-content-two">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Postman</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="service-single text-center">
-                                <div class="service-img">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" />
-                                </div><!--/.service-img-->
-                                <div class="service-txt">
-                                    <h2>
-                                        <a href="#">Vim</a>
-                                    </h2>
-                                    <p>
-                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
-                                    </p>
-                                    <a href="#" class="service-btn">
-                                        {% translate "learn more" %}
-                                    </a>
-                                </div><!--/.service-txt-->
-                            </div><!--/.service-single-->
-                        </div><!--/.col-->
                         <div class="col-sm-4 col-xs-12">
                             <div class="service-single text-center">
                                 <div class="service-img">
@@ -611,24 +268,826 @@
                                 </div><!--/.service-img-->
                                 <div class="service-txt">
                                     <h2>
-                                        <a href="#">VSCode</a>
+                                        <a href="{% url 'knowledge_skills_describe' id=38 %}">VS Code</a>
                                     </h2>
                                     <p>
-                                        {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
                                     </p>
-                                    <a href="#" class="service-btn">
+                                    <a href="{% url 'knowledge_skills_describe' id=38 %}" class="service-btn">
                                         {% translate "learn more" %}
                                     </a>
                                 </div><!--/.service-txt-->
                             </div><!--/.service-single-->
                         </div><!--/.col-->
                     </div><!--/.row-->
-                </div><!--/.service-content-two-->
+                </div><!--/.service-content-one-->
+
             </div><!--/.service-details-->
         </div><!--/.container-->
-        <div class="text-center" style="margin-top: 30px;">
-            <button type="button" class="btn btn-warning">VIEW MORE PROJECTS <i class="fa fa-arrow-right"></i></button>
-        </div>
+
+    </div>
+
+
+
+
+    
+
+
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="service-details">
+            <div class="section-header text-center">
+                <h2 style="color: #ff561e !important;" id=" Me Interesan Aprender">{% translate "Me Interesan Aprender" %}</h2>
+                <p>
+                    {% blocktranslate %} Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. {% endblocktranslate %}
+                </p>
+            </div><!--/.section-header-->
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="#">Apache Spark</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="#" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=37 %}">Docker</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=37 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=36 %}">PyTorch</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=36 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-one-->
+            <div class="service-content-two">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=35 %}">Keras</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=35 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=34 %}">Kubernetes</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=34 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=33 %}">OpenCV</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=33 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-two-->
+
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=32 %}">Raspberrypi</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=32 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=31 %}">Anaconda</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=31 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=30 %}">Linux</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=30 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-one-->
+            <div class="service-content-two">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg" />
+                                
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=29 %}">Debian</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=29 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=28 %}">AWS</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=28 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=27 %}">Bash</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=27 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-two-->
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rockylinux/rockylinux-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=26 %}">Rocky Linux</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=26 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redhat/redhat-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=25 %}">Redhat</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=25 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=24 %}">Scikitlearn</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=24 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-one-->
+            <div class="service-content-two">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=23 %}">Selenium</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=23 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=22 %}">TensorFlow</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=22 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=21 %}">Bash</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=21 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-two-->
+        </div><!--/.service-details-->
+    </div><!--/.container-->
+    
+    
+    
+    
+    
+    
+    <div class="container" style="margin-top: 50px;" >
+        <div class="service-details">
+            <div class="section-header text-center">
+                <h2 style="color: #ff561e !important;" id=" He Aplicado y Experimentado">{% translate "He Aplicado y Experimentado" %}</h2>
+                <p>
+                    {% blocktranslate %} Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. {% endblocktranslate %}
+                </p>
+            </div><!--/.section-header-->
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=20 %}">Jira</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=20 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=19 %}">Azure</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=19 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=18 %}">SQL Server</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=18 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-one-->
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=17 %}">Matplotlib</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=17 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=16 %}">Arduino</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=16 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/uwsgi/uwsgi-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=15 %}">uWSGI</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=15 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-one-->
+            <div class="service-content-two">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=14 %}">SQL Server</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=14 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=13 %}">.NET</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=13 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=12 %}">Azure</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=12 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-two-->
+            <div class="service-content-two">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=11 %}">Postman</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=11 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=10 %}">Vim</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=10 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=9 %}">NGINX</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=9 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-two-->
+            <div class="service-content-two">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=8 %}">Cloudflare</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=8 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+
+
+                </div><!--/.row-->
+            </div><!--/.service-content-two-->
+        </div><!--/.service-details-->
+    </div><!--/.container-->
+
+
+
+
+
+
+
+
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="service-details">
+            <div class="section-header text-center">
+                <h2 style="color: #ff561e !important;" id=" Conocidas y Complementatias">{% translate "Conocidas y Complementatias" %}</h2>
+                <p>
+                    {% blocktranslate %} Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. {% endblocktranslate %}
+                </p>
+            </div><!--/.section-header-->
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=7 %}">HTML5</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=7 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=6 %}">CSS3</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=6 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=5 %}">JavaScript</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=5 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-two-->
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=4 %}">jQuery</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=4 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=3 %}">Bootstrap</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=3 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=2 %}">NPM</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %}  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=2 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+
+                </div><!--/.row-->
+            </div><!--/.service-content-one-->
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="service-single text-center">
+                            <div class="service-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" />
+                            </div><!--/.service-img-->
+                            <div class="service-txt">
+                                <h2>
+                                    <a href="{% url 'knowledge_skills_describe' id=1 %}">Matlab</a>
+                                </h2>
+                                <p>
+                                    {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                </p>
+                                <a href="{% url 'knowledge_skills_describe' id=1 %}" class="service-btn">
+                                    {% translate "learn more" %}
+                                </a>
+                            </div><!--/.service-txt-->
+                        </div><!--/.service-single-->
+                    </div><!--/.col-->
+
+
+                </div><!--/.row-->
+            </div><!--/.service-content-one-->
+        </div><!--/.service-details-->
+    </div><!--/.container-->
+
+</section>
 
 
 

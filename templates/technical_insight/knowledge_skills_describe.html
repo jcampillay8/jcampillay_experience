@@ -1,0 +1,329 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{%block content%}
+
+<!DOCTYPE html>
+
+</style>
+<html lang="en">
+
+    <title> TITULO {% block title %} {% endblock %}</title>
+
+    <!-- Right Sidebar Container  -->
+    <section class="page-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Content -->
+                <div class="col-lg-9">
+                    <div class="blog-listing">
+                        <article>
+                            <img class="img-thumbnail w-100" src="{% static 'images/service/bg1.jpg' %}" alt="Blog Image">
+                            <h2>{{title_technology}}</h2>
+                            <hr class="title-underline">
+                            <div class="post-meta mb-3">
+                                <span><i class="fas fa-calendar-alt"></i> {{publication_date}}</span>
+                                <span><i class="fas fa-user"></i> By <a href="#">{{author}}</a></span>
+                                <span><i class="fas fa-tags"></i> <a href="#">{% translate "Technology Type: " %}</a> <a href="#">{{type_technology}}</a></span>
+                                <!-- <span><i class="fas fa-comments"></i> <a href="#">12 Comments</a></span> -->
+                            </div>
+                            <h3>{{title2_technology}}</h3>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi, non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla. Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius sit amet hendrerit id, egestas quis mauris.</p>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">Ut ac elit non mi pharetra dictum nec quis nibh. Pellentesque ut fringilla elit. Aliquam non ipsum id leo eleifend sagittis id a lorem. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam massa mauris, viverra et rhoncus a, feugiat ut sem. Quisque ultricies diam tempus quam molestie vitae sodales dolor sagittis. Praesent commodo sodales purus. Maecenas scelerisque ligula vitae leo adipiscing a facilisis nisl ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                            </blockquote>
+                            <p>Curabitur non erat quam, id volutpat leo. Nullam pretium gravida urna et interdum. Suspendisse in dui tellus. Cras luctus nisl vel risus adipiscing aliquet. Phasellus convallis lorem dui. Quisque hendrerit, lectus ut accumsan gravida, leo tellus porttitor mi, ac mattis eros nunc vel enim. Nulla facilisi. Nam non nulla sed nibh sodales auctor eget non augue. Pellentesque sollicitudin consectetur mauris, eu mattis mi dictum ac. Etiam et sapien eu nisl dapibus fermentum et nec tortor.</p>
+                            <p><img class="float-end ms-3" width="150" src="http://placehold.it/260x501" alt="iPhone">Curabitur nec nulla lectus, non hendrerit lorem. Quisque lorem risus, porttitor eget fringilla non, vehicula sed tortor. Proin enim quam, vulputate at lobortis quis, condimentum at justo. Phasellus nec nisi justo. Ut luctus sagittis nulla at dapibus. Aliquam ullamcorper commodo elit, quis ornare eros consectetur a. Curabitur nulla dui, fermentum sed dapibus at, adipiscing eget nisi. Aenean iaculis vehicula imperdiet. Donec suscipit leo sed metus vestibulum pulvinar. Phasellus bibendum magna nec tellus fringilla faucibus. Phasellus mollis scelerisque volutpat. Ut sed molestie turpis. Phasellus ultrices suscipit tellus, ac vehicula ligula condimentum et.</p>
+                            <p>Aenean metus nibh, molestie at consectetur nec, molestie sed nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec euismod urna. Donec gravida pharetra ipsum, non volutpat ipsum sagittis a. Phasellus ut convallis ipsum. Sed nec dui orci, nec hendrerit massa. Curabitur at risus suscipit massa varius accumsan. Proin eu nisi id velit ultrices viverra nec condimentum magna. Ut porta orci quis nulla aliquam at dictum mi viverra. Maecenas ultricies elit in tortor scelerisque facilisis. Mauris vehicula porttitor lacus, vel pretium est semper non. Ut accumsan rhoncus metus non pharetra. Quisque luctus blandit nisi, id tempus tellus pulvinar eu. Nam ornare laoreet mi a molestie. Donec sodales scelerisque congue.</p>
+                            <div class="post-block post-author clearfix mt-5">
+                                <h3 class="h5"><i class="fas fa-user"></i> Author</h3>
+                                <div class="author-details d-flex">
+                                    <img src="http://placehold.it/150x150" alt="Author" class="img-thumbnail me-3">
+                                    <div>
+                                        <p><strong class="name"><a href="#">John Doe</a></strong></p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-block clearfix mt-5">
+                                <h3 class="h5"><i class="fas fa-comments"></i> Comments (5)</h3>
+                                <ul class="list-unstyled comments">
+                                    <li class="mb-4">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img class="avatar img-thumbnail" alt="" src="http://placehold.it/150x150">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <span class="comment-by">
+                                                    <strong>John Doe</strong>
+                                                    <span class="float-end">
+                                                        <a href="#"><i class="fas fa-reply"></i> Reply</a>
+                                                    </span>
+                                                </span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui.</p>
+                                                <span class="date float-end">November 12, 2016 at 1:38 pm</span>
+                                            </div>
+                                        </div>
+                                        <ul class="list-unstyled ms-4">
+                                            <li class="mb-4">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0">
+                                                        <img class="avatar img-thumbnail" alt="" src="http://placehold.it/150x150">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <span class="comment-by">
+                                                            <strong>John Doe</strong>
+                                                            <span class="float-end">
+                                                                <a href="#"><i class="fas fa-reply"></i> Reply</a>
+                                                            </span>
+                                                        </span>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
+                                                        <span class="date float-end">November 12, 2016 at 1:38 pm</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-4">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0">
+                                                        <img class="avatar img-thumbnail" alt="" src="http://placehold.it/150x150">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <span class="comment-by">
+                                                            <strong>John Doe</strong>
+                                                            <span class="float-end">
+                                                                <a href="#"><i class="fas fa-reply"></i> Reply</a>
+                                                            </span>
+                                                        </span>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
+                                                        <span class="date float-end">November 12, 2016 at 1:38 pm</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-4">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img class="avatar img-thumbnail" alt="" src="http://placehold.it/150x150">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <span class="comment-by">
+                                                    <strong>John Doe</strong>
+                                                    <span class="float-end">
+                                                        <a href="#"><i class="fas fa-reply"></i> Reply</a>
+                                                    </span>
+                                                </span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                <span class="date float-end">November 12, 2016 at 1:38 pm</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-4">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img class="avatar img-thumbnail" alt="" src="http://placehold.it/150x150">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <span class="comment-by">
+                                                    <strong>John Doe</strong>
+                                                    <span class="float-end">
+                                                        <a href="#"><i class="fas fa-reply"></i> Reply</a>
+                                                    </span>
+                                                </span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                <span class="date float-end">November 12, 2016 at 1:38 pm</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-block mt-5">
+                                <h3 class="h5"><i class="fas fa-comment-dots"></i> Leave a comment</h3>
+                                <form action="" method="post">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Your name *</label>
+                                        <input type="text" class="form-control" id="name" name="name" maxlength="100">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Your email address *</label>
+                                        <input type="email" class="form-control" id="email" name="email" maxlength="100">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="comment" class="form-label">Comment *</label>
+                                        <textarea class="form-control" id="comment" name="comment" rows="10" maxlength="5000"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg" data-loading-text="Loading...">Post Comment</button>
+                                </form>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+    
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <aside class="sidebar">
+                        <div class="widget">
+                            <h3 > Python </h3>
+                        </div>
+                        <div class="widget">
+                            <h4 class="sidebar-header">Tecnologías</h4>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="{% url 'knowledge_skills' %}# Preferidas y Usualmente Ocupo"><i class="fas fa-angle-right"></i> Preferidas y Usualmente Ocupo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'knowledge_skills' %}# Me Interesan Aprender"><i class="fas fa-angle-right"></i> Me Interesan Aprender</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'knowledge_skills' %}# He Aplicado y Experimentado"><i class="fas fa-angle-right"></i> He Aplicado y Experimentado</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'knowledge_skills' %}# Conocidas y Complementatias"><i class="fas fa-angle-right"></i> Conocidas y Complementatias</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="{{technology_image}}" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">{{title_technology}}</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat {% endblocktranslate %}
+                                    </p>
+
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="widget blog-widget">
+                            <div class="tabs">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="popularPosts-tab" data-bs-toggle="tab" data-bs-target="#popularPosts" type="button" role="tab" aria-controls="popularPosts" aria-selected="true"><i class="fas fa-star"></i> Popular</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="recentPosts-tab" data-bs-toggle="tab" data-bs-target="#recentPosts" type="button" role="tab" aria-controls="recentPosts" aria-selected="false">Recent</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="popularPosts" role="tabpanel" aria-labelledby="popularPosts-tab">
+                                        <ul class="list-unstyled post-list">
+                                            <li class="post d-flex mb-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="img-thumbnail">
+                                                        <a href="blog-single-post.html">
+                                                            <img src="http://placehold.it/50x50" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <a href="blog-single-post.html">Nullam Vitae Nibh Un Odiosters</a>
+                                                    <div class="post-meta">
+                                                        Jan 10, 2016
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post d-flex mb-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="img-thumbnail">
+                                                        <a href="blog-single-post.html">
+                                                            <img src="http://placehold.it/50x50" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <a href="blog-single-post.html">Vitae Nibh Un Odiosters</a>
+                                                    <div class="post-meta">
+                                                        Jan 10, 2016
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post d-flex mb-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="img-thumbnail">
+                                                        <a href="blog-single-post.html">
+                                                            <img src="http://placehold.it/50x50" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <a href="blog-single-post.html">Odiosters Nullam Vitae</a>
+                                                    <div class="post-meta">
+                                                        Jan 10, 2016
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="recentPosts" role="tabpanel" aria-labelledby="recentPosts-tab">
+                                        <ul class="list-unstyled post-list">
+                                            <li class="post d-flex mb-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="img-thumbnail">
+                                                        <a href="blog-single-post.html">
+                                                            <img src="http://placehold.it/50x50" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <a href="blog-single-post.html">Lorem Vitae Nibh Un Odiosters</a>
+                                                    <div class="post-meta">
+                                                        Jan 10, 2016
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post d-flex mb-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="img-thumbnail">
+                                                        <a href="blog-single-post.html">
+                                                            <img src="http://placehold.it/50x50" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <a href="blog-single-post.html">Lorem Vitae Nibh Un Odiosters</a>
+                                                    <div class="post-meta">
+                                                        Jan 10, 2016
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post d-flex mb-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="img-thumbnail">
+                                                        <a href="blog-single-post.html">
+                                                            <img src="http://placehold.it/50x50" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <a href="blog-single-post.html">Lorem Odiosters Nullam Vitae</a>
+                                                    <div class="post-meta">
+                                                        Jan 10, 2016
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget tags mt-4">
+                            <a href="#">lorem</a> <a href="#">loremipse</a> <a href="#">Esrite</a> <a href="#">remip</a> <a href="#">serte</a> <a href="#">quiaxms</a> <a href="#">loremipse</a> <a href="#">Esrite</a>
+                        </div>
+                        <div class="widget mt-4">
+                            <h4 class="sidebar-header">About Us</h4>
+                            <p>Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Nulla nunc dui, tristique in semper vel. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+<div style="height: 100px;"></div>
+
+
+
+
+
+      {%endblock%}
+
