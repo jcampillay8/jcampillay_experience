@@ -39,7 +39,7 @@
     }
 </style>
 <!--header start-->
-<section class="header" >
+<section class="header">
     <div class="container">
         <div class="header-left">
             <ul class="list-inline mb-0">
@@ -66,29 +66,34 @@
             </ul>
         </div>
         <div class="header-right">
-            <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                    <div class="d-flex align-items-center">
-                        <input class="form-check-input" type="radio" name="language" value="English" id="languageEnglish" onchange="document.getElementById('language-form').submit();" checked>
-                        <span class="ms-2">{% translate "English" %}</span>
-                        <img src="{% static 'images/logo/usa_england.ico' %}" class="small-icon ms-2" alt="USA Flag">
-                    </div>
-                </li>
-                <li class="list-inline-item ms-4">
-                    <div class="d-flex align-items-center">
-                        <input class="form-check-input" type="radio" name="language" value="Spanish" id="languageSpanish" onchange="document.getElementById('language-form').submit();">
-                        <span class="ms-2">{% translate "Spanish" %}</span>
-                        <img src="{% static 'images/logo/chile_spain.ico' %}" class="small-icon ms-2" alt="Spain Flag">
-                    </div>
-                </li>
-                <li class="list-inline-item ms-4">
-                    <form action="{% url 'logout' %}" method="POST" class="logout-form d-inline">
-                        {% csrf_token %}
-                        
-                        <button class="btn " style="background: #ff561e; " type="submit"><strong><i class="fa fa-sign-out" aria-hidden="true"></i>{% translate " Logout" %}</strong></button>
-                    </form>
-                </li>
-            </ul>
+            <form id="language-form" action="{% url 'set_language' %}" method="post" class="d-flex align-items-center">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}">
+                
+                <!-- Opciones de idioma -->
+                <div class="d-flex align-items-center">
+                    <input class="form-check-input" type="radio" name="language" value="en" id="languageEnglish" checked onchange="document.getElementById('language-form').submit();" {% if LANGUAGE_CODE == 'en' %}checked{% endif %}>
+                    <label class="form-check-label ms-2{% if LANGUAGE_CODE == 'en' %} active-language{% endif %}" for="languageEnglish">
+                        {% translate "English" %}
+                    </label>
+                    <img src="{% static 'images/logo/usa_england.ico' %}" class="small-icon ms-2" alt="USA Flag">
+                </div>
+
+                <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input" type="radio" name="language" value="es" id="languageSpanish" onchange="document.getElementById('language-form').submit();" {% if LANGUAGE_CODE == 'es' %}checked{% endif %}>
+                    <label class="form-check-label ms-2{% if LANGUAGE_CODE == 'es' %} active-language{% endif %}" for="languageSpanish">
+                        {% translate "Spanish" %}
+                    </label>
+                    <img src="{% static 'images/logo/chile_spain.ico' %}" class="small-icon ms-2" alt="Spain Flag">
+                </div>
+            </form>
+
+            <form action="{% url 'logout' %}" method="POST" class="logout-form d-inline ms-4">
+                {% csrf_token %}
+                <button class="btn" style="background: #ff561e;" type="submit">
+                    <strong><i class="fa fa-sign-out" aria-hidden="true"></i>{% translate " Logout" %}</strong>
+                </button>
+            </form>
         </div>
     </div>
 </section>

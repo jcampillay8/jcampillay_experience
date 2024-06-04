@@ -117,7 +117,7 @@
           <li><a class="desktop-item menu-link {% if current_page == 'welcome' %}active{% endif %}" href="{% url 'home' %}">{% translate "Home" %}</a></li>
 
           <li class="about_personalizado_about_me">
-            <a class="desktop-item menu-link {% if 'about_me_home' in current_pages %}active{% endif %}" href="{% url 'about_me_home' %}">{% translate "About Me" %}</a>
+            <a class="desktop-item menu-link {% if 'about_me_home' in current_pages %}active{% endif %}" href="{% url 'about_me' %}">{% translate "About Me" %}</a>
             <input type="checkbox" id="showMega_personalizado_about_me">
             <label for="showMega_personalizado_about_me" class="mobile-item_personalizado">{% translate "About Me" %}</label>
             <div class="mega-box_personalizado">
@@ -188,7 +188,7 @@
             </ul>
           </li>
           <li class="mega_personalizado">
-            <a href="#" class="desktop-item menu-link {% if 'portfolio_home' in current_pages %}active{% endif %}">{% translate "Portfolio" %}</a>
+            <a href="{% url 'professional_project_home' %}" class="desktop-item menu-link {% if 'portfolio_home' in current_pages %}active{% endif %}">{% translate "Portfolio" %}</a>
             <input type="checkbox" id="showMega_personalizado">
             <label for="showMega_personalizado" class="mobile-item_personalizado {% if 'portfolio' in current_pages %}active{% endif %}">{% translate "Portfolio" %}</label>
             <div class="mega-box_personalizado">

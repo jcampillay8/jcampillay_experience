@@ -10,3 +10,31 @@ Robot que rescata desde una tabla de Base de Datos los casos a hacer mantención
  Robot que está corriendo todo el día, chequeando constantemente si ha llegado correo con el asunto de 'si cliente aceptó o no el Seguro ofrecido'. El robot al encontrar un caso, lee y rescata información desde correo, es cargada a una tabla de Base de Datos y se procede a hacer varias validaciones a través de servicios API los cuales algunos de ellos requieren de una llave que ocupa Python para su uso. El resul- tado, al cliente en caso de aprobar, le llega un correo con aviso tiene su seguro ya corriendo a la vez que se han sido actualizado los datos del cliente en los sistemas internos del banco, en caso de rechazo se envía correo y se actualiza los datos del cliente en los sistemas internos del banco con los datos de rechazo. 
 
 Robot rescata desde 2 carpetas compartidas, 6 archivos Excel los cuales contienen las ventas hechas durante el día por Telemarketing, la información es depurada y cargada a una tabla de Base Datos donde se aplican varias validaciones según reglas de negocio finalizando en 2 tablas que se llevan a archivos Txt con formato específico con las ventas del día aprobadas más un reporte con los casos rechazados. 
+
+
+
+Tecnologías Preferidas
+Tecnologías de Interés
+Tecnologías que he ocupado
+Tecnologías 
+
+
+Tecnologías Preferidas y Usualmente ocoupo
+Tecnologías me interesan aprender
+Tecnologías que he Aplicado y Experimentado 
+Tecnologías Conocidas y Complementarias
+
+❯ msgfmt -c -o locale/en/LC_MESSAGES/django.mo locale/en/LC_MESSAGES/django.po
+msgfmt -c -o locale/es/LC_MESSAGES/django.mo locale/es/LC_MESSAGES/django.po
+locale/en/LC_MESSAGES/django.po:1886: definición del mensaje duplicada...
+locale/en/LC_MESSAGES/django.po:1842: ...esta es la localización de la primera definición
+locale/en/LC_MESSAGES/django.po:1912: definición del mensaje duplicada...
+locale/en/LC_MESSAGES/django.po:1854: ...esta es la localización de la primera definición
+locale/en/LC_MESSAGES/django.po:2033: fin de línea dentro de una cadena
+locale/en/LC_MESSAGES/django.po:2033:2: error de sintaxis
+locale/en/LC_MESSAGES/django.po:2303: fin de línea dentro de una cadena
+msgfmt: found 5 fatal errors
+locale/es/LC_MESSAGES/django.po:174: fin de línea dentro de una cadena
+locale/es/LC_MESSAGES/django.po:174:3: error de sintaxis
+locale/es/LC_MESSAGES/django.po:175: palabra clave "Adem" desconocida
+msgfmt: found 3 fatal errors

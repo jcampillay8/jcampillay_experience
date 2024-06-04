@@ -18,6 +18,8 @@ from xhtml2pdf import pisa
 from io import BytesIO
 from django.conf import settings
 import os
+from django.utils.translation import get_language
+from django.views.generic import TemplateView
 
 
 
@@ -56,6 +58,8 @@ def home(request):
         'current_page': 'welcome',  # Cambia esto por el nombre de tu página
         'form':contact_form,
     }
+
+    context['LANGUAGE_CODE'] = get_language()
     # Si el usuario no está autenticado o no es un invitado, redirigir a 'welcome'
     if not request.user.is_authenticated and not request.user.is_guest:
 

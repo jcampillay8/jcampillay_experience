@@ -93,8 +93,8 @@ def projects_describe(request, id):
             El sitio web también presenta una sección detallada de los proyectos realizados, destacando las tecnologías utilizadas como Django, Python, PostgreSQL, HTML, CSS y JavaScript. Estos proyectos demuestran la capacidad para resolver problemas complejos y entregar soluciones eficientes.
             Además, el sitio incluye una sección "Sobre Mí", que ofrece información sobre el desarrollador, sus intereses en ingeniería, naturaleza, senderismo y música, proporcionando una conexión personal con los visitantes. La sección de contacto facilita la comunicación con los clientes, y los gráficos y visualizaciones se utilizan para ilustrar datos y logros de manera clara y atractiva. Este sitio web no solo muestra el trabajo y las habilidades del desarrollador, sino que también ofrece una experiencia completa y accesible para los usuarios.'''),
             'technology_list' : 'Python, Django, Dash & Plotly, JavaScript, HTML5, CSS3, Bootstrap 5, jQuery, FontAwesome, Ajax, PostgreSQL, AWS EC2, AWS S3, AWS DRS, Git, Json, Vim, Linux',
-            'company_description_part_1' : _(''),
-            'company_description_part_2' : _(''),
+            'company_description_part_1' : _('Este es mi proyecto'),
+            'company_description_part_2' : _('Este es mi proyecto'),
             'image_path' : "images/project/banner-slide-9.jpg"
         }
         return render(request, 'portfolio/project_describe.html', context)
@@ -231,7 +231,7 @@ def projects_describe(request, id):
             'description_project' : _('Este proyecto se centra en la implementación y gestión de Odoo, un software de gestión empresarial, en una pyme de Valparaíso dedicada a la venta de prendas de vestir personalizadas y otros objetos. La implementación de Odoo optimiza procesos clave como la gestión de inventarios, ventas, compras y contabilidad. La integración del sistema permite una mayor eficiencia operativa y un mejor control sobre las operaciones diarias, mejorando así la productividad y la capacidad de respuesta al cliente.'),
             'technology_list' : 'Odoo ERP, Python, Excel',
             'company_description_part_1' : _('Clearpix es una empresa fundada en 2016, especializada en la personalización de prendas de vestir. Con un enfoque en la calidad y la creatividad, Clearpix ofrece una amplia gama de productos personalizados para satisfacer las necesidades de sus clientes, combinando diseño innovador y técnicas avanzadas de impresión y bordado.'),
-            'company_description_part_2' : _(''),
+            'company_description_part_2' : _('Fue un emprendimiento con un amigo de Valparaíso'),
             'image_path' : "images/project/banner-slide-8.jpg"
         }
         return render(request, 'portfolio/project_describe.html', context)

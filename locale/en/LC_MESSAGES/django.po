@@ -1,0 +1,3029 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyProject 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-03 17:06-0400\n"
+"PO-Revision-Date: 2024-06-03 15:00+0000\n"
+"Last-Translator: Your Name <your.email@example.com>\n"
+"Language-Team: English <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/authentication/views.py:53
+msgid "username can  only contain letters and numbers"
+msgstr "username can only contain letters and numbers"
+
+#: apps/authentication/views.py:55
+msgid "username is taken,please choose a new one"
+msgstr "username is taken, please choose a new one"
+
+#: apps/authentication/views.py:65
+msgid "Please enter an email"
+msgstr "Please enter an email"
+
+#: apps/authentication/views.py:68
+msgid "Please enter a valid email"
+msgstr "Please enter a valid email"
+
+#: apps/authentication/views.py:70
+msgid "Email is taken,please choose a new one"
+msgstr "Email is taken,please choose a new one"
+
+#: apps/authentication/views.py:101 apps/authentication/views.py:322
+msgid "Password too short"
+msgstr "Password too short"
+
+#: apps/authentication/views.py:124
+msgid "Activate your account"
+msgstr "Activate your account"
+
+#: apps/authentication/views.py:130
+msgid ", Please the link below to activate your account \n"
+msgstr ", Por favor, utiliza el enlace de abajo para activar tu cuenta \n"
+
+#: apps/authentication/views.py:135
+msgid ""
+"Le hemos enviado un correo a su cuenta con un enlace de validación. Por "
+"favor, acceda a su correo y haga clic en el enlace para validar y activar su "
+"cuenta"
+msgstr ""
+"We have sent an email to your account with a validation link. Please check "
+"your email and click on the link to validate and activate your account."
+
+#: apps/authentication/views.py:139 apps/authentication/views.py:211
+msgid "Please fill all fields"
+msgstr "Please fill all fields"
+
+#: apps/authentication/views.py:153
+msgid "login"
+msgstr "login"
+
+#: apps/authentication/views.py:153
+msgid "?message="
+msgstr "?message="
+
+#: apps/authentication/views.py:153
+msgid "User already activated"
+msgstr "User already activated"
+
+#: apps/authentication/views.py:160
+msgid "Account activated successfully"
+msgstr "Account activated successfully"
+
+#: apps/authentication/views.py:206
+msgid "Account is not active, please check your email"
+msgstr "Account is not active, please check your email"
+
+#: apps/authentication/views.py:208
+msgid "Invalid credentials, try again"
+msgstr "Invalid credentials, try again"
+
+#: apps/authentication/views.py:220
+msgid "You have been logged out"
+msgstr "You have been logged out"
+
+#: apps/authentication/views.py:228 apps/authentication/views.py:238
+msgid "forgot_password"
+msgstr "forgot_password"
+
+#: apps/authentication/views.py:243
+msgid "Please supply a valid email"
+msgstr "Please supply a valid email"
+
+#: apps/authentication/views.py:247
+msgid "El campo de correo electrónico es obligatorio."
+msgstr "The email field is required."
+
+#: apps/authentication/views.py:264
+msgid "Password reset Instrucctions"
+msgstr "Password reset Instrucctions"
+
+#: apps/authentication/views.py:270
+msgid "Hi there, Please the link below to reset your password \n"
+msgstr "Hi there, Please the link below to reset your password \n"
+
+#: apps/authentication/views.py:301
+msgid "Password link is invalid, please request a new one"
+msgstr "Password link is invalid, please request a new one"
+
+#: apps/authentication/views.py:318
+msgid "Password do not match"
+msgstr "Password do not match"
+
+#: apps/authentication/views.py:331
+msgid "Password reset successfuly you can login now with your new password"
+msgstr "Password reset successfuly you can login now with your new password"
+
+#: apps/authentication/views.py:334
+msgid "Something went wrong, try again"
+msgstr "Something went wrong, try again"
+
+#: apps/technical_insight/views.py:33
+msgid "Program Language"
+msgstr "Program Language"
+
+#: apps/technical_insight/views.py:34
+msgid "Why Python?"
+msgstr "Why Python?"
+
+#: apps/technical_insight/views.py:90
+msgid "Website Portfolio with Django"
+msgstr "Website Portfolio with Django"
+
+#: apps/technical_insight/views.py:91
+msgid "Entrepreneurship"
+msgstr "Entrepreneurship"
+
+#: apps/technical_insight/views.py:92
+msgid ""
+" Este proyecto de emprendimiento consiste en un sitio web desarrollado con "
+"Django, destinado a ofrecer servicios de desarrollo web personalizados. El "
+"sitio web proporciona una plataforma integral donde se muestran los "
+"servicios ofrecidos, incluyendo diseño y desarrollo de sitios web, "
+"integración de bases de datos y creación de aplicaciones web interactivas.\n"
+"            El sitio web también presenta una sección detallada de los "
+"proyectos realizados, destacando las tecnologías utilizadas como Django, "
+"Python, PostgreSQL, HTML, CSS y JavaScript. Estos proyectos demuestran la "
+"capacidad para resolver problemas complejos y entregar soluciones "
+"eficientes.\n"
+"            Además, el sitio incluye una sección \"Sobre Mí\", que ofrece "
+"información sobre el desarrollador, sus intereses en ingeniería, naturaleza, "
+"senderismo y música, proporcionando una conexión personal con los "
+"visitantes. La sección de contacto facilita la comunicación con los "
+"clientes, y los gráficos y visualizaciones se utilizan para ilustrar datos y "
+"logros de manera clara y atractiva. Este sitio web no solo muestra el "
+"trabajo y las habilidades del desarrollador, sino que también ofrece una "
+"experiencia completa y accesible para los usuarios."
+msgstr ""
+"This entrepreneurship project consists of a website developed with Django, "
+"aimed at offering personalized web development services. The website "
+"provides a comprehensive platform showcasing the services offered, including "
+"web design and development, database integration, and the creation of "
+"interactive web applications.\n"
+"The website also features a detailed section of the projects carried out, "
+"highlighting the technologies used such as Django, Python, PostgreSQL, HTML, "
+"CSS, and JavaScript. These projects demonstrate the ability to solve complex "
+"problems and deliver efficient solutions.\n"
+"Additionally, the site includes an \"About Me\" section, offering "
+"information about the developer, their interests in engineering, nature, "
+"hiking, and music, providing a personal connection with visitors. The "
+"contact section facilitates communication with clients, and graphics and "
+"visualizations are used to illustrate data and achievements clearly and "
+"attractively. This website not only showcases the developer's work and "
+"skills but also offers a complete and accessible user experience."
+
+#: apps/technical_insight/views.py:96 apps/technical_insight/views.py:97
+msgid "Este es mi proyecto"
+msgstr "This is my project"
+
+#: apps/technical_insight/views.py:109
+msgid "Cloud Strategy"
+msgstr "Cloud Strategy"
+
+#: apps/technical_insight/views.py:110
+msgid "Redbanc"
+msgstr "Redbanc"
+
+#: apps/technical_insight/views.py:111
+msgid ""
+"El proyecto de asesoría \"Estrategia Nube\" para Redbanc se centra en la "
+"migración de sus operaciones de infraestructura On Premise a la nube, "
+"evaluando factores como seguridad, escalabilidad, flexibilidad y costos. Se "
+"destacan ventajas como la capacidad de escalar recursos según demanda, "
+"reducción de costos operativos, y mejora en la disponibilidad del servicio. "
+"La estrategia más viable para Redbanc es una migración híbrida, combinando "
+"recursos On Premise y en la nube, utilizando servicios de nube pública para "
+"cargas fluctuantes y privada para datos sensibles. Esto incluye tecnologías "
+"como Docker y Kubernetes para facilitar la portabilidad y gestión de "
+"aplicaciones, asegurando la integridad y seguridad de las operaciones "
+"críticas mientras se optimiza la infraestructura tecnológica y la capacidad "
+"de respuesta al mercado."
+msgstr ""
+"The consulting project \"Cloud Strategy\" for Redbanc focuses on migrating "
+"their On-Premise infrastructure operations to the cloud, evaluating factors "
+"such as security, scalability, flexibility, and costs. Advantages "
+"highlighted include the ability to scale resources on demand, reduce "
+"operational costs, and improve service availability. The most viable "
+"strategy for Redbanc is a hybrid migration, combining On-Premise and cloud "
+"resources, using public cloud services for fluctuating workloads and private "
+"cloud for sensitive data. This includes technologies like Docker and "
+"Kubernetes to facilitate the portability and management of applications, "
+"ensuring the integrity and security of critical operations while optimizing "
+"technological infrastructure and market responsiveness."
+
+#: apps/technical_insight/views.py:113
+msgid ""
+"Redbanc es una empresa chilena especializada en la provisión de servicios de "
+"interconexión y procesamiento de transacciones electrónicas. Fundada en "
+"1987, Redbanc se ha convertido en una pieza fundamental del sistema "
+"financiero chileno, ofreciendo una infraestructura robusta y segura para la "
+"operación de cajeros automáticos y otros servicios de pago electrónico. La "
+"compañía facilita la integración de diversas instituciones financieras, "
+"permitiendo a los usuarios realizar transacciones bancarias de manera "
+"eficiente y segura."
+msgstr ""
+"Redbanc is a Chilean company specialized in providing interconnection "
+"services and electronic transaction processing. Founded in 1987, Redbanc has "
+"become a fundamental part of the Chilean financial system, offering a robust "
+"and secure infrastructure for the operation of ATMs and other electronic "
+"payment services. The company facilitates the integration of various "
+"financial institutions, enabling users to conduct banking transactions "
+"efficiently and securely."
+
+#: apps/technical_insight/views.py:114
+msgid ""
+"Con una red extensa de cajeros automáticos a nivel nacional, Redbanc se "
+"dedica a garantizar la disponibilidad y el buen funcionamiento de estos "
+"dispositivos, mejorando así la accesibilidad a los servicios bancarios para "
+"todos los chilenos. Su estrategia se basa en la innovación tecnológica y en "
+"el mantenimiento de altos estándares de seguridad y calidad. Además, Redbanc "
+"colabora activamente con las instituciones financieras del país para "
+"desarrollar soluciones que respondan a las necesidades cambiantes del "
+"mercado, contribuyendo al desarrollo y modernización del sistema financiero "
+"chileno."
+msgstr ""
+"With an extensive network of ATMs nationwide, Redbanc is dedicated to "
+"ensuring the availability and proper functioning of these devices, thus "
+"improving access to banking services for all Chileans. Their strategy is "
+"based on technological innovation and maintaining high standards of security "
+"and quality. Additionally, Redbanc actively collaborates with the country's "
+"financial institutions to develop solutions that meet the changing needs of "
+"the market, contributing to the development and modernization of the Chilean "
+"financial system."
+
+#: apps/technical_insight/views.py:126
+msgid ""
+"Desarrollo de Herramienta para MItigación de Riesgos en Instituciones "
+"Financieras"
+msgstr "Development of a Tool for Risk Mitigation in Financial Institutions"
+
+#: apps/technical_insight/views.py:127
+msgid "International Bank"
+msgstr "Banco Internacional"
+
+#: apps/technical_insight/views.py:128
+msgid ""
+"Desarrollo de una herramienta eficiente para ainstituciones financieras, "
+"centradas en la gestión de riesgos cambiarios en inversiones a través de "
+"intrumentos derivados. Utilicé Python, y ibliotecas como Pandas, Dash "
+"Plotly, Scipy, para construir el módulo Gestión de Riesgos y Estrategia de "
+"Cobertura, lo que contribuyó al fortalecimienot de mis habilidades en "
+"programación y análisis de datos"
+msgstr ""
+"Development of an efficient tool for financial institutions, focused on "
+"managing exchange rate risks in investments through derivative instruments. "
+"I used Python, and libraries such as Pandas, Dash, Plotly, Scipy, to build "
+"the Risk Management and Hedging Strategy module, which contributed to "
+"strengthening my programming and data analysis skills."
+
+#: apps/technical_insight/views.py:130
+msgid ""
+"Banco Internacional es una entidad financiera con sede en Quito, Ecuador. "
+"Fundado en 1973, se ha consolidado como uno de los principales bancos del "
+"país, ofreciendo una amplia gama de productos y servicios financieros. Estos "
+"incluyen cuentas de ahorro y corrientes, préstamos personales y comerciales, "
+"tarjetas de crédito, y servicios de banca electrónica. Banco Internacional "
+"se distingue por su enfoque en la atención al cliente y su compromiso con la "
+"innovación tecnológica para mejorar la experiencia bancaria de sus usuarios."
+msgstr ""
+"Banco Internacional is a financial institution based in Quito, Ecuador. "
+"Founded in 1973, it has become one of the country's leading banks, offering "
+"a wide range of financial products and services. These include savings and "
+"checking accounts, personal and commercial loans, credit cards, and "
+"electronic banking services. Banco Internacional is distinguished by its "
+"focus on customer service and its commitment to technological innovation to "
+"improve the banking experience for its users."
+
+#: apps/technical_insight/views.py:131
+msgid ""
+"A lo largo de los años, Banco Internacional ha logrado establecerse como un "
+"actor clave en el sector financiero ecuatoriano. Su estrategia se basa en la "
+"solidez financiera, la eficiencia operativa y la diversificación de "
+"servicios. Con una red de sucursales y cajeros automáticos en todo el país, "
+"Banco Internacional se dedica a proporcionar servicios financieros "
+"accesibles y de alta calidad. Además, la institución se compromete con la "
+"responsabilidad social corporativa, apoyando diversas iniciativas en "
+"educación, salud y desarrollo comunitario, contribuyendo así al bienestar de "
+"la sociedad ecuatoriana."
+msgstr ""
+"Over the years, Banco Internacional has established itself as a key player "
+"in the Ecuadorian financial sector. Its strategy is based on financial "
+"solidity, operational efficiency, and service diversification. With a "
+"network of branches and ATMs throughout the country, Banco Internacional is "
+"dedicated to providing accessible and high-quality financial services. "
+"Additionally, the institution is committed to corporate social "
+"responsibility, supporting various initiatives in education, health, and "
+"community development, thus contributing to the well-being of Ecuadorian "
+"society."
+
+#: apps/technical_insight/views.py:143
+msgid "Extracción y Tratamiento de Datos en la Industria Bancaria"
+msgstr "Data Extraction and Processing in the Banking Industry"
+
+#: apps/technical_insight/views.py:144
+msgid "BICE Inversiones - FactSet"
+msgstr ""
+
+#: apps/technical_insight/views.py:145
+msgid ""
+"En el marco del proyecto, se enfatizó el uso de SQL y la implementación de "
+"Stored Procedures para extraer, limpiar y estandarizar grandes cantidades de "
+"datos clave. Además, se utilizó la herramienta ETL Talend para asegurar la "
+"calidad de los datos antes de su migración desde servidores locales a "
+"entornos en la nube. Se destaca la importancia de gestionar eficazmente "
+"datos complejos y garantizar su integridad en un entorno crítico para el "
+"sector bancario. Los resultados contribuyeron a la optimización de procesos "
+"y la mejora en la toma de decisiones dentro de la organización."
+msgstr ""
+"The project emphasized the use of SQL and the implementation of Stored "
+"Procedures to extract, clean, and standardize large amounts of key data. "
+"Additionally, the ETL tool Talend was used to ensure data quality before "
+"migration from local servers to cloud environments. The importance of "
+"effectively managing complex data and ensuring its integrity in a critical "
+"banking sector environment is highlighted. The results contributed to "
+"process optimization and improved decision-making within the organization."
+
+#: apps/technical_insight/views.py:147
+msgid ""
+"BICE Inversiones es una institución financiera chilena con sede en Santiago, "
+"Chile. Fundada en 1978, forma parte del grupo financiero BICE y se "
+"especializa en servicios de inversión y asesoría financiera. Ofrece una "
+"amplia gama de productos financieros, incluyendo fondos mutuos, gestión de "
+"patrimonios, corretaje de valores y asesoría en inversiones."
+msgstr ""
+"BICE Inversiones is a Chilean financial institution based in Santiago, "
+"Chile. Founded in 1978, it is part of the BICE financial group and "
+"specializes in investment and financial advisory services. It offers a wide "
+"range of financial products, including mutual funds, wealth management, "
+"securities brokerage, and investment advice."
+
+#: apps/technical_insight/views.py:148
+msgid ""
+"BICE Inversiones se ha consolidado como un actor relevante en el mercado "
+"financiero chileno. Su estrategia se centra en proporcionar soluciones "
+"personalizadas y de alto valor a sus clientes. Con un enfoque en la "
+"innovación y el servicio al cliente, BICE Inversiones busca maximizar el "
+"rendimiento de las inversiones y ofrecer asesoría experta para alcanzar los "
+"objetivos financieros de sus clientes."
+msgstr ""
+"BICE Inversiones has established itself as a relevant player in the Chilean "
+"financial market. Its strategy focuses on providing high-value personalized "
+"solutions to its clients. With a focus on innovation and customer service, "
+"BICE Inversiones seeks to maximize investment returns and offer expert "
+"advice to achieve its clients' financial goals."
+
+#: apps/technical_insight/views.py:160
+msgid "Robot: Automatización BO Hipotecario Garantía"
+msgstr "Robot: Mortgage BO Automation Guarantee"
+
+#: apps/technical_insight/views.py:161
+msgid "Scotiabank - Operaciones Garantía"
+msgstr "Scotiabank - Guarantee Operations"
+
+#: apps/technical_insight/views.py:162
+msgid ""
+"Robot que rescata desde una tabla de Base de Datos los casos a hacer "
+"mantención, con el Id Documento se ingresa a una página web interna del "
+"Banco para descargar el Informe actualizado enviado desde distintas notarías "
+"en formato PDF cuyo contenido es de difícil manejo debido que los informes "
+"constantemente vienen con formato ‘sucio’ y son varios campos a rescatar, "
+"por lo que se aplican varías formas ingeniosas para dar con la información "
+"que se requiere para luego con toda la información ya rescatada, se ingresa "
+"a sitio web más antiguo del banco, donde se deben hacer las mantenciones de "
+"los clientes ingresando la información rescatada en sus lugares respectivos "
+"dentro de sitio web antiguo que no conversa con la página nueva de donde se "
+"descargó el informe."
+msgstr ""
+"A robot that retrieves cases from a Database table for maintenance. With the "
+"Document ID, it accesses an internal Bank website to download the updated "
+"report sent from various notaries in PDF format. The content is difficult to "
+"handle as the reports often come in a 'dirty' format and several fields need "
+"to be extracted. Ingenious methods are applied to extract the required "
+"information. Once all the information is extracted, it is entered into an "
+"older bank website where client maintenance is performed, entering the "
+"extracted information in their respective places within the old website, "
+"which does not communicate with the new page from where the report was "
+"downloaded."
+
+#: apps/technical_insight/views.py:164 apps/technical_insight/views.py:182
+#: apps/technical_insight/views.py:199
+msgid ""
+"Scotiabank es una institución financiera multinacional con sede en Toronto, "
+"Canadá. Fundada en 1832, es uno de los bancos más grandes de Canadá y cuenta "
+"con una fuerte presencia internacional. Ofrece una amplia gama de productos "
+"y servicios financieros, incluyendo banca personal y comercial, gestión de "
+"patrimonios, y banca corporativa."
+msgstr ""
+"Scotiabank is a multinational financial institution headquartered in "
+"Toronto, Canada. Founded in 1832, it is one of the largest banks in Canada "
+"with a strong international presence. It offers a wide range of financial "
+"products and services, including personal and commercial banking, wealth "
+"management, and corporate banking."
+
+#: apps/technical_insight/views.py:165 apps/technical_insight/views.py:183
+#: apps/technical_insight/views.py:200
+msgid ""
+"Scotiabank ha logrado establecerse como un actor importante en el mercado "
+"financiero global. Su estrategia se basa en la diversificación geográfica y "
+"la inversión en tecnología. Con una red de más de 900 sucursales y 3,600 "
+"cajeros automáticos en todo el mundo, Scotiabank se dedica a proporcionar "
+"servicios financieros accesibles y de calidad."
+msgstr ""
+"Scotiabank has established itself as an important player in the global "
+"financial market. Its strategy is based on geographic diversification and "
+"investment in technology. With a network of more than 900 branches and 3,600 "
+"ATMs worldwide, Scotiabank is dedicated to providing accessible and quality "
+"financial services."
+
+#: apps/technical_insight/views.py:178
+msgid "Robot: Curse Linea Seguros"
+msgstr "Robot: Insurance Line Curse"
+
+#: apps/technical_insight/views.py:179
+msgid "Scotiabank - Corredora Seguros"
+msgstr "Scotiabank - Insurance Brokerage"
+
+#: apps/technical_insight/views.py:180
+msgid ""
+"Robot que está corriendo todo el día, chequeando constantemente si ha "
+"llegado correo con el asunto de ‘si cliente aceptó o no el Seguro ofrecido’. "
+"El robot al encontrar un caso, lee y rescata información desde correo, es "
+"cargada a una tabla de Base de Datos y se procede a hacer varias "
+"validaciones a través de servicios API los cuales algunos de ellos requieren "
+"de una llave que ocupa Python para su uso. El resultado, al cliente en caso "
+"de aprobar, le llega un correo con aviso tiene su seguro ya corriendo a la "
+"vez que se han sido actualizado los datos del cliente en los sistemas "
+"internos del banco, en caso de rechazo se envía correo y se actualiza los "
+"datos del cliente en los sistemas internos del banco con los datos de "
+"rechazo."
+msgstr ""
+"A robot that runs all day, constantly checking if an email with the subject "
+"of whether the client accepted or rejected the offered insurance has "
+"arrived. When the robot finds a case, it reads and extracts information from "
+"the email, which is loaded into a Database table, and several validations "
+"are carried out through API services, some of which require a key that uses "
+"Python. The result: if approved, the client receives an email notification "
+"that their insurance is active, and the client's data is updated in the "
+"bank's internal systems. In case of rejection, an email is sent, and the "
+"client's data is updated in the bank's internal systems with the rejection "
+"details."
+
+#: apps/technical_insight/views.py:195
+msgid "Robot: Procesamiento Telemarketing"
+msgstr "Robot: Telemarketing Processing"
+
+#: apps/technical_insight/views.py:196
+msgid "Scotiabank - Telemarketing & Back Office Operaciones Negocio"
+msgstr "Scotiabank - Telemarketing & Back Office Business Operations"
+
+#: apps/technical_insight/views.py:197
+msgid ""
+"Robot rescata desde 2 carpetas compartidas, 6 archivos Excel los cuales "
+"contienen las ventas hechas durante el día por Telemarketing, la información "
+"es depurada y cargada a una tabla de Base Datos donde se aplican varias "
+"validaciones según reglas de negocio finalizando en 2 tablas que se llevan a "
+"archivos Txt con formato específico con las ventas del día aprobadas más un "
+"reporte con los casos rechazados."
+msgstr ""
+"A robot retrieves 6 Excel files from 2 shared folders, containing the sales "
+"made during the day by Telemarketing. The information is cleaned and loaded "
+"into a Database table where several validations are applied according to "
+"business rules, resulting in 2 tables that are converted into specific "
+"format Txt files with the approved sales of the day, plus a report with the "
+"rejected cases."
+
+#: apps/technical_insight/views.py:212
+msgid "ReportWorks - Mobile App"
+msgstr "ReportWorks - Mobile App"
+
+#: apps/technical_insight/views.py:213
+msgid "TECHINT Ingeniería y Construcción"
+msgstr "TECHINT Engineering and Construction"
+
+#: apps/technical_insight/views.py:214
+msgid ""
+"Aplicación Android que automatiza los reportes generados por los "
+"‘Apuntadores’ inicialmente en Excel o Papel desde distintas ubicaciones "
+"geográficas, depurando los datos ‘sucios’ y adaptándolo al formato "
+"correspondiente."
+msgstr ""
+"An Android application that automates reports generated by 'Apuntadores' "
+"initially in Excel or Paper from various geographical locations, cleaning "
+"the 'dirty' data and adapting it to the corresponding format."
+
+#: apps/technical_insight/views.py:216
+msgid ""
+"Techint Ingeniería y Construcción es una empresa multinacional con sede en "
+"Milán, Italia, y Buenos Aires, Argentina. Fundada en 1945, es una de las "
+"compañías más grandes de América Latina en el sector de la ingeniería y la "
+"construcción. Techint ofrece una amplia gama de servicios, que incluyen "
+"diseño, ingeniería, construcción, operación y mantenimiento de proyectos "
+"industriales y de infraestructura."
+msgstr ""
+"Techint Engineering and Construction is a multinational company "
+"headquartered in Milan, Italy, and Buenos Aires, Argentina. Founded in 1945, "
+"it is one of the largest companies in Latin America in the engineering and "
+"construction sector. Techint offers a wide range of services, including "
+"design, engineering, construction, operation, and maintenance of industrial "
+"and infrastructure projects."
+
+#: apps/technical_insight/views.py:217
+msgid ""
+"Techint ha establecido una sólida reputación en el mercado global de la "
+"construcción. Su estrategia se basa en la innovación tecnológica y en la "
+"excelencia operativa. Con una presencia en más de 45 países, Techint se "
+"dedica a entregar proyectos de alta calidad y complejidad, contribuyendo al "
+"desarrollo económico y social de las regiones donde opera."
+msgstr ""
+"Techint has established a solid reputation in the global construction "
+"market. Its strategy is based on technological innovation and operational "
+"excellence. With a presence in more than 45 countries, Techint is dedicated "
+"to delivering high-quality and complex projects, contributing to the "
+"economic and social development of the regions where it operates."
+
+#: apps/technical_insight/views.py:229
+msgid "Implementation & Manage Odoo ERP"
+msgstr "Implementation & Manage Odoo ERP"
+
+#: apps/technical_insight/views.py:230 templates/partials/_menu_home.html:227
+msgid "Clearpix"
+msgstr "Clearpix"
+
+#: apps/technical_insight/views.py:231
+msgid ""
+"Este proyecto se centra en la implementación y gestión de Odoo, un software "
+"de gestión empresarial, en una pyme de Valparaíso dedicada a la venta de "
+"prendas de vestir personalizadas y otros objetos. La implementación de Odoo "
+"optimiza procesos clave como la gestión de inventarios, ventas, compras y "
+"contabilidad. La integración del sistema permite una mayor eficiencia "
+"operativa y un mejor control sobre las operaciones diarias, mejorando así la "
+"productividad y la capacidad de respuesta al cliente."
+msgstr ""
+"This project focuses on the implementation and management of Odoo, a "
+"business management software, in an SME in Valparaíso dedicated to the sale "
+"of customized clothing and other items. The implementation of Odoo optimizes "
+"key processes such as inventory management, sales, purchasing, and "
+"accounting. The integration of the system allows for greater operational "
+"efficiency and better control over daily operations, thus improving "
+"productivity and customer responsiveness."
+
+#: apps/technical_insight/views.py:233
+msgid ""
+"Clearpix es una empresa fundada en 2016, especializada en la personalización "
+"de prendas de vestir. Con un enfoque en la calidad y la creatividad, "
+"Clearpix ofrece una amplia gama de productos personalizados para satisfacer "
+"las necesidades de sus clientes, combinando diseño innovador y técnicas "
+"avanzadas de impresión y bordado."
+msgstr ""
+"Clearpix is a company founded in 2016, specializing in the customization of "
+"clothing. With a focus on quality and creativity, Clearpix offers a wide "
+"range of personalized products to meet the needs of its customers, combining "
+"innovative design and advanced printing and embroidery techniques."
+
+#: apps/technical_insight/views.py:234
+msgid "Fue un emprendimiento con un amigo de Valparaíso"
+msgstr "It was an entrepreneurship with a friend from Valparaíso"
+
+#: core/core_cms/core_cms/settings.py:155 templates/partials/_header.html:73
+#: templates/partials/_header_welcome.html:36
+msgid "English"
+msgstr "English"
+
+#: core/core_cms/core_cms/settings.py:190
+msgid "Standard"
+msgstr "Standard"
+
+#: env/lib/python3.8/site-packages/click/_termui_impl.py:518
+#, python-brace-format
+msgid "{editor}: Editing failed"
+msgstr "{editor}: Editing failed"
+
+#: env/lib/python3.8/site-packages/click/_termui_impl.py:522
+#, python-brace-format
+msgid "{editor}: Editing failed: {e}"
+msgstr "{editor}: Editing failed: {e}"
+
+#: env/lib/python3.8/site-packages/click/core.py:1120
+msgid "Aborted!"
+msgstr "Aborted!"
+
+#: env/lib/python3.8/site-packages/click/core.py:1309
+#: env/lib/python3.8/site-packages/click/decorators.py:559
+msgid "Show this message and exit."
+msgstr "Show this message and exit."
+
+#: env/lib/python3.8/site-packages/click/core.py:1340
+#: env/lib/python3.8/site-packages/click/core.py:1370
+#, python-brace-format
+msgid "(Deprecated) {text}"
+msgstr "(Deprecated) {text}"
+
+#: env/lib/python3.8/site-packages/click/core.py:1387
+msgid "Options"
+msgstr "Options"
+
+#: env/lib/python3.8/site-packages/click/core.py:1413
+#, python-brace-format
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] "Got unexpected extra argument ({args})"
+msgstr[1] "Got unexpected extra arguments ({args})"
+
+#: env/lib/python3.8/site-packages/click/core.py:1429
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr "DeprecationWarning: The command {name!r} is deprecated."
+
+#: env/lib/python3.8/site-packages/click/core.py:1636
+msgid "Commands"
+msgstr "Commands"
+
+#: env/lib/python3.8/site-packages/click/core.py:1668
+msgid "Missing command."
+msgstr "Missing command."
+
+#: env/lib/python3.8/site-packages/click/core.py:1746
+msgid "No such command {name!r}."
+msgstr "No such command {name!r}."
+
+#: env/lib/python3.8/site-packages/click/core.py:2310
+msgid "Value must be an iterable."
+msgstr "Value must be an iterable."
+
+#: env/lib/python3.8/site-packages/click/core.py:2331
+#, python-brace-format
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] "Takes {nargs} values but 1 was given."
+msgstr[1] "Takes {nargs} values but {len} were given."
+
+#: env/lib/python3.8/site-packages/click/core.py:2778
+#, python-brace-format
+msgid "env var: {var}"
+msgstr "env var: {var}"
+
+#: env/lib/python3.8/site-packages/click/core.py:2808
+msgid "(dynamic)"
+msgstr "(dynamic)"
+
+#: env/lib/python3.8/site-packages/click/core.py:2821
+#, python-brace-format
+msgid "default: {default}"
+msgstr "default: {default}"
+
+#: env/lib/python3.8/site-packages/click/core.py:2834
+msgid "required"
+msgstr "required"
+
+#: env/lib/python3.8/site-packages/click/decorators.py:465
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr "%(prog)s, version %(version)s"
+
+#: env/lib/python3.8/site-packages/click/decorators.py:528
+msgid "Show the version and exit."
+msgstr "Show the version and exit."
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:44
+#: env/lib/python3.8/site-packages/click/exceptions.py:80
+#, python-brace-format
+msgid "Error: {message}"
+msgstr "Error: {message}"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:72
+#, python-brace-format
+msgid "Try '{command} {option}' for help."
+msgstr "Try '{command} {option}' for help."
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:121
+#, python-brace-format
+msgid "Invalid value: {message}"
+msgstr "Invalid value: {message}"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:123
+#, python-brace-format
+msgid "Invalid value for {param_hint}: {message}"
+msgstr "Invalid value for {param_hint}: {message}"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:179
+msgid "Missing argument"
+msgstr "Missing argument"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:181
+msgid "Missing option"
+msgstr "Missing option"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:183
+msgid "Missing parameter"
+msgstr "Missing parameter"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:185
+#, python-brace-format
+msgid "Missing {param_type}"
+msgstr "Missing {param_type}"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:192
+#, python-brace-format
+msgid "Missing parameter: {param_name}"
+msgstr "Missing parameter: {param_name}"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:212
+#, python-brace-format
+msgid "No such option: {name}"
+msgstr "No such option: {name}"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:224
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] "Did you mean {possibility}?"
+msgstr[1] "(Possible options: {possibilities})"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:262
+msgid "unknown error"
+msgstr "unknown error"
+
+#: env/lib/python3.8/site-packages/click/exceptions.py:269
+msgid "Could not open file {filename!r}: {message}"
+msgstr "Could not open file {filename!r}: {message}"
+
+#: env/lib/python3.8/site-packages/click/parser.py:231
+msgid "Argument {name!r} takes {nargs} values."
+msgstr "Argument {name!r} takes {nargs} values."
+
+#: env/lib/python3.8/site-packages/click/parser.py:413
+msgid "Option {name!r} does not take a value."
+msgstr "Option {name!r} does not take a value."
+
+#: env/lib/python3.8/site-packages/click/parser.py:474
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] "Option {name!r} requires an argument."
+msgstr[1] "Option {name!r} requires {nargs} arguments."
+
+#: env/lib/python3.8/site-packages/click/shell_completion.py:319
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr "Shell completion is not supported for Bash versions older than 4.4."
+
+#: env/lib/python3.8/site-packages/click/shell_completion.py:326
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr "Couldn't detect Bash version, shell completion is not supported."
+
+#: env/lib/python3.8/site-packages/click/termui.py:158
+msgid "Repeat for confirmation"
+msgstr "Repeat for confirmation"
+
+#: env/lib/python3.8/site-packages/click/termui.py:174
+msgid "Error: The value you entered was invalid."
+msgstr "Error: The value you entered was invalid."
+
+#: env/lib/python3.8/site-packages/click/termui.py:176
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr "Error: {e.message}"
+
+#: env/lib/python3.8/site-packages/click/termui.py:187
+msgid "Error: The two entered values do not match."
+msgstr "Error: The two entered values do not match."
+
+#: env/lib/python3.8/site-packages/click/termui.py:243
+msgid "Error: invalid input"
+msgstr "Error: invalid input"
+
+#: env/lib/python3.8/site-packages/click/termui.py:773
+msgid "Press any key to continue..."
+msgstr "Press any key to continue..."
+
+#: env/lib/python3.8/site-packages/click/types.py:266
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+"Choose from:\n"
+"\t{choices}"
+
+#: env/lib/python3.8/site-packages/click/types.py:298
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] "{value!r} is not {choice}."
+msgstr[1] "{value!r} is not one of {choices}."
+
+#: env/lib/python3.8/site-packages/click/types.py:392
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] "{value!r} does not match the format {format}."
+msgstr[1] "{value!r} does not match the formats {formats}."
+
+#: env/lib/python3.8/site-packages/click/types.py:414
+msgid "{value!r} is not a valid {number_type}."
+msgstr "{value!r} is not a valid {number_type}."
+
+#: env/lib/python3.8/site-packages/click/types.py:470
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr "{value} is not in the range {range}."
+
+#: env/lib/python3.8/site-packages/click/types.py:611
+msgid "{value!r} is not a valid boolean."
+msgstr "{value!r} is not a valid boolean."
+
+#: env/lib/python3.8/site-packages/click/types.py:635
+msgid "{value!r} is not a valid UUID."
+msgstr "{value!r} is not a valid UUID."
+
+#: env/lib/python3.8/site-packages/click/types.py:822
+msgid "file"
+msgstr "file"
+
+#: env/lib/python3.8/site-packages/click/types.py:824
+msgid "directory"
+msgstr "directory"
+
+#: env/lib/python3.8/site-packages/click/types.py:826
+msgid "path"
+msgstr "path"
+
+#: env/lib/python3.8/site-packages/click/types.py:877
+msgid "{name} {filename!r} does not exist."
+msgstr "{name} {filename!r} does not exist."
+
+#: env/lib/python3.8/site-packages/click/types.py:886
+msgid "{name} {filename!r} is a file."
+msgstr "{name} {filename!r} is a file."
+
+#: env/lib/python3.8/site-packages/click/types.py:894
+#, python-brace-format
+msgid "{name} '{filename}' is a directory."
+msgstr "{name} '{filename}' is a directory."
+
+#: env/lib/python3.8/site-packages/click/types.py:903
+msgid "{name} {filename!r} is not readable."
+msgstr "{name} {filename!r} is not readable."
+
+#: env/lib/python3.8/site-packages/click/types.py:912
+msgid "{name} {filename!r} is not writable."
+msgstr "{name} {filename!r} is not writable."
+
+#: env/lib/python3.8/site-packages/click/types.py:921
+msgid "{name} {filename!r} is not executable."
+msgstr "{name} {filename!r} is not executable."
+
+#: env/lib/python3.8/site-packages/click/types.py:988
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] "{len_type} values are required, but {len_value} was given."
+msgstr[1] "{len_type} values are required, but {len_value} were given."
+
+#: env/lib/python3.8/site-packages/django/contrib/messages/apps.py:15
+msgid "Messages"
+msgstr "Messages"
+
+#: env/lib/python3.8/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Site Maps"
+
+#: env/lib/python3.8/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr "Static Files"
+
+#: env/lib/python3.8/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr "Syndication"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: env/lib/python3.8/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: env/lib/python3.8/site-packages/django/core/paginator.py:50
+msgid "That page number is not an integer"
+msgstr "That page number is not an integer"
+
+#: env/lib/python3.8/site-packages/django/core/paginator.py:52
+msgid "That page number is less than 1"
+msgstr "That page number is less than 1"
+
+#: env/lib/python3.8/site-packages/django/core/paginator.py:54
+msgid "That page contains no results"
+msgstr "That page contains no results"
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr "Enter a valid value."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:104
+#: env/lib/python3.8/site-packages/django/forms/fields.py:749
+msgid "Enter a valid URL."
+msgstr "Enter a valid URL."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:164
+msgid "Enter a valid integer."
+msgstr "Enter a valid integer."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:174
+msgid "Enter a valid email address."
+msgstr "Enter a valid email address."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: env/lib/python3.8/site-packages/django/core/validators.py:257
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:265
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:277
+#: env/lib/python3.8/site-packages/django/core/validators.py:285
+#: env/lib/python3.8/site-packages/django/core/validators.py:314
+msgid "Enter a valid IPv4 address."
+msgstr "Enter a valid IPv4 address."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:294
+#: env/lib/python3.8/site-packages/django/core/validators.py:315
+msgid "Enter a valid IPv6 address."
+msgstr "Enter a valid IPv6 address."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:306
+#: env/lib/python3.8/site-packages/django/core/validators.py:313
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr "Enter a valid IPv4 or IPv6 address."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:346
+msgid "Enter only digits separated by commas."
+msgstr "Enter only digits separated by commas."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:352
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:387
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Ensure this value is less than or equal to %(limit_value)s."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:396
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Ensure this value is greater than or equal to %(limit_value)s."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:405
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Ensure this value is a multiple of step size %(limit_value)s."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:415
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgstr[1] ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:433
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgstr[1] ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:456
+#: env/lib/python3.8/site-packages/django/forms/fields.py:347
+#: env/lib/python3.8/site-packages/django/forms/fields.py:386
+msgid "Enter a number."
+msgstr "Enter a number."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:458
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "Ensure that there are no more than %(max)s digit in total."
+msgstr[1] "Ensure that there are no more than %(max)s digits in total."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:463
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] "Ensure that there are no more than %(max)s decimal place."
+msgstr[1] "Ensure that there are no more than %(max)s decimal places."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:468
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgstr[1] ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:539
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+
+#: env/lib/python3.8/site-packages/django/core/validators.py:600
+msgid "Null characters are not allowed."
+msgstr "Null characters are not allowed."
+
+#: env/lib/python3.8/site-packages/django/db/models/base.py:1406
+#: env/lib/python3.8/site-packages/django/forms/models.py:885
+msgid "and"
+msgstr "and"
+
+#: env/lib/python3.8/site-packages/django/db/models/base.py:1408
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s with this %(field_labels)s already exists."
+
+#: env/lib/python3.8/site-packages/django/db/models/constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "Constraint “%(name)s” is violated."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "Value %(value)r is not a valid choice."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:129
+msgid "This field cannot be null."
+msgstr "This field cannot be null."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:130
+msgid "This field cannot be blank."
+msgstr "This field cannot be blank."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s with this %(field_label)s already exists."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Field of type: %(field_type)s"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1092
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "“%(value)s” value must be either True or False."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1093
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "“%(value)s” value must be either True, False, or None."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1095
+msgid "Boolean (Either True or False)"
+msgstr "Boolean (Either True or False)"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1145
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "String (up to %(max_length)s)"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1147
+msgid "String (unlimited)"
+msgstr "String (unlimited)"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1251
+msgid "Comma-separated integers"
+msgstr "Comma-separated integers"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1352
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1356
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1484
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1360
+msgid "Date (without time)"
+msgstr "Date (without time)"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1480
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1488
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1493
+msgid "Date (with time)"
+msgstr "Date (with time)"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1610
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” value must be a decimal number."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1612
+msgid "Decimal number"
+msgstr "Decimal number"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1769
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1773
+msgid "Duration"
+msgstr "Duration"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1818
+msgid "Email address"
+msgstr "Email address"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1838
+msgid "File path"
+msgstr "File path"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1916
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” value must be a float."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1918
+msgid "Floating point number"
+msgstr "Floating point number"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1951
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” value must be an integer."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1953
+msgid "Integer"
+msgstr "Integer"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2042
+msgid "Big (8 byte) integer"
+msgstr "Big (8 byte) integer"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2059
+msgid "Small integer"
+msgstr "Small integer"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2067
+msgid "IPv4 address"
+msgstr "IPv4 address"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2098
+msgid "IP address"
+msgstr "IP address"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2191
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2192
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "“%(value)s” value must be either None, True or False."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2194
+msgid "Boolean (Either True, False or None)"
+msgstr "Boolean (Either True, False or None)"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2245
+msgid "Positive big integer"
+msgstr "Positive big integer"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2255
+msgid "Positive integer"
+msgstr "Positive integer"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2265
+msgid "Positive small integer"
+msgstr "Positive small integer"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2276
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (up to %(max_length)s)"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2312
+msgid "Text"
+msgstr "Text"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2387
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2391
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2395
+msgid "Time"
+msgstr "Time"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2496
+msgid "URL"
+msgstr "URL"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2515
+msgid "Raw binary data"
+msgstr "Raw binary data"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2580
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” is not a valid UUID."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2582
+msgid "Universally unique identifier"
+msgstr "Universally unique identifier"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/files.py:232
+msgid "File"
+msgstr "File"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/files.py:389
+msgid "Image"
+msgstr "Image"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/json.py:26
+msgid "A JSON object"
+msgstr "A JSON object"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/json.py:28
+msgid "Value must be valid JSON."
+msgstr "Value must be valid JSON."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/related.py:914
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr "%(model)s instance with %(field)s %(value)r does not exist."
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/related.py:916
+msgid "Foreign Key (type determined by related field)"
+msgstr "Foreign Key (type determined by related field)"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/related.py:1203
+msgid "One-to-one relationship"
+msgstr "One-to-one relationship"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/related.py:1260
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(from)s-%(to)s relationship"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/related.py:1262
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(from)s-%(to)s relationships"
+
+#: env/lib/python3.8/site-packages/django/db/models/fields/related.py:1310
+msgid "Many-to-many relationship"
+msgstr "Many-to-many relationship"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: env/lib/python3.8/site-packages/django/forms/boundfield.py:182
+msgid ":?.!"
+msgstr ":?.!"
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:91
+msgid "This field is required."
+msgstr "This field is required."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:298
+msgid "Enter a whole number."
+msgstr "Enter a whole number."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:465
+#: env/lib/python3.8/site-packages/django/forms/fields.py:1238
+msgid "Enter a valid date."
+msgstr "Enter a valid date."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:488
+#: env/lib/python3.8/site-packages/django/forms/fields.py:1239
+msgid "Enter a valid time."
+msgstr "Enter a valid time."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:515
+msgid "Enter a valid date/time."
+msgstr "Enter a valid date/time."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:549
+msgid "Enter a valid duration."
+msgstr "Enter a valid duration."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:550
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "The number of days must be between {min_days} and {max_days}."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:619
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "No file was submitted. Check the encoding type on the form."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:620
+msgid "No file was submitted."
+msgstr "No file was submitted."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:621
+msgid "The submitted file is empty."
+msgstr "The submitted file is empty."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:623
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgstr[1] ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:628
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "Please either submit a file or check the clear checkbox, not both."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:692
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:854
+#: env/lib/python3.8/site-packages/django/forms/fields.py:946
+#: env/lib/python3.8/site-packages/django/forms/models.py:1551
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "Select a valid choice. %(value)s is not one of the available choices."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:948
+#: env/lib/python3.8/site-packages/django/forms/fields.py:1067
+#: env/lib/python3.8/site-packages/django/forms/models.py:1549
+msgid "Enter a list of values."
+msgstr "Enter a list of values."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:1068
+msgid "Enter a complete value."
+msgstr "Enter a complete value."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:1307
+msgid "Enter a valid UUID."
+msgstr "Enter a valid UUID."
+
+#: env/lib/python3.8/site-packages/django/forms/fields.py:1337
+msgid "Enter a valid JSON."
+msgstr "Enter a valid JSON."
+
+#. Translators: This is the default suffix added to form field labels
+#: env/lib/python3.8/site-packages/django/forms/forms.py:98
+msgid ":"
+msgstr ":"
+
+#: env/lib/python3.8/site-packages/django/forms/forms.py:240
+#: env/lib/python3.8/site-packages/django/forms/forms.py:324
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Hidden field %(name)s) %(error)s"
+
+#: env/lib/python3.8/site-packages/django/forms/formsets.py:63
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+
+#: env/lib/python3.8/site-packages/django/forms/formsets.py:67
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Please submit at most %(num)d form."
+msgstr[1] "Please submit at most %(num)d forms."
+
+#: env/lib/python3.8/site-packages/django/forms/formsets.py:72
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Please submit at least %(num)d form."
+msgstr[1] "Please submit at least %(num)d forms."
+
+#: env/lib/python3.8/site-packages/django/forms/formsets.py:484
+#: env/lib/python3.8/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr "Order"
+
+#: env/lib/python3.8/site-packages/django/forms/formsets.py:497
+msgid "Delete"
+msgstr "Delete"
+
+#: env/lib/python3.8/site-packages/django/forms/models.py:879
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "Please correct the duplicate data for %(field)s."
+
+#: env/lib/python3.8/site-packages/django/forms/models.py:884
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr "Please correct the duplicate data for %(field)s, which must be unique."
+
+#: env/lib/python3.8/site-packages/django/forms/models.py:889
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+
+#: env/lib/python3.8/site-packages/django/forms/models.py:898
+msgid "Please correct the duplicate values below."
+msgstr "Please correct the duplicate values below."
+
+#: env/lib/python3.8/site-packages/django/forms/models.py:1323
+msgid "The inline value did not match the parent instance."
+msgstr "The inline value did not match the parent instance."
+
+#: env/lib/python3.8/site-packages/django/forms/models.py:1414
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+"Select a valid choice. That choice is not one of the available choices."
+
+#: env/lib/python3.8/site-packages/django/forms/models.py:1553
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” is not a valid value."
+
+#: env/lib/python3.8/site-packages/django/forms/utils.py:226
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+
+#: env/lib/python3.8/site-packages/django/forms/widgets.py:463
+msgid "Clear"
+msgstr "Clear"
+
+#: env/lib/python3.8/site-packages/django/forms/widgets.py:464
+msgid "Currently"
+msgstr "Currently"
+
+#: env/lib/python3.8/site-packages/django/forms/widgets.py:465
+msgid "Change"
+msgstr "Change"
+
+#: env/lib/python3.8/site-packages/django/forms/widgets.py:794
+msgid "Unknown"
+msgstr "Unknown"
+
+#: env/lib/python3.8/site-packages/django/forms/widgets.py:795
+msgid "Yes"
+msgstr "Yes"
+
+#: env/lib/python3.8/site-packages/django/forms/widgets.py:796
+msgid "No"
+msgstr "No"
+
+#. Translators: Please do not add spaces around commas.
+#: env/lib/python3.8/site-packages/django/template/defaultfilters.py:855
+msgid "yes,no,maybe"
+msgstr "yes,no,maybe"
+
+#: env/lib/python3.8/site-packages/django/template/defaultfilters.py:885
+#: env/lib/python3.8/site-packages/django/template/defaultfilters.py:902
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d byte"
+msgstr[1] "%(size)d bytes"
+
+#: env/lib/python3.8/site-packages/django/template/defaultfilters.py:904
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: env/lib/python3.8/site-packages/django/template/defaultfilters.py:906
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: env/lib/python3.8/site-packages/django/template/defaultfilters.py:908
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: env/lib/python3.8/site-packages/django/template/defaultfilters.py:910
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: env/lib/python3.8/site-packages/django/template/defaultfilters.py:912
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: env/lib/python3.8/site-packages/django/utils/dateformat.py:73
+msgid "p.m."
+msgstr "p.m."
+
+#: env/lib/python3.8/site-packages/django/utils/dateformat.py:74
+msgid "a.m."
+msgstr "a.m."
+
+#: env/lib/python3.8/site-packages/django/utils/dateformat.py:79
+msgid "PM"
+msgstr "PM"
+
+#: env/lib/python3.8/site-packages/django/utils/dateformat.py:80
+msgid "AM"
+msgstr "AM"
+
+#: env/lib/python3.8/site-packages/django/utils/dateformat.py:152
+msgid "midnight"
+msgstr "midnight"
+
+#: env/lib/python3.8/site-packages/django/utils/dateformat.py:154
+msgid "noon"
+msgstr "noon"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr "Monday"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr "Tuesday"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr "Wednesday"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr "Thursday"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr "Friday"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr "Saturday"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr "Sunday"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr "Mon"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr "Tue"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr "Wed"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr "Thu"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr "Fri"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr "Sat"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr "Sun"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr "January"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr "February"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr "March"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr "April"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr "May"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr "June"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr "July"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr "August"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr "September"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr "October"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr "November"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr "December"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr "jan"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr "feb"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr "apr"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr "may"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr "jun"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr "jul"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr "aug"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr "sep"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr "oct"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr "nov"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr "dec"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Jan."
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Feb."
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "March"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "April"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "May"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "June"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "July"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Aug."
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Sept."
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Oct."
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Nov."
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Dec."
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "January"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "February"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "March"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "April"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "May"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "June"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "July"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "August"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "September"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "October"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "November"
+
+#: env/lib/python3.8/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "December"
+
+#: env/lib/python3.8/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr "This is not a valid IPv6 address."
+
+#: env/lib/python3.8/site-packages/django/utils/text.py:84
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#: env/lib/python3.8/site-packages/django/utils/text.py:269
+msgid "or"
+msgstr "or"
+
+#. Translators: This string is used as a separator between list elements
+#: env/lib/python3.8/site-packages/django/utils/text.py:288
+#: env/lib/python3.8/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ", "
+
+#: env/lib/python3.8/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] "%(num)d year"
+msgstr[1] "%(num)d years"
+
+#: env/lib/python3.8/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "%(num)d month"
+msgstr[1] "%(num)d months"
+
+#: env/lib/python3.8/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] "%(num)d week"
+msgstr[1] "%(num)d weeks"
+
+#: env/lib/python3.8/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] "%(num)d day"
+msgstr[1] "%(num)d days"
+
+#: env/lib/python3.8/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] "%(num)d hour"
+msgstr[1] "%(num)d hours"
+
+#: env/lib/python3.8/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] "%(num)d minute"
+msgstr[1] "%(num)d minutes"
+
+#: env/lib/python3.8/site-packages/django/views/csrf.py:111
+msgid "Forbidden"
+msgstr "Forbidden"
+
+#: env/lib/python3.8/site-packages/django/views/csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr "CSRF verification failed. Request aborted."
+
+#: env/lib/python3.8/site-packages/django/views/csrf.py:116
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+
+#: env/lib/python3.8/site-packages/django/views/csrf.py:122
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+
+#: env/lib/python3.8/site-packages/django/views/csrf.py:127
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+
+#: env/lib/python3.8/site-packages/django/views/csrf.py:136
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+
+#: env/lib/python3.8/site-packages/django/views/csrf.py:142
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+
+#: env/lib/python3.8/site-packages/django/views/csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:64
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:115
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:349
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:378
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:642
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/dates.py:682
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: env/lib/python3.8/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Invalid page (%(page_number)s): %(message)s"
+
+#: env/lib/python3.8/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Empty list and “%(class_name)s.allow_empty” is False."
+
+#: env/lib/python3.8/site-packages/django/views/static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr "Directory indexes are not allowed here."
+
+#: env/lib/python3.8/site-packages/django/views/static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” does not exist"
+
+#: env/lib/python3.8/site-packages/django/views/static.py:79
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "Index of %(directory)s"
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:7
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr "The install worked successfully! Congratulations!"
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:229
+msgid "Django Documentation"
+msgstr "Django Documentation"
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Topics, references, &amp; how-to’s"
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr "Tutorial: A Polling App"
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:239
+msgid "Get started with Django"
+msgstr "Get started with Django"
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:247
+msgid "Django Community"
+msgstr "Django Community"
+
+#: env/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr "Connect, get help, or contribute"
+
+#: env/lib/python3.8/site-packages/django_plotly_dash/templates/admin/django_plotly_dash/statelessapp/change_list.html:7
+msgid "Find Apps"
+msgstr "Find Apps"
+
+#: env/lib/python3.8/site-packages/django_plotly_dash/templates/admin/django_plotly_dash/statelessapp/change_list.html:13
+#, python-format
+msgid "Add %(name)s"
+msgstr "Add %(name)s"
+
+#: env/lib/python3.8/site-packages/djangocms_attributes_field/fields.py:58
+#, python-format
+msgid "'%s' is not a valid JSON string."
+msgstr "'%s' is not a valid JSON string."
+
+#: env/lib/python3.8/site-packages/djangocms_attributes_field/fields.py:152
+#, python-brace-format
+msgid "\"{key}\" is excluded by configuration and cannot be used as a key."
+msgstr "\"{key}\" is excluded by configuration and cannot be used as a key."
+
+#: env/lib/python3.8/site-packages/djangocms_attributes_field/fields.py:161
+#, python-brace-format
+msgid ""
+"\"{key}\" is not a valid key. Keys must start with at least one letter and "
+"consist only of the letters, numbers, underscores or hyphens."
+msgstr ""
+"\"{key}\" is not a valid key. Keys must start with at least one letter and "
+"consist only of the letters, numbers, underscores or hyphens."
+
+#: env/lib/python3.8/site-packages/djangocms_attributes_field/fields.py:176
+#, python-brace-format
+msgid ""
+"The value for the key \"{key}\" is invalid. Please enter a value that can be "
+"represented in JSON."
+msgstr ""
+"The value for the key \"{key}\" is invalid. Please enter a value that can be "
+"represented in JSON."
+
+#: env/lib/python3.8/site-packages/djangocms_attributes_field/fields.py:196
+msgid "\"{field_name}\" is not a field of {obj|r}"
+msgstr "\"{field_name}\" is not a field of {obj|r}"
+
+#: env/lib/python3.8/site-packages/djangocms_attributes_field/fields.py:204
+#, python-brace-format
+msgid "\"{field_name}\" is not an AttributesField"
+msgstr "\"{field_name}\" is not an AttributesField"
+
+#: env/lib/python3.8/site-packages/djangocms_attributes_field/widgets.py:51
+msgid "Remove"
+msgstr "Remove"
+
+#: env/lib/python3.8/site-packages/djangocms_attributes_field/widgets.py:87
+msgid "Add another key/value pair"
+msgstr "Add another key/value pair"
+
+#: env/lib/python3.8/site-packages/menus/apps.py:7
+msgid "django CMS menus system"
+msgstr "django CMS menus system"
+
+#: env/lib/python3.8/site-packages/menus/menu_pool.py:187
+#, python-format
+msgid ""
+"Menu %s cannot be loaded. Please, make sure all its urls exist and can be "
+"resolved."
+msgstr ""
+"Menu %s cannot be loaded. Please, make sure all its urls exist and can be "
+"resolved."
+
+#: env/lib/python3.8/site-packages/menus/templates/menu/language_chooser.html:6
+msgid "Change to language:"
+msgstr "Change to language:"
+
+#: env/lib/python3.8/site-packages/tests/test_locking.py:62
+msgid "locked"
+msgstr "locked"
+
+#: env/lib/python3.8/site-packages/tests/test_locking.py:553
+msgid "Unlocked"
+msgstr "Unlocked"
+
+#: env/lib/python3.8/site-packages/tests/test_toolbar.py:263
+#: env/lib/python3.8/site-packages/tests/test_toolbars.py:602
+msgid "Language"
+msgstr "Language"
+
+#: env/lib/python3.8/site-packages/tests/utils/custom_image/apps.py:8
+msgid "Custom Image"
+msgstr "Custom Image"
+
+#: env/lib/python3.8/site-packages/tests/utils/extended_app/apps.py:8
+msgid "Extended App"
+msgstr "Extended App"
+
+#: env/lib/python3.8/site-packages/tests/utils/test_app/apps.py:8
+msgid "Test app"
+msgstr "Test app"
+
+#: templates/Quizzes/quiz_creation.html:23
+#: templates/Quizzes/quiz_delete.html:14
+msgid "Chief Seattle’s Letter 1855"
+msgstr "Chief Seattle’s Letter 1855"
+
+#: templates/Quizzes/quiz_creation.html:24
+#: templates/Quizzes/quiz_delete.html:15
+msgid ""
+"Our connection with the Earth is deep and spiritual. Every corner of this "
+"earth and every living being are valuable and deserve our respect and care. "
+"Our actions should reflect our sacred duty to protect and love nature. By "
+"preserving the beauty and diversity of nature, we ensure that future "
+"generations can enjoy the same gifts we have received. The Earth is a gift "
+"to us and our descendants, and we must protect it with gratitude and "
+"commitment."
+msgstr ""
+"Our connection with the Earth is deep and spiritual. Every corner of this "
+"earth and every living being are valuable and deserve our respect and care. "
+"Our actions should reflect our sacred duty to protect and love nature. By "
+"preserving the beauty and diversity of nature, we ensure that future "
+"generations can enjoy the same gifts we have received. The Earth is a gift "
+"to us and our descendants, and we must protect it with gratitude and "
+"commitment."
+
+#: templates/Quizzes/quiz_creation.html:24
+#: templates/Quizzes/quiz_delete.html:15
+msgid "Continue reading"
+msgstr "Continue reading"
+
+#: templates/Quizzes/quiz_creation.html:42
+msgid "Title"
+msgstr "Title"
+
+#: templates/Quizzes/quiz_creation.html:46
+msgid "Description"
+msgstr "Description"
+
+#: templates/Quizzes/quiz_delete.html:22
+msgid "Estás seguro de eliminar"
+msgstr "Are you sure to delete"
+
+#: templates/Quizzes/quiz_index.html:46
+msgid "Escrito por"
+msgstr "Written by"
+
+#: templates/Quizzes/quiz_index.html:52
+msgid "Editar"
+msgstr "Edit"
+
+#: templates/Quizzes/quiz_index.html:55
+msgid "Eliminar"
+msgstr "Delete"
+
+#: templates/Quizzes/quiz_index.html:59
+msgid "Ir a Quiz GCP Digital Leader"
+msgstr "Go to Quiz GCP Digital Leader"
+
+#: templates/Quizzes/quiz_index.html:83
+msgid "Previous"
+msgstr "Previous"
+
+#: templates/Quizzes/quiz_index.html:86
+msgid "Next"
+msgstr "Next"
+
+#: templates/about_me/about_me_home.html:25 templates/home/home.html:25
+#: templates/technical_insight/technical_insight_home.html:25
+msgid "Bienvenido"
+msgstr "Welcome"
+
+#: templates/about_me/about_me_home.html:27 templates/home/home.html:27
+#: templates/partials/_welcome_content.html:36
+#: templates/technical_insight/technical_insight_home.html:27
+msgid ""
+" We are the unique Consultancy Farm for your business solution, That is "
+"ready to take challenge and knockout your business problems. "
+msgstr ""
+" We are the unique Consultancy Farm for your business solution, That is "
+"ready to take challenge and knockout your business problems. "
+
+#: templates/about_me/about_me_home.html:45
+msgid "Explore About Me"
+msgstr "Explore About Me"
+
+#: templates/about_me/about_me_home.html:52
+#: templates/partials/_menu_home.html:120
+#: templates/partials/_menu_home.html:122
+#: templates/partials/_menu_home.html:130
+msgid "About Me"
+msgstr "About Me"
+
+#: templates/about_me/about_me_home.html:53
+#: templates/about_me/about_me_home.html:64
+#: templates/about_me/about_me_home.html:75
+msgid "Lorem elitr magna stet eirmod labore amet labore clita"
+msgstr "Lorem elitr magna stet eirmod labore amet labore clita"
+
+#: templates/about_me/about_me_home.html:55
+#: templates/about_me/about_me_home.html:66
+#: templates/about_me/about_me_home.html:77
+msgid "SEE"
+msgstr "SEE"
+
+#: templates/about_me/about_me_home.html:63
+#: templates/partials/_menu_home.html:152
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/about_me/about_me_home.html:74
+msgid "My Space"
+msgstr "My Space"
+
+#: templates/authentication/invalid_activation.html:8
+msgid "Sorry your link is no longer Valid,please request a new one"
+msgstr "Sorry your link is no longer Valid,please request a new one"
+
+#: templates/authentication/login.html:36
+msgid "Login to your Account"
+msgstr "Login to your Account"
+
+#: templates/authentication/login.html:45
+msgid "Username or Email"
+msgstr "Username or Email"
+
+#: templates/authentication/login.html:57
+#: templates/authentication/register.html:107
+#: templates/authentication/set-new-password.html:40
+msgid "Password"
+msgstr "Password"
+
+#: templates/authentication/login.html:69
+#: templates/partials/_welcome_menu.html:41
+msgid "Login"
+msgstr "Login"
+
+#: templates/authentication/login.html:79
+#: templates/authentication/register.html:130
+#: templates/authentication/reset-password.html:63
+#: templates/authentication/set-new-password.html:55
+msgid "OR"
+msgstr "OR"
+
+#: templates/authentication/login.html:85
+msgid "Create an Account"
+msgstr "Create an Account"
+
+#: templates/authentication/login.html:87
+#: templates/partials/_welcome_menu.html:43
+msgid "Forgot Password"
+msgstr "Forgot Password"
+
+#: templates/authentication/register.html:39
+msgid "Register for a free account"
+msgstr "Register for a free account"
+
+#: templates/authentication/register.html:49
+msgid "First Name"
+msgstr "First Name"
+
+#: templates/authentication/register.html:60
+msgid "Last Name"
+msgstr "Last Name"
+
+#: templates/authentication/register.html:73
+msgid "Username"
+msgstr "Username"
+
+#: templates/authentication/register.html:84
+msgid "Available"
+msgstr "Available"
+
+#: templates/authentication/register.html:92
+#: templates/authentication/reset-password.html:54
+msgid "Email"
+msgstr "Email"
+
+#: templates/authentication/register.html:101
+msgid "Email Looks good !"
+msgstr "Email Looks good !"
+
+#: templates/authentication/register.html:116
+msgid "SHOW"
+msgstr "SHOW"
+
+#: templates/authentication/register.html:120
+#: templates/partials/_welcome_menu.html:42
+msgid "Register"
+msgstr "Register"
+
+#: templates/authentication/register.html:136
+msgid "Reset Password"
+msgstr "Reset Password"
+
+#: templates/authentication/register.html:138
+#: templates/authentication/reset-password.html:71
+#: templates/authentication/set-new-password.html:63
+msgid "Back to Login"
+msgstr "Back to Login"
+
+#: templates/authentication/reset-password.html:44
+msgid "Trouble Logging In?"
+msgstr "Trouble Loggin In?"
+
+#: templates/authentication/reset-password.html:46
+msgid ""
+"Enter your username or email and we'll send you a link to get back into your "
+"account."
+msgstr ""
+"Enter your username or email and we'll send you a link to get back into your "
+"account."
+
+#: templates/authentication/reset-password.html:56
+#: templates/authentication/set-new-password.html:48
+msgid "Send Link"
+msgstr "Send Link"
+
+#: templates/authentication/reset-password.html:69
+#: templates/authentication/set-new-password.html:61
+msgid "Create New Account"
+msgstr "Create New Account"
+
+#: templates/authentication/set-new-password.html:32
+msgid "Please enter your new preferred password"
+msgstr "Please enter your new preferred password"
+
+#: templates/authentication/set-new-password.html:46
+msgid "Confirm Password"
+msgstr "Confirm Password"
+
+#: templates/home/home.html:91
+msgid "Technical Knowledge and Skills"
+msgstr "Technical Knowledge and Skills"
+
+#: templates/home/home.html:93
+#: templates/technical_insight/knowledge_skill.html:22
+#: templates/technical_insight/knowledge_skill.html:302
+#: templates/technical_insight/knowledge_skill.html:668
+#: templates/technical_insight/knowledge_skill.html:943
+msgid ""
+" Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure "
+"dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla "
+"pariatur. "
+msgstr ""
+" Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure "
+"dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla "
+"pariatur. "
+
+#: templates/home/home.html:108 templates/home/home.html:126
+#: templates/home/home.html:144 templates/home/home.html:168
+#: templates/home/home.html:205
+#: templates/technical_insight/knowledge_skill.html:37
+#: templates/technical_insight/knowledge_skill.html:55
+#: templates/technical_insight/knowledge_skill.html:73
+#: templates/technical_insight/knowledge_skill.html:95
+#: templates/technical_insight/knowledge_skill.html:113
+#: templates/technical_insight/knowledge_skill.html:131
+#: templates/technical_insight/knowledge_skill.html:155
+#: templates/technical_insight/knowledge_skill.html:173
+#: templates/technical_insight/knowledge_skill.html:215
+#: templates/technical_insight/knowledge_skill.html:233
+#: templates/technical_insight/knowledge_skill.html:251
+#: templates/technical_insight/knowledge_skill.html:274
+#: templates/technical_insight/knowledge_skill.html:317
+#: templates/technical_insight/knowledge_skill.html:335
+#: templates/technical_insight/knowledge_skill.html:353
+#: templates/technical_insight/knowledge_skill.html:375
+#: templates/technical_insight/knowledge_skill.html:393
+#: templates/technical_insight/knowledge_skill.html:434
+#: templates/technical_insight/knowledge_skill.html:452
+#: templates/technical_insight/knowledge_skill.html:470
+#: templates/technical_insight/knowledge_skill.html:493
+#: templates/technical_insight/knowledge_skill.html:511
+#: templates/technical_insight/knowledge_skill.html:551
+#: templates/technical_insight/knowledge_skill.html:569
+#: templates/technical_insight/knowledge_skill.html:587
+#: templates/technical_insight/knowledge_skill.html:609
+#: templates/technical_insight/knowledge_skill.html:627
+#: templates/technical_insight/knowledge_skill.html:683
+#: templates/technical_insight/knowledge_skill.html:701
+#: templates/technical_insight/knowledge_skill.html:719
+#: templates/technical_insight/knowledge_skill.html:741
+#: templates/technical_insight/knowledge_skill.html:759
+#: templates/technical_insight/knowledge_skill.html:777
+#: templates/technical_insight/knowledge_skill.html:799
+#: templates/technical_insight/knowledge_skill.html:817
+#: templates/technical_insight/knowledge_skill.html:857
+#: templates/technical_insight/knowledge_skill.html:875
+#: templates/technical_insight/knowledge_skill.html:915
+#: templates/technical_insight/knowledge_skill.html:958
+#: templates/technical_insight/knowledge_skill.html:976
+#: templates/technical_insight/knowledge_skill.html:1016
+#: templates/technical_insight/knowledge_skill.html:1034
+#: templates/technical_insight/knowledge_skill.html:1075
+#: templates/technical_insight/knowledge_skills_describe.html:189
+msgid ""
+" Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
+"sint oat cupidatat "
+msgstr ""
+" Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
+"sint oat cupidatat "
+
+#: templates/home/home.html:111 templates/home/home.html:129
+#: templates/home/home.html:147 templates/home/home.html:171
+#: templates/home/home.html:190 templates/home/home.html:208
+#: templates/technical_insight/knowledge_skill.html:40
+#: templates/technical_insight/knowledge_skill.html:58
+#: templates/technical_insight/knowledge_skill.html:76
+#: templates/technical_insight/knowledge_skill.html:98
+#: templates/technical_insight/knowledge_skill.html:116
+#: templates/technical_insight/knowledge_skill.html:134
+#: templates/technical_insight/knowledge_skill.html:158
+#: templates/technical_insight/knowledge_skill.html:176
+#: templates/technical_insight/knowledge_skill.html:194
+#: templates/technical_insight/knowledge_skill.html:218
+#: templates/technical_insight/knowledge_skill.html:236
+#: templates/technical_insight/knowledge_skill.html:254
+#: templates/technical_insight/knowledge_skill.html:277
+#: templates/technical_insight/knowledge_skill.html:320
+#: templates/technical_insight/knowledge_skill.html:338
+#: templates/technical_insight/knowledge_skill.html:356
+#: templates/technical_insight/knowledge_skill.html:378
+#: templates/technical_insight/knowledge_skill.html:396
+#: templates/technical_insight/knowledge_skill.html:414
+#: templates/technical_insight/knowledge_skill.html:437
+#: templates/technical_insight/knowledge_skill.html:455
+#: templates/technical_insight/knowledge_skill.html:473
+#: templates/technical_insight/knowledge_skill.html:496
+#: templates/technical_insight/knowledge_skill.html:514
+#: templates/technical_insight/knowledge_skill.html:532
+#: templates/technical_insight/knowledge_skill.html:554
+#: templates/technical_insight/knowledge_skill.html:572
+#: templates/technical_insight/knowledge_skill.html:590
+#: templates/technical_insight/knowledge_skill.html:612
+#: templates/technical_insight/knowledge_skill.html:630
+#: templates/technical_insight/knowledge_skill.html:648
+#: templates/technical_insight/knowledge_skill.html:686
+#: templates/technical_insight/knowledge_skill.html:704
+#: templates/technical_insight/knowledge_skill.html:722
+#: templates/technical_insight/knowledge_skill.html:744
+#: templates/technical_insight/knowledge_skill.html:762
+#: templates/technical_insight/knowledge_skill.html:780
+#: templates/technical_insight/knowledge_skill.html:802
+#: templates/technical_insight/knowledge_skill.html:820
+#: templates/technical_insight/knowledge_skill.html:838
+#: templates/technical_insight/knowledge_skill.html:860
+#: templates/technical_insight/knowledge_skill.html:878
+#: templates/technical_insight/knowledge_skill.html:896
+#: templates/technical_insight/knowledge_skill.html:918
+#: templates/technical_insight/knowledge_skill.html:961
+#: templates/technical_insight/knowledge_skill.html:979
+#: templates/technical_insight/knowledge_skill.html:997
+#: templates/technical_insight/knowledge_skill.html:1019
+#: templates/technical_insight/knowledge_skill.html:1037
+#: templates/technical_insight/knowledge_skill.html:1055
+#: templates/technical_insight/knowledge_skill.html:1078
+msgid "learn more"
+msgstr "learn more"
+
+#: templates/home/home.html:165
+msgid "Pandas"
+msgstr "Pandas"
+
+#: templates/home/home.html:184
+#: templates/technical_insight/knowledge_skill.html:152
+msgid "Arch Linux"
+msgstr "Arch Linux"
+
+#: templates/home/home.html:187
+#: templates/technical_insight/knowledge_skill.html:191
+#: templates/technical_insight/knowledge_skill.html:411
+#: templates/technical_insight/knowledge_skill.html:529
+#: templates/technical_insight/knowledge_skill.html:645
+#: templates/technical_insight/knowledge_skill.html:835
+#: templates/technical_insight/knowledge_skill.html:893
+#: templates/technical_insight/knowledge_skill.html:994
+#: templates/technical_insight/knowledge_skill.html:1052
+msgid ""
+"  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
+"sint oat cupidatat "
+msgstr ""
+"  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
+"sint oat cupidatat "
+
+#: templates/home/home.html:202
+#: templates/technical_insight/knowledge_skill.html:170
+msgid "Git"
+msgstr "Git"
+
+#: templates/home/home.html:602
+msgid "Education"
+msgstr "Education"
+
+#: templates/home/home.html:605
+msgid ""
+"Major educational achievements include obtaining academic degrees and "
+"acquiring advanced skills in key areas such as programming, data science, "
+"English, and cloud fundamentals."
+msgstr ""
+"Major educational achievements include obtaining academic degrees and "
+"acquiring advanced skills in key areas such as programming, data science, "
+"English, and cloud fundamentals."
+
+#: templates/home/home.html:734
+msgid " vision and mission"
+msgstr " Vision and mission"
+
+#: templates/home/home.html:736
+#, fuzzy
+#| msgid ""
+#| "My motivations to constantly improve are based on the following three "
+#| "pillars:"
+msgid ""
+"Mis motivaciones para mejorar constantemente se basan en los siguientes tres "
+"pilares:"
+msgstr ""
+"My motivations to constantly improve are based on the following three "
+"pillars:"
+
+#: templates/home/home.html:745
+msgid ""
+"Aprender y utilizar Machine Learning y la Inteligencia Artificial es uno de "
+"mis principales objetivos. Me esfuerzo por dominar estas tecnologías "
+"emergentespara desarrollar soluciones que transformen y mejoren la calidad "
+"de vida de las personas."
+msgstr ""
+"Learning and using Machine Learning and Artificial Intelligence is one of my "
+"main objectives. I strive to master these emerging technologies to develop "
+"solutions that transform and improve people's quality of life."
+
+#: templates/home/home.html:757
+msgid ""
+"Dominar el idioma inglés para colaborar eficazmente a nivel global. Trabajo "
+"constantemente en mejorar mis habilidades lingüísticas para comunicarme y "
+"trabajar junto a profesionales de todo el mundo."
+msgstr ""
+"Mastering the English language to collaborate effectively on a global level. "
+"I constantly work on improving my language skills to communicate and work "
+"alongside professionals from all over the world."
+
+#: templates/home/home.html:769
+msgid ""
+"Conocer y trabajar junto a equipos de personas de diferentes lugares, "
+"culturas y conocimientos es fundamental para enriquecer mis experiencias y "
+"habilidades. Valoro la diversidad y busco siempre colaborar en un ambiente "
+"inclusivo."
+msgstr ""
+"Knowing and working with teams of people from different places, cultures, "
+"and backgrounds is essential to enrich my experiences and skills. I value "
+"diversity and always seek to collaborate in an inclusive environment."
+
+#: templates/partials/_footer_home.html:24
+msgid ""
+"Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua."
+msgstr ""
+"Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua."
+
+#: templates/partials/_footer_home.html:39
+msgid "Useful Links"
+msgstr "Useful Links"
+
+#: templates/partials/_footer_home.html:43
+#: templates/partials/_menu_home.html:117
+#: templates/partials/_welcome_menu.html:40
+msgid "Home"
+msgstr "Home"
+
+#: templates/partials/_footer_home.html:44
+msgid "About"
+msgstr "About"
+
+#: templates/partials/_footer_home.html:45
+msgid "Service"
+msgstr "Service"
+
+#: templates/partials/_footer_home.html:46
+msgid "Contact us"
+msgstr "Contact us"
+
+#: templates/partials/_footer_home.html:54
+msgid "From the News"
+msgstr "From the News"
+
+#: templates/partials/_footer_home.html:57
+#: templates/partials/_footer_home.html:64
+msgid "\"The Pros and Cons of Starting an Online Business.\""
+msgstr "\"The Pros and Cons of Starting an Online Business.\""
+
+#: templates/partials/_footer_home.html:58
+#: templates/partials/_footer_home.html:65
+msgid "12th June 2017"
+msgstr "12th June 2017"
+
+#: templates/partials/_footer_home.html:72
+msgid "Our Newsletter"
+msgstr "Our Newsletter"
+
+#: templates/partials/_footer_home.html:75
+msgid "Subscribe to our newsletter to get the latest News and offers."
+msgstr "Subscribe to our newsletter to get the latest News and offers."
+
+#: templates/partials/_footer_home.html:79
+msgid "Email Address"
+msgstr "Email Address"
+
+#: templates/partials/_footer_home.html:80
+msgid "Go"
+msgstr "Go"
+
+#: templates/partials/_footer_home.html:99
+msgid " All Rights Reserved. Designed and Developed by "
+msgstr " All Rights Reserved. Designed and Developed by "
+
+#: templates/partials/_footer_home.html:107
+msgid "legal"
+msgstr "legal"
+
+#: templates/partials/_footer_home.html:108
+msgid "sitemap"
+msgstr "sitemap"
+
+#: templates/partials/_footer_home.html:109
+msgid "privacy policy"
+msgstr "privacy policy"
+
+#: templates/partials/_header.html:80
+#: templates/partials/_header_welcome.html:43
+msgid "Spanish"
+msgstr "Spanish"
+
+#: templates/partials/_header.html:88
+msgid " Logout"
+msgstr "Logout"
+
+#: templates/partials/_menu_home.html:133
+msgid "Who am I "
+msgstr "Who am I "
+
+#: templates/partials/_menu_home.html:134
+msgid "What are my interest"
+msgstr "What are my interest"
+
+#: templates/partials/_menu_home.html:135
+msgid "What do I want to learn"
+msgstr "What do I want to learn"
+
+#: templates/partials/_menu_home.html:136
+msgid "What are my goals"
+msgstr "What are my goals"
+
+#: templates/partials/_menu_home.html:141
+msgid "Technical Insight"
+msgstr "Technical Insight"
+
+#: templates/partials/_menu_home.html:144
+msgid "Knowledge and Skills"
+msgstr "Knowledge and Skills"
+
+#: templates/partials/_menu_home.html:145
+msgid "Engineering knowledge"
+msgstr "Engineering knowledge"
+
+#: templates/partials/_menu_home.html:146
+msgid "My Space Three"
+msgstr "My Space Three"
+
+#: templates/partials/_menu_home.html:147
+msgid "My Space Four"
+msgstr "My Space Four"
+
+#: templates/partials/_menu_home.html:155
+msgid "My Blog"
+msgstr "My Blog"
+
+#: templates/partials/_menu_home.html:157
+msgid "Blog One "
+msgstr "Blog One "
+
+#: templates/partials/_menu_home.html:158
+msgid "Blog Two"
+msgstr "Blog Two"
+
+#: templates/partials/_menu_home.html:159
+msgid "Blog Three"
+msgstr "Blog Three"
+
+#: templates/partials/_menu_home.html:160
+msgid "Blog Four"
+msgstr "Blog Four"
+
+#: templates/partials/_menu_home.html:169
+#: templates/partials/_menu_home.html:171
+msgid "Quizzes"
+msgstr "Quizzes"
+
+#: templates/partials/_menu_home.html:173
+msgid "Drop Quiz 1"
+msgstr "Drop Quiz 1"
+
+#: templates/partials/_menu_home.html:174
+msgid "Drop Quiz 2"
+msgstr "Drop Quiz 2"
+
+#: templates/partials/_menu_home.html:175
+msgid "Drop Quiz 3"
+msgstr "Drop Quiz 3"
+
+#: templates/partials/_menu_home.html:176
+msgid "Drop Quiz 4"
+msgstr "Drop Quiz 4"
+
+#: templates/partials/_menu_home.html:180
+#: templates/partials/_menu_home.html:182
+msgid "Services"
+msgstr "Services"
+
+#: templates/partials/_menu_home.html:184
+msgid "Drop Service 1"
+msgstr "Drop Service 1"
+
+#: templates/partials/_menu_home.html:185
+msgid "Drop Service 2"
+msgstr "Drop Service 2"
+
+#: templates/partials/_menu_home.html:186
+msgid "Drop Service 3"
+msgstr "Drop Service 3"
+
+#: templates/partials/_menu_home.html:187
+msgid "Drop Service 4"
+msgstr "Drop Service 4"
+
+#: templates/partials/_menu_home.html:191
+#: templates/partials/_menu_home.html:193
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: templates/partials/_menu_home.html:200
+msgid "Personal Projects"
+msgstr "Personal Projects"
+
+#: templates/partials/_menu_home.html:202
+msgid "Graphics"
+msgstr "Graphics"
+
+#: templates/partials/_menu_home.html:203
+msgid "Vectors"
+msgstr "Vectors"
+
+#: templates/partials/_menu_home.html:204
+msgid "Business cards"
+msgstr "Business cards"
+
+#: templates/partials/_menu_home.html:205
+msgid "Custom logo"
+msgstr "Custom logo"
+
+#: templates/partials/_menu_home.html:210
+msgid "Professional Projects"
+msgstr "Professional Projects"
+
+#: templates/partials/_menu_home.html:213
+msgid "Estrategy Cloud"
+msgstr "Estrategy Cloud"
+
+#: templates/partials/_menu_home.html:214
+msgid "Python Tool Finance"
+msgstr "Python Tool Finance"
+
+#: templates/partials/_menu_home.html:215
+msgid "ETL SQL BICE"
+msgstr "ETL SQL BICE"
+
+#: templates/partials/_menu_home.html:216
+msgid "RPA Scotiabank"
+msgstr "RPA Scotiabank"
+
+#: templates/partials/_menu_home.html:217
+msgid "ReportWorks MobileApp"
+msgstr "ReportWorks MobileApp"
+
+#: templates/partials/_menu_home.html:218
+msgid "Odoo ERP"
+msgstr "Odoo ERP"
+
+#: templates/partials/_menu_home.html:222
+msgid "Work Experience"
+msgstr "Work Experience"
+
+#: templates/partials/_menu_home.html:224
+msgid "Freelance"
+msgstr "Freelance"
+
+#: templates/partials/_menu_home.html:225
+msgid "EY"
+msgstr "EY"
+
+#: templates/partials/_menu_home.html:226
+msgid "Techint"
+msgstr "Techint"
+
+#: templates/partials/_menu_home.html:233
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/partials/_welcome_content.html:34
+msgid "Hi!"
+msgstr "Hi!"
+
+#: templates/partials/_welcome_content.html:34
+msgid "I'm Jaime Campillay"
+msgstr "I'm Jaime Campillay"
+
+#: templates/partials/_welcome_content.html:39
+msgid "Guest User"
+msgstr "Gueset User"
+
+#: templates/partials/_welcome_content.html:42
+msgid "Authenticated User"
+msgstr "Authenticated User"
+
+#: templates/portfolio/project_describe.html:18
+msgid "Project Portfolio"
+msgstr "Project Portfolio"
+
+#: templates/portfolio/project_describe.html:35
+msgid "Descripción:"
+msgstr "Descripction"
+
+#: templates/portfolio/project_describe.html:35
+#, python-format
+msgid " %(description_project)s"
+msgstr " %(description_project)s"
+
+#: templates/portfolio/project_describe.html:37
+msgid "Tecnologías usadas:"
+msgstr "Technologies used:"
+
+#: templates/portfolio/project_describe.html:65
+msgid "Company Description"
+msgstr "Company Description"
+
+#: templates/portfolio/project_describe.html:69
+#, python-format
+msgid " %(company_description_part_1)s "
+msgstr " %(company_description_part_1)s "
+
+#: templates/portfolio/project_describe.html:72
+#, python-format
+msgid " %(company_description_part_2)s "
+msgstr " %(company_description_part_2)s "
+
+#: templates/technical_insight/knowledge_skill.html:20
+msgid "Preferidas y Usualmente Ocupo"
+msgstr "Preferred and Usually Used"
+
+#: templates/technical_insight/knowledge_skill.html:188
+msgid "GitHub"
+msgstr "GitHub"
+
+#: templates/technical_insight/knowledge_skill.html:300
+msgid "Me Interesan Aprender"
+msgstr "Interested in Learning"
+
+#: templates/technical_insight/knowledge_skill.html:666
+msgid "He Aplicado y Experimentado"
+msgstr "Applied and Experienced"
+
+#: templates/technical_insight/knowledge_skill.html:941
+msgid "Conocidas y Complementatias"
+msgstr "Known and Complementary"
+
+#: templates/technical_insight/knowledge_skills_describe.html:28
+msgid "Technology Type: "
+msgstr "Technology Type: "
