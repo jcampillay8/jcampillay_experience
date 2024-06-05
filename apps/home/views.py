@@ -20,8 +20,9 @@ from django.conf import settings
 import os
 from django.utils.translation import get_language
 from django.views.generic import TemplateView
-
-
+from django.template.loader import get_template
+from django.http import HttpResponse
+from weasyprint import HTML
 
 class GuestUser:
     is_guest = True
@@ -128,13 +129,6 @@ def send_email_new(user, user_email, message_sent):
 #     return render(request, "home/home.html", {'current_page': 'home'})
 
 
-def generate_pdf(template_src, context_dict):
-    template = render_to_string(template_src, context_dict)
-    result = BytesIO()
-    pdf = pisa.pisaDocument(BytesIO(template.encode("UTF-8")), result, link_callback=fetch_resources)
-    if not pdf.err:
-        return result.getvalue()
-    return None
 
 def fetch_resources(uri, rel):
     path = os.path.join(settings.STATIC_ROOT, uri.replace(settings.STATIC_URL, ""))
@@ -180,6 +174,13 @@ def send_email_with_pdf(user, user_email, message_sent, pdf):
     email.attach("Curriculum.pdf", pdf, "application/pdf")
     email.send(fail_silently=False)
 
+def generate_pdf_from_template(template_path, context_dict):
+    template = get_template(template_path)
+    html_content = template.render(context_dict)
+    
+    pdf_file = HTML(string=html_content).write_pdf()
+    return pdf_file
+
 def contact(request):
     if request.method == 'POST':
         name = request.POST.get('name')
@@ -189,9 +190,10 @@ def contact(request):
         try:
             user = request.user if request.user.is_authenticated else None
 
-            # Generar el PDF
+            # Generar el PDF desde la plantilla HTML
+            template_path = 'home/jcampillay_cv.html'
             context = {'name': name, 'email': email, 'message': message}
-            pdf = generate_pdf('home/jcampillay_cv.html', context)
+            pdf = generate_pdf_from_template(template_path, context)
 
             if pdf:
                 send_email_with_pdf(user, email, message, pdf)
