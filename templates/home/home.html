@@ -79,7 +79,7 @@
                                             <a href="#">Python</a>
                                         </h2>
                                         <p>
-                                            {% blocktranslate %}Python, mi herramienta principal para dar vida a proyectos, desde aplicaciones web interactivas hasta modelos de machine learning que transforman datos en insights.{% endblocktranslate %}
+                                            {% blocktranslate %} Python, my main tool for bringing projects to life, from interactive web applications to machine learning models that turn data into insights. {% endblocktranslate %}
                                         </p>
                                         <a href="#" class="service-btn">
                                             {% translate "learn more" %}
@@ -97,7 +97,7 @@
                                             <a href="#">PostgreSQL</a>
                                         </h2>
                                         <p>
-                                            {% blocktranslate %} Mi elección predilecta para almacenar datos estructurados, es muy seguro, es de código abierto y se adapta a proyectos de cualquier tamaño o escala. {% endblocktranslate %}
+                                            {% blocktranslate %} My preferred choice for storing structured data, it's highly secure, open-source, and fits projects of any size or scale {% endblocktranslate %}
                                         </p>
                                         <a href="#" class="service-btn">
                                             {% translate "learn more" %}
@@ -115,7 +115,7 @@
                                             <a href="#">Django Framework</a>
                                         </h2>
                                         <p>
-                                            {% blocktranslate %} Django, el marco web ágil preferido por su robustez, seguridad, potencia, flexibilidad y eficiencia en aplicaciones y sitos web totalmente escalables. {% endblocktranslate %}
+                                            {% blocktranslate %} Django, the agile web framework preferred for its robustness, security, power, flexibility, and efficiency in fully scalable applications and websites. {% endblocktranslate %}
                                         </p>
                                         <a href="#" class="service-btn">
                                             {% translate "learn more" %}
@@ -139,7 +139,7 @@
                                             <a href="#">{% translate "Pandas" %}</a>
                                         </h2>
                                         <p>
-                                            {% blocktranslate %} Pandas, la biblioteca imprescindible para cualquier proyecto de ciencia de datos, conocida por su potencia y flexibilidad en la manipulación y exploración de datos tabulares. {% endblocktranslate %}
+                                            {% blocktranslate %} Pandas, the indispensable library for any data science project, known for its power and flexibility in the manipulation and exploration of tabular data. {% endblocktranslate %}
                                         </p>
                                         <a href="#" class="service-btn">
                                             {% translate "learn more" %}
@@ -158,7 +158,7 @@
                                             <a href="#">{% translate "Arch Linux" %}</a>
                                         </h2>
                                         <p>
-                                            {% blocktranslate %} Arch Linux me intrigó con su enfoque "hágalo usted mismo" y la posibilidad de construir un sistema operativo a tu medida, desde la instalación hasta la configuración más fina. {% endblocktranslate %}
+                                            {% blocktranslate %} Arch Linux intrigued me with its "do-it-yourself" approach and the possibility of building a tailor-made operating system, from installation to fine-tuning configuration. {% endblocktranslate %}
                                         </p>
                                         <a href="#" class="service-btn">
                                             {% translate "learn more" %}
@@ -176,7 +176,7 @@
                                             <a href="#">{% translate "Git" %}</a>
                                         </h2>
                                         <p>
-                                            {% blocktranslate %} Optar por Git como mi sistema de control de versiones fue una elección obvia debido a su liderazgo en la industria y su eficaz gestión del flujo de trabajo del desarrollo. {% endblocktranslate %}
+                                            {% blocktranslate %} Opting for Git as my version control system was an obvious choice due to its industry leadership and effective management of the development workflow. {% endblocktranslate %}
                                         </p>
                                         <a href="#" class="service-btn">
                                             {% translate "learn more" %}
@@ -847,18 +847,23 @@
                         <div class="accordion-item wow fadeIn" data-wow-delay="1s">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background: #ff5800; color:white">
-                                    {% translate "Access my resume with a click" %}
-                                </button>
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background: #ff5800; color:white">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true" style="padding-right: 10px;"></i>
+                                {% translate " Access my resume with a click" %}
+                            </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionFAQ1">
                                 <div class="accordion-body text-center">
                                     <div class="btn-group" role="group" aria-label="Curriculum Buttons">
-                                        <a href="link_to_your_curriculum_eng.pdf" class="btn btn btn-static" style="background: #242526; color: #ff5800;">Watch and Download Curriculum ENG</a>
+                                        <a href="{% url 'download_cv_eng' %}" class="btn btn btn-static" target="_blank" style="background: #242526; color: #ff5800;">Watch and Download Curriculum ENG <i class="fa fa-download" aria-hidden="true" style="padding-left: 10px;"></i></a>
                                         <span style="margin: 0 10px;"></span> <!-- Add a space between buttons -->
-                                        <a href="link_to_your_curriculum_esp.pdf" class="btn btn btn-static" style="background: #242526; color: #ff5800;">Revisa y Descarga Curriculum ESP</a>
+                                        <a href="{% url 'download_cv_esp' %}" class="btn btn btn-static" target="_blank" style="background: #242526; color: #ff5800;">Revisa y Descarga Curriculum ESP <i class="fa fa-download" aria-hidden="true" style="padding-left: 10px;"></i></a>
                                     </div>
+                                    
+
+
+
                                 </div>
                             </div>
                         </div>

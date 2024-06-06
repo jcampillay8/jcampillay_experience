@@ -23,6 +23,9 @@ from django.views.generic import TemplateView
 from django.template.loader import get_template
 from django.http import HttpResponse
 from weasyprint import HTML
+from django.http import FileResponse
+
+
 
 class GuestUser:
     is_guest = True
@@ -143,25 +146,43 @@ def fetch_resources(uri, rel):
     
     return path
 
-def send_email_with_pdf(user, user_email, message_sent, pdf):
+def send_email_with_pdf(user, user_email, message_sent, pdf, language):
     name = user.get_full_name() if user.is_authenticated else user_email.split('@')[0]
     
-    subject = "Gracias por su Interés: Pronto Me Pondré en Contacto"
-    message = f"""
-    Estimado(a) {name},
+    if language == 'english':
+        subject = "Thank you for Your Interest: I Will Get in Touch Soon"
+        message = f"""
+        Dear {name},
 
-    Me complace informarle que su solicitud de contactarme ha sido generada y enviada con éxito. Agradezco su interés en mis habilidades y servicios. Siempre me esfuerzo por cumplir con las expectativas y dar lo mejor de mí.
+        I am pleased to inform you that your request to contact me has been successfully generated and sent. I appreciate your interest in my skills and services. I always strive to meet expectations and give my best.
 
-    Pronto me pondré en contacto con usted para estar a su disposición. Si tiene alguna pregunta o necesita más información, no dude en ponerse en contacto conmigo.
+        I will get in touch with you soon to make myself available. If you have any questions or need further information, please feel free to contact me.
 
-    Saludos cordiales,
+        Best regards,
 
-    Jaime Campillay Rojas
-    Ingeniero en Aplicaciones Web y Consultor de Automatización de Procesos
+        Jaime Campillay Rojas
+        Web Applications Engineer and Process Automation Consultant
 
-    *** Su Mensaje ***
-    {message_sent}
-    """
+        *** Your Message ***
+        {message_sent}
+        """
+    elif language == 'spanish':
+        subject = "Gracias por su Interés: Pronto Me Pondré en Contacto"
+        message = f"""
+        Estimado(a) {name},
+
+        Me complace informarle que su solicitud de contactarme ha sido generada y enviada con éxito. Agradezco su interés en mis habilidades y servicios. Siempre me esfuerzo por cumplir con las expectativas y dar lo mejor de mí.
+
+        Pronto me pondré en contacto con usted para estar a su disposición. Si tiene alguna pregunta o necesita más información, no dude en ponerse en contacto conmigo.
+
+        Saludos cordiales,
+
+        Jaime Campillay Rojas
+        Ingeniero en Aplicaciones Web y Consultor de Automatización de Procesos
+
+        *** Su Mensaje ***
+        {message_sent}
+        """
 
     email = EmailMessage(
         subject,
@@ -171,8 +192,9 @@ def send_email_with_pdf(user, user_email, message_sent, pdf):
         reply_to=[user_email],
     )
     
-    email.attach("Curriculum.pdf", pdf, "application/pdf")
+    email.attach("Jaime_Campillay_Curriculum.pdf", pdf, "application/pdf")
     email.send(fail_silently=False)
+
 
 def generate_pdf_from_template(template_path, context_dict):
     template = get_template(template_path)
@@ -186,13 +208,27 @@ def contact(request):
         name = request.POST.get('name')
         email = request.POST.get('email')
         message = request.POST.get('message')
+        language = request.POST.get('language')  # Obtener el idioma seleccionado
         
         try:
             user = request.user if request.user.is_authenticated else None
 
+            # Determinar la ruta de la plantilla según el idioma seleccionado
+            if language == 'english':
+                template_path = 'home/jcampillay_cv_eng.html'
+            elif language == 'spanish':
+                template_path = 'home/jcampillay_cv_esp.html'
+            else:
+                # Si no se selecciona un idioma válido, usar una plantilla predeterminada
+                template_path = 'home/jcampillay_cv.html'
+
             # Generar el PDF desde la plantilla HTML
-            template_path = 'home/jcampillay_cv.html'
             context = {'name': name, 'email': email, 'message': message}
+            
+            # Agregar la ruta de la imagen al contexto
+            image_path = os.path.abspath('core/assets/img/qr_web.png')
+            context['qr_image'] = image_path
+            
             pdf = generate_pdf_from_template(template_path, context)
 
             if pdf:
@@ -207,3 +243,44 @@ def contact(request):
         return redirect('home')
 
     return render(request, "home/home.html", {'current_page': 'home'})
+
+
+
+def generate_pdf_from_template(template_path, context_dict, output_path):
+    try:
+        # Renderizar la plantilla HTML con el contexto
+        template = get_template(template_path)
+        html_content = template.render(context_dict)
+
+        # Crear el archivo PDF usando WeasyPrint
+        HTML(string=html_content).write_pdf(output_path)
+
+    except Exception as e:
+        return HttpResponseServerError(str(e))
+
+def download_cv(request, template_name):
+    if template_name == 'cv_eng':
+        template_path = 'home/jcampillay_cv_eng.html'
+    elif template_name == 'cv_esp':
+        template_path = 'home/jcampillay_cv_esp.html'
+    else:
+        return HttpResponseServerError('Invalid template name')
+
+    # Agregar la ruta de la imagen QR al contexto
+    qr_image_path = os.path.abspath('core/assets/img/qr_web.png')
+    context = {'qr_image': qr_image_path}  # Agrega cualquier otro contexto necesario para la plantilla
+
+    # Ruta de salida para el PDF
+    output_path = os.path.join(settings.MEDIA_ROOT, f'{template_name}.pdf')
+
+    # Generar y guardar el PDF desde la plantilla
+    generate_pdf_from_template(template_path, context, output_path)
+
+    # Devolver el PDF como respuesta
+    return FileResponse(open(output_path, 'rb'), content_type='application/pdf')
+
+def download_cv_eng(request):
+    return download_cv(request, 'cv_eng')
+
+def download_cv_esp(request):
+    return download_cv(request, 'cv_esp')

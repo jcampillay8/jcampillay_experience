@@ -14,21 +14,21 @@
       <div class="row">
         <div class="col-md-4 col-sm-6 col-12">
           <div class="hm-footer-widget">
-            <div class="hm-foot-title">
+            <div class="hm-foot-title" >
               <a class="navbar-brand d-flex align-items-center" href="{% url 'welcome' %}">
                 <img src="{% static 'images/logo/global_white.png' %}" alt="logo" width="50" height="50">
                 <span class="text-white fs-2 ms-3">Jaime Campillay</span>
               </a>
             </div>
-            <div class="hm-foot-para">
+            <div class="hm-foot-para" style="padding-top: 40px;">
               <p>{% blocktranslate %}Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{% endblocktranslate %}</p>
             </div>
             <div class="hm-foot-icon">
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa-solid fa-phone"></i></a></li>
               </ul>
             </div>
           </div>
@@ -51,33 +51,32 @@
         <div class="col-md-3 col-sm-6 col-12">
           <div class="hm-footer-widget">
             <div class="hm-foot-title">
-              <h4>{% translate "From the News" %}</h4>
+              <h4>{% translate "Widsom Quotes" %}</h4>
             </div>
             <div class="hm-para-news">
-              <a href="#">{% blocktranslate %}"The Pros and Cons of Starting an Online Business."{% endblocktranslate %}</a>
-              <span>{% translate "12th June 2017" %}</span>
+              <a href="#">{% blocktranslate %}"Success is not final, failure is not fatal. what matters is the courage to continue."{% endblocktranslate %}</a>
+              <span>Winston Churchill</span>
             </div>
             <div class="footer-line">
               <div class="border-bottom"></div>
             </div>
             <div class="hm-para-news">
-              <a href="#">{% blocktranslate %}"The Pros and Cons of Starting an Online Business."{% endblocktranslate %}</a>
-              <span>{% translate "12th June 2017" %}</span>
+              <a href="#">{% blocktranslate %}"The best way to predict the future is to create it."{% endblocktranslate %}</a>
+              <span>Peter Drucker</span>
             </div>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-12">
           <div class="hm-footer-widget">
             <div class="hm-foot-title">
-              <h4>{% translate "Our Newsletter" %}</h4>
+              <h4>{% translate "Contact Me" %}</h4>
             </div>
             <div class="hm-foot-para">
-              <p class="para-news">{% blocktranslate %}Subscribe to our newsletter to get the latest News and offers.{% endblocktranslate %}</p>
+              <p class="para-news">{% blocktranslate %}Would like to have a talk, contact me!{% endblocktranslate %}</p>
             </div>
             <div class="hm-foot-email">
               <div class="input-group">
-                <input type="email" class="form-control" placeholder="{% translate 'Email Address' %}">
-                <button class="btn btn-primary" type="button">{% translate "Go" %}</button>
+                <button class="btn btn" style="background-color: #ff561e; color: white;" type="button">{% translate "SEND" %}</button>
               </div>
             </div>
           </div>
@@ -115,7 +114,6 @@
       <i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
     </div><!--/.scroll-Top-->
   </div><!-- /.container-->
-
 </footer><!-- /.footer-copyright-->
 <div style="margin-bottom: -130px;"></div>
 <!-- footer-copyright end -->

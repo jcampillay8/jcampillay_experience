@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyProject 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-03 17:06-0400\n"
+"POT-Creation-Date: 2024-06-05 16:31-0400\n"
 "PO-Revision-Date: 2024-06-03 15:00+0000\n"
 "Last-Translator: Tu Nombre <tu.email@example.com>\n"
 "Language-Team: Spanish <LL@li.org>\n"
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Este es mi proyecto"
 msgstr "Este es mi proyecto"
 
-#: apps/technical_insight/views.py:109
+#: apps/technical_insight/views.py:109 templates/home/home.html:261
 msgid "Cloud Strategy"
 msgstr "Estrategia en la Nube"
 
@@ -573,7 +573,7 @@ msgstr ""
 msgid "Implementation & Manage Odoo ERP"
 msgstr "Implementación y Gestión de Odoo ERP"
 
-#: apps/technical_insight/views.py:230 templates/partials/_menu_home.html:227
+#: apps/technical_insight/views.py:230 templates/partials/_menu_home.html:225
 msgid "Clearpix"
 msgstr "Clearpix"
 
@@ -613,7 +613,8 @@ msgstr ""
 msgid "Fue un emprendimiento con un amigo de Valparaíso"
 msgstr "Fue un emprendimiento con un amigo de Valparaíso"
 
-#: core/core_cms/core_cms/settings.py:155 templates/partials/_header.html:73
+#: core/core_cms/core_cms/settings.py:155 templates/home/home.html:900
+#: templates/partials/_header.html:88
 #: templates/partials/_header_welcome.html:36
 msgid "English"
 msgstr "Inglés"
@@ -2358,12 +2359,276 @@ msgstr "Anterior"
 msgid "Next"
 msgstr "Siguiente"
 
+#: templates/about_me/about_me.html:59
+msgid "Get To"
+msgstr "Explora"
+
+#: templates/about_me/about_me.html:59
+msgid "Know Me"
+msgstr "Quién Soy"
+
+#: templates/about_me/about_me.html:77
+msgid ""
+" I am a 36-year-old professional living in Santiago, Chile. With a "
+"background in Civil Industrial Engineering and a postgraduate degree in the "
+"same field, I have a passion for continuous learning and personal growth. My "
+"dedication to excellence is evident in my academic and professional "
+"achievements."
+msgstr ""
+"Soy un profesional que vive en Santiago, Chile, con formación en Ingeniería "
+"Civil Industrial y un título de postgrado en el mismo campo."
+
+#: templates/about_me/about_me.html:80
+msgid ""
+" My journey in the professional world has been enriched by my love for "
+"programming. I specialize in Python and PostgreSQL, constantly seeking to "
+"expand my skills and knowledge. My interest in technology drives me to "
+"explore new areas such as Machine Learning, which I believe will be pivotal "
+"in the future of many industries."
+msgstr ""
+"Mi trayectoria en el mundo profesional se ha enriquecido gracias a mi amor "
+"por la programación. Me especializo en Python y PostgreSQL, buscando "
+"constantemente expandir mis habilidades y conocimientos. Mi interés en la "
+"tecnología me impulsa a explorar nuevas áreas como el Aprendizaje "
+"Automático, que creo que será fundamental en el futuro de muchas industrias."
+
+#: templates/about_me/about_me.html:83
+msgid ""
+" I am proficient in English at a B2 level, which has opened numerous "
+"opportunities for both personal and professional growth. I aspire to further "
+"improve my language skills and use them to connect with a global audience. "
+"Communication is a crucial aspect of my work, and being able to express "
+"myself in multiple languages enhances my ability to collaborate "
+"internationally."
+msgstr ""
+"Tengo un nivel de inglés B2, lo que me ha abierto numerosas oportunidades "
+"tanto para el crecimiento personal como profesional. Aspiro a mejorar aún "
+"más mis habilidades lingüísticas y usarlas para conectarme con una audiencia "
+"global. La comunicación es un aspecto crucial de mi trabajo, y poder "
+"expresarme en varios idiomas mejora mi capacidad para colaborar a nivel "
+"internacional."
+
+#: templates/about_me/about_me.html:86
+msgid ""
+" One of my greatest passions is playing the guitar. Music provides me with a "
+"creative outlet and a way to relax and unwind. It’s a joy that complements "
+"my analytical and technical pursuits, offering a balance between creativity "
+"and logic that I find deeply fulfilling."
+msgstr ""
+"Una de mis mayores pasiones es tocar la guitarra. La música me proporciona "
+"un medio creativo y una forma de relajarme. Es una alegría que complementa "
+"mis intereses analíticos y técnicos, ofreciendo un equilibrio entre la "
+"creatividad y la lógica que encuentro profundamente satisfactorio."
+
+#: templates/about_me/about_me.html:89
+msgid ""
+" Traveling is another aspiration of mine. I am eager to explore new "
+"cultures, meet diverse people, and gain experiences that broaden my "
+"perspective. Each journey is an opportunity to learn and grow, enriching my "
+"understanding of the world and enhancing my personal and professional life."
+msgstr ""
+"Viajar es otra de mis aspiraciones. Estoy ansioso por explorar nuevas "
+"culturas, conocer personas diversas y obtener experiencias que amplíen mi "
+"perspectiva. Cada viaje es una oportunidad para aprender y crecer, "
+"enriqueciendo mi comprensión del mundo y mejorando mi vida personal y "
+"profesional."
+
+#: templates/about_me/about_me.html:92
+msgid ""
+" I also have a profound love for nature and enjoy hiking. The tranquility "
+"and beauty of natural landscapes provide a perfect escape from the hustle "
+"and bustle of everyday life. Hiking not only keeps me physically active but "
+"also allows me to reconnect with nature and find inspiration in its "
+"simplicity and grandeur."
+msgstr ""
+"Tengo un profundo amor por la naturaleza y disfruto del senderismo, lo que "
+"ofrece un escape perfecto del ajetreo diario, manteniéndome físicamente "
+"activo e inspirado."
+
+#: templates/about_me/about_me.html:95
+msgid ""
+" I consider myself a happy and motivated individual. My enthusiasm for life "
+"is driven by a desire to keep learning and achieving. I am always looking "
+"for ways to enhance my skills and contribute meaningfully to any project I "
+"am involved in. My positive outlook and determination are key drivers in my "
+"pursuit of excellence."
+msgstr ""
+"Me considero una persona feliz y motivada, impulsada por el deseo de seguir "
+"aprendiendo y logrando, siempre buscando formas de mejorar mis habilidades y "
+"contribuir de manera significativa a los proyectos."
+
+#: templates/about_me/about_me.html:97 templates/home/home.html:411
+msgid ""
+"Continuous learning and self-improvement are the keys to personal and "
+"professional success. I strive to embody these principles in everything I do."
+msgstr ""
+"El aprendizaje continuo y la auto-superación son las claves del éxito "
+"personal y profesional. Me esfuerzo por encarnar estos principios en todo lo "
+"que hago."
+
+#: templates/about_me/about_me.html:99
+msgid ""
+" My professional journey is marked by a commitment to excellence and a "
+"passion for innovation. As an Industrial Engineer with a deep interest in "
+"programming and technology, I aim to leverage my skills to make a "
+"significant impact in my field. I believe that through hard work, "
+"dedication, and a willingness to embrace new challenges, I can achieve my "
+"goals and make a positive difference in the world. "
+msgstr ""
+" Mi trayectoria profesional se caracteriza por un compromiso con la "
+"excelencia y una pasión por la innovación. Como Ingeniero Industrial con un "
+"profundo interés en la programación y la tecnología, mi objetivo es "
+"aprovechar mis habilidades para tener un impacto significativo en mi campo. "
+"Creo que a través del trabajo duro, la dedicación y la disposición para "
+"aceptar nuevos desafíos, puedo alcanzar mis metas y hacer una diferencia "
+"positiva en el mundo. "
+
+#: templates/about_me/about_me.html:128
+msgid "What Are "
+msgstr "¿Cuáles son mis objetivos"
+
+#: templates/about_me/about_me.html:128
+msgid "My Interest?"
+msgstr "¿Mis Intereses?"
+
+#: templates/about_me/about_me.html:129
+msgid ""
+"My areas of interest in depth that I wish to expand and develop "
+"professionally."
+msgstr ""
+"Mis áreas de interés en profundidad que deseo ampliar y desarrollar "
+"profesionalmente."
+
+#: templates/about_me/about_me.html:137
+msgid "Programming & Software Development"
+msgstr "Desarrollo de Software"
+
+#: templates/about_me/about_me.html:141
+msgid ""
+"I have a passion for programming, especially in Python because of its "
+"potential uses, such as web development with Django, solving complex "
+"problems, and creating efficient, scalable applications."
+msgstr ""
+"Tengo pasión por la programación, especialmente en Python debido a sus usos "
+"potenciales, como el desarrollo web con Django, la resolución de problemas "
+"complejos y la creación de aplicaciones eficientes y escalables."
+
+#: templates/about_me/about_me.html:151
+msgid "Engineering & Data Science"
+msgstr "Ingeniería y Ciencia de Datos"
+
+#: templates/about_me/about_me.html:155
+msgid ""
+"With a background in Industrial Engineering, I am keen on applying "
+"engineering principles to data science. I love analyzing data and extracting "
+"meaningful insights to drive decision-making."
+msgstr ""
+"Con formación en Ingeniería Industrial, estoy interesado en aplicar "
+"principios de ingeniería a la ciencia de datos. Me encanta analizar datos y "
+"extraer ideas significativas para impulsar la toma de decisiones."
+
+#: templates/about_me/about_me.html:165 templates/home/home.html:218
+#: templates/portfolio/portfolio_home.html:83
+msgid "Machine Learning"
+msgstr "Aprendizaje Automático"
+
+#: templates/about_me/about_me.html:169
+msgid ""
+"I am fascinated by Machine Learning and its potential to solve real-world "
+"problems. Currently, I am studying different algorithms and their "
+"implementation in Python."
+msgstr ""
+"Me fascina el Aprendizaje Automático y su potencial para resolver problemas "
+"del mundo real. Actualmente, estoy estudiando diferentes algoritmos y su "
+"implementación en Python."
+
+#: templates/about_me/about_me.html:181
+msgid "Artificial Intelligence"
+msgstr "Inteligencia Artificial"
+
+#: templates/about_me/about_me.html:185
+msgid ""
+"The field of Artificial Intelligence intrigues me, and I am eager to explore "
+"its various applications. I am particularly interested in how AI can enhance "
+"productivity and innovation."
+msgstr ""
+"El campo de la Inteligencia Artificial me intriga, y estoy ansioso por "
+"explorar sus diversas aplicaciones. Me interesa especialmente cómo la IA "
+"puede mejorar la productividad y la innovación."
+
+#: templates/about_me/about_me.html:195 templates/home/home.html:214
+#: templates/portfolio/portfolio_home.html:79
+msgid "Process Automation"
+msgstr "Automatización de Procesos"
+
+#: templates/about_me/about_me.html:199
+msgid ""
+"I believe in the power of process automation to improve efficiency and "
+"reduce human error. I am constantly looking for ways to automate repetitive "
+"tasks and streamline workflows."
+msgstr ""
+"Creo en el poder de la automatización de procesos para mejorar la eficiencia "
+"y reducir errores humanos. Estoy constantemente buscando formas de "
+"automatizar tareas repetitivas y optimizar flujos de trabajo."
+
+#: templates/about_me/about_me.html:209
+msgid "English Language"
+msgstr "Idioma"
+
+#: templates/about_me/about_me.html:213
+msgid ""
+"I am dedicated to improving my English language skills. Being proficient in "
+"English helps me access a wider range of resources and communicate "
+"effectively in a global context."
+msgstr ""
+"Tengo un dominio del inglés a nivel B2, lo que me permite acceder a una "
+"amplia gama de recursos y comunicarme eficazmente a nivel global."
+
+#: templates/about_me/about_me.html:230
+msgid "What are my goals?"
+msgstr "Cuáles son mis metas"
+
+#: templates/about_me/about_me.html:237
+msgid "3 Professional Goals"
+msgstr "Metas Profesionales"
+
+#: templates/about_me/about_me.html:239
+msgid ""
+" Learning and using Machine Learning and Artificial Intelligence is one of "
+"my main objectives. I strive to master these emerging technologies to "
+"develop solutions that transform and improve people's quality of life."
+msgstr ""
+" Aprender y utilizar Aprendizaje Automático e Inteligencia Artificial es uno "
+"de mis principales objetivos. Me esfuerzo por dominar estas tecnologías "
+"emergentes para desarrollar soluciones que transformen y mejoren la calidad "
+"de vida de las personas."
+
+#: templates/about_me/about_me.html:240
+msgid ""
+" Mastering the English language to collaborate effectively on a global "
+"level. I constantly work on improving my language skills to communicate and "
+"work alongside professionals from all over the world."
+msgstr ""
+" Dominar el idioma inglés para colaborar de manera efectiva a nivel global. "
+"Constantemente trabajo en mejorar mis habilidades lingüísticas para "
+"comunicarme y trabajar junto a profesionales de todo el mundo."
+
+#: templates/about_me/about_me.html:241
+msgid ""
+" Knowing and working with teams of people from different places, cultures, "
+"and backgrounds is essential to enrich my experiences and skills. I value "
+"diversity and always seek to collaborate in an inclusive environment."
+msgstr ""
+" Conocer y trabajar con equipos de personas de diferentes lugares, culturas "
+"y antecedentes es esencial para enriquecer mis experiencias y habilidades. "
+"Valoro la diversidad y siempre busco colaborar en un entorno inclusivo."
+
 #: templates/about_me/about_me_home.html:25 templates/home/home.html:25
 #: templates/technical_insight/technical_insight_home.html:25
 msgid "Bienvenido"
 msgstr "Bienvenido"
 
-#: templates/about_me/about_me_home.html:27 templates/home/home.html:27
+#: templates/about_me/about_me_home.html:27
 #: templates/partials/_welcome_content.html:36
 #: templates/technical_insight/technical_insight_home.html:27
 msgid ""
@@ -2377,7 +2642,7 @@ msgstr ""
 msgid "Explore About Me"
 msgstr "Explora Acerca de Mí"
 
-#: templates/about_me/about_me_home.html:52
+#: templates/about_me/about_me_home.html:52 templates/home/home.html:410
 #: templates/partials/_menu_home.html:120
 #: templates/partials/_menu_home.html:122
 #: templates/partials/_menu_home.html:130
@@ -2397,7 +2662,7 @@ msgid "SEE"
 msgstr "VER"
 
 #: templates/about_me/about_me_home.html:63
-#: templates/partials/_menu_home.html:152
+#: templates/partials/_menu_home.html:150
 msgid "Blog"
 msgstr "Blog"
 
@@ -2522,79 +2787,47 @@ msgstr "Por favor, introduzca su nueva contraseña preferida"
 msgid "Confirm Password"
 msgstr "Confirmar Contraseña"
 
-#: templates/home/home.html:91
+#: templates/home/home.html:27
+msgid ""
+"Fostering Innovation in Technology and Unlocking Potential Through Teamwork "
+"are some of my main life goals."
+msgstr ""
+"Fomentar la innovación en tecnología y desbloquear el potencial a través del "
+"trabajo en equipo son algunos de mis principales objetivos de vida."
+
+#: templates/home/home.html:46
+msgid "Hello, I'm "
+msgstr "Hola, soy "
+
+#: templates/home/home.html:46
+msgid "Passionate about technology, programming, and machine learning"
+msgstr ""
+"Apasionado por la tecnología, la programación y el aprendizaje automático"
+
+#: templates/home/home.html:48
+msgid ""
+"Exploring innovative solutions at the intersection of code, data, and in pro "
+"of improving people's quality of life."
+msgstr ""
+"Explorando soluciones innovadoras en la intersección de código, datos, y en "
+"busca de mejorar la calidad de vida de las personas."
+
+#: templates/home/home.html:63
 msgid "Technical Knowledge and Skills"
-msgstr "Conocimientos y Habilidades Técnicas"
+msgstr "Conocimientos y habilidades técnicas"
 
-#: templates/home/home.html:93
-#: templates/technical_insight/knowledge_skill.html:22
-#: templates/technical_insight/knowledge_skill.html:302
-#: templates/technical_insight/knowledge_skill.html:668
-#: templates/technical_insight/knowledge_skill.html:943
+#: templates/home/home.html:82
 msgid ""
-" Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure "
-"dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla "
-"pariatur. "
+" Python, my main tool for bringing projects to life, from interactive web "
+"applications to machine learning models that turn data into insights. "
 msgstr ""
-"Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure "
-"dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla "
-"pariatur."
+"Python, mi principal herramienta para dar vida a proyectos, desde "
+"aplicaciones web interactivas hasta modelos de aprendizaje automático que "
+"convierten datos en información útil."
 
-#: templates/home/home.html:108 templates/home/home.html:126
-#: templates/home/home.html:144 templates/home/home.html:168
-#: templates/home/home.html:205
-#: templates/technical_insight/knowledge_skill.html:37
-#: templates/technical_insight/knowledge_skill.html:55
-#: templates/technical_insight/knowledge_skill.html:73
-#: templates/technical_insight/knowledge_skill.html:95
-#: templates/technical_insight/knowledge_skill.html:113
-#: templates/technical_insight/knowledge_skill.html:131
-#: templates/technical_insight/knowledge_skill.html:155
-#: templates/technical_insight/knowledge_skill.html:173
-#: templates/technical_insight/knowledge_skill.html:215
-#: templates/technical_insight/knowledge_skill.html:233
-#: templates/technical_insight/knowledge_skill.html:251
-#: templates/technical_insight/knowledge_skill.html:274
-#: templates/technical_insight/knowledge_skill.html:317
-#: templates/technical_insight/knowledge_skill.html:335
-#: templates/technical_insight/knowledge_skill.html:353
-#: templates/technical_insight/knowledge_skill.html:375
-#: templates/technical_insight/knowledge_skill.html:393
-#: templates/technical_insight/knowledge_skill.html:434
-#: templates/technical_insight/knowledge_skill.html:452
-#: templates/technical_insight/knowledge_skill.html:470
-#: templates/technical_insight/knowledge_skill.html:493
-#: templates/technical_insight/knowledge_skill.html:511
-#: templates/technical_insight/knowledge_skill.html:551
-#: templates/technical_insight/knowledge_skill.html:569
-#: templates/technical_insight/knowledge_skill.html:587
-#: templates/technical_insight/knowledge_skill.html:609
-#: templates/technical_insight/knowledge_skill.html:627
-#: templates/technical_insight/knowledge_skill.html:683
-#: templates/technical_insight/knowledge_skill.html:701
-#: templates/technical_insight/knowledge_skill.html:719
-#: templates/technical_insight/knowledge_skill.html:741
-#: templates/technical_insight/knowledge_skill.html:759
-#: templates/technical_insight/knowledge_skill.html:777
-#: templates/technical_insight/knowledge_skill.html:799
-#: templates/technical_insight/knowledge_skill.html:817
-#: templates/technical_insight/knowledge_skill.html:857
-#: templates/technical_insight/knowledge_skill.html:875
-#: templates/technical_insight/knowledge_skill.html:915
-#: templates/technical_insight/knowledge_skill.html:958
-#: templates/technical_insight/knowledge_skill.html:976
-#: templates/technical_insight/knowledge_skill.html:1016
-#: templates/technical_insight/knowledge_skill.html:1034
-#: templates/technical_insight/knowledge_skill.html:1075
-#: templates/technical_insight/knowledge_skills_describe.html:189
-msgid ""
-" Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
-"sint oat cupidatat "
-msgstr ""
-
-#: templates/home/home.html:111 templates/home/home.html:129
-#: templates/home/home.html:147 templates/home/home.html:171
-#: templates/home/home.html:190 templates/home/home.html:208
+#: templates/home/home.html:85 templates/home/home.html:103
+#: templates/home/home.html:121 templates/home/home.html:145
+#: templates/home/home.html:164 templates/home/home.html:182
 #: templates/technical_insight/knowledge_skill.html:40
 #: templates/technical_insight/knowledge_skill.html:58
 #: templates/technical_insight/knowledge_skill.html:76
@@ -2629,61 +2862,296 @@ msgstr ""
 #: templates/technical_insight/knowledge_skill.html:686
 #: templates/technical_insight/knowledge_skill.html:704
 #: templates/technical_insight/knowledge_skill.html:722
-#: templates/technical_insight/knowledge_skill.html:744
-#: templates/technical_insight/knowledge_skill.html:762
-#: templates/technical_insight/knowledge_skill.html:780
-#: templates/technical_insight/knowledge_skill.html:802
-#: templates/technical_insight/knowledge_skill.html:820
-#: templates/technical_insight/knowledge_skill.html:838
-#: templates/technical_insight/knowledge_skill.html:860
-#: templates/technical_insight/knowledge_skill.html:878
-#: templates/technical_insight/knowledge_skill.html:896
+#: templates/technical_insight/knowledge_skill.html:745
+#: templates/technical_insight/knowledge_skill.html:763
+#: templates/technical_insight/knowledge_skill.html:781
+#: templates/technical_insight/knowledge_skill.html:804
+#: templates/technical_insight/knowledge_skill.html:822
+#: templates/technical_insight/knowledge_skill.html:840
+#: templates/technical_insight/knowledge_skill.html:882
+#: templates/technical_insight/knowledge_skill.html:900
 #: templates/technical_insight/knowledge_skill.html:918
-#: templates/technical_insight/knowledge_skill.html:961
-#: templates/technical_insight/knowledge_skill.html:979
-#: templates/technical_insight/knowledge_skill.html:997
-#: templates/technical_insight/knowledge_skill.html:1019
-#: templates/technical_insight/knowledge_skill.html:1037
-#: templates/technical_insight/knowledge_skill.html:1055
-#: templates/technical_insight/knowledge_skill.html:1078
+#: templates/technical_insight/knowledge_skill.html:940
+#: templates/technical_insight/knowledge_skill.html:958
+#: templates/technical_insight/knowledge_skill.html:976
+#: templates/technical_insight/knowledge_skill.html:999
+#: templates/technical_insight/knowledge_skill.html:1017
 msgid "learn more"
 msgstr "aprender más"
 
-#: templates/home/home.html:165
+#: templates/home/home.html:100
+msgid ""
+" My preferred choice for storing structured data, it's highly secure, open-"
+"source, and fits projects of any size or scale "
+msgstr ""
+" Mi opción preferida para almacenar datos estructurados, es altamente "
+"segura, de código abierto, y se adapta a proyectos de cualquier tamaño o "
+"escala "
+
+#: templates/home/home.html:118
+#, fuzzy
+#| msgid ""
+#| " Django, el marco web ágil preferido por su robustez, seguridad, "
+#| "potencia, flexibilidad y eficiencia en aplicaciones y sitios web "
+#| "totalmente escalables. "
+msgid ""
+" Django, the agile web framework preferred for its robustness, security, "
+"power, flexibility, and efficiency in fully scalable applications and "
+"websites. "
+msgstr ""
+" Django, el marco web ágil preferido por su robustez, seguridad, potencia, "
+"flexibilidad y eficiencia en aplicaciones y sitios web totalmente "
+"escalables. "
+
+#: templates/home/home.html:139
 msgid "Pandas"
 msgstr "Pandas"
 
-#: templates/home/home.html:184
+#: templates/home/home.html:142
+msgid ""
+" Pandas, the indispensable library for any data science project, known for "
+"its power and flexibility in the manipulation and exploration of tabular "
+"data. "
+msgstr ""
+" Pandas, la biblioteca indispensable para cualquier proyecto de ciencia de "
+"datos, conocida por su potencia y flexibilidad en la manipulación y "
+"exploración de datos tabulares. "
+
+#: templates/home/home.html:158
 #: templates/technical_insight/knowledge_skill.html:152
 msgid "Arch Linux"
 msgstr "Arch Linux"
 
-#: templates/home/home.html:187
-#: templates/technical_insight/knowledge_skill.html:191
-#: templates/technical_insight/knowledge_skill.html:411
-#: templates/technical_insight/knowledge_skill.html:529
-#: templates/technical_insight/knowledge_skill.html:645
-#: templates/technical_insight/knowledge_skill.html:835
-#: templates/technical_insight/knowledge_skill.html:893
-#: templates/technical_insight/knowledge_skill.html:994
-#: templates/technical_insight/knowledge_skill.html:1052
+#: templates/home/home.html:161
 msgid ""
-"  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
-"sint oat cupidatat "
+" Arch Linux intrigued me with its \"do-it-yourself\" approach and the "
+"possibility of building a tailor-made operating system, from installation to "
+"fine-tuning configuration. "
 msgstr ""
-"Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint "
-"oat cupidatat"
+" Arch Linux me intrigó con su enfoque \"hazlo tú mismo\" y la posibilidad de "
+"construir un sistema operativo a medida, desde la instalación hasta la "
+"configuración ajustada. "
 
-#: templates/home/home.html:202
+#: templates/home/home.html:176
 #: templates/technical_insight/knowledge_skill.html:170
 msgid "Git"
 msgstr "Git"
 
-#: templates/home/home.html:602
+#: templates/home/home.html:179
+msgid ""
+" Opting for Git as my version control system was an obvious choice due to "
+"its industry leadership and effective management of the development "
+"workflow. "
+msgstr ""
+" Optar por Git como mi sistema de control de versiones fue una elección "
+"obvia debido a su liderazgo en la industria y su gestión eficaz del flujo de "
+"trabajo de desarrollo. "
+
+#: templates/home/home.html:193 templates/home/home.html:395
+#: templates/home/home.html:430
+msgid "VIEW MORE"
+msgstr "VER MÁS"
+
+#: templates/home/home.html:210
+#, fuzzy
+#| msgid "Project Portfolio"
+msgid "Projects Portfolio"
+msgstr "Portafolio de Proyectos"
+
+#: templates/home/home.html:213 templates/portfolio/portfolio_home.html:78
+msgid "All"
+msgstr "Todos"
+
+#: templates/home/home.html:215 templates/portfolio/portfolio_home.html:80
+msgid "Engineering"
+msgstr "Ingeniería"
+
+#: templates/home/home.html:216 templates/portfolio/portfolio_home.html:81
+msgid "Websites"
+msgstr "Sitios Web"
+
+#: templates/home/home.html:217 templates/portfolio/portfolio_home.html:82
+msgid "Software Development"
+msgstr "Desarrollo de Software"
+
+#: templates/home/home.html:236
+#, fuzzy
+#| msgid "Portfolio"
+msgid "Portfolio Website"
+msgstr "Portafolio"
+
+#: templates/home/home.html:290
+#, fuzzy
+#| msgid "International Bank"
+msgid "Financial Tool International Bank"
+msgstr "Banco Internacional"
+
+#: templates/home/home.html:346
+#, fuzzy
+#| msgid "Robot: Automatización BO Hipotecario Garantía"
+msgid "Automatización Hipotecario Garantía"
+msgstr "Robot: Automatización BO Hipotecario Garantía"
+
+#: templates/home/home.html:374
+msgid "Automatización Linea Seguro"
+msgstr "Automatización Linea Seguro"
+
+#: templates/home/home.html:414
+msgid ""
+" I am a professional living in Santiago, Chile, with a background in Civil "
+"Industrial Engineering and a postgraduate degree in the same field."
+msgstr ""
+"Soy un profesional que vive en Santiago, Chile, con formación en Ingeniería "
+"Civil Industrial y un título de postgrado en el mismo campo."
+
+#: templates/home/home.html:416
+msgid ""
+" I have a passion for continuous learning and personal growth, demonstrated "
+"through my academic and professional achievements."
+msgstr ""
+"Tengo pasión por el aprendizaje continuo y el crecimiento personal, "
+"demostrado a través de mis logros académicos y profesionales."
+
+#: templates/home/home.html:418
+msgid ""
+" My professional journey is driven by my love for programming, particularly "
+"in Python and PostgreSQL, as I constantly seek to expand my skills and "
+"knowledge."
+msgstr ""
+"Mi trayectoria profesional está impulsada por mi amor por la programación, "
+"especialmente en Python y PostgreSQL, ya que constantemente busco expandir "
+"mis habilidades y conocimientos."
+
+#: templates/home/home.html:420
+msgid ""
+" I am enthusiastic about exploring new technologies such as Machine Learning "
+"and Artificial Intelligence, which I believe will play a crucial role in the "
+"future of various industries."
+msgstr ""
+"Estoy entusiasmado por explorar nuevas tecnologías como el Aprendizaje "
+"Automático e Inteligencia Artificial, que creo jugarán un papel crucial en "
+"el futuro de varias industrias."
+
+#: templates/home/home.html:422
+msgid ""
+" I am proficient in English at a B2 level, enabling me to access a wide "
+"range of resources and communicate effectively on a global scale."
+msgstr ""
+"Tengo un dominio del inglés a nivel B2, lo que me permite acceder a una "
+"amplia gama de recursos y comunicarme eficazmente a nivel global."
+
+#: templates/home/home.html:424
+msgid ""
+" One of my greatest passions is playing the guitar, providing a creative "
+"outlet that balances my analytical and technical pursuits."
+msgstr ""
+"Una de mis mayores pasiones es tocar la guitarra, proporcionando un medio "
+"creativo que equilibra mis intereses analíticos y técnicos."
+
+#: templates/home/home.html:426
+msgid ""
+" I have a profound love for nature and enjoy hiking, which offers a perfect "
+"escape from the daily hustle and bustle, keeping me physically active and "
+"inspired."
+msgstr ""
+"Tengo un profundo amor por la naturaleza y disfruto del senderismo, lo que "
+"ofrece un escape perfecto del ajetreo diario, manteniéndome físicamente "
+"activo e inspirado."
+
+#: templates/home/home.html:428
+msgid ""
+" I consider myself a happy and motivated individual, driven by a desire to "
+"keep learning and achieving, always looking for ways to enhance my skills "
+"and contribute meaningfully to projects."
+msgstr ""
+"Me considero una persona feliz y motivada, impulsada por el deseo de seguir "
+"aprendiendo y logrando, siempre buscando formas de mejorar mis habilidades y "
+"contribuir de manera significativa a los proyectos."
+
+#: templates/home/home.html:459
+msgid "Experiencia Laboral"
+msgstr "Experiencia Laboral"
+
+#: templates/home/home.html:475
+msgid ""
+"Como Ingeniero de Datos aporte con los diseños, construcción y mantención de "
+"infraestructura de datos, asegurando su organización y accesibilidad. Me "
+"encargé de la extracción, transformación y carga (ETL) de datos, integrando "
+"diversas fuentes y garantizando su calidad y la optimización de consultas a "
+"bases de datos para mejorar el rendimiento. Además colaboré con el "
+"desarrollo y gestión de pipelines de datos para facilitar el flujo continuo "
+"de información."
+msgstr ""
+"Como Ingeniero de Datos, contribuí con el diseño, construcción y "
+"mantenimiento de la infraestructura de datos, asegurando su organización y "
+"accesibilidad. Me encargué de la extracción, transformación y carga (ETL) de "
+"datos, integrando diversas fuentes y garantizando su calidad y la "
+"optimización de consultas a bases de datos para mejorar el rendimiento. "
+"Además, colaboré en el desarrollo y gestión de pipelines de datos para "
+"facilitar el flujo continuo de información."
+
+#: templates/home/home.html:495
+msgid ""
+"Evaluar, diseñar, proponer y crear soluciones a trabajos altamente "
+"repetitivos, voluminosos, predecibles y no obstante necesarios para el "
+"correcto funcionamiento del negocio, mediante la programación RPA. "
+"Implementa y gestiona la automatización de procesos utilizando herramientas "
+"de Robotic Process Automation (RPA) para mejorar la eficiencia y reducir "
+"errores. Desarrolla scripts y bots que automatizan tareas rutinarias, "
+"asegurando que los procesos sean ejecutados de manera consistente y precisa. "
+"Colabora con equipos de diferentes departamentos para identificar "
+"oportunidades de automatización, optimizando así los flujos de trabajo y "
+"liberando tiempo para actividades de mayor valor agregado. "
+msgstr ""
+"Evalué, diseñé, propuse y creé soluciones para trabajos altamente "
+"repetitivos, voluminosos, predecibles y necesarios para el correcto "
+"funcionamiento del negocio, mediante la programación RPA. Implementé y "
+"gestioné la automatización de procesos utilizando herramientas de Robotic "
+"Process Automation (RPA) para mejorar la eficiencia y reducir errores. "
+"Desarrollé scripts y bots que automatizan tareas rutinarias, asegurando que "
+"los procesos sean ejecutados de manera consistente y precisa. Colaboré con "
+"equipos de diferentes departamentos para identificar oportunidades de "
+"automatización, optimizando así los flujos de trabajo y liberando tiempo "
+"para actividades de mayor valor agregado."
+
+#: templates/home/home.html:522
+msgid ""
+"Monitorear y Supervisar avances físicos de obra, hacer Informes (diarios y "
+"mensuales) sobre el desempeño de estos, principalmente avance obras físicas "
+"vs HH y HM consumidas del proyecto, y el informe mensual 'Estado de Pago' "
+"que requería de harta documentación firmada como respaldo y las cuentas "
+"claras y precisas para su aprobación final, lo cuál se traducia en el pago "
+"para la empresa Techint por parte de Anglo American, y la liquídez del "
+"proyecto para el pago de todos los trabajadores del proyecto."
+msgstr ""
+"Monitorear y supervisar los avances físicos de obra, realizar informes "
+"(diarios y mensuales) sobre el desempeño de estos, principalmente el avance "
+"de obras físicas vs. HH y HM consumidas del proyecto, y el informe mensual "
+"'Estado de Pago', que requería de mucha documentación firmada como respaldo "
+"y cuentas claras y precisas para su aprobación final, lo cual se traducía en "
+"el pago para la empresa Techint por parte de Anglo American, y la liquidez "
+"del proyecto para el pago de todos los trabajadores del proyecto."
+
+#: templates/home/home.html:543
+msgid ""
+"Proyecto de implementación de Odoo en una pyme de Valparaíso dedicada a la "
+"venta de prendas de vestir personalizadas y otros objetos, optimizando la "
+"gestión de inventarios, ventas, compras y contabilidad para mejorar la "
+"eficiencia operativa y la productividad."
+msgstr ""
+"Este proyecto se centra en la implementación y gestión de Odoo, un software "
+"de gestión empresarial, en una pyme de Valparaíso dedicada a la venta de "
+"prendas de vestir personalizadas y otros objetos. La implementación de Odoo "
+"optimiza procesos clave como la gestión de inventarios, ventas, compras y "
+"contabilidad. La integración del sistema permite una mayor eficiencia "
+"operativa y un mejor control sobre las operaciones diarias, mejorando así la "
+"productividad y la capacidad de respuesta al cliente."
+
+#: templates/home/home.html:576
 msgid "Education"
 msgstr "Educación"
 
-#: templates/home/home.html:605
+#: templates/home/home.html:579
 msgid ""
 "Major educational achievements include obtaining academic degrees and "
 "acquiring advanced skills in key areas such as programming, data science, "
@@ -2693,11 +3161,11 @@ msgstr ""
 "académicos y la adquisición de habilidades avanzadas en áreas clave como "
 "programación, ciencia de datos, inglés y fundamentos de la nube."
 
-#: templates/home/home.html:734
+#: templates/home/home.html:708
 msgid " vision and mission"
 msgstr "visión y misión"
 
-#: templates/home/home.html:736
+#: templates/home/home.html:710
 #, fuzzy
 #| msgid ""
 #| "My motivations to constantly improve are based on the following three "
@@ -2709,7 +3177,7 @@ msgstr ""
 "Mis motivaciones para mejorar constantemente se basan en los siguientes tres "
 "pilares:"
 
-#: templates/home/home.html:745
+#: templates/home/home.html:719
 msgid ""
 "Aprender y utilizar Machine Learning y la Inteligencia Artificial es uno de "
 "mis principales objetivos. Me esfuerzo por dominar estas tecnologías "
@@ -2721,7 +3189,7 @@ msgstr ""
 "emergentespara desarrollar soluciones que transformen y mejoren la calidad "
 "de vida de las personas."
 
-#: templates/home/home.html:757
+#: templates/home/home.html:731
 msgid ""
 "Dominar el idioma inglés para colaborar eficazmente a nivel global. Trabajo "
 "constantemente en mejorar mis habilidades lingüísticas para comunicarme y "
@@ -2731,7 +3199,7 @@ msgstr ""
 "constantemente en mejorar mis habilidades lingüísticas para comunicarme y "
 "trabajar junto a profesionales de todo el mundo."
 
-#: templates/home/home.html:769
+#: templates/home/home.html:743
 msgid ""
 "Conocer y trabajar junto a equipos de personas de diferentes lugares, "
 "culturas y conocimientos es fundamental para enriquecer mis experiencias y "
@@ -2742,14 +3210,65 @@ msgstr ""
 "culturas y conocimientos es fundamental para enriquecer mis experiencias y "
 "habilidades. Valoro la diversidad y busco siempre colaborar en un ambiente "
 "inclusivo."
+
+#: templates/home/home.html:842
+msgid "Interested in my resume?"
+msgstr "¿Interesado en mi currículum?"
+
+#: templates/home/home.html:852
+msgid " Access my resume with a click"
+msgstr " Acceda a mi currículum con un clic"
+
+#: templates/home/home.html:883
+msgid "CONTACT"
+msgstr "CONTACTO"
+
+#: templates/home/home.html:883
+msgid "ME"
+msgstr "YO"
+
+#: templates/home/home.html:886
+msgid ""
+"Looking for a committed and motivated collaborator? I'm here to be your ally "
+"in the pursuit of exceptional results! Contact me today!"
+msgstr ""
+"¿Buscas un colaborador comprometido y motivado? ¡Estoy aquí para ser tu "
+"aliado en la búsqueda de resultados excepcionales! ¡Contáctame hoy mismo!"
+
+#: templates/home/home.html:899
+#, fuzzy
+#| msgid "Language"
+msgid "Choose Language"
+msgstr "Eligir Idioma"
+
+#: templates/home/home.html:901 templates/partials/_header.html:96
+#: templates/partials/_header_welcome.html:43
+msgid "Spanish"
+msgstr "Español"
+
+#: templates/home/home.html:905
+msgid "NAME"
+msgstr "NOMBRE"
+
+#: templates/home/home.html:908
+msgid "EMAIL"
+msgstr "EMAIL"
+
+#: templates/home/home.html:911
+msgid "MESSAGE"
+msgstr "MENSAJE"
+
+#: templates/home/home.html:913 templates/partials/_footer_home.html:79
+msgid "SEND"
+msgstr "ENVIAR"
 
 #: templates/partials/_footer_home.html:24
 msgid ""
 "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod "
 "tempor incididunt ut labore et dolore magna aliqua."
 msgstr ""
-"Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod "
-"tempor incididunt ut labore et dolore magna aliqua."
+"Fomentar la innovación en tecnología y desbloquear el potencial a través del "
+"trabajo en equipo son algunos de mis principales objetivos de vida."
 
 #: templates/partials/_footer_home.html:39
 msgid "Useful Links"
@@ -2763,7 +3282,7 @@ msgstr "Inicio"
 
 #: templates/partials/_footer_home.html:44
 msgid "About"
-msgstr "Acerca"
+msgstr "Sobre mí"
 
 #: templates/partials/_footer_home.html:45
 msgid "Service"
@@ -2771,61 +3290,49 @@ msgstr "Servicios"
 
 #: templates/partials/_footer_home.html:46
 msgid "Contact us"
-msgstr "Contactanos"
+msgstr "Contactame"
 
 #: templates/partials/_footer_home.html:54
-msgid "From the News"
-msgstr "Lo más reciente"
+msgid "Widsom Quotes"
+msgstr ""
 
 #: templates/partials/_footer_home.html:57
-#: templates/partials/_footer_home.html:64
-msgid "\"The Pros and Cons of Starting an Online Business.\""
-msgstr "\"Los Pros y Contras de Iniciar un Negocio en Línea.\""
+msgid ""
+"\"Success is not final, failure is not fatal. what matters is the courage to "
+"continue.\""
+msgstr ""
 
-#: templates/partials/_footer_home.html:58
-#: templates/partials/_footer_home.html:65
-msgid "12th June 2017"
-msgstr "12 de junio de 2017"
+#: templates/partials/_footer_home.html:64
+msgid "\"The best way to predict the future is to create it.\""
+msgstr ""
 
 #: templates/partials/_footer_home.html:72
-msgid "Our Newsletter"
-msgstr "Nuestro Boletín"
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Me"
+msgstr "Contacto"
 
 #: templates/partials/_footer_home.html:75
-msgid "Subscribe to our newsletter to get the latest News and offers."
+msgid "Would like to have a talk, contact me!"
 msgstr ""
-"Suscríbase a nuestro boletín para recibir las últimas noticias y ofertas."
 
-#: templates/partials/_footer_home.html:79
-msgid "Email Address"
-msgstr "Dirección de Correo Electrónico"
-
-#: templates/partials/_footer_home.html:80
-msgid "Go"
-msgstr "Ir"
-
-#: templates/partials/_footer_home.html:99
+#: templates/partials/_footer_home.html:98
 msgid " All Rights Reserved. Designed and Developed by "
 msgstr " Todos los Derechos Reservados. Diseñado y Desarrollado por "
 
-#: templates/partials/_footer_home.html:107
+#: templates/partials/_footer_home.html:106
 msgid "legal"
 msgstr "legal"
 
-#: templates/partials/_footer_home.html:108
+#: templates/partials/_footer_home.html:107
 msgid "sitemap"
 msgstr "mapa del sitio"
 
-#: templates/partials/_footer_home.html:109
+#: templates/partials/_footer_home.html:108
 msgid "privacy policy"
 msgstr "política de privacidad"
 
-#: templates/partials/_header.html:80
-#: templates/partials/_header_welcome.html:43
-msgid "Spanish"
-msgstr "Español"
-
-#: templates/partials/_header.html:88
+#: templates/partials/_header.html:105
 msgid " Logout"
 msgstr " Cerrar sesión"
 
@@ -2857,146 +3364,138 @@ msgstr "Conocimientos y Habilidades"
 msgid "Engineering knowledge"
 msgstr "Conocimientos de Ingeniería"
 
-#: templates/partials/_menu_home.html:146
-msgid "My Space Three"
-msgstr "Mi Espacio Tres"
-
-#: templates/partials/_menu_home.html:147
-msgid "My Space Four"
-msgstr "Mi Espacio Cuatro"
-
-#: templates/partials/_menu_home.html:155
+#: templates/partials/_menu_home.html:153
 msgid "My Blog"
 msgstr "Mi Blog"
 
-#: templates/partials/_menu_home.html:157
+#: templates/partials/_menu_home.html:155
 msgid "Blog One "
 msgstr "Blog Uno"
 
-#: templates/partials/_menu_home.html:158
+#: templates/partials/_menu_home.html:156
 msgid "Blog Two"
 msgstr "Blog Dos"
 
-#: templates/partials/_menu_home.html:159
+#: templates/partials/_menu_home.html:157
 msgid "Blog Three"
 msgstr "Blog Tres"
 
-#: templates/partials/_menu_home.html:160
+#: templates/partials/_menu_home.html:158
 msgid "Blog Four"
 msgstr "Blog Cuatro"
 
+#: templates/partials/_menu_home.html:167
 #: templates/partials/_menu_home.html:169
-#: templates/partials/_menu_home.html:171
 msgid "Quizzes"
 msgstr "Cuestionarios"
 
-#: templates/partials/_menu_home.html:173
+#: templates/partials/_menu_home.html:171
 msgid "Drop Quiz 1"
 msgstr "Dejar Cuestionario 1"
 
-#: templates/partials/_menu_home.html:174
+#: templates/partials/_menu_home.html:172
 msgid "Drop Quiz 2"
 msgstr "Dejar Cuestionario 2"
 
-#: templates/partials/_menu_home.html:175
+#: templates/partials/_menu_home.html:173
 msgid "Drop Quiz 3"
 msgstr "Dejar Cuestionario 3"
 
-#: templates/partials/_menu_home.html:176
+#: templates/partials/_menu_home.html:174
 msgid "Drop Quiz 4"
 msgstr "Dejar Cuestionario 4"
 
+#: templates/partials/_menu_home.html:178
 #: templates/partials/_menu_home.html:180
-#: templates/partials/_menu_home.html:182
 msgid "Services"
 msgstr "Servicios"
 
-#: templates/partials/_menu_home.html:184
+#: templates/partials/_menu_home.html:182
 msgid "Drop Service 1"
 msgstr "Dejar Servicio 1"
 
-#: templates/partials/_menu_home.html:185
+#: templates/partials/_menu_home.html:183
 msgid "Drop Service 2"
 msgstr "Dejar Servicio 2"
 
-#: templates/partials/_menu_home.html:186
+#: templates/partials/_menu_home.html:184
 msgid "Drop Service 3"
 msgstr "Dejar Servicio 3"
 
-#: templates/partials/_menu_home.html:187
+#: templates/partials/_menu_home.html:185
 msgid "Drop Service 4"
 msgstr "Dejar Servicio 4"
 
+#: templates/partials/_menu_home.html:189
 #: templates/partials/_menu_home.html:191
-#: templates/partials/_menu_home.html:193
 msgid "Portfolio"
 msgstr "Portafolio"
 
-#: templates/partials/_menu_home.html:200
+#: templates/partials/_menu_home.html:198
 msgid "Personal Projects"
 msgstr "Proyectos Personales"
 
-#: templates/partials/_menu_home.html:202
+#: templates/partials/_menu_home.html:200
 msgid "Graphics"
 msgstr "Gráficos"
 
-#: templates/partials/_menu_home.html:203
+#: templates/partials/_menu_home.html:201
 msgid "Vectors"
 msgstr "Vectores"
 
-#: templates/partials/_menu_home.html:204
+#: templates/partials/_menu_home.html:202
 msgid "Business cards"
 msgstr "Tarjetas de visita"
 
-#: templates/partials/_menu_home.html:205
+#: templates/partials/_menu_home.html:203
 msgid "Custom logo"
 msgstr "Logo personalizado"
 
-#: templates/partials/_menu_home.html:210
+#: templates/partials/_menu_home.html:208
 msgid "Professional Projects"
 msgstr "Proyectos Profesionales"
 
-#: templates/partials/_menu_home.html:213
+#: templates/partials/_menu_home.html:211
 msgid "Estrategy Cloud"
 msgstr "Estrategia en la Nube"
 
-#: templates/partials/_menu_home.html:214
+#: templates/partials/_menu_home.html:212
 msgid "Python Tool Finance"
 msgstr "Herramienta Financiera en Python"
 
-#: templates/partials/_menu_home.html:215
+#: templates/partials/_menu_home.html:213
 msgid "ETL SQL BICE"
 msgstr "ETL SQL BICE"
 
-#: templates/partials/_menu_home.html:216
+#: templates/partials/_menu_home.html:214
 msgid "RPA Scotiabank"
 msgstr "RPA Scotiabank"
 
-#: templates/partials/_menu_home.html:217
+#: templates/partials/_menu_home.html:215
 msgid "ReportWorks MobileApp"
 msgstr "ReportWorks App Móvil"
 
-#: templates/partials/_menu_home.html:218
+#: templates/partials/_menu_home.html:216
 msgid "Odoo ERP"
 msgstr "Odoo ERP"
 
-#: templates/partials/_menu_home.html:222
+#: templates/partials/_menu_home.html:220
 msgid "Work Experience"
 msgstr "Experiencia Laboral"
 
-#: templates/partials/_menu_home.html:224
+#: templates/partials/_menu_home.html:222
 msgid "Freelance"
 msgstr "Freelance"
 
-#: templates/partials/_menu_home.html:225
+#: templates/partials/_menu_home.html:223
 msgid "EY"
 msgstr "EY"
 
-#: templates/partials/_menu_home.html:226
+#: templates/partials/_menu_home.html:224
 msgid "Techint"
 msgstr "Techint"
 
-#: templates/partials/_menu_home.html:233
+#: templates/partials/_menu_home.html:231
 msgid "Contact"
 msgstr "Contacto"
 
@@ -3015,6 +3514,15 @@ msgstr "Usuario Invitado"
 #: templates/partials/_welcome_content.html:42
 msgid "Authenticated User"
 msgstr "Usuario Autenticado"
+
+#: templates/portfolio/portfolio_home.html:34
+#: templates/portfolio/portfolio_home.html:42
+#: templates/portfolio/portfolio_home.html:50
+#: templates/portfolio/portfolio_home.html:58
+#, fuzzy
+#| msgid "Technology Type: "
+msgid "Technology Projects"
+msgstr "Tipo de Tecnología: "
 
 #: templates/portfolio/project_describe.html:18
 msgid "Project Portfolio"
@@ -3051,22 +3559,429 @@ msgstr " %(company_description_part_2)s "
 msgid "Preferidas y Usualmente Ocupo"
 msgstr "Preferidas y Usualmente Ocupo"
 
+#: templates/technical_insight/knowledge_skill.html:22
+msgid " Mi Stack Tecnológico Principal "
+msgstr "Mi Stack Tecnológico Principal"
+
+#: templates/technical_insight/knowledge_skill.html:37
+#: templates/technical_insight/knowledge_skill.html:55
+msgid ""
+" Mi elección predilecta para almacenar datos estructurados, es muy seguro, "
+"es de código abierto y se adapta a proyectos de cualquier tamaño o escala. "
+msgstr ""
+"Mi elección predilecta para almacenar datos estructurados, es muy seguro, es "
+"de código abierto y se adapta a proyectos de cualquier tamaño o escala."
+
+#: templates/technical_insight/knowledge_skill.html:73
+msgid ""
+" Django, el marco web ágil preferido por su robustez, seguridad, potencia, "
+"flexibilidad y eficiencia en aplicaciones y sitos web totalmente escalables. "
+msgstr ""
+" Django, el marco web ágil preferido por su robustez, seguridad, potencia, "
+"flexibilidad y eficiencia en aplicaciones y sitios web totalmente "
+"escalables. "
+
+#: templates/technical_insight/knowledge_skill.html:95
+msgid ""
+" NumPy concida por su capacidad en manejo de datos y eltrabajar de manera "
+"conjunta con Pandas, lo que posibilita la ejecución de operaciones numéricas "
+"en el análisis de datos. "
+msgstr ""
+"NumPy concida por su capacidad en manejo de datos y eltrabajar de manera "
+"conjunta con Pandas, lo que posibilita la ejecución de operaciones numéricas "
+"en el análisis de datos."
+
+#: templates/technical_insight/knowledge_skill.html:113
+msgid ""
+" Pandas, la biblioteca imprescindible para cualquier proyecto de ciencia de "
+"datos, conocida por su potencia y flexibilidad en la manipulación y "
+"exploración de datos tabulares. "
+msgstr ""
+"Pandas, la biblioteca imprescindible para cualquier proyecto de ciencia de "
+"datos, conocida por su potencia y flexibilidad en la manipulación y "
+"exploración de datos tabulares."
+
+#: templates/technical_insight/knowledge_skill.html:131
+msgid ""
+" Plotly destaca por su amplio conjunto de funciones y su capacidad para "
+"generar visualizaciones y gráficos interactivos de alta calidad con solo "
+"unas pocas líneas de código. "
+msgstr ""
+"Plotly destaca por su amplio conjunto de funciones y su capacidad para "
+"generar visualizaciones y gráficos interactivos de alta calidad con solo "
+"unas pocas líneas de código."
+
+#: templates/technical_insight/knowledge_skill.html:155
+msgid ""
+" Arch Linux me intrigó con su enfoque \"hágalo usted mismo\" y la "
+"posibilidad de construir un sistema operativo a tu medida, desde la "
+"instalación hasta la configuración más fina. "
+msgstr ""
+"Arch Linux me intrigó con su enfoque 'hágalo usted mismo' y la posibilidad "
+"de construir un sistema operativo a tu medida, desde la instalación hasta la "
+"configuración más fina."
+
+#: templates/technical_insight/knowledge_skill.html:173
+msgid ""
+" Optar por Git como mi sistema de control de versiones fue una elección "
+"obvia debido a su liderazgo en la industria y su eficaz gestión del flujo de "
+"trabajo del desarrollo. "
+msgstr ""
+"Optar por Git como mi sistema de control de versiones fue una elección obvia "
+"debido a su liderazgo en la industria y su eficaz gestión del flujo de "
+"trabajo del desarrollo."
+
 #: templates/technical_insight/knowledge_skill.html:188
 msgid "GitHub"
 msgstr "GitHub"
+
+#: templates/technical_insight/knowledge_skill.html:191
+msgid ""
+"  La elección de GitHub se fundamenta en su eficacia y su sencillez, "
+"permitiendo gestionar proyectos y colaborar con otros desarrolladores de "
+"manera intuitiva y rápida. "
+msgstr ""
+"La elección de GitHub se fundamenta en su eficacia y su sencillez, "
+"permitiendo gestionar proyectos y colaborar con otros desarrolladores de "
+"manera intuitiva y rápida."
+
+#: templates/technical_insight/knowledge_skill.html:215
+msgid ""
+" LLa elección de Markdown se basa en su eficacia y su interfaz intuitiva, "
+"permitiendo crear documentos formateados de forma rápida y sencilla con solo "
+"unas pocas etiquetas. "
+msgstr ""
+"La elección de Markdown se basa en su eficacia y su interfaz intuitiva, "
+"permitiendo crear documentos formateados de forma rápida y sencilla con solo "
+"unas pocas etiquetas."
+
+#: templates/technical_insight/knowledge_skill.html:233
+msgid ""
+" Jupyter destaca como la herramienta ideal para crear documentos "
+"interactivos y reproducibles, facilitando la colaboración en proyectos de "
+"investigación y análisis. "
+msgstr ""
+"Jupyter destaca como la herramienta ideal para crear documentos interactivos "
+"y reproducibles, facilitando la colaboración en proyectos de investigación y "
+"análisis."
+
+#: templates/technical_insight/knowledge_skill.html:251
+msgid ""
+" JSON se destaca como el formato ideal para el intercambio de datos debido a "
+"su simplicidad y su capacidad para estructurar información de manera legible "
+"y eficiente. "
+msgstr ""
+"JSON se destaca como el formato ideal para el intercambio de datos debido a "
+"su simplicidad y su capacidad para estructurar información de manera legible "
+"y eficiente."
+
+#: templates/technical_insight/knowledge_skill.html:274
+msgid ""
+" Entorno de desarrollo que ocupo debido a su versatilidad y las herramientas "
+"para escribir, depurar y construir código de manera eficiente y efectiva. "
+msgstr ""
+"Entorno de desarrollo que ocupo debido a su versatilidad y las herramientas "
+"para escribir, depurar y construir código de manera eficiente y efectiva."
 
 #: templates/technical_insight/knowledge_skill.html:300
 msgid "Me Interesan Aprender"
 msgstr "Me Interesan Aprender"
 
+#: templates/technical_insight/knowledge_skill.html:302
+msgid " Explorando Nuevos Horizontes Tecnológicos "
+msgstr " Explorando Nuevos Horizontes Tecnológicos "
+
+#: templates/technical_insight/knowledge_skill.html:317
+msgid ""
+" Apache Spark destaca por su escalabilidad y eficiencia en el procesamiento "
+"de datos en tiempo real y batch, convirtiéndose en una opción ideal para "
+"proyectos de big data. "
+msgstr ""
+" Apache Spark destaca por su escalabilidad y eficiencia en el procesamiento "
+"de datos en tiempo real y batch, convirtiéndose en una opción ideal para "
+"proyectos de big data. "
+
+#: templates/technical_insight/knowledge_skill.html:335
+msgid ""
+" Docker es reconocido por su capacidad para encapsular aplicaciones en "
+"contenedores ligeros y portátiles, facilitando su implementación en "
+"cualquier entorno. "
+msgstr ""
+" Docker es reconocido por su capacidad para encapsular aplicaciones en "
+"contenedores ligeros y portátiles, facilitando su implementación en "
+"cualquier entorno. "
+
+#: templates/technical_insight/knowledge_skill.html:353
+msgid ""
+" Optar por la librería PyTorch significa contar con la principal herramienta "
+"para el desarrollo de modelos de aprendizaje profundo, adaptándose "
+"fácilmente desde la investigación hasta la producción. "
+msgstr ""
+" Optar por la librería PyTorch significa contar con la principal herramienta "
+"para el desarrollo de modelos de aprendizaje profundo, adaptándose "
+"fácilmente desde la investigación hasta la producción. "
+
+#: templates/technical_insight/knowledge_skill.html:375
+msgid ""
+" Keras destaca por ser una API de alto nivel y como la mejor opción para "
+"desarrollar modelos de aprendizaje profundo, con capacidad para pasar sin "
+"problemas de la investigación a la producción. "
+msgstr ""
+" Keras destaca por ser una API de alto nivel y como la mejor opción para "
+"desarrollar modelos de aprendizaje profundo, con capacidad para pasar sin "
+"problemas de la investigación a la producción. "
+
+#: templates/technical_insight/knowledge_skill.html:393
+msgid ""
+" Aprender Kubernetes significa elegir una solución líder para la gestión de "
+"contenedores, con capacidad para desplegar, escalar y administrar "
+"aplicaciones de manera eficiente y confiable. "
+msgstr ""
+" Aprender Kubernetes significa elegir una solución líder para la gestión de "
+"contenedores, con capacidad para desplegar, escalar y administrar "
+"aplicaciones de manera eficiente y confiable. "
+
+#: templates/technical_insight/knowledge_skill.html:411
+msgid ""
+"  Aprender OpenCV significa elegir una solución líder para el procesamiento "
+"de imágenes y análisis de vídeo, con capacidad para desarrollar aplicaciones "
+"de visión por computadora de alto rendimiento. "
+msgstr ""
+"  Aprender OpenCV significa elegir una solución líder para el procesamiento "
+"de imágenes y análisis de vídeo, con capacidad para desarrollar aplicaciones "
+"de visión por computadora de alto rendimiento. "
+
+#: templates/technical_insight/knowledge_skill.html:434
+msgid ""
+" Me interesa Raspberry Pi por su potencial en proyectos de informática de "
+"bajo costo y alto impacto, ofreciendo una amplia gama de posibilidades para "
+"la creación de dispositivos electrónicos y sistemas embebidos. "
+msgstr ""
+" Me interesa Raspberry Pi por su potencial en proyectos de informática de "
+"bajo costo y alto impacto, ofreciendo una amplia gama de posibilidades para "
+"la creación de dispositivos electrónicos y sistemas embebidos. "
+
+#: templates/technical_insight/knowledge_skill.html:452
+msgid ""
+" Anaconda es la herramienta líder para proyectos de ciencia de datos y "
+"aprendizaje automático, proporcionando una plataforma completa y fácil de "
+"usar para el desarrollo y la implementación de soluciones analíticas. "
+msgstr ""
+" Anaconda es la herramienta líder para proyectos de ciencia de datos y "
+"aprendizaje automático, proporcionando una plataforma completa y fácil de "
+"usar para el desarrollo y la implementación de soluciones analíticas. "
+
+#: templates/technical_insight/knowledge_skill.html:470
+msgid ""
+" Linux es la elección preferida para aquellos que valoran la libertad, la "
+"seguridad y el control sobre su sistema informático, proporcionando una "
+"alternativa sólida y confiable a otros sistemas operativos comerciales. "
+msgstr ""
+" Linux es la elección preferida para aquellos que valoran la libertad, la "
+"seguridad y el control sobre su sistema informático, proporcionando una "
+"alternativa sólida y confiable a otros sistemas operativos comerciales. "
+
+#: templates/technical_insight/knowledge_skill.html:493
+msgid ""
+" Me interesa Debian por ser una distribución de Linux que ofrece un sistema "
+"operativo estable y confiable, con acceso a un vasto repositorio de software "
+"de código abierto y actualizaciones de seguridad regulares. "
+msgstr ""
+" Me interesa Debian por ser una distribución de Linux que ofrece un sistema "
+"operativo estable y confiable, con acceso a un vasto repositorio de software "
+"de código abierto y actualizaciones de seguridad regulares. "
+
+#: templates/technical_insight/knowledge_skill.html:511
+msgid ""
+" Me interesa Amazon Web Services (AWS) como plataforma líder en servicios de "
+"computación en la nube, reconocida por su escalabilidad, confiabilidad y "
+"amplia gama de servicios, lo que la convierte en una excelente opción. "
+msgstr ""
+" Me interesa Amazon Web Services (AWS) como plataforma líder en servicios de "
+"computación en la nube, reconocida por su escalabilidad, confiabilidad y "
+"amplia gama de servicios, lo que la convierte en una excelente opción. "
+
+#: templates/technical_insight/knowledge_skill.html:529
+msgid ""
+" Bash es la herramienta esencial para aquellos que trabajan en sistemas Unix "
+"y Linux, proporcionando un entorno de línea de comandos poderoso y flexible "
+"para realizar tareas de administración del sistema y desarrollar scripts. "
+msgstr ""
+" Bash es la herramienta esencial para aquellos que trabajan en sistemas Unix "
+"y Linux, proporcionando un entorno de línea de comandos poderoso y flexible "
+"para realizar tareas de administración del sistema y desarrollar scripts. "
+
+#: templates/technical_insight/knowledge_skill.html:551
+msgid ""
+" Rocky Linux es una distribución de Linux reconocida por su seguridad y "
+"fiabilidad con la continuidad de CentOS, lo que la convierte en una opción "
+"excelente para servidores y entornos de producción. "
+msgstr ""
+" Rocky Linux es una distribución de Linux reconocida por su seguridad y "
+"fiabilidad con la continuidad de CentOS, lo que la convierte en una opción "
+"excelente para servidores y entornos de producción. "
+
+#: templates/technical_insight/knowledge_skill.html:569
+msgid ""
+" Red Hat Enterprise Linux sobresale como la opción preferida para "
+"infraestructuras críticas y cargas de trabajo empresariales, ofreciendo una "
+"combinación única de estabilidad, seguridad y rendimiento. "
+msgstr ""
+" Red Hat Enterprise Linux sobresale como la opción preferida para "
+"infraestructuras críticas y cargas de trabajo empresariales, ofreciendo una "
+"combinación única de estabilidad, seguridad y rendimiento. "
+
+#: templates/technical_insight/knowledge_skill.html:587
+msgid ""
+" Scikit-learn sobresale como la opción para científicos de datos y "
+"desarrolladores que buscan una biblioteca confiable y fácil de usar para el "
+"análisis de datos y la creación de modelos predictivos en Python. "
+msgstr ""
+" Scikit-learn sobresale como la opción para científicos de datos y "
+"desarrolladores que buscan una biblioteca confiable y fácil de usar para el "
+"análisis de datos y la creación de modelos predictivos en Python. "
+
+#: templates/technical_insight/knowledge_skill.html:609
+msgid ""
+" Me interesa Selenium como herramienta líder en automatización web, de las "
+"más usadas por su flexibilidad y habilidad para simular interacciones de "
+"usuario en navegadores, ideal para pruebas de regresión y funcionales. "
+msgstr ""
+" Me interesa Selenium como herramienta líder en automatización web, una de "
+"las más usadas por su flexibilidad y habilidad para simular interacciones de "
+"usuario en navegadores, ideal para pruebas de regresión y funcionales. "
+
+#: templates/technical_insight/knowledge_skill.html:627
+msgid ""
+" Me interesa TensorFlow por ser una de las herramienta de aprendizaje "
+"automático de código abierto, diseñada para la creación y entrenamiento de "
+"modelos de inteligencia artificial de alto rendimiento más usadas. "
+msgstr ""
+" Me interesa TensorFlow por ser una de las herramientas de aprendizaje "
+"automático de código abierto más utilizadas, diseñada para la creación y "
+"entrenamiento de modelos de inteligencia artificial de alto rendimiento. "
+
+#: templates/technical_insight/knowledge_skill.html:645
+msgid ""
+" Matplotlib sobresale como la opción para la visualización de datos en "
+"Python, ofreciendo una gran variedad de estilos y opciones de "
+"personalización para crear gráficos que se adapten a las necesidades "
+"específicas de cada usuario. "
+msgstr ""
+" Matplotlib sobresale como la opción para la visualización de datos en "
+"Python, ofreciendo una gran variedad de estilos y opciones de "
+"personalización para crear gráficos que se adapten a las necesidades "
+"específicas de cada usuario. "
+
 #: templates/technical_insight/knowledge_skill.html:666
 msgid "He Aplicado y Experimentado"
 msgstr "He Aplicado y Experimentado"
 
-#: templates/technical_insight/knowledge_skill.html:941
+#: templates/technical_insight/knowledge_skill.html:668
+msgid " Experiencia Práctica en Tecnologías "
+msgstr " Experiencia Práctica en Tecnologías "
+
+#: templates/technical_insight/knowledge_skill.html:683
+msgid ""
+" Jira es reconocido como una excelente herramienta para equipos que buscan "
+"mejorar su productividad y calidad en el desarrollo de software. Permite "
+"organizar, priorizar y ejecutar tareas de manera efectiva,  "
+msgstr ""
+" Jira es reconocido como una excelente herramienta para equipos que buscan "
+"mejorar su productividad y calidad en el desarrollo de software. Permite "
+"organizar, priorizar y ejecutar tareas de manera efectiva,  "
+
+#: templates/technical_insight/knowledge_skill.html:701
+#: templates/technical_insight/knowledge_skill.html:719
+#: templates/technical_insight/knowledge_skill.html:742
+#: templates/technical_insight/knowledge_skill.html:760
+#: templates/technical_insight/knowledge_skill.html:778
+#: templates/technical_insight/knowledge_skill.html:801
+#: templates/technical_insight/knowledge_skill.html:819
+#: templates/technical_insight/knowledge_skill.html:879
+#: templates/technical_insight/knowledge_skill.html:897
+#: templates/technical_insight/knowledge_skill.html:937
+#: templates/technical_insight/knowledge_skill.html:955
+#: templates/technical_insight/knowledge_skill.html:996
+msgid " Pendiente Breve Descripción "
+msgstr " Pendiente Breve Descripción "
+
+#: templates/technical_insight/knowledge_skill.html:837
+#: templates/technical_insight/knowledge_skill.html:915
+#: templates/technical_insight/knowledge_skill.html:973
+#: templates/technical_insight/knowledge_skill.html:1014
+msgid "  Pendiente Breve Descripción "
+msgstr "  Pendiente Breve Descripción "
+
+#: templates/technical_insight/knowledge_skill.html:862
 msgid "Conocidas y Complementatias"
+msgstr "Conocidas y Complementarias"
+
+#: templates/technical_insight/knowledge_skill.html:864
+#, fuzzy
+#| msgid "Conocidas y Complementatias"
+msgid " Conocimientos Adicionales y Habilidades Complementarias "
 msgstr "Conocidas y Complementarias"
 
 #: templates/technical_insight/knowledge_skills_describe.html:28
 msgid "Technology Type: "
 msgstr "Tipo de Tecnología: "
+
+#: templates/technical_insight/knowledge_skills_describe.html:189
+msgid ""
+" Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
+"sint oat cupidatat "
+msgstr ""
+
+#~ msgid "From the News"
+#~ msgstr "Lo más reciente"
+
+#~ msgid "\"The Pros and Cons of Starting an Online Business.\""
+#~ msgstr "\"Los Pros y Contras de Iniciar un Negocio en Línea.\""
+
+#~ msgid "12th June 2017"
+#~ msgstr "Winston Churchill"
+
+#~ msgid "Our Newsletter"
+#~ msgstr "Nuestro Boletín"
+
+#~ msgid "Subscribe to our newsletter to get the latest News and offers."
+#~ msgstr ""
+#~ "Suscríbase a nuestro boletín para recibir las últimas noticias y ofertas."
+
+#~ msgid "Email Address"
+#~ msgstr "Dirección de Correo Electrónico"
+
+#~ msgid "Go"
+#~ msgstr "Ir"
+
+#~ msgid ""
+#~ "Django, el marco web ágil preferido por su robustez, seguridad, potencia, "
+#~ "flexibilidad y eficiencia en aplicaciones y sitos web totalmente "
+#~ "escalables."
+#~ msgstr ""
+#~ "Django, el marco web ágil preferido por su robustez, seguridad, potencia, "
+#~ "flexibilidad y eficiencia en aplicaciones y sitos web totalmente "
+#~ "escalables."
+
+#~ msgid ""
+#~ " Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute "
+#~ "irure dolor in reprehenderit in voluptate velit esse cillum dolore eu "
+#~ "fugiat nulla pariatur. "
+#~ msgstr ""
+#~ "Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure "
+#~ "dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat "
+#~ "nulla pariatur."
+
+#~ msgid ""
+#~ "  Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. "
+#~ "epteur sint oat cupidatat "
+#~ msgstr ""
+#~ "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur "
+#~ "sint oat cupidatat"
+
+#~ msgid "My Space Three"
+#~ msgstr "Mi Espacio Tres"
+
+#~ msgid "My Space Four"
+#~ msgstr "Mi Espacio Cuatro"

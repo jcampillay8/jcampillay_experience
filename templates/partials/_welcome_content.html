@@ -7,21 +7,16 @@
 {%block content%}
 <style>
   h2 {
-      -webkit-text-stroke: 0.4px black;
-      color:whitesmoke;
-  }
-  </style>
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+</style>
 <!-- header-slider-area start -->
 <section class="header-slider-area">
   <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
     {% csrf_token%}
     
     {% include 'partials/_alerts.html'%}
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    </ol>
+
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
