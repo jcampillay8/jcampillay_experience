@@ -1,58 +1,105 @@
 {% load static %}
 {% load i18n %}
-<!--header start-->
 <style>
-  .small-icon {
-  width: 24px;
-  height: 16px;
+    .small-icon {
+        width: 24px;
+        height: 16px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+    }
+
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-left, .header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 970px) {
+        .header .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header-right {
+            margin-top: 10px;
+        }
+        @media screen and (max-width: 970px) {
+    .header-right {
+        padding-left:  25px;
+        
+        
+        
+        
+    }
+
 }
+
+    }
 </style>
+<!--header start-->
 <section class="header">
-    <div class="container">	
-      <div class="header-left">
-        <ul class="pull-left">
-          <li>
-            <a href="#">
-              <i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com
-            </a>
-          </li><!--/li-->
-          <li>
-            <a href="#">
-              <i class="fa fa-phone" aria-hidden="true"></i> +992 563 542
-            </a>
-          </li><!--/li-->
-  
-        </ul><!--/ul-->
-      </div><!--/.header-left -->
-      <div class="header-right pull-right">
-        <ul>
-  
-          <li>
-            <div class="social-icon">
-              <ul>
-                <li>
-                  <div style="display: flex; align-items: center;">
-                    <input class="form-check-input" type="radio" name="language" value="English" id="languageEnglish" onchange="document.getElementById('language-form').submit();"checked>
-                    <span style="margin-left: 18px;">{% translate "English" %}</span>
-                    <img src="{% static 'images/logo/usa_england.ico' %}" class="small-icon" style="margin-left: 5px;" alt="UK Flag">
-                  </div>
+    <div class="container">
+        <div class="header-left">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <!-- <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>{{ request.user.email }}
+                    </a> -->
                 </li>
-                <li>
-                  <div style="display: flex; align-items: center; margin-left: 15px">
-                    <input class="form-check-input" type="radio" name="language" value="Spanish" id="languageSpanish" onchange="document.getElementById('language-form').submit();">
-                    <span style="margin-left: 18px;">{% translate "Spanish" %}</span>
-                    <img src="{% static 'images/logo/chile_spain.ico' %}" class="small-icon" style="margin-left: 5px;" alt="Spain Flag">
-                  </div>
+                <li class="list-inline-item">
+                    <!-- <a href="#">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <a href="username:username:">
+                            {{ request.user.username }}
+                            {% if request.user.is_superuser %}
+                                (Usuario Administrador)
+                            {% elif request.user.is_staff %}
+                                (Usuario Empleado)
+                            {% else %}
+                                (Usuario Cliente)
+                            {% endif %}
+                        </a>
+                    </a> -->
                 </li>
-              </ul><!--/.ul -->
-              
-              
-              
-            </div><!--/.social-icon -->
-          </li><!--/li -->
-        </ul><!--/ul -->
-      </div><!--/.header-right -->
-    </div><!--/.container -->	
-  
-  </section><!--/.header-->	
-  <!--header end-->
+            </ul>
+        </div>
+        <div class="header-right">
+            <form id="language-form" action="{% url 'set_language' %}" method="post" class="d-flex align-items-center" style="padding-bottom: 15px;">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}">
+                
+                <!-- Opciones de idioma -->
+                <div class="d-flex align-items-center" style="padding-right: 30px;">
+                    <input class="form-check-input" type="radio" name="language" value="en" id="languageEnglish" checked onchange="document.getElementById('language-form').submit();" {% if LANGUAGE_CODE == 'en' %}checked{% endif %}>
+                    <label class="form-check-label ms-2{% if LANGUAGE_CODE == 'en' %} active-language{% endif %}" for="languageEnglish">
+                        {% translate "English" %}
+                    </label>
+                    <img src="{% static 'images/logo/usa_england.ico' %}" class="small-icon ms-2" alt="USA Flag">
+                </div>
+
+                <div class="d-flex align-items-center ms-2">
+                    <input class="form-check-input" type="radio" name="language" value="es" id="languageSpanish" onchange="document.getElementById('language-form').submit();" {% if LANGUAGE_CODE == 'es' %}checked{% endif %}>
+                    <label class="form-check-label ms-2{% if LANGUAGE_CODE == 'es' %} active-language{% endif %}" for="languageSpanish">
+                        {% translate "Spanish" %}
+                    </label>
+                    <img src="{% static 'images/logo/chile_spain.ico' %}" class="small-icon ms-2" alt="Spain Flag">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+<!--header end-->

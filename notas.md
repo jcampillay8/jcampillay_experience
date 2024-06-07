@@ -100,3 +100,9 @@ Robot rescata desde 2 carpetas compartidas, 6 archivos Excel los cuales contiene
 UiPath Reframework, SQL, .Net, Git, Jira, Excel  UiPath Reframework, SQL, .Net, Git, Jira Browser Edge, PDF Json File,UiPath Reframework, Postman, Servicios API, Python, .Net, Git, Jira, Json File
 
 UiPath Reframework, SQL, .Net, Git, Jira, Excel, Browser Edge, PDF, Json File, Postman, Servicios API, Python
+
+
+
+Manejo Error 404 y 500
+Eliminar problema empresa al hacer register
+agregar traducción en welcom

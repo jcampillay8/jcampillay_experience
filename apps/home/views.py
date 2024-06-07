@@ -114,23 +114,6 @@ def send_email_new(user, user_email, message_sent):
     
     email.send(fail_silently=False)
 
-# def contact(request):
-#     if request.method == 'POST':
-#         name = request.POST.get('name')
-#         email = request.POST.get('email')
-#         message = request.POST.get('message')
-        
-#         try:
-#             user = request.user if request.user.is_authenticated else None
-#             send_email_new(user, email, message)
-#             messages.success(request, 'Tu mensaje ha sido enviado con éxito.')
-#         except Exception as e:
-#             messages.error(request, f'Hubo un error al enviar tu mensaje: {str(e)}')
-
-#         return redirect('home')
-
-#     return render(request, "home/home.html", {'current_page': 'home'})
-
 
 
 def fetch_resources(uri, rel):

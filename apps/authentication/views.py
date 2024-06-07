@@ -94,7 +94,7 @@ class RegistrationView(View):
             'current_page': 'register'
         }
 
-        if first_name and last_name and username and email and password and company_name:  # Asegúrate de que también se proporcionó el nombre de la compañía
+        if first_name and last_name and username and email and password:  # Asegúrate de que también se proporcionó el nombre de la compañía
             if not User.objects.filter(username=username).exists():
                 if not User.objects.filter(email=email).exists():
                     if len(password) < 6:
@@ -127,12 +127,12 @@ class RegistrationView(View):
 
                     email = EmailMessage(
                         email_subject,
-                        -('Hi ')+user.username + _(', Please the link below to activate your account \n')+activate_url,
+                        _('Hi ')+user.username + _(', Please the link below to activate your account \n')+activate_url,
                         'noreply@semycolon.com',
                         [email],
                     )
                     EmailThread(email).start()
-                    messages.success(request, _('Le hemos enviado un correo a su cuenta con un enlace de validación. Por favor, acceda a su correo y haga clic en el enlace para validar y activar su cuenta'))
+                    messages.success(request, _('Se le ha enviado un correo a su cuenta con un enlace de validación. Por favor, acceda a su correo y haga clic en el enlace para validar y activar su cuenta'))
                     return render(request, 'authentication/register.html',context)
 
         else:
@@ -272,7 +272,7 @@ class RequestPasswordResetEmail(View):
                 [email],
             )
             EmailThread(email).start()
-            messages.success(request,'We have sent you an email to reset your password')
+            messages.success(request,_('I have sent you an email to reset your password'))
 
         return render(request,'authentication/reset-password.html',context)
 

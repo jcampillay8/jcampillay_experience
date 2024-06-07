@@ -104,6 +104,24 @@
       body {
         margin-top: 160px; /* Ajusta este valor según la altura combinada del encabezado y el menú */
       }
+
+        .dropdown_personalizado .drop-menu_personalizado {
+            
+            
+            
+            min-width: 300px; /* Ajusta este valor según necesites */
+            
+            z-index: 1;
+        }
+        .dropdown_personalizado:hover .drop-menu_personalizado {
+            display: block;
+        }
+        .drop-menu_personalizado li {
+            padding: 12px 16px;
+            white-space: nowrap;
+        }
+
+
     </style>
   </head>
   <body>
@@ -179,10 +197,11 @@
             <input type="checkbox" id="showDrop_personalizado">
             <label id="showDrop_personalizado" class="mobile-item_personalizado">{% translate "Services" %}</label>
             <ul class="drop-menu_personalizado">
-              <li><a href="#">{% translate "Drop Service 1" %}</a></li>
-              <li><a href="#">{% translate "Drop Service 2" %}</a></li>
-              <li><a href="#">{% translate "Drop Service 3" %}</a></li>
-              <li><a href="#">{% translate "Drop Service 4" %}</a></li>
+              <li><a href="#">{% translate "Data Science Learning" %}</a></li>
+              <li><a href="#">{% translate "Backend Developer" %}</a></li>
+              <li><a href="#">{% translate "Process Automation" %}</a></li>
+              <li><a href="#">{% translate "Software Developer" %}</a></li>
+              <li><a href="#">{% translate "Engineering" %}</a></li>
             </ul>
           </li>
           <li class="mega_personalizado">
@@ -192,7 +211,8 @@
             <div class="mega-box_personalizado">
               <div class="content_personalizado">
                 <div class="row_personalizado">
-                  <img src="#" alt="imagen_about_me">
+                  <img src="{% static 'images/project/banner-slide-1.jpg' %}" alt="imagen_portfolio">
+                  
                 </div>
                 <div class="row_personalizado">
                   <header>{% translate "Personal Projects" %}</header>

@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
     
   }
   .image_login{
@@ -21,6 +22,17 @@
     padding-left: 180px;
 }
 
+.icon-user {
+    font-size: 5em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.fixed-width {
+    width: 500px;
+}
 
 </style>
 
@@ -31,8 +43,9 @@
       <div class="container">
           <div class="center-card">
             <div class="card">
-            <div class="card-body">
-                <img src="{% static 'img/login_users.png' %}" class="image_login" style="margin: 0px 0%;"  alt="Card image cap">
+            <div class="card-body fixed-width">
+                
+              <i class="fa-solid fa-user icon-user"></i>
                   <p class="text-center" style="color: black;"><b>{% translate "Login to your Account" %}</b></p>
                   <form class="mt-2" autocomplete="off" action="{%url 'login'%}"  method="POST" autocomplete="off">
                   {% csrf_token%}

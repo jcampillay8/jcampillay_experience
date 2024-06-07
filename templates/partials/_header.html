@@ -63,13 +63,13 @@
                     <a href="#">
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                         <a href="username:username:">
-                            {{ request.user.username }}
+                            
                             {% if request.user.is_superuser %}
-                                (Usuario Administrador)
+                            {{ request.user.username }} {% translate "(Usuario Administrador)" %}
                             {% elif request.user.is_staff %}
-                                (Usuario Empleado)
+                            {{ request.user.username }}{% translate "(Usuario Autenticado)" %}
                             {% else %}
-                                (Usuario Cliente)
+                                {% translate "(Usuario Visita)" %}
                             {% endif %}
                         </a>
                     </a>

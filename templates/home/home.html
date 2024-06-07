@@ -7,7 +7,55 @@
 
 
     <title> TITULO {% block title %} {% endblock %}</title>
-    
+
+
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+        <style>
+
+            .filter-section {
+                margin-top: 20px;
+            }
+            .filter-container ul {
+                padding: 0;
+                list-style: none;
+            }
+            .filter-container li {
+                display: inline-block;
+                margin-right: 10px;
+                white-space: nowrap;
+                text-align: center;
+            }
+            .filter-container li a {
+                display: block;
+                padding: 5px 10px;
+                font-size: 14px;
+                color: #000;
+                text-decoration: none;
+                border: 1px solid transparent;
+                transition: all 0.3s;
+            }
+            .filter-container li span {
+                display: none;
+            }
+            @media (max-width: 768px) {
+                .filter-container li {
+                    width: 100%;
+                }
+                .filter-container li span {
+                    display: inline;
+                }
+            }
+            @media (max-width: 480px) {
+                .filter-container li {
+                    white-space: normal;
+                }
+            }
+        </style>
+    </head>
 <!-- header-slider-area start -->
 <!-- header-slider-area start -->
 <section class="header-slider-area">
@@ -22,7 +70,7 @@
               <div class="row">
                 <div class="col-sm-12">
                   <div class="single-slide-item-content">
-                    <h2>{% translate "Bienvenido" %}<br> {{ request.user.first_name }} {{ request.user.last_name }}</h2>
+                    <h2 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">{% translate "Bienvenido" %}<br> {{ request.user.first_name }} {{ request.user.last_name }}</h2>
                     <p>
                       {% blocktranslate %}Fostering Innovation in Technology and Unlocking Potential Through Teamwork are some of my main life goals.{% endblocktranslate %}
                     </p>
@@ -204,23 +252,23 @@
     <!-- /3 Column Portfolio -->
     
     <div class="container">
-        <div class="filter-section">
-            <div class="row">
-                <div class="col-sm-12 col-xs-12">
-                    <h1>{% translate "Projects Portfolio" %}</h1>
-                    <div class="filter-container isotopeFilters">
-                        <ul class="list-inline filter d-flex justify-content-center align-items-center">
-                            <li class="active"><a href="#" data-filter="*">{% translate "All" %}</a><span>/</span></li>
-                            <li><a href="#" data-filter=".Process_Automation">{% translate "Process Automation" %}</a><span>/</span></li>
-                            <li><a href="#" data-filter=".Engineering">{% translate "Engineering" %}</a><span>/</span></li>
-                            <li><a href="#" data-filter=".websites">{% translate "Websites" %}</a><span>/</span></li>
-                            <li><a href="#" data-filter=".software_development">{% translate "Software Development" %}</a><span>/</span></li>
-                            <li><a href="#" data-filter=".machine_learning">{% translate "Machine Learning" %}</a></li>
-                        </ul>
-                    </div>
+    <div class="filter-section">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <h1>{% translate "Projects Portfolio" %}</h1>
+                <div class="filter-container isotopeFilters">
+                    <ul class="list-inline filter d-flex justify-content-center align-items-center flex-wrap">
+                        <li class="active"><a href="#" data-filter="*">{% translate "All" %}</a></li>
+                        <li><a href="#" data-filter=".Process_Automation">{% translate "Process Automation" %}</a></li>
+                        <li><a href="#" data-filter=".Engineering">{% translate "Engineering" %}</a></li>
+                        <li><a href="#" data-filter=".websites">{% translate "Websites" %}</a></li>
+                        <li><a href="#" data-filter=".software_development">{% translate "Software Development" %}</a></li>
+                        <li><a href="#" data-filter=".machine_learning">{% translate "Machine Learning" %}</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
 
         <div class="portfolio-section port-col d-flex flex-wrap justify-content-center">                
             <div class="col-md-4 col-sm-6 isotopeSelector Engineering software_development websites">

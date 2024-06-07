@@ -19,8 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG')
-#DEBUG = True
+#DEBUG = os.environ.get('DEBUG')
+DEBUG = True
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOST_DEV')
 #ALLOWED_HOSTS = []
@@ -67,6 +67,9 @@ THIRD_PARTY_APPS = [
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
+
+HANDLER404 = 'apps.Error_Handler.views.Error404View'
+HANDLER500 = 'apps.Error_Handler.views.Error505View'
 
 SESSION_SAVE_EVERY_REQUEST = True
 
