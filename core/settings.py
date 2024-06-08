@@ -42,21 +42,14 @@ PROJECT_APPS = [
     'apps.about_me',
     'apps.technical_insight',
     'apps.contact',
-    #'apps.Error_Handler',
+    'apps.Error_handler',
     'apps.blog',
-    #'apps.portfolio',
-    #'apps.translation_manager',
     'apps.Quizzes',
 ]
 
 THIRD_PARTY_APPS = [
-    #'corsheaders',
-    #'rest_framework',
-    #'ckeditor',
-    #'ckeditor_uploader',
     'livereload',
     'guest_user',
-    # 'cms',
     'six',
     'widget_tweaks',
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
@@ -112,16 +105,6 @@ TEMPLATES = [
 WSGI_APPLICATION = "core.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -133,8 +116,6 @@ DATABASES = {
     }
 }
 
-# Password validation
-# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -152,8 +133,7 @@ AUTHENTICATION_BACKENDS = [
     # ...
 ]
 
-# Internationalization
-# https://docs.djangoproject.com/en/4.2/topics/i18n/
+
 
 LANGUAGE_CODE = "en"
 
@@ -183,8 +163,6 @@ STATICFILES_FINDERS = [
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 STATIC_URL = '/assets/'
