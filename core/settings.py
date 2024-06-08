@@ -192,7 +192,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'core/assets')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'django_gcp/staticfiles/dash/component/dash_bootstrap_components/_components/dash_bootstrap_components.min.js')
+
 
 PLOTLY_DASH = {
 
