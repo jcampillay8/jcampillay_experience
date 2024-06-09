@@ -1,8 +1,12 @@
 import os
 from pathlib import Path
 from django.contrib.messages import constants as messages
+import dj_database_url
+from dotenv import load_dotenv
 import json
 import environ
+
+load_dotenv()
 
 env = environ.Env()
 environ.Env.read_env()
@@ -111,15 +115,18 @@ WSGI_APPLICATION = "core.wsgi.application"
 
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST'),
-        'PORT': env('DB_PORT'),
-    }
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': env('DB_NAME'),
+#         'USER': env('DB_USER'),
+#         'PASSWORD': env('DB_PASSWORD'),
+#         'HOST': env('DB_HOST'),
+#         'PORT': env('DB_PORT'),
+#     }
+# }
 
 
 AUTH_PASSWORD_VALIDATORS = [

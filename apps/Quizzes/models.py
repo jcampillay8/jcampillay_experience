@@ -5,8 +5,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 class Quiz(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    title = models.CharField(max_length=None)
-    description = models.CharField(max_length=None)
+    title = models.CharField(max_length=255)
+    description = models.CharField(max_length=500)
     imagen = models.ImageField(upload_to='core/assets/images/quizzes/', default='imagen')
     likes = models.ManyToManyField(User, related_name='post_likes')
 
