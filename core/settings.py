@@ -25,6 +25,7 @@ DEBUG = os.environ.get('DEBUG')
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['0.0.0.0','*','localhost', '127.0.0.1', 'web-production-299a1.up.railway.app'])
 #ALLOWED_HOSTS = []
 
+CSRF_TRUSTED_ORIGINS = ['http://*','https://web-production-299a1.up.railway.app']
 
 # Application definition
 
