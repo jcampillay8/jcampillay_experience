@@ -35,6 +35,7 @@ DJANGO_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'whitenoise.runserver_nostatic',
 ]
 
 PROJECT_APPS = [
@@ -57,6 +58,7 @@ THIRD_PARTY_APPS = [
     'django_bootstrap_icons',
     'bootstrap4',
     'dpd_static_support',
+    
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
@@ -71,6 +73,7 @@ with open('language.json', 'r', encoding='utf-8') as file:
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -171,6 +174,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'core/assets')
 ]
 
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 
 PLOTLY_DASH = {
