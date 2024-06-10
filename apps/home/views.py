@@ -242,9 +242,9 @@ def generate_pdf_from_template(template_path, context_dict, output_path):
         return HttpResponseServerError(str(e))
 
 def download_cv(request, template_name):
-    if template_name == 'cv_eng':
+    if template_name == 'jcampillay_cv_eng':
         template_path = 'home/jcampillay_cv_eng.html'
-    elif template_name == 'cv_esp':
+    elif template_name == 'jcampillay_cv_esp':
         template_path = 'home/jcampillay_cv_esp.html'
     else:
         return HttpResponseServerError('Invalid template name')
@@ -254,7 +254,7 @@ def download_cv(request, template_name):
     context = {'qr_image': qr_image_path}  # Agrega cualquier otro contexto necesario para la plantilla
 
     # Ruta de salida para el PDF
-    output_path = os.path.join(settings.MEDIA_ROOT, f'{template_name}.pdf')
+    output_path = os.path.join(settings.MEDIA_ROOT, f'media/{template_name}.pdf')
 
     # Generar y guardar el PDF desde la plantilla
     generate_pdf_from_template(template_path, context, output_path)
@@ -263,7 +263,7 @@ def download_cv(request, template_name):
     return FileResponse(open(output_path, 'rb'), content_type='application/pdf')
 
 def download_cv_eng(request):
-    return download_cv(request, 'cv_eng')
+    return download_cv(request, 'jcampillay_cv_eng')
 
 def download_cv_esp(request):
-    return download_cv(request, 'cv_esp')
+    return download_cv(request, 'jcampillay_cv_esp')
