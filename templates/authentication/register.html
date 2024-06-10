@@ -1,11 +1,11 @@
-{% extends 'welcome.html' %} 
+{% extends 'welcome.html' %}
 
 {% load static %}
 {% load i18n %}
 
 {% block title %}
-| {% translate "Login to Account" %}
-{% endblock %} 
+| {% translate "Register for an Account" %}
+{% endblock %}
 
 {% block content %}
 <style>
@@ -33,7 +33,27 @@
   }
 
   .fixed-width {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .or-divider .line {
+    flex: 1;
+    height: 1px;
+    background-color: #d3d3d3;
+  }
+
+  .or-divider .text {
+    padding: 0 10px;
+    font-size: small;
+    color: #6c757d;
   }
 </style>
 
@@ -96,7 +116,7 @@
               <input
                 type="email"
                 name="email"
-                placeholder="{% translate "Email" %}"
+                placeholder="{% translate 'Email' %}"
                 class="form-control form-control-sm user-email"
                 required
                 value="{{ values.email }}"
@@ -112,7 +132,7 @@
             <div class="form-group">
               <input
                 type="password"
-                placeholder="{% translate "Password" %}"
+                placeholder="{% translate 'Password' %}"
                 name="password"
                 class="form-control form-control-sm passwordField"
                 required
@@ -124,26 +144,19 @@
 
             <input
               type="submit"
-              value="{% translate "Register" %}"
+              value="{% translate 'Register' %}"
               class="btn btn-primary submit-btn btn-block btn-sm btn-block"
               style="font-size:small;"
             />
 
-            <div class="lower my-3 pl-3 pr-3">
-              <div class="row">
-                <div class="col-md-5">
-                  <hr class="ml-1">
-                </div>
-                <div class="col-md-2">
-                  <small class="text-muted" style="font-size:small;">{% translate "OR" %}</small>
-                </div>
-                <div class="col-md-5">
-                  <hr class="mr-1">
-                </div>
-              </div>
-              <a href="{% url 'request-password' %}" class="btn btn-block btn-sm" style="font-size:small;">{% translate "Reset Password" %}</a>
-              <a href="{% url 'login' %}" class="btn btn-block btn-sm" style="font-size:small;">{% translate "Back to Login" %}</a>
+            <div class="or-divider">
+              <div class="line"></div>
+              <div class="text">{% translate "OR" %}</div>
+              <div class="line"></div>
             </div>
+
+            <a href="{% url 'request-password' %}" class="btn btn-block btn-sm" style="font-size:small;">{% translate "Reset Password" %}</a>
+            <a href="{% url 'login' %}" class="btn btn-block btn-sm" style="font-size:small;">{% translate "Back to Login" %}</a>
           </form>
         </div>
       </div>
