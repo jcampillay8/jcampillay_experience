@@ -209,7 +209,7 @@ def contact(request):
             context = {'name': name, 'email': email, 'message': message}
 
             # Agregar la ruta de la imagen al contexto
-            image_path = os.path.abspath('core/assets/img/qr_web.png')
+            image_path = os.path.abspath('core/assets/img/qr_website.png')
             context['qr_image'] = image_path
 
             pdf = generate_pdf_from_template(template_path, context)
