@@ -192,7 +192,7 @@ def contact(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
         language = request.POST.get('language')  # Obtener el idioma seleccionado
-        
+
         try:
             user = request.user if request.user.is_authenticated else None
 
@@ -207,15 +207,15 @@ def contact(request):
 
             # Generar el PDF desde la plantilla HTML
             context = {'name': name, 'email': email, 'message': message}
-            
+
             # Agregar la ruta de la imagen al contexto
             image_path = os.path.abspath('core/assets/img/qr_web.png')
             context['qr_image'] = image_path
-            
+
             pdf = generate_pdf_from_template(template_path, context)
 
             if pdf:
-                send_email_with_pdf(user, email, message, pdf)
+                send_email_with_pdf(user, email, message, pdf, language)
                 messages.success(request, 'Tu mensaje ha sido enviado con éxito.')
             else:
                 messages.error(request, 'Hubo un error al generar el PDF.')
@@ -229,17 +229,25 @@ def contact(request):
 
 
 
-def generate_pdf_from_template(template_path, context_dict, output_path):
+
+def generate_pdf_from_template(template_path, context_dict, output_path=None):
     try:
         # Renderizar la plantilla HTML con el contexto
         template = get_template(template_path)
         html_content = template.render(context_dict)
 
         # Crear el archivo PDF usando WeasyPrint
-        HTML(string=html_content).write_pdf(output_path)
+        pdf_file = HTML(string=html_content).write_pdf()
+
+        if output_path:
+            HTML(string=html_content).write_pdf(output_path)
+            return output_path
+        else:
+            return pdf_file
 
     except Exception as e:
         return HttpResponseServerError(str(e))
+
 
 def download_cv(request, template_name):
     if template_name == 'jcampillay_cv_eng':
@@ -254,13 +262,14 @@ def download_cv(request, template_name):
     context = {'qr_image': qr_image_path}  # Agrega cualquier otro contexto necesario para la plantilla
 
     # Ruta de salida para el PDF
-    output_path = os.path.join(settings.MEDIA_ROOT, f'media/{template_name}.pdf')
+    output_path = os.path.join(settings.MEDIA_ROOT, f'{template_name}.pdf')
 
     # Generar y guardar el PDF desde la plantilla
     generate_pdf_from_template(template_path, context, output_path)
 
     # Devolver el PDF como respuesta
     return FileResponse(open(output_path, 'rb'), content_type='application/pdf')
+
 
 def download_cv_eng(request):
     return download_cv(request, 'jcampillay_cv_eng')
