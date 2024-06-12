@@ -165,7 +165,6 @@ img {
   right: 5.5pt;
   display: block;
   height: 10pt;
-  content: '|';
 }
 
 .decorator {
@@ -230,29 +229,13 @@ img {
 }
 
 .details .place {
-  float: left;
   font-size: 7.5pt;
+  flex: 1; /* Asegura que ocupe todo el espacio posible */
+  text-align: left;
+  white-space: nowrap;
 }
 
-.details .location {
-  float: right;
-}
 
-.details div {
-  clear: both;
-}
-
-.details .location::before {
-  display: inline-block;
-  position: relative;
-  right: 3pt;
-  top: 0.25pt;
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  content: "\f041";
-}
 
 /***** fine-tunes on the lists... *****/
 
@@ -279,11 +262,9 @@ img {
   font-size: 11pt;
 }
 
-
 #contact ul {
   margin-top: 0.05in;
   padding-left: 0;
-  font-family: "Source Code Pro";
   font-weight: 400;
   line-height: 1.75;
 }
@@ -366,241 +347,197 @@ img {
 }
 
     </style>
-   <title>Curriculum Vitae</title>
-  </head>
-  <body lang="en">
-      <div class="container">
-        <aside id="sidebar">
-          
-          <div class="side-block" id="presentation">
-            <h1>Presentation</h1>
-              <p>"I'm Jaime, a technology and programming enthusiast with experience in industrial engineering. Throughout my career, I have constantly sought to expand my skills and knowledge in these areas, with a special interest in machine learning and artificial intelligence. I consider these disciplines crucial for the future of many industries, and honestly, I am excited and intrigued to work in them and continually improve in this field."</p>
-          </div>
-          <div class="side-block" id="contact">
-              <h1>Contact</h1>
-              <ul>
-                  <li><i class="fa-solid fa-envelope"></i> jcampillayworks@gmail.com</li>
-                  <li><i class="fa-solid fa-earth-americas"></i><a href="https://web-production-299a1.up.railway.app/en/"> jcampillayexperience.com</a></li>
-                  <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/jgcampillayr/"> linkedin.com/in/jgcampillayr/</a></li>
-                  <li><i class="fa-solid fa-phone"></i> +569-81394911</li>
-              </ul>
-          </div>
-          <div class="side-block" id="skills">
-              <h1>Skills</h1>
-              <ul>
-                  <li>Programming</li>
-                  <li>Data Analysis</li>
-                  <li>Data Visualization</li>
-                  <li>Data Cleansing</li>
-                  <li>Linear Algebra</li>
-                  <li>Probability - Statistics</li>
-                  <li>Calculus</li>
-                  <li>Correlation - Linear Regression</li>
-              </ul>
-          </div>
-          <div class="side-block" id="intereses">
-              <h1>Tools and Languages</h1>
-              <ul>
-                  <li>Python</li>
-                  <li>SQL</li>
-                  <li>PowerBI</li>
-                  <li>Excel</li>
-                  <li>Git</li>
-                  <li>HTML-CSS</li>
-                  <li>Pandas, Matplotlib, Seaborn</li>
-                  <li>Postman</li>
-                  <li>.NET Framework</li>
-                  <li>UiPath</li>
-              </ul>
-          </div>
-          <div class="side-block">
-            <h1>Website</h1>
-            <ul>
-                <img src="file://{{qr_image}}" alt='' style='width: 100px;'>
-            </ul>
-        </div>
-        
-        
-      </aside>
-          <section id="main">
-              <header id="title">
-                  <h1>Jaime Gabriel Campillay Rojas</h1>
-                  <span class="subtitle">Data Scientist Learner, Backend Developer, RPA Developer, Civil Engineer &amp;<br> Master in Industrial and Systems Engineering</span>
-              </header>
-              <section class="main-block">
-                  <h2>
-                      <i class="fa fa-suitcase"></i> Experience
-                  </h2>
-                  <section class="blocks">
-                    <div class="date">
-                        <span>Present</span><span>03-2024</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Backend Developer</h3>
-                            <span class="place">Freelancer</span>
-                            <span class="location">(remote) - Santiago, Chile</span>
-                        </header>
-                        <div>
-                            <ul>
-                                <li><strong>Description: </strong> This venture offers customized web development services through a site created with Django. It stands out for its comprehensive approach to design and development, demonstrating efficiency in solving technical, engineering, and process automation problems.</li>
-                                <li><strong>Technologies used: </strong> Python, Django, Dash & Plotly, JavaScript, HTML5, CSS3, Bootstrap 5, jQuery, FontAwesome, Ajax, PostgreSQL, AWS EC2, AWS S3, AWS DRS, Git, Json, Vim, Linux</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="blocks">
-                  <div class="date">
-                      <span>03-2024</span><span>2023</span>
-                  </div>
-                  <div class="decorator"></div>
-                  <div class="details">
-                      <header>
-                          <h3>Data Engineer</h3>
-                          <span class="place">EY Chile</span>
-                          <span class="location">(remote/on-site) - Santiago, Chile</span>
-                      </header>
-                      <div>
-                          <ul>
-                            <li><strong>Description: </strong>As a Data Engineer, I participated in cloud migration projects, developed tools for financial risk management, and optimized data extraction and processing processes in the banking industry. My experience ranges from the use of Python to the implementation of SQL and ETL to ensure the integrity of critical data.</li>
-                              <li><strong>Technologies used: </strong> SQL Server, Talend, Git, Excel, Factset Cloud, Putty, Python, PostgreSQL, Dash & Plotly, Pandas, Scipy</li>
-                          </ul>
-                      </div>
-                  </div>
-              </section>
-                  <section class="blocks">
-                      <div class="date">
-                          <span>2022</span><span>08-2021</span>
-                      </div>
-                      <div class="decorator"></div>
-                      <div class="details">
-                          <header>
-                              <h3>RPA Developer</h3>
-                              <span class="place">EY Chile</span>
-                              <span class="location">(remote/on-site) - Santiago, Chile</span>
-                          </header>
-                          <div>
-                              <ul>
-                                <li><strong>Description: </strong>
-                                  As an RPA Developer, my work involves creating and maintaining automation robots for various tasks within the banking environment. I participated in projects ranging from extracting and processing information from mortgage reports to constantly monitoring emails for acceptance of offered insurances. Additionally, I developed robots for telemarketing sales data processing, thus optimizing processes and improving the bank's operational efficiency.</li>
-                                  <li><strong>Technologies used: </strong> UiPath Reframework, SQL, .Net, Git, Jira, Excel, Browser Edge, PDF, Json File, Postman, API Services, Python</li>
-                              </ul>
-                          </div>
-                      </div>
-                  </section>
-              </section>
-              <section class="main-block">
-                  <h2>
-                      <i class="fa fa-folder-open"></i> Selected Projects
-                  </h2>
-                  <section class="blocks">
-                    <div class="date">
-                        <span>2024</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Portfolio Website</h3>
-                            <span class="place">Personal</span>
-                        </header>
-                        <div>
-                            <ul>
-                                <li><strong>Description: </strong>Personal and also for companies for managing engineering projects and real-time monitoring for projects of all scales with selectable language option.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                  <section class="blocks">
-                      <div class="date">
-                          <span>2023</span>
-                      </div>
-                      <div class="decorator"></div>
-                      <div class="details">
-                          <header>
-                              <h3>Tool Development for Risk Mitigation in Financial Institutions</h3>
-                              <span class="place">International Bank</span>
-                          </header>
-                          <div>
-                              <ul>
-                                  <li><strong>Description: </strong>Development of an efficient tool for financial institutions, focused on managing currency risks in investments through derivative instruments. I used Python, and libraries like Pandas, Dash, Plotly, Scipy, to build the Risk Management and Hedging Strategy module, which contributed to strengthening my programming and data analysis skills.</li>
-                              </ul>
-                          </div>
-                      </div>
-                  </section>
-                  
-              </section>
-              <section class="main-block">
-                  <h2>
-                      <i class="fa fa-graduation-cap"></i> Education
-                  </h2>
-                  <section class="blocks">
-                    <div class="date">
-                        <span>2023</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>DP900 - Azure Data Fundamentals</h3>
-                            <span class="place">Microsoft Certified</span>
-                            <span class="location">Santiago, Chile</span>
-                        </header>
-                    </div>
-                </section>
-                  <section class="blocks">
-                      <div class="date">
-                          <span>2022</span>
-                      </div>
-                      <div class="decorator"></div>
-                      <div class="details">
-                          <header>
-                              <h3>English B1/B2 (182hrs)</h3>
-                              <span class="place">EY - Eclass (remote)</span>
-                              <span class="location">Santiago, Chile</span>
-                          </header>
-                      </div>
-                  </section>
-                  <section class="blocks">
-                      <div class="date">
-                          <span>2022</span>
-                      </div>
-                      <div class="decorator"></div>
-                      <div class="details">
-                          <header>
-                              <h3>Data Science</h3>
-                              <span class="place">EY Analytics Badge Learning</span>
-                              <span class="location">Santiago, Chile</span>
-                          </header>
-                      </div>
-                  </section>
-                  <section class="blocks">
-                      <div class="date">
-                          <span>2021</span>
-                      </div>
-                      <div class="decorator"></div>
-                      <div class="details">
-                          <header>
-                              <h3>Python Full Stack Developer</h3>
-                              <span class="place">Bootcamp - Coding Dojo</span>
-                              <span class="location">Santiago, Chile</span>
-                          </header>
-                      </div>
-                  </section>
-                  <section class="blocks">
-                      <div class="date">
-                          <span>2019</span>
-                      </div>
-                      <div class="decorator"></div>
-                      <div class="details">
-                          <header>
-                              <h3>Master's in Industrial and Systems Engineering</h3>
-                              <span class="place">Universidad del Desarrollo</span>
-                              <span class="location">Santiago, Chile</span>
-                          </header>
-                      </div>
-                  </section>
-              </section>
-          </section>
-      </div>
-  </body>
-  </html>
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Curriculum Vitae</title>
+   </head>
+   <body>
+       <div class="container">
+           <aside id="sidebar">
+               <div class="side-block" id="presentation">
+                   <h1>Presentation</h1>
+                   <p>"I am Jaime, a technology and programming enthusiast with experience in industrial engineering. Throughout my career, I have constantly sought to expand my skills and knowledge in these areas, and I have a particular interest in machine learning and artificial intelligence. I believe these disciplines are crucial for the future of many industries, and honestly, I am greatly excited and intrigued to work in them and continuously improve in this field."</p>
+               </div>
+               <div class="side-block" id="contact">
+                   <h1>Contact</h1>
+                   <ul>
+                       <li><i class="fa-solid fa-envelope"></i> jcampillayworks@gmail.com</li>
+                       <li><i class="fa-solid fa-earth-americas"></i><a href="https://web-production-299a1.up.railway.app/en/"> jcampillayexperience.com</a></li>
+                       <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/jgcampillayr/"> linkedin.com/in/jgcampillayr/</a></li>
+                       <li><i class="fa-solid fa-phone"></i> +569-81394911</li>
+                   </ul>
+               </div>
+               <div class="side-block" id="skills">
+                   <h1>Skills</h1>
+                   <ul>
+                       <li>Programming</li>
+                       <li>Data Analysis</li>
+                       <li>Data Visualization</li>
+                       <li>Data Cleaning</li>
+                       <li>Linear Algebra</li>
+                       <li>Probability - Statistics</li>
+                       <li>Calculus</li>
+                       <li>Correlation - Linear Regression</li>
+                   </ul>
+               </div>
+               <div class="side-block" id="tools">
+                   <h1>Tools and Languages</h1>
+                   <ul>
+                       <li><i class="fa-brands fa-python"></i> Python</li>
+                       <li><i class="fa-sharp fa-solid fa-database"></i> SQL</li>
+                       <li><i class="fa-sharp fa-solid fa-file-excel"></i> Excel</li>
+                       <li><i class="fa-brands fa-square-git"></i> Git</li>
+                       <li><i class="fa-brands fa-linux"></i> Linux</li>
+                       <li><i class="fa-solid fa-chart-column"></i> Pandas, Dash, Plotly</li>
+                       <li><i class="fa-solid fa-code-branch"></i> Postman</li>
+                       <li><i class="fa-solid fa-code"></i> .NET Framework</li>
+                       <li><i class="fa-solid fa-robot"></i> UiPath</li>
+                   </ul>
+               </div>
+               <div class="side-block">
+                   <h1>Website</h1>
+                   <ul>
+                       <img src="file://{{qr_image}}" alt="" style="width: 100px;">
+                   </ul>
+               </div>
+           </aside>
+           <section id="main">
+               <header id="title">
+                   <h1>Jaime Gabriel Campillay Rojas</h1>
+                   <span class="subtitle">Data Scientist Learner, Backend Developer, RPA Developer, Civil Engineer &amp; Master in Industrial and Systems Engineering</span>
+               </header>
+               <section class="main-block">
+                   <h2><i class="fa fa-suitcase"></i> Experience</h2>
+                   <section class="blocks">
+                       <div class="date"><span>Present</span><span>03-2024</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>Backend Developer</h3>
+                               <span class="place">Freelancer</span>
+                           </header>
+                           <ul>
+                               <li><strong>Description:</strong> This venture offers personalized web development services through a site created with Django. It stands out for its comprehensive approach to design and development, demonstrating efficiency in solving technical, engineering, and process automation problems.</li>
+                               <li><strong>Technologies used:</strong> Python, Django, Dash & Plotly, JavaScript, HTML5, CSS3, Bootstrap 5, jQuery, FontAwesome, Ajax, PostgreSQL, AWS EC2, AWS S3, AWS DRS, Git, Json, Vim, Linux</li>
+                           </ul>
+                       </div>
+                   </section>
+                   <section class="blocks">
+                       <div class="date"><span>03-2024</span><span>2023</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>Data Engineer</h3>
+                               <span class="place">EY Chile</span>
+                           </header>
+                           <ul>
+                               <li><strong>Description:</strong> As a Data Engineer, I participated in cloud migration projects, developed tools for financial risk management, and optimized data extraction and processing processes in the banking industry. My experience ranges from using Python to implementing SQL and ETL to ensure the integrity of critical data.</li>
+                               <li><strong>Technologies used:</strong> SQL Server, Talend, Git, Excel, Factset Cloud, Putty, Python, PostgreSQL, Dash & Plotly, Pandas, Scipy</li>
+                           </ul>
+                       </div>
+                   </section>
+                   <section class="blocks">
+                       <div class="date"><span>2022</span><span>08-2021</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>RPA Developer</h3>
+                               <span class="place">EY Chile</span>
+                           </header>
+                           <ul>
+                               <li><strong>Description:</strong> As an RPA Developer, my work involves creating and maintaining automation robots for various tasks within the banking environment. I participated in projects ranging from extracting and processing information from mortgage reports to constantly monitoring emails for insurance acceptance. Additionally, I developed robots for processing telemarketing sales data, thus optimizing processes and improving the bank's operational efficiency.</li>
+                               <li><strong>Technologies used:</strong> UiPath Reframework, SQL, .Net, Git, Jira, Excel, Browser Edge, PDF, Json File, Postman, API Services, Python</li>
+                           </ul>
+                       </div>
+                   </section>
+               </section>
+               <section class="main-block">
+                   <h2><i class="fa fa-folder-open"></i> Project Selection</h2>
+                   <section class="blocks">
+                       <div class="date"><span>2024</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>Portfolio Website</h3>
+                               <span class="place">Personal</span>
+                           </header>
+                           <ul>
+                               <li><strong>Description:</strong> Personal project and also for companies to manage engineering projects and real-time monitoring for projects of all scales with selectable language option.</li>
+                           </ul>
+                       </div>
+                   </section>
+                   <section class="blocks">
+                       <div class="date"><span>2023</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>Development of a Tool for Risk Mitigation in Financial Institutions</h3>
+                               <span class="place">International Bank</span>
+                           </header>
+                           <ul>
+                               <li><strong>Description:</strong> Development of an efficient tool for financial institutions, focused on managing currency risks in investments through derivative instruments. I used Python, and libraries such as Pandas, Dash, Plotly, Scipy, to build the Risk Management and Hedging Strategy module, which contributed to strengthening my programming and data analysis skills.</li>
+                           </ul>
+                       </div>
+                   </section>
+               </section>
+               <section class="main-block">
+                   <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+                   <section class="blocks">
+                       <div class="date"><span>2023</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>DP900 - Azure Data Fundamentals</h3>
+                               <span class="place">Microsoft Certified</span>
+                           </header>
+                       </div>
+                   </section>
+                   <section class="blocks">
+                       <div class="date"><span>2022</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>English B1/B2 (182hrs)</h3>
+                               <span class="place">EY - Eclass (remote)</span>
+                           </header>
+                       </div>
+                   </section>
+                   <section class="blocks">
+                       <div class="date"><span>2022</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>Data Science</h3>
+                               <span class="place">EY Analytics Badge Learning</span>
+                           </header>
+                       </div>
+                   </section>
+                   <section class="blocks">
+                       <div class="date"><span>2021</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>Python Full Stack Developer</h3>
+                               <span class="place">Bootcamp - Coding Dojo</span>
+                           </header>
+                       </div>
+                   </section>
+                   <section class="blocks">
+                       <div class="date"><span>2019</span></div>
+                       <div class="decorator"></div>
+                       <div class="details">
+                           <header>
+                               <h3>Master in Industrial and Systems Engineering</h3>
+                               <span class="place">Universidad del Desarrollo</span>
+                           </header>
+                       </div>
+                   </section>
+               </section>
+           </section>
+       </div>
+   </body>
+   </html>
+   
