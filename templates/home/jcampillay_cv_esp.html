@@ -215,6 +215,9 @@ img {
 
 .details header {
   color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .details h3 {
@@ -362,6 +365,26 @@ img {
 .side-block .progress .progress-bar {
   background-color: #007bff;
 }
+.details .place, .details .location {
+  display: inline-block;
+  font-size: 7.5pt;
+}
+
+.details .location::before {
+  display: inline-block;
+  position: relative;
+  right: 3pt;
+  top: 0.25pt;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  content: "\f041";
+}
+
+.details div {
+  clear: both;
+}
 
     </style>
 <!DOCTYPE html>
@@ -445,24 +468,24 @@ img {
                             </ul>
                         </div>
                     </div>
-                </section>
-                <section class="blocks">
-                    <div class="date"><span>03-2024</span><span>2023</span></div>
-                    <div class="decorator"></div>
-                    <div class="details">
+                    <section class="blocks">
+                      <div class="date"><span>03-2024</span><span>2023</span></div>
+                      <div class="decorator"></div>
+                      <div class="details">
                         <header>
-                            <h3>Ingeniero de Datos</h3>
-                            <span class="place">EY Chile</span>
-                            <span class="location">(remoto/presencial) - Santiago, Chile</span>
+                          <h3>Ingeniero de Datos</h3>
+                          <span class="place">EY Chile</span>
+                          <span class="location">(remoto/presencial) - Santiago, Chile</span>
                         </header>
                         <div>
-                            <ul>
-                                <li><strong>Descripción:</strong> Como Ingeniero de Datos, participé de proyectos de migración a la nube, desarrollé herramientas para la gestión de riesgos financieros y optimicé procesos de extracción y tratamiento de datos en la industria bancaria. Mi experiencia abarca desde el uso de Python hasta la implementación de SQL y ETL para garantizar la integridad de los datos críticos.</li>
-                                <li><strong>Tecnologías usadas:</strong> SQL Server, Talend, Git, Excel, Factset Cloud, Putty, Python, PostgreSQL, Dash & Plotly, Pandas, Scipy</li>
-                            </ul>
+                          <ul>
+                            <li><strong>Descripción:</strong> Como Ingeniero de Datos, participé de proyectos de migración a la nube, desarrollé herramientas para la gestión de riesgos financieros y optimicé procesos de extracción y tratamiento de datos en la industria bancaria. Mi experiencia abarca desde el uso de Python hasta la implementación de SQL y ETL para garantizar la integridad de los datos críticos.</li>
+                            <li><strong>Tecnologías usadas:</strong> SQL Server, Talend, Git, Excel, Factset Cloud, Putty, Python, PostgreSQL, Dash & Plotly, Pandas, Scipy</li>
+                          </ul>
                         </div>
-                    </div>
-                </section>
+                      </div>
+                    </section>
+                    
                 <section class="blocks">
                     <div class="date"><span>2022</span><span>08-2021</span></div>
                     <div class="decorator"></div>
