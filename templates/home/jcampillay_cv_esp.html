@@ -229,12 +229,15 @@ img {
 }
 
 .details .place {
-  float: left;
-  flex: 1;
   font-size: 7.5pt;
+  flex: 1; /* Asegura que ocupe todo el espacio posible */
+  text-align: left;
 }
 
-
+.details .location {
+  font-size: 7.5pt;
+  white-space: nowrap; /* Evita que se divida en varias líneas */
+}
 
 .details div {
   clear: both;
@@ -421,7 +424,7 @@ img {
             </header>
             <section class="main-block">
                 <h2><i class="fa fa-suitcase"></i> Experiencia</h2>
-                <section class="blocks">
+                <section class="blocks">  position: relative;
                     <div class="date"><span>Presente</span><span>03-2024</span></div>
                     <div class="decorator"></div>
                     <div class="details">
