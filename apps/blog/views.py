@@ -15,3 +15,9 @@ from django.utils.translation import gettext as _
 @login_required(login_url='login')
 def blog_home(request):
     return render(request, 'blog/blog_home.html', {'current_pages': ['blog_home', 'about_me_home']})
+
+
+
+@login_required(login_url='login')
+def serivces_home(request):
+    return render(request, 'blog/services_home.html', {'current_page': 'services_home'})

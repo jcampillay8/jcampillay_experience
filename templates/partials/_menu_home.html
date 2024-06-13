@@ -150,7 +150,7 @@
                         <ul class="mega-links_personalizado">
                             <li><a href="#">{% translate "Who am I " %}</a></li>
                             <li><a href="#">{% translate "What are my interest" %}</a></li>
-                            <li><a href="#">{% translate "What do I want to learn" %}</a></li>
+                            <li><a href="#">{% translate "What am I studying right now?" %}</a></li>
                             <li><a href="#">{% translate "What are my goals" %}</a></li>
                         </ul>
                     </div>
@@ -193,7 +193,7 @@
             </ul>
           </li>
           <li class="dropdown_personalizado">
-            <a class="desktop-item menu-link {% if current_page == 'Servicios' %}active{% endif %}" href="#">{% translate "Services" %}</a>
+            <a class="desktop-item menu-link {% if current_page == 'services_home' %}active{% endif %}" href="{% url 'services_home' %}">{% translate "Services" %}</a>
             <input type="checkbox" id="showDrop_personalizado">
             <label id="showDrop_personalizado" class="mobile-item_personalizado">{% translate "Services" %}</label>
             <ul class="drop-menu_personalizado">

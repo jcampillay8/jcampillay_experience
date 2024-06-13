@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title%} Post {% endblock %}
+
+{%block content%}
+
+<body>
+    <!-- Our Skills -->
+    <div class="col-md-12 text-center" style="padding-top: 80px;">
+        <h2 class="title-section"><span class="title-regular">{% translate "Get To" %}</span><br/>{% translate "My Services" %}</h2>
+        <hr class="title-underline mx-auto" />
+    </div> 
+
+    <!-- Contact Section -->
+    <section class="container py-5" id="what_am_I_currently_studying">
+        <div class="d-flex flex-column align-items-center">
+            <div class="card mb-4" style="max-width: 970px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{% static 'images/service/team-bg.jpg' %}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{% translate "Machine Learning" %}</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="{% url 'services_home' %}"><button type="button" class="btn" style="background: #ff561e; color:white"><strong>{% translate "VIEW MORE" %} </strong><i class="fa fa-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4" style="max-width: 970px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{% static 'images/service/team-bg.jpg' %}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{% translate "Backend Developer" %}</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="{% url 'services_home' %}"><button type="button" class="btn" style="background: #ff561e; color:white"><strong>{% translate "VIEW MORE" %} </strong><i class="fa fa-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4" style="max-width: 970px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{% static 'images/service/team-bg.jpg' %}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{% translate "Process Automation" %}</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="{% url 'services_home' %}"><button type="button" class="btn" style="background: #ff561e; color:white"><strong>{% translate "VIEW MORE" %} </strong><i class="fa fa-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4" style="max-width: 970px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{% static 'images/service/team-bg.jpg' %}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{% translate "Software Development" %}</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="{% url 'services_home' %}"><button type="button" class="btn" style="background: #ff561e; color:white"><strong>{% translate "VIEW MORE" %} </strong><i class="fa fa-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4" style="max-width: 970px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{% static 'images/service/team-bg.jpg' %}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{% translate "Engineering" %}</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="{% url 'services_home' %}"><button type="button" class="btn" style="background: #ff561e; color:white"><strong>{% translate "VIEW MORE" %} </strong><i class="fa fa-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+
+
+<!-- Footer -->
+
+<!-- </footer> -->
+
+</body>
+
+
+    
+
+        
+{%endblock%}
+
+
