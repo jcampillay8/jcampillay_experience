@@ -67,7 +67,7 @@ img {
 }
 
 #title {
-  margin-bottom: 0.3in;
+  margin-bottom: 0.1in;
   line-height: 1.2;
 }
 
@@ -143,7 +143,7 @@ img {
 }
 
 .blocks > div {
-  padding-top: 5pt;
+  padding-top: 2pt;
 }
 
 .date {
@@ -201,7 +201,7 @@ img {
 
 .blocks:last-child .decorator {
   /* slightly shortens it */
-  margin-bottom: 0.25in;
+  margin-bottom: 0.1in;
 }
 
 /***** fine-tunes on the details block where the real juice is *****/
@@ -357,10 +357,11 @@ img {
 <body>
     <div class="container">
         <aside id="sidebar">
-            <div class="side-block" id="presentation">
-                <h1>Presentación</h1>
-                <p>"Soy Jaime, un entusiasta de la tecnología y la programación con experiencia en ingeniería industrial. A lo largo de mi carrera, he buscado constantemente ampliar mis habilidades y conocimientos en estas áreas, y tengo un especial interés en el aprendizaje automático y la inteligencia artificial. Considero que estas disciplinas son cruciales para el futuro de muchas industrias, y honestamente, me genera gran expectación e intriga trabajar en ellas y mejorar continuamente en este campo."</p>
-            </div>
+          <div class="side-block" id="presentation">
+            <h1>Presentación</h1>
+            <p>"Soy Jaime, ingeniero industrial con experiencia en programación y un enfoque en aprendizaje automático e inteligencia artificial. He trabajado en proyectos de migración a la nube y desarrollado soluciones de automatización que mejoran la eficiencia operativa. Busco oportunidades para aplicar mis habilidades en entornos innovadores y desafiantes."</p>
+        </div>
+        
             <div class="side-block" id="contact">
                 <h1>Contacto</h1>
                 <ul>
@@ -371,33 +372,35 @@ img {
                 </ul>
             </div>
             <div class="side-block" id="skills">
-                <h1>Skills</h1>
-                <ul>
-                    <li>Programación</li>
-                    <li>Análisis Datos</li>
-                    <li>Visualización Datos</li>
-                    <li>Depuración Datos</li>
-                    <li>Álgebra Lineal</li>
-                    <li>Probabilidad - Estadística</li>
-                    <li>Cálculo</li>
-                    <li>Correlación - Regresión Lineal</li>
-                </ul>
-            </div>
-            <div class="side-block" id="intereses">
-                <h1>Herramientas y Lenguajes</h1>
+              <h1>Habilidades</h1>
+              <ul>
+                  <li>Programación</li>
+                  <li>Inglés B1/B2</li>
+                  <li>Análisis de Datos</li>
+                  <li>Visualización de Datos</li>
+                  <li>Depuración de Datos</li>
+                  <li>Matemáticas</li>
+                  <li>Probabilidad y Estadística</li>
+                  <li>Automatización de Procesos</li>
+              </ul>
+          </div>
+          
+            <div class="side-block" id="skills">
+                <h1>Tecnologías y Herramientas</h1>
                 <ul>
                     <li><i class="fa-brands fa-python"></i> Python</li>
                     <li><i class="fa-sharp fa-solid fa-database"></i> SQL</li>
+                    <li><i class="fa-solid fa-earth-americas"></i> Django</li>
                     <li><i class="fa-sharp fa-solid fa-file-excel"></i> Excel</li>
                     <li><i class="fa-brands fa-square-git"></i> Git</li>
                     <li><i class="fa-brands fa-linux"></i> Linux</li>
                     <li><i class="fa-solid fa-chart-column"></i> Pandas, Dash, Plotly</li>
                     <li><i class="fa-solid fa-code-branch"></i> Postman</li>
                     <li><i class="fa-solid fa-code"></i> .NET Framework</li>
-                    <li><i class="fa-solid fa-robot"></i> UiPath</li>
+                    <li><i class="fa-solid fa-robot"></i> Robotic Process Automation</li>
                 </ul>
             </div>
-            <div class="side-block">
+            <div class="side-block" id="skills">
                 <h1>SitioWeb</h1>
                 <ul>
                     <img src="file://{{qr_image}}" alt="" style="width: 100px;">
@@ -407,7 +410,7 @@ img {
         <section id="main">
             <header id="title">
                 <h1>Jaime Gabriel Campillay Rojas</h1>
-                <span class="subtitle">Data Scientist Learner, Backend Developer, RPA Developer, Civil Engineer &amp; Master in Industrial and Systems Engineering</span>
+                <span class="subtitle">Aspirante a Científico de Datos, Desarrollador Backend, Desarrollador de RPA, Ingeniero Civil, con Máster en Ingeniería Industrial y de Sistemas</span>
             </header>
             <section class="main-block">
                 <h2><i class="fa fa-suitcase"></i> Experiencia</h2>
@@ -472,7 +475,7 @@ img {
                         </header>
                         
                             <ul>
-                                <li><strong>Descripción:</strong> Proyecto personal y también para empresas para gestionar proyectos de ingeniería y monitoreo en tiempo real para proyectos de toda escala con opción seleccionable de idioma.</li>
+                                <li><strong>Descripción:</strong> Proyecto personal y empresarial para gestionar y monitorear proyectos de ingeniería en tiempo real, con soporte multilingüe.</li>
                             </ul>
                         
                     </div>
@@ -483,15 +486,30 @@ img {
                     <div class="details">
                         <header>
                             <h3>Desarrollo De Herramienta Para Mitigación De Riesgos En Instituciones Financieras</h3>
-                            <span class="place">Banco Internacional</span>
+                            <span class="place">Banco Internacional <strong>(<i class="fa-solid fa-trophy"></i> Ganador Data Science Bronze Badge)</strong> </span>
                         </header>
                         
                             <ul>
-                                <li><strong>Descripción:</strong> Desarrollo de una herramienta eficiente para instituciones financieras, centradas en la gestión de riesgos cambiarios en inversiones a través de instrumentos derivados. Utilicé Python, y bibliotecas como Pandas, Dash, Plotly, Scipy, para construir el módulo Gestión de Riesgos y Estrategia de Cobertura, lo que contribuyó al fortalecimiento de mis habilidades en programación y análisis de datos.</li>
+                                <li><strong>Descripción:</strong> Herramienta para gestionar riesgos cambiarios en inversiones derivadas, utilizando Python, PostgreSQL y bibliotecas como Pandas, Dash, Plotly y Scipy. </li>
                             </ul>
                         
                     </div>
                 </section>
+                <section class="blocks">
+                  <div class="date"><span>2022</span></div>
+                  <div class="decorator"></div>
+                  <div class="details">
+                      <header>
+                          <h3>Robot - Curse Línea Negocio</h3>
+                          <span class="place">Banco Scotiabank <strong>(<i class="fa-solid fa-trophy"></i> Ovación por Excelente Desempeño)</strong></span>
+                      </header>
+                      
+                          <ul>
+                              <li><strong>Descripción:</strong> Robot que verifica correos de aceptación de seguros, extrae datos y realiza validaciones con APIs. Finaliza con envío correos de confirmación o rechazo al cliente y actualiza los datos en el sistema.</li>
+                          </ul>
+                      
+                  </div>
+              </section>
             </section>
             <section class="main-block">
                 <h2><i class="fa fa-graduation-cap"></i> Educación</h2>
@@ -506,17 +524,7 @@ img {
                     </div>
                 </section>
                 <section class="blocks">
-                    <div class="date"><span>2022</span></div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Inglés B1/B2 (182hrs)</h3>
-                            <span class="place">EY - Eclass (remoto)</span>
-                        </header>
-                    </div>
-                </section>
-                <section class="blocks">
-                    <div class="date"><span>2022</span></div>
+                    <div class="date"><span>2023</span></div>
                     <div class="decorator"></div>
                     <div class="details">
                         <header>
@@ -525,6 +533,16 @@ img {
                         </header>
                     </div>
                 </section>
+                <section class="blocks">
+                  <div class="date"><span>2022</span></div>
+                  <div class="decorator"></div>
+                  <div class="details">
+                      <header>
+                          <h3>Inglés B1/B2 (182hrs)</h3>
+                          <span class="place">EY - Eclass (remoto)</span>
+                      </header>
+                  </div>
+              </section>
                 <section class="blocks">
                     <div class="date"><span>2021</span></div>
                     <div class="decorator"></div>
