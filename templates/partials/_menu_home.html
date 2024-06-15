@@ -132,7 +132,22 @@
         <input type="radio" name="slider_personalizado" id="cancel-btn_personalizado">
         <ul class="nav-links_personalizado">
           <label for="cancel-btn_personalizado" class="btn cancel-btn_personalizado"><i class="fa fa-window-close"></i></label>
-          <li><a class="desktop-item menu-link {% if current_page == 'welcome' %}active{% endif %}" href="{% url 'home' %}">{% translate "Home" %}</a></li>
+          <!-- <li><a class="desktop-item menu-link {% if current_page == 'welcome' %}active{% endif %}" href="{% url 'home' %}">{% translate "Home" %}</a></li> -->
+
+          <li class="dropdown_personalizado">
+            <a class="desktop-item menu-link {% if current_page == 'welcome' %}active{% endif %}" href="{% url 'home' %}">{% translate "Home" %}</a>
+            <input type="checkbox" id="showDrop_personalizado">
+            <label id="showDrop_personalizado" class="mobile-item_personalizado">{% translate "Home" %}</label>
+            <ul class="drop-menu_personalizado">
+              <li><a href="{% url 'home' %}#skills">{% translate "Skills" %}</a></li>
+              <li><a href="{% url 'home' %}#portfolio">{% translate "Portfolio" %}</a></li>
+              <li><a href="{% url 'home' %}#about">{% translate "About Me" %}</a></li>
+              <li><a href="{% url 'home' %}#experience">{% translate "Experience" %}</a></li>
+              <li><a href="{% url 'home' %}#mision_vision">{% translate "Mision and Vision" %}</a></li>
+              <li><a href="{% url 'home' %}#cv">{% translate "Curriculum" %}</a></li>
+              <li><a href="{% url 'home' %}#contact">{% translate "Contact Me" %}</a></li>
+            </ul>
+          </li>
 
           <li class="about_personalizado_about_me">
             <a class="desktop-item menu-link {% if 'about_me_home' in current_pages %}active{% endif %}" href="{% url 'about_me' %}">{% translate "About Me" %}</a>
@@ -144,15 +159,15 @@
                         <img src="{% static 'img/me_one.jpeg' %}" alt="imagen_menu">
                     </div>
                     <div class="row_personalizado">
-                        <header>
-                            <a class="desktop-item menu-link {% if 'about_me' in current_pages %}active{% endif %}" href="{% url 'about_me' %}">{% translate "About Me" %}</a>
-                        </header>
-                        <ul class="mega-links_personalizado">
-                            <li><a href="#">{% translate "Who am I " %}</a></li>
-                            <li><a href="#">{% translate "What are my interest" %}</a></li>
-                            <li><a href="#">{% translate "What am I studying right now?" %}</a></li>
-                            <li><a href="#">{% translate "What are my goals" %}</a></li>
-                        </ul>
+                      <header>
+                        <a class="desktop-item menu-link {% if 'about_me' in current_pages %}active{% endif %}" href="{% url 'about_me' %}">{% translate "About Me" %}</a>
+                      </header>
+                      <ul class="mega-links_personalizado">
+                        <li><a href="{% url 'about_me' %}#whoami">{% translate "Who am I" %}</a></li>
+                        <li><a href="{% url 'about_me' %}#whataremyinterest">{% translate "What are my interests" %}</a></li>
+                        <li><a href="{% url 'about_me' %}#whatamistudy">{% translate "What am I studying right now?" %}</a></li>
+                        <li><a href="{% url 'about_me' %}#goals">{% translate "What are my goals" %}</a></li>
+                      </ul>
                     </div>
                     <div class="row_personalizado">
                         <header>
@@ -248,7 +263,12 @@
               </div>
             </div>
           </li>
-          <li class="feedback_personalizado"><a href="#">{% translate "Contact" %}</a></li>
+          <li class="feedback_personalizado">
+            <a class="desktop-item menu-link {% if 'contact_home' in current_pages %}active{% endif %}" href="{% url 'contact_home' %}">
+              {% translate "Contact" %}
+            </a>
+          </li>
+          
         </ul>
         <label for="menu-btn_personalizado" class="btn menu-btn_personalizado"><i class="fa fa-bars"></i></label>
       </div>

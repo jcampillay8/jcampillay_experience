@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyProject 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-07 14:35-0400\n"
+"POT-Creation-Date: 2024-06-15 12:47-0400\n"
 "PO-Revision-Date: 2024-06-03 15:00+0000\n"
 "Last-Translator: Tu Nombre <tu.email@example.com>\n"
 "Language-Team: Spanish <LL@li.org>\n"
@@ -120,8 +120,7 @@ msgstr ""
 
 #: apps/authentication/views.py:275
 msgid "I have sent you an email to reset your password"
-msgstr ""
-"Le he enviado un correo para resetear su contraseña"
+msgstr "Le he enviado un correo para resetear su contraseña"
 
 #: apps/authentication/views.py:301
 msgid "Password link is invalid, please request a new one"
@@ -203,6 +202,7 @@ msgid "Este es mi proyecto"
 msgstr "Este es mi proyecto"
 
 #: apps/technical_insight/views.py:109 templates/home/home.html:309
+#: templates/portfolio/portfolio_home.html:176
 msgid "Cloud Strategy"
 msgstr "Estrategia en la Nube"
 
@@ -582,7 +582,7 @@ msgstr ""
 msgid "Implementation & Manage Odoo ERP"
 msgstr "Implementación y Gestión de Odoo ERP"
 
-#: apps/technical_insight/views.py:230 templates/partials/_menu_home.html:245
+#: apps/technical_insight/views.py:230 templates/partials/_menu_home.html:260
 msgid "Clearpix"
 msgstr "Clearpix"
 
@@ -2358,7 +2358,7 @@ msgstr "Anterior"
 msgid "Next"
 msgstr "Siguiente"
 
-#: templates/about_me/about_me.html:59
+#: templates/about_me/about_me.html:59 templates/blog/services_home.html:11
 msgid "Get To"
 msgstr "Explora"
 
@@ -2418,9 +2418,9 @@ msgstr ""
 #: templates/about_me/about_me.html:86
 msgid ""
 " One of my greatest passions is playing the guitar. Music provides me with a "
-"creative outlet and a way to relax and unwind. It’s a joy that complements "
-"my analytical and technical pursuits, offering a balance between creativity "
-"and logic that I find deeply fulfilling."
+"creative outlet and a way to relax and unwind. It’s a pleasure that "
+"complements my analytical and technical pursuits, offering a balance between "
+"creativity and logic that I find deeply fulfilling."
 msgstr ""
 "Una de mis mayores pasiones es tocar la guitarra. La música me proporciona "
 "un medio creativo y una forma de relajarme. Es una alegría que complementa "
@@ -2491,12 +2491,8 @@ msgstr ""
 "positiva en el mundo. "
 
 #: templates/about_me/about_me.html:128
-msgid "What Are "
-msgstr "¿Cuáles son mis objetivos"
-
-#: templates/about_me/about_me.html:128
-msgid "My Interest?"
-msgstr "¿Mis Intereses?"
+msgid "What Are My Interest?"
+msgstr "Cuáles son mis intereses"
 
 #: templates/about_me/about_me.html:129
 msgid ""
@@ -2534,8 +2530,8 @@ msgstr ""
 "principios de ingeniería a la ciencia de datos. Me encanta analizar datos y "
 "extraer ideas significativas para impulsar la toma de decisiones."
 
-#: templates/about_me/about_me.html:165 templates/home/home.html:266
-#: templates/portfolio/portfolio_home.html:133
+#: templates/about_me/about_me.html:165 templates/blog/services_home.html:25
+#: templates/home/home.html:266 templates/portfolio/portfolio_home.html:133
 msgid "Machine Learning"
 msgstr "Aprendizaje Automático"
 
@@ -2563,8 +2559,8 @@ msgstr ""
 "explorar sus diversas aplicaciones. Me interesa especialmente cómo la IA "
 "puede mejorar la productividad y la innovación."
 
-#: templates/about_me/about_me.html:195 templates/home/home.html:262
-#: templates/partials/_menu_home.html:202
+#: templates/about_me/about_me.html:195 templates/blog/services_home.html:53
+#: templates/home/home.html:262 templates/partials/_menu_home.html:217
 #: templates/portfolio/portfolio_home.html:129
 msgid "Process Automation"
 msgstr "Automatización de Procesos"
@@ -2592,15 +2588,42 @@ msgstr ""
 "Tengo un dominio del inglés a nivel B2, lo que me permite acceder a una "
 "amplia gama de recursos y comunicarme eficazmente a nivel global."
 
-#: templates/about_me/about_me.html:230
+#: templates/about_me/about_me.html:228 templates/partials/_menu_home.html:168
+msgid "What am I studying right now?"
+msgstr ""
+
+#: templates/about_me/about_me.html:236
+msgid "Deep Learning and Artificial Intelligence"
+msgstr "Deep Learning e Inteligencia Artificial"
+
+#: templates/about_me/about_me.html:237
+msgid ""
+"I am currently studying Deep Learning and Artificial Intelligence, focusing "
+"on understanding and applying advanced algorithms and techniques. My goal is "
+"to leverage these technologies to develop innovative solutions and enhance "
+"my expertise in this cutting-edge field."
+msgstr ""
+
+#: templates/about_me/about_me.html:244
+msgid " English Language"
+msgstr "Idioma Inglés"
+
+#: templates/about_me/about_me.html:245
+msgid ""
+"I am continually studying English to improve my language skills. This "
+"ongoing effort aims to enhance my ability to communicate effectively in a "
+"global environment and collaborate with professionals from around the world."
+msgstr ""
+
+#: templates/about_me/about_me.html:259
 msgid "What are my goals?"
 msgstr "Cuáles son mis metas"
 
-#: templates/about_me/about_me.html:237
+#: templates/about_me/about_me.html:266
 msgid "3 Professional Goals"
 msgstr "Metas Profesionales"
 
-#: templates/about_me/about_me.html:239
+#: templates/about_me/about_me.html:268
 msgid ""
 " Learning and using Machine Learning and Artificial Intelligence is one of "
 "my main objectives. I strive to master these emerging technologies to "
@@ -2611,7 +2634,7 @@ msgstr ""
 "emergentes para desarrollar soluciones que transformen y mejoren la calidad "
 "de vida de las personas."
 
-#: templates/about_me/about_me.html:240
+#: templates/about_me/about_me.html:269
 msgid ""
 " Mastering the English language to collaborate effectively on a global "
 "level. I constantly work on improving my language skills to communicate and "
@@ -2621,60 +2644,43 @@ msgstr ""
 "Constantemente trabajo en mejorar mis habilidades lingüísticas para "
 "comunicarme y trabajar junto a profesionales de todo el mundo."
 
-#: templates/about_me/about_me.html:241
+#: templates/about_me/about_me.html:270
 msgid ""
-" Knowing and working with teams of people from different places, cultures, "
-"and backgrounds is essential to enrich my experiences and skills. I value "
-"diversity and always seek to collaborate in an inclusive environment."
+" Meeting and working with people from different places, cultures, and "
+"backgrounds who love what they do and contribute to creating a respectful, "
+"responsible, and fertile environment enriches experiences and skills."
 msgstr ""
-" Conocer y trabajar con equipos de personas de diferentes lugares, culturas "
-"y antecedentes es esencial para enriquecer mis experiencias y habilidades. "
-"Valoro la diversidad y siempre busco colaborar en un entorno inclusivo."
 
-#: templates/about_me/about_me_home.html:25 templates/home/home.html:73
-#: templates/technical_insight/technical_insight_home.html:25
-msgid "Bienvenido"
-msgstr "Bienvenido"
-
-#: templates/about_me/about_me_home.html:27
-#: templates/partials/_welcome_content.html:31
-#: templates/technical_insight/technical_insight_home.html:27
-msgid ""
-" We are the unique Consultancy Farm for your business solution, That is "
-"ready to take challenge and knockout your business problems. "
-msgstr ""
-"Somos la empresa de consultoría única para la solución de su negocio, que "
-"está lista para aceptar desafíos y resolver sus problemas empresariales."
-
-#: templates/about_me/about_me_home.html:45
+#: templates/about_me/about_me_home.html:19
 msgid "Explore About Me"
 msgstr "Explora Acerca de Mí"
 
-#: templates/about_me/about_me_home.html:52 templates/home/home.html:458
-#: templates/partials/_menu_home.html:138
-#: templates/partials/_menu_home.html:140
-#: templates/partials/_menu_home.html:148
+#: templates/about_me/about_me_home.html:26 templates/home/home.html:458
+#: templates/partials/_menu_home.html:144
+#: templates/partials/_menu_home.html:153
+#: templates/partials/_menu_home.html:155
+#: templates/partials/_menu_home.html:163
 msgid "About Me"
 msgstr "Sobre mí"
 
-#: templates/about_me/about_me_home.html:53
-#: templates/about_me/about_me_home.html:64
-#: templates/about_me/about_me_home.html:75
+#: templates/about_me/about_me_home.html:27
+#: templates/about_me/about_me_home.html:38
+#: templates/about_me/about_me_home.html:49
 msgid "Lorem elitr magna stet eirmod labore amet labore clita"
 msgstr "Lorem elitr magna stet eirmod labore amet labore clita"
 
-#: templates/about_me/about_me_home.html:55
-#: templates/about_me/about_me_home.html:66
-#: templates/about_me/about_me_home.html:77
+#: templates/about_me/about_me_home.html:29
+#: templates/about_me/about_me_home.html:40
+#: templates/about_me/about_me_home.html:51
 msgid "SEE"
 msgstr "VER"
 
-#: templates/about_me/about_me_home.html:63
-#: templates/partials/_menu_home.html:168
+#: templates/about_me/about_me_home.html:37
+#: templates/partials/_menu_home.html:183
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/about_me/about_me_home.html:74
+#: templates/about_me/about_me_home.html:48
 msgid "My Space"
 msgstr "Mi Espacio"
 
@@ -2682,98 +2688,99 @@ msgstr "Mi Espacio"
 msgid "Sorry your link is no longer Valid,please request a new one"
 msgstr "Lo siento, su enlace ya no es válido, por favor solicite uno nuevo"
 
-#: templates/authentication/login.html:49
+#: templates/authentication/login.html:70
 msgid "Login to your Account"
 msgstr "Inicia sesión en tu cuenta"
 
-#: templates/authentication/login.html:58
+#: templates/authentication/login.html:75
 msgid "Username or Email"
 msgstr "Nombre de usuario o correo electrónico"
 
-#: templates/authentication/login.html:70
-#: templates/authentication/register.html:115
-#: templates/authentication/set-new-password.html:40
+#: templates/authentication/login.html:78
+#: templates/authentication/register.html:135
+#: templates/authentication/set-new-password.html:69
 msgid "Password"
 msgstr "Contraseña"
 
-#: templates/authentication/login.html:82
+#: templates/authentication/login.html:80
 #: templates/partials/_welcome_menu.html:118
 msgid "Login"
 msgstr "Iniciar sesión"
 
-#: templates/authentication/login.html:92
-#: templates/authentication/register.html:138
-#: templates/authentication/reset-password.html:75
-#: templates/authentication/set-new-password.html:55
+#: templates/authentication/login.html:83
+#: templates/authentication/register.html:154
+#: templates/authentication/reset-password.html:83
+#: templates/authentication/set-new-password.html:77
 msgid "OR"
 msgstr "O"
 
-#: templates/authentication/login.html:98
+#: templates/authentication/login.html:86
 msgid "Create an Account"
 msgstr "Crear una Cuenta"
 
-#: templates/authentication/login.html:100
+#: templates/authentication/login.html:87
 #: templates/partials/_welcome_menu.html:120
 msgid "Forgot Password"
 msgstr "Olvidó su Contraseña"
 
 #: templates/authentication/register.html:7
-msgid "Login to Account"
-msgstr "Inicia sesión en tu cuenta"
+msgid "Register for an Account"
+msgstr "Registrarse para una cuenta gratuita"
 
-#: templates/authentication/register.html:47
+#: templates/authentication/register.html:67
 msgid "Register for a free account"
 msgstr "Registrarse para una cuenta gratuita"
 
-#: templates/authentication/register.html:57
+#: templates/authentication/register.html:77
 msgid "First Name"
 msgstr "Nombre"
 
-#: templates/authentication/register.html:69
+#: templates/authentication/register.html:89
 msgid "Last Name"
 msgstr "Apellido"
 
-#: templates/authentication/register.html:81
+#: templates/authentication/register.html:101
 msgid "Username"
 msgstr "Nombre de Usuario"
 
-#: templates/authentication/register.html:90
+#: templates/authentication/register.html:110
 msgid "Available"
 msgstr "Disponible"
 
-#: templates/authentication/register.html:99
-#: templates/authentication/reset-password.html:66
+#: templates/authentication/register.html:119
+#: templates/authentication/reset-password.html:78
 msgid "Email"
 msgstr "Correo Electrónico"
 
-#: templates/authentication/register.html:107
+#: templates/authentication/register.html:127
 msgid "Email Looks good !"
 msgstr "¡El correo electrónico se ve bien!"
 
-#: templates/authentication/register.html:122
+#: templates/authentication/register.html:142
 msgid "SHOW"
 msgstr "MOSTRAR"
 
-#: templates/authentication/register.html:127
+#: templates/authentication/register.html:147
 #: templates/partials/_welcome_menu.html:119
 msgid "Register"
 msgstr "Registrarse"
 
-#: templates/authentication/register.html:144
+#: templates/authentication/register.html:158
 msgid "Reset Password"
 msgstr "Restablecer Contraseña"
 
-#: templates/authentication/register.html:145
-#: templates/authentication/reset-password.html:83
-#: templates/authentication/set-new-password.html:63
+#: templates/authentication/register.html:159
+#: templates/authentication/reset-password.html:87
+#: templates/authentication/set-new-password.html:81
 msgid "Back to Login"
 msgstr "Volver a Iniciar Sesión"
 
-#: templates/authentication/reset-password.html:56
+#: templates/authentication/reset-password.html:70
+#: templates/authentication/set-new-password.html:63
 msgid "Trouble Logging In?"
 msgstr "¿Problemas para Iniciar Sesión?"
 
-#: templates/authentication/reset-password.html:58
+#: templates/authentication/reset-password.html:72
 msgid ""
 "Enter your username or email and we'll send you a link to get back into your "
 "account."
@@ -2781,23 +2788,109 @@ msgstr ""
 "Introduzca su nombre de usuario o correo electrónico y le enviaremos un "
 "enlace para recuperar el acceso a su cuenta."
 
-#: templates/authentication/reset-password.html:68
-#: templates/authentication/set-new-password.html:48
+#: templates/authentication/reset-password.html:80
+#: templates/authentication/set-new-password.html:74
 msgid "Send Link"
 msgstr "Enviar Enlace"
 
-#: templates/authentication/reset-password.html:81
-#: templates/authentication/set-new-password.html:61
+#: templates/authentication/reset-password.html:86
+#: templates/authentication/set-new-password.html:80
 msgid "Create New Account"
 msgstr "Crear Nueva Cuenta"
 
-#: templates/authentication/set-new-password.html:32
+#: templates/authentication/set-new-password.html:64
 msgid "Please enter your new preferred password"
 msgstr "Por favor, introduzca su nueva contraseña preferida"
 
-#: templates/authentication/set-new-password.html:46
+#: templates/authentication/set-new-password.html:72
 msgid "Confirm Password"
 msgstr "Confirmar Contraseña"
+
+#: templates/blog/services_home.html:11
+msgid "My Services"
+msgstr "Servicios"
+
+#: templates/blog/services_home.html:27 templates/blog/services_home.html:41
+#: templates/blog/services_home.html:55 templates/blog/services_home.html:69
+#: templates/blog/services_home.html:83 templates/home/home.html:241
+#: templates/home/home.html:443 templates/home/home.html:478
+msgid "VIEW MORE"
+msgstr "VER MÁS"
+
+#: templates/blog/services_home.html:39 templates/partials/_menu_home.html:216
+msgid "Backend Developer"
+msgstr ""
+
+#: templates/blog/services_home.html:67 templates/home/home.html:265
+#: templates/portfolio/portfolio_home.html:132
+msgid "Software Development"
+msgstr "Desarrollo de Software"
+
+#: templates/blog/services_home.html:81 templates/home/home.html:263
+#: templates/partials/_menu_home.html:219
+#: templates/portfolio/portfolio_home.html:130
+msgid "Engineering"
+msgstr "Ingeniería"
+
+#: templates/contact/contact_home.html:28
+#: templates/partials/_footer_home.html:74
+#: templates/partials/_menu_home.html:148
+msgid "Contact Me"
+msgstr "Contactame"
+
+#: templates/contact/contact_home.html:31 templates/home/home.html:931
+msgid ""
+"Looking for a committed and motivated collaborator? I'm here to be your ally "
+"in the pursuit of exceptional results! Contact me today!"
+msgstr ""
+"¿Buscas un colaborador comprometido y motivado? ¡Estoy aquí para ser tu "
+"aliado en la búsqueda de resultados excepcionales! ¡Contáctame hoy mismo!"
+
+#: templates/contact/contact_home.html:41
+msgid "Contact Info"
+msgstr "Información Contacto"
+
+#: templates/contact/contact_home.html:53
+msgid "Social Media"
+msgstr ""
+
+#: templates/contact/contact_home.html:81 templates/home/home.html:944
+msgid "Choose Language"
+msgstr "Eligir Idioma"
+
+#: templates/contact/contact_home.html:82 templates/home/home.html:945
+#: templates/partials/_header.html:88
+#: templates/partials/_header_welcome.html:88
+msgid "English"
+msgstr "Inglés"
+
+#: templates/contact/contact_home.html:83 templates/home/home.html:946
+#: templates/partials/_header.html:96
+#: templates/partials/_header_welcome.html:96
+msgid "Spanish"
+msgstr "Español"
+
+#: templates/contact/contact_home.html:87 templates/home/home.html:950
+msgid "NAME"
+msgstr "NOMBRE"
+
+#: templates/contact/contact_home.html:90 templates/home/home.html:953
+msgid "EMAIL"
+msgstr "EMAIL"
+
+#: templates/contact/contact_home.html:93 templates/home/home.html:956
+msgid "MESSAGE"
+msgstr "MENSAJE"
+
+#: templates/contact/contact_home.html:95 templates/home/home.html:958
+#: templates/partials/_footer_home.html:82
+msgid "SEND"
+msgstr "ENVIAR"
+
+#: templates/home/home.html:73
+#: templates/technical_insight/technical_insight_home.html:25
+msgid "Bienvenido"
+msgstr "Bienvenido"
 
 #: templates/home/home.html:75
 msgid ""
@@ -2954,11 +3047,6 @@ msgstr ""
 "obvia debido a su liderazgo en la industria y su gestión eficaz del flujo de "
 "trabajo de desarrollo. "
 
-#: templates/home/home.html:241 templates/home/home.html:443
-#: templates/home/home.html:478
-msgid "VIEW MORE"
-msgstr "VER MÁS"
-
 #: templates/home/home.html:258 templates/portfolio/portfolio_home.html:125
 msgid "Projects Portfolio"
 msgstr "Portafolio de Proyectos"
@@ -2967,32 +3055,23 @@ msgstr "Portafolio de Proyectos"
 msgid "All"
 msgstr "Todos"
 
-#: templates/home/home.html:263 templates/partials/_menu_home.html:204
-#: templates/portfolio/portfolio_home.html:130
-msgid "Engineering"
-msgstr "Ingeniería"
-
 #: templates/home/home.html:264 templates/portfolio/portfolio_home.html:131
 msgid "Websites"
 msgstr "Sitios Web"
 
-#: templates/home/home.html:265 templates/portfolio/portfolio_home.html:132
-msgid "Software Development"
-msgstr "Desarrollo de Software"
-
-#: templates/home/home.html:284
+#: templates/home/home.html:284 templates/portfolio/portfolio_home.html:151
 msgid "Portfolio Website"
 msgstr "Portafolio"
 
-#: templates/home/home.html:338
+#: templates/home/home.html:338 templates/portfolio/portfolio_home.html:205
 msgid "Financial Tool International Bank"
 msgstr "Banco Internacional"
 
-#: templates/home/home.html:394
+#: templates/home/home.html:394 templates/portfolio/portfolio_home.html:261
 msgid "Automatización Hipotecario Garantía"
 msgstr "Robot: Automatización BO Hipotecario Garantía"
 
-#: templates/home/home.html:422
+#: templates/home/home.html:422 templates/portfolio/portfolio_home.html:289
 msgid "Automatización Linea Seguro"
 msgstr "Automatización Linea Seguro"
 
@@ -3161,105 +3240,53 @@ msgstr ""
 "académicos y la adquisición de habilidades avanzadas en áreas clave como "
 "programación, ciencia de datos, inglés y fundamentos de la nube."
 
-#: templates/home/home.html:756
-msgid " vision and mission"
+#: templates/home/home.html:753
+msgid "Vision and Mission"
 msgstr "visión y misión"
 
-#: templates/home/home.html:758
+#: templates/home/home.html:761
 msgid ""
-"Mis motivaciones para mejorar constantemente se basan en los siguientes tres "
-"pilares:"
+"Learning and utilizing Machine Learning and Artificial Intelligence is one "
+"of my main goals. I strive to master these emerging technologies to develop "
+"solutions that transform and improve people's quality of life."
 msgstr ""
-"Mis motivaciones para mejorar constantemente se basan en los siguientes tres "
-"pilares:"
-
-#: templates/home/home.html:767
-msgid ""
-"Aprender y utilizar Machine Learning y la Inteligencia Artificial es uno de "
-"mis principales objetivos. Me esfuerzo por dominar estas tecnologías "
-"emergentespara desarrollar soluciones que transformen y mejoren la calidad "
-"de vida de las personas."
-msgstr ""
-"Aprender y utilizar Machine Learning y la Inteligencia Artificial es uno de "
-"mis principales objetivos. Me esfuerzo por dominar estas tecnologías "
-"emergentespara desarrollar soluciones que transformen y mejoren la calidad "
+" Aprender y utilizar Aprendizaje Automático e Inteligencia Artificial es uno "
+"de mis principales objetivos. Me esfuerzo por dominar estas tecnologías "
+"emergentes para desarrollar soluciones que transformen y mejoren la calidad "
 "de vida de las personas."
 
-#: templates/home/home.html:779
+#: templates/home/home.html:773
 msgid ""
-"Dominar el idioma inglés para colaborar eficazmente a nivel global. Trabajo "
-"constantemente en mejorar mis habilidades lingüísticas para comunicarme y "
-"trabajar junto a profesionales de todo el mundo."
+"Mastering the English language to collaborate effectively on a global level. "
+"I constantly work on improving my language skills to communicate and work "
+"with professionals from around the world."
 msgstr ""
-"Dominar el idioma inglés para colaborar eficazmente a nivel global. Trabajo "
-"constantemente en mejorar mis habilidades lingüísticas para comunicarme y "
-"trabajar junto a profesionales de todo el mundo."
-
-#: templates/home/home.html:791
+" Dominar el idioma inglés para colaborar de manera efectiva a nivel global. "
+"Constantemente trabajo en mejorar mis habilidades lingüísticas para "
+"comunicarme y trabajar junto a profesionales de todo el mundo."
+#: templates/home/home.html:785
 msgid ""
-"Conocer y trabajar junto a equipos de personas de diferentes lugares, "
-"culturas y conocimientos es fundamental para enriquecer mis experiencias y "
-"habilidades. Valoro la diversidad y busco siempre colaborar en un ambiente "
-"inclusivo."
+"Meeting and working with people from different places, cultures, and "
+"backgrounds who love what they do and contribute to creating a respectful, "
+"responsible, and fertile environment enriches experiences and skills."
 msgstr ""
-"Conocer y trabajar junto a equipos de personas de diferentes lugares, "
-"culturas y conocimientos es fundamental para enriquecer mis experiencias y "
-"habilidades. Valoro la diversidad y busco siempre colaborar en un ambiente "
-"inclusivo."
+"Conocer y trabajar con personas de diferentes lugares, culturas y antecedentes, que aman lo que hacen y contribuyen a crear un ambiente respetuoso, responsable y fértil, enriquece las experiencias y habilidades."
 
-#: templates/home/home.html:890
+#: templates/home/home.html:883
 msgid "Interested in my resume?"
 msgstr "¿Interesado en mi currículum?"
 
-#: templates/home/home.html:900
+#: templates/home/home.html:893
 msgid " Access my resume with a click"
 msgstr " Acceda a mi currículum con un clic"
 
-#: templates/home/home.html:935
+#: templates/home/home.html:928
 msgid "CONTACT"
 msgstr "CONTACTO"
 
-#: templates/home/home.html:935
+#: templates/home/home.html:928
 msgid "ME"
-msgstr "YO"
-
-#: templates/home/home.html:938
-msgid ""
-"Looking for a committed and motivated collaborator? I'm here to be your ally "
-"in the pursuit of exceptional results! Contact me today!"
-msgstr ""
-"¿Buscas un colaborador comprometido y motivado? ¡Estoy aquí para ser tu "
-"aliado en la búsqueda de resultados excepcionales! ¡Contáctame hoy mismo!"
-
-#: templates/home/home.html:951
-msgid "Choose Language"
-msgstr "Eligir Idioma"
-
-#: templates/home/home.html:952 templates/partials/_header.html:88
-#: templates/partials/_header_welcome.html:88
-msgid "English"
-msgstr "Inglés"
-
-#: templates/home/home.html:953 templates/partials/_header.html:96
-#: templates/partials/_header_welcome.html:96
-msgid "Spanish"
-msgstr "Español"
-
-#: templates/home/home.html:957
-msgid "NAME"
-msgstr "NOMBRE"
-
-#: templates/home/home.html:960
-msgid "EMAIL"
-msgstr "EMAIL"
-
-#: templates/home/home.html:963
-msgid "MESSAGE"
-msgstr "MENSAJE"
-
-#: templates/home/home.html:965 templates/partials/_footer_home.html:82
-msgid "SEND"
-msgstr "ENVIAR"
+msgstr "ME"
 
 #: templates/partials/_footer_home.html:24
 msgid ""
@@ -3275,6 +3302,8 @@ msgstr "Enlaces Útiles"
 
 #: templates/partials/_footer_home.html:44
 #: templates/partials/_menu_home.html:135
+#: templates/partials/_menu_home.html:138
+#: templates/partials/_menu_home.html:140
 #: templates/partials/_welcome_menu.html:117
 msgid "Home"
 msgstr "Inicio"
@@ -3293,25 +3322,25 @@ msgstr "Contactame"
 
 #: templates/partials/_footer_home.html:55
 msgid "Widsom Quotes"
-msgstr ""
+msgstr "Palabras de Sabiduria"
 
 #: templates/partials/_footer_home.html:59
 msgid ""
 "\"Success is not final, failure is not fatal. what matters is the courage to "
 "continue.\""
 msgstr ""
+"\"El éxito no es definitivo, el fracaso no es fatal. Lo que importa es el coraje de seguir adelante.\""
 
 #: templates/partials/_footer_home.html:66
 msgid "\"The best way to predict the future is to create it.\""
 msgstr ""
-
-#: templates/partials/_footer_home.html:74
-msgid "Contact Me"
-msgstr "Contactame"
+"\"La mejor manera de predecir el futuro es creándolo.\""
 
 #: templates/partials/_footer_home.html:78
 msgid "Would like to have a talk, contact me!"
 msgstr ""
+"¿Te gustaría tener una conversación? ¡Contáctame!"
+
 
 #: templates/partials/_footer_home.html:101
 msgid " All Rights Reserved. Designed and Developed by "
@@ -3331,176 +3360,186 @@ msgstr "política de privacidad"
 
 #: templates/partials/_header.html:68
 msgid "(Usuario Administrador)"
-msgstr ""
+msgstr "(Usuario Administrador)"
 
 #: templates/partials/_header.html:70
 msgid "(Usuario Autenticado)"
-msgstr ""
+msgstr "(Usuario Autenticado)"
 
 #: templates/partials/_header.html:72
 msgid "(Usuario Visita)"
-msgstr ""
+msgstr "(Usuario Visita)"
 
 #: templates/partials/_header.html:105
 msgid " Logout"
 msgstr " Cerrar sesión"
 
-#: templates/partials/_menu_home.html:151
-msgid "Who am I "
-msgstr "¿Quién soy?"
+#: templates/partials/_menu_home.html:142
+msgid "Skills"
+msgstr "Habilidades"
 
-#: templates/partials/_menu_home.html:152
-msgid "What are my interest"
-msgstr "Cuáles son mis intereses"
-
-#: templates/partials/_menu_home.html:153
-msgid "What do I want to learn"
-msgstr "Qué quiero aprender"
-
-#: templates/partials/_menu_home.html:154
-msgid "What are my goals"
-msgstr "Cuáles son mis objetivos"
-
-#: templates/partials/_menu_home.html:159
-msgid "Technical Insight"
-msgstr "Conocimiento Técnico"
-
-#: templates/partials/_menu_home.html:162
-msgid "Knowledge and Skills"
-msgstr "Conocimientos y Habilidades"
-
-#: templates/partials/_menu_home.html:163
-msgid "Engineering knowledge"
-msgstr "Conocimientos de Ingeniería"
-
-#: templates/partials/_menu_home.html:171
-msgid "My Blog"
-msgstr "Mi Blog"
-
-#: templates/partials/_menu_home.html:173
-msgid "Blog One "
-msgstr "Blog Uno"
-
-#: templates/partials/_menu_home.html:174
-msgid "Blog Two"
-msgstr "Blog Dos"
-
-#: templates/partials/_menu_home.html:175
-msgid "Blog Three"
-msgstr "Blog Tres"
-
-#: templates/partials/_menu_home.html:176
-msgid "Blog Four"
-msgstr "Blog Cuatro"
-
-#: templates/partials/_menu_home.html:185
-#: templates/partials/_menu_home.html:187
-msgid "Quizzes"
-msgstr "Cuestionarios"
-
-#: templates/partials/_menu_home.html:189
-msgid "Drop Quiz 1"
-msgstr "Dejar Cuestionario 1"
-
-#: templates/partials/_menu_home.html:190
-msgid "Drop Quiz 2"
-msgstr "Dejar Cuestionario 2"
-
-#: templates/partials/_menu_home.html:191
-msgid "Drop Quiz 3"
-msgstr "Dejar Cuestionario 3"
-
-#: templates/partials/_menu_home.html:192
-msgid "Drop Quiz 4"
-msgstr "Dejar Cuestionario 4"
-
-#: templates/partials/_menu_home.html:196
-#: templates/partials/_menu_home.html:198
-msgid "Services"
-msgstr "Servicios"
-
-#: templates/partials/_menu_home.html:200
-msgid "Data Science Learning"
-msgstr "Aprendizaje Automático"
-
-#: templates/partials/_menu_home.html:201
-msgid "Backend Developer"
-msgstr ""
-
-#: templates/partials/_menu_home.html:203
-msgid "Software Developer"
-msgstr "Desarrollo de Software"
-
-#: templates/partials/_menu_home.html:208
-#: templates/partials/_menu_home.html:210
+#: templates/partials/_menu_home.html:143
+#: templates/partials/_menu_home.html:223
+#: templates/partials/_menu_home.html:225
 msgid "Portfolio"
 msgstr "Portafolio"
 
+#: templates/partials/_menu_home.html:145
+msgid "Experience"
+msgstr "Experiencia Laboral"
+
+#: templates/partials/_menu_home.html:146
+msgid "Mision and Vision"
+msgstr "visión y misión"
+
+#: templates/partials/_menu_home.html:147
+msgid "Curriculum"
+msgstr "Curriculum"
+
+#: templates/partials/_menu_home.html:166
+msgid "Who am I"
+msgstr "¿Quién soy?"
+
+#: templates/partials/_menu_home.html:167
+msgid "What are my interests"
+msgstr "Cuáles son mis intereses"
+
+#: templates/partials/_menu_home.html:169
+msgid "What are my goals"
+msgstr "Cuáles son mis objetivos"
+
+#: templates/partials/_menu_home.html:174
+msgid "Technical Insight"
+msgstr "Conocimiento Técnico"
+
+#: templates/partials/_menu_home.html:177
+msgid "Knowledge and Skills"
+msgstr "Conocimientos y Habilidades"
+
+#: templates/partials/_menu_home.html:178
+msgid "Engineering knowledge"
+msgstr "Conocimientos de Ingeniería"
+
+#: templates/partials/_menu_home.html:186
+msgid "My Blog"
+msgstr "Mi Blog"
+
+#: templates/partials/_menu_home.html:188
+msgid "Blog One "
+msgstr "Blog Uno"
+
+#: templates/partials/_menu_home.html:189
+msgid "Blog Two"
+msgstr "Blog Dos"
+
+#: templates/partials/_menu_home.html:190
+msgid "Blog Three"
+msgstr "Blog Tres"
+
+#: templates/partials/_menu_home.html:191
+msgid "Blog Four"
+msgstr "Blog Cuatro"
+
+#: templates/partials/_menu_home.html:200
+#: templates/partials/_menu_home.html:202
+msgid "Quizzes"
+msgstr "Cuestionarios"
+
+#: templates/partials/_menu_home.html:204
+msgid "Drop Quiz 1"
+msgstr "Dejar Cuestionario 1"
+
+#: templates/partials/_menu_home.html:205
+msgid "Drop Quiz 2"
+msgstr "Dejar Cuestionario 2"
+
+#: templates/partials/_menu_home.html:206
+msgid "Drop Quiz 3"
+msgstr "Dejar Cuestionario 3"
+
+#: templates/partials/_menu_home.html:207
+msgid "Drop Quiz 4"
+msgstr "Dejar Cuestionario 4"
+
+#: templates/partials/_menu_home.html:211
+#: templates/partials/_menu_home.html:213
+msgid "Services"
+msgstr "Servicios"
+
+#: templates/partials/_menu_home.html:215
+msgid "Data Science Learning"
+msgstr "Aprendizaje Automático"
+
 #: templates/partials/_menu_home.html:218
+msgid "Software Developer"
+msgstr "Desarrollo de Software"
+
+#: templates/partials/_menu_home.html:233
 msgid "Personal Projects"
 msgstr "Proyectos Personales"
 
-#: templates/partials/_menu_home.html:220
+#: templates/partials/_menu_home.html:235
 msgid "Graphics"
 msgstr "Gráficos"
 
-#: templates/partials/_menu_home.html:221
+#: templates/partials/_menu_home.html:236
 msgid "Vectors"
 msgstr "Vectores"
 
-#: templates/partials/_menu_home.html:222
+#: templates/partials/_menu_home.html:237
 msgid "Business cards"
 msgstr "Tarjetas de visita"
 
-#: templates/partials/_menu_home.html:223
+#: templates/partials/_menu_home.html:238
 msgid "Custom logo"
 msgstr "Logo personalizado"
 
-#: templates/partials/_menu_home.html:228
+#: templates/partials/_menu_home.html:243
 msgid "Professional Projects"
 msgstr "Proyectos Profesionales"
 
-#: templates/partials/_menu_home.html:231
+#: templates/partials/_menu_home.html:246
 msgid "Estrategy Cloud"
 msgstr "Estrategia en la Nube"
 
-#: templates/partials/_menu_home.html:232
+#: templates/partials/_menu_home.html:247
 msgid "Python Tool Finance"
 msgstr "Herramienta Financiera en Python"
 
-#: templates/partials/_menu_home.html:233
+#: templates/partials/_menu_home.html:248
 msgid "ETL SQL BICE"
 msgstr "ETL SQL BICE"
 
-#: templates/partials/_menu_home.html:234
+#: templates/partials/_menu_home.html:249
 msgid "RPA Scotiabank"
 msgstr "RPA Scotiabank"
 
-#: templates/partials/_menu_home.html:235
+#: templates/partials/_menu_home.html:250
+#: templates/portfolio/portfolio_home.html:344
 msgid "ReportWorks MobileApp"
 msgstr "ReportWorks App Móvil"
 
-#: templates/partials/_menu_home.html:236
+#: templates/partials/_menu_home.html:251
 msgid "Odoo ERP"
 msgstr "Odoo ERP"
 
-#: templates/partials/_menu_home.html:240
+#: templates/partials/_menu_home.html:255
 msgid "Work Experience"
 msgstr "Experiencia Laboral"
 
-#: templates/partials/_menu_home.html:242
+#: templates/partials/_menu_home.html:257
 msgid "Freelance"
 msgstr "Freelance"
 
-#: templates/partials/_menu_home.html:243
+#: templates/partials/_menu_home.html:258
 msgid "EY"
 msgstr "EY"
 
-#: templates/partials/_menu_home.html:244
+#: templates/partials/_menu_home.html:259
 msgid "Techint"
 msgstr "Techint"
 
-#: templates/partials/_menu_home.html:251
+#: templates/partials/_menu_home.html:268
 msgid "Contact"
 msgstr "Contacto"
 
@@ -3512,6 +3551,15 @@ msgstr "¡Hola!"
 msgid "I'm Jaime Campillay"
 msgstr "Soy Jaime Campillay"
 
+#: templates/partials/_welcome_content.html:31
+#: templates/technical_insight/technical_insight_home.html:27
+msgid ""
+" We are the unique Consultancy Farm for your business solution, That is "
+"ready to take challenge and knockout your business problems. "
+msgstr ""
+"Somos la empresa de consultoría única para la solución de su negocio, que "
+"está lista para aceptar desafíos y resolver sus problemas empresariales."
+
 #: templates/partials/_welcome_content.html:34
 msgid "Guest User"
 msgstr "Usuario Invitado"
@@ -3520,12 +3568,48 @@ msgstr "Usuario Invitado"
 msgid "Authenticated User"
 msgstr "Usuario Autenticado"
 
+#: templates/portfolio/portfolio_home.html:68
+msgid "Get to"
+msgstr "Explora"
+
+#: templates/portfolio/portfolio_home.html:68
+msgid "Know"
+msgstr "Quién Soy"
+
+#: templates/portfolio/portfolio_home.html:68
+msgid "All My Projects"
+msgstr "Tipo de Tecnología: "
+
+#: templates/portfolio/portfolio_home.html:71
+msgid "Explore my portfolio of projects,"
+msgstr ""
+"Explora mi portafolio de proyectos,"
+
+#: templates/portfolio/portfolio_home.html:72
+msgid ""
+"where each initiative represents a milestone in my professional journey."
+msgstr ""
+"donde cada iniciativa representa un hito en mi trayectoria profesional."
+
+
 #: templates/portfolio/portfolio_home.html:84
 #: templates/portfolio/portfolio_home.html:92
 #: templates/portfolio/portfolio_home.html:100
 #: templates/portfolio/portfolio_home.html:108
 msgid "Technology Projects"
 msgstr "Tipo de Tecnología: "
+
+#: templates/portfolio/portfolio_home.html:233
+msgid "ETL SQL BICE & FACTSET"
+msgstr "ETL SQL BICE"
+
+#: templates/portfolio/portfolio_home.html:316
+msgid "Telemarketing Automation"
+msgstr "Automatización de Procesos"
+
+#: templates/portfolio/portfolio_home.html:371
+msgid "Implementation & Manage Odoo"
+msgstr "Implementación y Gestión de Odoo ERP"
 
 #: templates/portfolio/project_describe.html:18
 msgid "Project Portfolio"
@@ -3933,6 +4017,70 @@ msgid ""
 " Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
 "sint oat cupidatat "
 msgstr ""
+
+#~ msgid "What Are "
+#~ msgstr "¿Cuáles son mis objetivos"
+
+#~ msgid "My Interest?"
+#~ msgstr "¿Mis Intereses?"
+
+#~ msgid ""
+#~ " Knowing and working with teams of people from different places, "
+#~ "cultures, and backgrounds is essential to enrich my experiences and "
+#~ "skills. I value diversity and always seek to collaborate in an inclusive "
+#~ "environment."
+#~ msgstr ""
+#~ " Conocer y trabajar con equipos de personas de diferentes lugares, "
+#~ "culturas y antecedentes es esencial para enriquecer mis experiencias y "
+#~ "habilidades. Valoro la diversidad y siempre busco colaborar en un entorno "
+#~ "inclusivo."
+
+#~ msgid "Login to Account"
+#~ msgstr "Inicia sesión en tu cuenta"
+
+#~ msgid ""
+#~ "Mis motivaciones para mejorar constantemente se basan en los siguientes "
+#~ "tres pilares:"
+#~ msgstr ""
+#~ "Mis motivaciones para mejorar constantemente se basan en los siguientes "
+#~ "tres pilares:"
+
+#~ msgid ""
+#~ "Aprender y utilizar Machine Learning y la Inteligencia Artificial es uno "
+#~ "de mis principales objetivos. Me esfuerzo por dominar estas tecnologías "
+#~ "emergentespara desarrollar soluciones que transformen y mejoren la "
+#~ "calidad de vida de las personas."
+#~ msgstr ""
+#~ "Aprender y utilizar Machine Learning y la Inteligencia Artificial es uno "
+#~ "de mis principales objetivos. Me esfuerzo por dominar estas tecnologías "
+#~ "emergentespara desarrollar soluciones que transformen y mejoren la "
+#~ "calidad de vida de las personas."
+
+#~ msgid ""
+#~ "Dominar el idioma inglés para colaborar eficazmente a nivel global. "
+#~ "Trabajo constantemente en mejorar mis habilidades lingüísticas para "
+#~ "comunicarme y trabajar junto a profesionales de todo el mundo."
+#~ msgstr ""
+#~ "Dominar el idioma inglés para colaborar eficazmente a nivel global. "
+#~ "Trabajo constantemente en mejorar mis habilidades lingüísticas para "
+#~ "comunicarme y trabajar junto a profesionales de todo el mundo."
+
+#~ msgid ""
+#~ "Conocer y trabajar junto a equipos de personas de diferentes lugares, "
+#~ "culturas y conocimientos es fundamental para enriquecer mis experiencias "
+#~ "y habilidades. Valoro la diversidad y busco siempre colaborar en un "
+#~ "ambiente inclusivo."
+#~ msgstr ""
+#~ "Conocer y trabajar junto a equipos de personas de diferentes lugares, "
+#~ "culturas y conocimientos es fundamental para enriquecer mis experiencias "
+#~ "y habilidades. Valoro la diversidad y busco siempre colaborar en un "
+#~ "ambiente inclusivo."
+
+#~ msgid "Who am I "
+#~ msgstr "¿Quién soy?"
+
+#~ msgid "What do I want to learn"
+#~ msgstr "Qué quiero aprender"
 
 #~ msgid "Standard"
 #~ msgstr "Estándar"

@@ -14,8 +14,8 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path("", include("apps.home.urls")),
-    
     path('guest_user/', include('guest_user.urls')),
+    path('contact_home/', include('apps.contact.urls')),
     path('about_me_home/', include('apps.about_me.urls')),
     path('technical_insight/', include('apps.technical_insight.urls')),
     path('Quizzes/', include("apps.Quizzes.urls")),

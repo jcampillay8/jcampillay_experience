@@ -223,6 +223,7 @@ def contact(request):
         except Exception as e:
             messages.error(request, f'Hubo un error al enviar tu mensaje: {str(e)}')
 
+        #return render(request, 'contact/contact_home.html',{'current_page','contact_home'})
         return redirect('home')
 
     return render(request, "home/home.html", {'current_page': 'home'})

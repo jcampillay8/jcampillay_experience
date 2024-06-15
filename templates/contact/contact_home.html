@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title%} Post {% endblock %}
+
+{%block content%}
+<style>
+.contact {
+    padding: 115px 0 120px;
+    background:url(../../assets/images/banner/map.jpg)no-repeat;
+	background-position:center;
+	background-size: cover;
+	position: relative;
+}
+</style>
+<body>
+    <!doctype html>
+    <html class="no-js" lang="en">
+    
+
+            
+    
+            <!--contact start-->
+            <section class="contact content">
+                <div class="container">
+                  <div class="contact-details">
+                    <div class="section-header contact-head text-center">
+                        <h2>{% translate "Contact Me" %}</h2>
+                        <hr class="title-underline-center mx-auto">
+                        <p class="lead"><strong>
+                            {% translate "Looking for a committed and motivated collaborator? I'm here to be your ally in the pursuit of exceptional results! Contact me today!" %}</strong>
+                        </p>
+                    </div><!--/.section-header-->
+                    <div class="contact-content">
+                      <div class="row">
+                        <div class="col-md-6 contact-info">
+                          <div class="single-contact-box">
+                            <div class="contact-right">
+                              <div class="contact-adress">
+                                <div class="contact-office-address">
+                                  <h3>{% translate "Contact Info" %}</h3>
+                                  <p>Chile, Santiago.</p>
+                                  <div class="contact-online-address">
+                                    <div class="single-online-address">
+                                      <i class="fa fa-phone"></i> +11253678958
+                                    </div><!--/.single-online-address-->
+                                    <div class="single-online-address">
+                                      <i class="fa fa-envelope-o"></i> <span>info@mail.com</span>
+                                    </div><!--/.single-online-address-->
+                                  </div><!--/.contact-online-address-->
+                                </div><!--/.contact-office-address-->
+                                <div class="contact-office-address">
+                                  <h3>{% translate "Social Media" %}</h3>
+                                  <div class="contact-icon">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                                        <li class="list-inline-item"><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li class="list-inline-item"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                                        <li class="list-inline-item"><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                                      </ul>
+                                  </div><!--/.contact-icon-->
+                                </div><!--/.contact-office-address-->
+                              </div><!--/.contact-address-->
+                            </div><!--/.contact-right-->
+                          </div><!--/.single-contact-box-->
+                        </div><!--/.col-->
+                        <div class="col-md-6 contact-form" style="margin-top: -40px;">
+                          <div class="contact-container">
+            
+                            {% if messages %}
+                              <div class="alert alert-info" role="alert">
+                                {% for message in messages %}
+                                  {{ message }}
+                                {% endfor %}
+                              </div>
+                            {% endif %}
+                            <form method="post" action="{% url 'contact' %}">
+                              {% csrf_token %}
+                              <div class="mb-3">
+                                <select class="form-select" id="language" name="language" required>
+                                  <option value="" disabled selected>{% translate "Choose Language" %}</option>
+                                  <option value="english">{% translate "English" %}</option>
+                                  <option value="spanish">{% translate "Spanish" %}</option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="{% translate 'NAME' %}" required>
+                              </div>
+                              <div class="mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="{% translate 'EMAIL' %}" required>
+                              </div>
+                              <div class="mb-3">
+                                <textarea class="form-control" rows="5" id="message" name="message" placeholder="{% translate 'MESSAGE' %}" required></textarea>
+                              </div>
+                              <button type="submit" class="btn btn" style="background: #ff561e; color:white" onclick="return validateLanguage()">{% translate "SEND" %} <i class="fa fa-envelope"></i></button>
+                            </form>
+                          </div>
+                        </div><!--/.col-->
+                      </div><!--/.row-->
+                    </div><!--/.contact-content-->
+                  </div><!--/.contact-details-->
+                </div><!--/.container-->
+              </section><!--/.contact-->
+            
+
+
+</body>
+
+
+    
+
+        
+{%endblock%}
+
+
