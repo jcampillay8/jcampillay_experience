@@ -259,7 +259,7 @@ def download_cv(request, template_name):
         return HttpResponseServerError('Invalid template name')
 
     # Agregar la ruta de la imagen QR al contexto
-    qr_image_path = os.path.abspath('core/assets/img/qr_web.png')
+    qr_image_path = os.path.abspath('core/assets/img/qr_website.png')
     context = {'qr_image': qr_image_path}  # Agrega cualquier otro contexto necesario para la plantilla
 
     # Ruta de salida para el PDF
