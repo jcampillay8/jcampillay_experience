@@ -2590,7 +2590,7 @@ msgstr ""
 
 #: templates/about_me/about_me.html:228 templates/partials/_menu_home.html:168
 msgid "What am I studying right now?"
-msgstr ""
+msgstr "¿Qué estoy estudiando ahora?"
 
 #: templates/about_me/about_me.html:236
 msgid "Deep Learning and Artificial Intelligence"
@@ -2602,7 +2602,7 @@ msgid ""
 "on understanding and applying advanced algorithms and techniques. My goal is "
 "to leverage these technologies to develop innovative solutions and enhance "
 "my expertise in this cutting-edge field."
-msgstr ""
+msgstr "Actualmente estoy estudiando Deep Learning e Inteligencia Artificial, enfocándome en comprender y aplicar algoritmos y técnicas avanzadas. Mi objetivo es aprovechar estas tecnologías para desarrollar soluciones innovadoras y mejorar mi experiencia en este campo de vanguardia."
 
 #: templates/about_me/about_me.html:244
 msgid " English Language"
@@ -2613,7 +2613,7 @@ msgid ""
 "I am continually studying English to improve my language skills. This "
 "ongoing effort aims to enhance my ability to communicate effectively in a "
 "global environment and collaborate with professionals from around the world."
-msgstr ""
+msgstr "Estoy estudiando inglés de manera continua para mejorar mis habilidades lingüísticas. Este esfuerzo constante tiene como objetivo mejorar mi capacidad de comunicarme de manera efectiva en un entorno global y colaborar con profesionales de todo el mundo."
 
 #: templates/about_me/about_me.html:259
 msgid "What are my goals?"
@@ -2649,7 +2649,7 @@ msgid ""
 " Meeting and working with people from different places, cultures, and "
 "backgrounds who love what they do and contribute to creating a respectful, "
 "responsible, and fertile environment enriches experiences and skills."
-msgstr ""
+msgstr "Conocer y trabajar con personas de diferentes lugares, culturas y antecedentes que amen lo que hacen y contribuyen a crear un ambiente respetuoso, responsable y fértil que enriquesca conocimientos, experiencias y habilidades."
 
 #: templates/about_me/about_me_home.html:19
 msgid "Explore About Me"
@@ -3269,8 +3269,7 @@ msgid ""
 "Meeting and working with people from different places, cultures, and "
 "backgrounds who love what they do and contribute to creating a respectful, "
 "responsible, and fertile environment enriches experiences and skills."
-msgstr ""
-"Conocer y trabajar con personas de diferentes lugares, culturas y antecedentes, que aman lo que hacen y contribuyen a crear un ambiente respetuoso, responsable y fértil, enriquece las experiencias y habilidades."
+msgstr "Conocer y trabajar con personas de diferentes lugares, culturas y antecedentes que amen lo que hacen y contribuyen a crear un ambiente respetuoso, responsable y fértil que enriquesca conocimientos, experiencias y habilidades."
 
 #: templates/home/home.html:883
 msgid "Interested in my resume?"
