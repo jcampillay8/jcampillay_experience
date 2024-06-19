@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyProject 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-15 12:47-0400\n"
+"POT-Creation-Date: 2024-06-19 10:03-0400\n"
 "PO-Revision-Date: 2024-06-03 15:00+0000\n"
 "Last-Translator: Tu Nombre <tu.email@example.com>\n"
 "Language-Team: Spanish <LL@li.org>\n"
@@ -2602,7 +2602,11 @@ msgid ""
 "on understanding and applying advanced algorithms and techniques. My goal is "
 "to leverage these technologies to develop innovative solutions and enhance "
 "my expertise in this cutting-edge field."
-msgstr "Actualmente estoy estudiando Deep Learning e Inteligencia Artificial, enfocándome en comprender y aplicar algoritmos y técnicas avanzadas. Mi objetivo es aprovechar estas tecnologías para desarrollar soluciones innovadoras y mejorar mi experiencia en este campo de vanguardia."
+msgstr ""
+"Actualmente estoy estudiando Deep Learning e Inteligencia Artificial, "
+"enfocándome en comprender y aplicar algoritmos y técnicas avanzadas. Mi "
+"objetivo es aprovechar estas tecnologías para desarrollar soluciones "
+"innovadoras y mejorar mi experiencia en este campo de vanguardia."
 
 #: templates/about_me/about_me.html:244
 msgid " English Language"
@@ -2613,7 +2617,11 @@ msgid ""
 "I am continually studying English to improve my language skills. This "
 "ongoing effort aims to enhance my ability to communicate effectively in a "
 "global environment and collaborate with professionals from around the world."
-msgstr "Estoy estudiando inglés de manera continua para mejorar mis habilidades lingüísticas. Este esfuerzo constante tiene como objetivo mejorar mi capacidad de comunicarme de manera efectiva en un entorno global y colaborar con profesionales de todo el mundo."
+msgstr ""
+"Estoy estudiando inglés de manera continua para mejorar mis habilidades "
+"lingüísticas. Este esfuerzo constante tiene como objetivo mejorar mi "
+"capacidad de comunicarme de manera efectiva en un entorno global y colaborar "
+"con profesionales de todo el mundo."
 
 #: templates/about_me/about_me.html:259
 msgid "What are my goals?"
@@ -2649,7 +2657,11 @@ msgid ""
 " Meeting and working with people from different places, cultures, and "
 "backgrounds who love what they do and contribute to creating a respectful, "
 "responsible, and fertile environment enriches experiences and skills."
-msgstr "Conocer y trabajar con personas de diferentes lugares, culturas y antecedentes que amen lo que hacen y contribuyen a crear un ambiente respetuoso, responsable y fértil que enriquesca conocimientos, experiencias y habilidades."
+msgstr ""
+"Conocer y trabajar con personas de diferentes lugares, culturas y "
+"antecedentes que amen lo que hacen y contribuyen a crear un ambiente "
+"respetuoso, responsable y fértil que enriquesca conocimientos, experiencias "
+"y habilidades."
 
 #: templates/about_me/about_me_home.html:19
 msgid "Explore About Me"
@@ -2860,13 +2872,13 @@ msgstr "Eligir Idioma"
 
 #: templates/contact/contact_home.html:82 templates/home/home.html:945
 #: templates/partials/_header.html:88
-#: templates/partials/_header_welcome.html:88
+#: templates/partials/_header_welcome.html:74
 msgid "English"
 msgstr "Inglés"
 
 #: templates/contact/contact_home.html:83 templates/home/home.html:946
 #: templates/partials/_header.html:96
-#: templates/partials/_header_welcome.html:96
+#: templates/partials/_header_welcome.html:82
 msgid "Spanish"
 msgstr "Español"
 
@@ -3264,12 +3276,17 @@ msgstr ""
 " Dominar el idioma inglés para colaborar de manera efectiva a nivel global. "
 "Constantemente trabajo en mejorar mis habilidades lingüísticas para "
 "comunicarme y trabajar junto a profesionales de todo el mundo."
+
 #: templates/home/home.html:785
 msgid ""
 "Meeting and working with people from different places, cultures, and "
 "backgrounds who love what they do and contribute to creating a respectful, "
 "responsible, and fertile environment enriches experiences and skills."
-msgstr "Conocer y trabajar con personas de diferentes lugares, culturas y antecedentes que amen lo que hacen y contribuyen a crear un ambiente respetuoso, responsable y fértil que enriquesca conocimientos, experiencias y habilidades."
+msgstr ""
+"Conocer y trabajar con personas de diferentes lugares, culturas y "
+"antecedentes que amen lo que hacen y contribuyen a crear un ambiente "
+"respetuoso, responsable y fértil que enriquesca conocimientos, experiencias "
+"y habilidades."
 
 #: templates/home/home.html:883
 msgid "Interested in my resume?"
@@ -3328,18 +3345,16 @@ msgid ""
 "\"Success is not final, failure is not fatal. what matters is the courage to "
 "continue.\""
 msgstr ""
-"\"El éxito no es definitivo, el fracaso no es fatal. Lo que importa es el coraje de seguir adelante.\""
+"\"El éxito no es definitivo, el fracaso no es fatal. Lo que importa es el "
+"coraje de seguir adelante.\""
 
 #: templates/partials/_footer_home.html:66
 msgid "\"The best way to predict the future is to create it.\""
-msgstr ""
-"\"La mejor manera de predecir el futuro es creándolo.\""
+msgstr "\"La mejor manera de predecir el futuro es creándolo.\""
 
 #: templates/partials/_footer_home.html:78
 msgid "Would like to have a talk, contact me!"
-msgstr ""
-"¿Te gustaría tener una conversación? ¡Contáctame!"
-
+msgstr "¿Te gustaría tener una conversación? ¡Contáctame!"
 
 #: templates/partials/_footer_home.html:101
 msgid " All Rights Reserved. Designed and Developed by "
@@ -3551,13 +3566,12 @@ msgid "I'm Jaime Campillay"
 msgstr "Soy Jaime Campillay"
 
 #: templates/partials/_welcome_content.html:31
-#: templates/technical_insight/technical_insight_home.html:27
 msgid ""
-" We are the unique Consultancy Farm for your business solution, That is "
-"ready to take challenge and knockout your business problems. "
+" Fostering Innovation in Technology and Unlocking Potential Through Teamwork "
+"are some of my main life goals. "
 msgstr ""
-"Somos la empresa de consultoría única para la solución de su negocio, que "
-"está lista para aceptar desafíos y resolver sus problemas empresariales."
+"Fomentar la innovación en tecnología y desbloquear el potencial a través del "
+"trabajo en equipo son algunos de mis principales objetivos de vida."
 
 #: templates/partials/_welcome_content.html:34
 msgid "Guest User"
@@ -3581,15 +3595,13 @@ msgstr "Tipo de Tecnología: "
 
 #: templates/portfolio/portfolio_home.html:71
 msgid "Explore my portfolio of projects,"
-msgstr ""
-"Explora mi portafolio de proyectos,"
+msgstr "Explora mi portafolio de proyectos,"
 
 #: templates/portfolio/portfolio_home.html:72
 msgid ""
 "where each initiative represents a milestone in my professional journey."
 msgstr ""
 "donde cada iniciativa representa un hito en mi trayectoria profesional."
-
 
 #: templates/portfolio/portfolio_home.html:84
 #: templates/portfolio/portfolio_home.html:92
@@ -4016,6 +4028,14 @@ msgid ""
 " Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur "
 "sint oat cupidatat "
 msgstr ""
+
+#: templates/technical_insight/technical_insight_home.html:27
+msgid ""
+" We are the unique Consultancy Farm for your business solution, That is "
+"ready to take challenge and knockout your business problems. "
+msgstr ""
+"Somos la empresa de consultoría única para la solución de su negocio, que "
+"está lista para aceptar desafíos y resolver sus problemas empresariales."
 
 #~ msgid "What Are "
 #~ msgstr "¿Cuáles son mis objetivos"

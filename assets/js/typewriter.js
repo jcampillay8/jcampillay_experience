@@ -1,4 +1,9 @@
-const typewriterText = [ "A Developer", "An Engineer", "A Dreamer", "A Fighter"];
+const englishText = ["A Developer", "An Engineer", "A Dreamer", "A Fighter"];
+const spanishText = ["Un Desarrollador", "Un Ingeniero", "Un Soñador", "Un Luchador"];
+
+const language = document.body.getAttribute('data-language');
+const typewriterText = language === 'es' ? spanishText : englishText;
+
 let textPosition = 0;
 let index = 0;
 
