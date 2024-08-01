@@ -13,4 +13,23 @@ class Quiz(models.Model):
     def cantidad_likes(self):
         return self.likes.count()
 
-        
+
+class StructuredEnglishGrammarCourse(models.Model):
+    file_name = models.CharField(max_length=255)
+    question = models.TextField()
+    options = models.JSONField()
+    answer = models.IntegerField()
+    explanation = models.TextField()
+    value = models.IntegerField()
+
+    def __str__(self):
+        return self.question
+
+class Translation(models.Model):
+    file_name = models.CharField(max_length=255)
+    spanish = models.TextField()
+    english = models.TextField()
+    score = models.IntegerField()
+
+    def __str__(self):
+        return self.spanish

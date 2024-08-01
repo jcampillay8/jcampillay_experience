@@ -19,3 +19,9 @@ class ContactForm(forms.Form):
     content = forms.CharField(label="Contenido", required=True, widget=forms.Textarea(
         attrs={ 'type':'text','class':'form-control', 'rows': 3, 'id':'floatingMessage', 'placeholder':'Enter Message*', 'style':'height: 205px'}
     ), min_length=10, max_length=1000)
+
+
+
+class DiagnosticForm(forms.Form):
+    name = forms.CharField(label='Name', max_length=100, widget=forms.TextInput(attrs={'placeholder': 'Enter name'}))
+    email = forms.EmailField(label='Email', widget=forms.EmailInput(attrs={'placeholder': 'Enter email'}), required=False)

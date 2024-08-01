@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load plotly_dash %}
+{% load static %}
+
+{% block content %}
+    <title>TITULO {% block title %}{% endblock %}</title>
+    <body>
+        {% if user.is_authenticated %}
+            <body>
+                <h2>Name: {{ name }}</h2>
+                <h2>Email: {{ email }}</h2>
+                <div class="{% plotly_class name='EnglishQuizApp' %}">
+                    {% if screen_width > 800 %}
+                        {% plotly_app name='EnglishQuizApp' ratio=1.45 %}
+                    {% else %}
+                        {% plotly_app name='EnglishQuizApp' ratio=1.45 %}
+                    {% endif %}
+                </div>
+            </body>
+            <section class="position-relative py-4">
+            </section>
+        {% else %}
+            <h1>Necesita <a href="/login">Iniciar sesión</a> para ver este curso</h1>
+        {% endif %}
+    </body>
+{% endblock %}

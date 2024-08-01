@@ -1,0 +1,1162 @@
+{
+    "ques": [
+        "I'd like a _______ of milk, please",
+        "Would you like _______ ice cream?",
+        "_______ one do you want?",
+        "Two or three of those men _______ familiar",
+        "I'd _______ have some lemonade",
+        "If you don't _______ I'd rather have some coffee",
+        "Who is that short man on the _______ ?",
+        "It doesn't _______ to me",
+        "She'd like _______ of tea",
+        "I want a _______ books about engineering",
+        "I know that lady _______ the middle",
+        "Do you know that thin man _______ the right?",
+        "I'd like some tea _______ a few minutes",
+        "Who are those people _______ there?",
+        "Who is that young boy _______ the left?",
+        "We'd like to talk _______ Mr. Cooper.",
+        "John speaks French _______",
+        "I don't make mistakes _______",
+        "They read Greek _______ well",
+        "She doesn't have any _______ with grammar",
+        "He makes several _______ in Russian",
+        "I have _______ trouble with spelling",
+        "Her _______ is very good",
+        "_______ I speak German",
+        "Spanish is George's _______ language",
+        "I speak English with a Greek _______",
+        "Paul _______ Japanese",
+        "They _______ Italian very well",
+        "He speaks _______ Spanish",
+        "We understand Arabic _______ well",
+        "He's writing to his friend. He's writing to a friend of _______",
+        "Martha is her good friend. Martha is a good friend of _______",
+        "Those people are their friends. Those people are friends of _______",
+        "Here is your friend. Here is a friend of _______",
+        "Bill is our old friend. Bill is an old friend of _______",
+        "What are you _______?",
+        "Do you want to go with them _______ ?",
+        "He is writing _______ a friend of his",
+        "We are talking to Mr. Sullivan _______ now",
+        "I don't want _______ right now",
+        "_______, who are you waiting for?",
+        "She's doing _______ at the moment",
+        "I'm not _______ of the correct time",
+        "Leo isn't certain _______",
+        "They're thinking about the geography lesson _______",
+        "She's not _______ sure what time she'll come back",
+        "Are you waiting _______ teacher?",
+        "Is Mr. Jones _______ his sixties?",
+        "My sister is not _______ fifteen",
+        "_______ how old he is",
+        "I'd say she's _______ fifty",
+        "How old was he on his _______ birthday?",
+        "John is in _______ teens",
+        "He's going to be thirty-nine on his _______ birthday",
+        "I'm the _______ in my family",
+        "There are eight of us _______",
+        "How _______ are there in your class?",
+        "We'd like to know _______ he is",
+        "She's the _______ youngest in our class",
+        "I go to bed at _______ midnight",
+        "He _______ has orange juice every day",
+        "Frank _______ up at 7 o'clock on Monday",
+        "We talk on _______ every day",
+        "They finish _______ at 8:30 p.m",
+        "We watch _______ much later than you do",
+        "After dinner, they listen to _______ for a while",
+        "She has _______ at the same time every day",
+        "My uncle has a _______ lunch on Tuesday",
+        "I'd like some _______ toast, please",
+        "Sometimes, he works _______ 9:45 p.m",
+        "_______ days we go out for lunch at about 12:30",
+        "She worked from early morning _______ late at night",
+        "It is _______ one o'clock",
+        "They went home _______ after work",
+        "Jonathan was here at _______ for lunch",
+        "We went to bed _______ to 11:30 p.m.",
+        "Did you sleep _______ last night?",
+        "I read books and magazines all _______ yesterday",
+        "She was here at ten o'clock _______",
+        "What _______ of lunch do you want?",
+        "He _______ up late yesterday",
+        "I'll meet you at exactly two _______",
+        "My _______ makes breakfast for our daughters",
+        "What _______ did you talk about yesterday?",
+        "I asked him _______ he knew Jim Stone",
+        "Where _______ you go last week?",
+        "We saw a _______ things there",
+        "They answered several _______ questions",
+        "Nancy said she'd rather have tea if I _______ mind",
+        "We went to call _______ a friend last night",
+        "I answered every _______ one of those questions",
+        "Jim _______ Ed in the hospital last year",
+        "He knew _______ those people",
+        "She made breakfast the day _______ yesterday",
+        "They asked almost _______ of the questions in the book",
+        "_______, I said I'd come",
+        "It is _______ six o'clock",
+        "She leaves the office _______ to seven o'clock",
+        "They dressed _______ morning",
+        "John has an interesting _______",
+        "We _______ to go to the movies with them all the time",
+        "I _______ have time to read",
+        "That young boy has many _______",
+        "You almost always _______ television",
+        "Jack goes to work _______ early in the morning",
+        "I live _______ Washington Street",
+        "Mr. Smith lives _______ 1203 Washington Street",
+        "My brother lives _______ Jones Boulevard",
+        "My father and mother live _______ University Drive",
+        "Do you live _______ 9601 Miller Lane?",
+        "I go _______ the movies every week",
+        "You live here _______ the city, don't you?",
+        "Are you going _______ the restaurant?",
+        "Yes. I'm going _______ the restaurant _______ Washington Street",
+        "How long have you lived _______ New York?"
+    ],
+    "options": [
+        [
+            "cup",
+            "mind",
+            "glass",
+            "left"
+        ],
+        [
+            "busy",
+            "some",
+            "matter",
+            "either"
+        ],
+        [
+            "which",
+            "glass",
+            "busy",
+            "rather"
+        ],
+        [
+            "look",
+            "left",
+            "busy",
+            "some"
+        ],
+        [
+            "some",
+            "left",
+            "either",
+            "rather"
+        ],
+        [
+            "matter",
+            "busy",
+            "mind",
+            "left"
+        ],
+        [
+            "busy",
+            "either",
+            "mind",
+            "left"
+        ],
+        [
+            "matter",
+            "either",
+            "busy",
+            "glass"
+        ],
+        [
+            "matter",
+            "a cup",
+            "busy",
+            "left"
+        ],
+        [
+            "busy",
+            "few",
+            "glass",
+            "either"
+        ],
+        [
+            "in",
+            "over",
+            "with",
+            "on"
+        ],
+        [
+            "over",
+            "with",
+            "on",
+            "in"
+        ],
+        [
+            "on",
+            "over",
+            "with",
+            "in"
+        ],
+        [
+            "on",
+            "over",
+            "in",
+            "with"
+        ],
+        [
+            "over",
+            "on",
+            "in",
+            "with"
+        ],
+        [
+            "with",
+            "on",
+            "over",
+            "in"
+        ],
+        [
+            "native",
+            "fluently",
+            "several",
+            "often"
+        ],
+        [
+            "sometimes",
+            "often",
+            "extremely",
+            "a little"
+        ],
+        [
+            "extremely",
+            "trouble",
+            "fluently",
+            "a little"
+        ],
+        [
+            "a little",
+            "tongue",
+            "extremely",
+            "trouble"
+        ],
+        [
+            "mistakes",
+            "language",
+            "pretty",
+            "trouble"
+        ],
+        [
+            "often",
+            "sometimes",
+            "a lot of",
+            "pretty"
+        ],
+        [
+            "tongue",
+            "languages",
+            "pretty",
+            "pronunciation"
+        ],
+        [
+            "Once in a while",
+            "Fluently",
+            "A little",
+            "Tongue"
+        ],
+        [
+            "tongue",
+            "accent",
+            "native",
+            "pretty"
+        ],
+        [
+            "pretty",
+            "accent",
+            "native",
+            "tongue"
+        ],
+        [
+            "understands",
+            "read",
+            "write",
+            "speak"
+        ],
+        [
+            "read",
+            "understands",
+            "writes",
+            "speaks"
+        ],
+        [
+            "a little",
+            "fluently",
+            "perfectly",
+            "pretty"
+        ],
+        [
+            "pretty",
+            "often",
+            "once in a while",
+            "tongue"
+        ],
+        [
+            "yours",
+            "theirs",
+            "his",
+            "ours"
+        ],
+        [
+            "hers",
+            "his",
+            "yours",
+            "theirs"
+        ],
+        [
+            "theirs",
+            "his",
+            "ours",
+            "hers"
+        ],
+        [
+            "yours",
+            "theirs",
+            "hers",
+            "his"
+        ],
+        [
+            "theirs",
+            "his",
+            "yours",
+            "ours"
+        ],
+        [
+            "absolutely",
+            "for",
+            "looking at",
+            "just"
+        ],
+        [
+            "too",
+            "for",
+            "looking at",
+            "sure"
+        ],
+        [
+            "just",
+            "sure",
+            "to",
+            "too"
+        ],
+        [
+            "looking at",
+            "absolutely",
+            "sure",
+            "just"
+        ],
+        [
+            "sure",
+            "anything",
+            "either",
+            "too"
+        ],
+        [
+            "sure",
+            "just",
+            "by the way",
+            "too"
+        ],
+        [
+            "something",
+            "sure",
+            "just",
+            "too"
+        ],
+        [
+            "just",
+            "sure",
+            "too",
+            "anything"
+        ],
+        [
+            "for",
+            "either",
+            "just",
+            "something"
+        ],
+        [
+            "too",
+            "for",
+            "at the moment",
+            "something"
+        ],
+        [
+            "absolutely",
+            "sure",
+            "too",
+            "anything"
+        ],
+        [
+            "just",
+            "sure",
+            "by the way",
+            "for"
+        ],
+        [
+            "in",
+            "last",
+            "about",
+            "guess"
+        ],
+        [
+            "youngest",
+            "quite",
+            "next to",
+            "in"
+        ],
+        [
+            "last",
+            "about",
+            "guess",
+            "what age"
+        ],
+        [
+            "quite",
+            "his",
+            "next",
+            "about"
+        ],
+        [
+            "next to",
+            "last",
+            "his",
+            "many"
+        ],
+        [
+            "youngest",
+            "about",
+            "his",
+            "in"
+        ],
+        [
+            "altogether",
+            "what age",
+            "many",
+            "next"
+        ],
+        [
+            "youngest",
+            "next to",
+            "about",
+            "last"
+        ],
+        [
+            "what age",
+            "altogether",
+            "next",
+            "many"
+        ],
+        [
+            "quite",
+            "youngest",
+            "many",
+            "about"
+        ],
+        [
+            "what age",
+            "altogether",
+            "guess",
+            "many"
+        ],
+        [
+            "quite",
+            "altogether",
+            "about",
+            "next to"
+        ],
+        [
+            "about",
+            "breakfast",
+            "until",
+            "some"
+        ],
+        [
+            "light",
+            "usually",
+            "the telephone",
+            "wakes"
+        ],
+        [
+            "wakes",
+            "the radio",
+            "breakfast",
+            "eating"
+        ],
+        [
+            "until",
+            "breakfast",
+            "buttered",
+            "the telephone"
+        ],
+        [
+            "eating",
+            "breakfast",
+            "television",
+            "light"
+        ],
+        [
+            "buttered",
+            "usually",
+            "television",
+            "some"
+        ],
+        [
+            "the radio",
+            "buttered",
+            "usually",
+            "light"
+        ],
+        [
+            "buttered",
+            "the radio",
+            "light",
+            "breakfast"
+        ],
+        [
+            "the telephone",
+            "light",
+            "television",
+            "until"
+        ],
+        [
+            "buttered",
+            "until",
+            "about",
+            "usually"
+        ],
+        [
+            "the radio",
+            "some",
+            "until",
+            "usually"
+        ],
+        [
+            "some",
+            "the radio",
+            "buttered",
+            "light"
+        ],
+        [
+            "until",
+            "sharp",
+            "wife",
+            "woke"
+        ],
+        [
+            "close",
+            "around",
+            "noon",
+            "immediately"
+        ],
+        [
+            "wife",
+            "close",
+            "immediately",
+            "sort"
+        ],
+        [
+            "soundly",
+            "sharp",
+            "around",
+            "noon"
+        ],
+        [
+            "noon",
+            "close",
+            "around",
+            "immediately"
+        ],
+        [
+            "immediately",
+            "sharp",
+            "soundly",
+            "noon"
+        ],
+        [
+            "sharp",
+            "wife",
+            "immediately",
+            "day"
+        ],
+        [
+            "sharp",
+            "woke",
+            "soundly",
+            "wife"
+        ],
+        [
+            "woke",
+            "immediately",
+            "sort",
+            "wife"
+        ],
+        [
+            "wife",
+            "soundly",
+            "around",
+            "woke"
+        ],
+        [
+            "o'clock",
+            "sharp",
+            "wife",
+            "immediately"
+        ],
+        [
+            "wife",
+            "sharp",
+            "immediately",
+            "woke"
+        ],
+        [
+            "subjects",
+            "finally",
+            "single",
+            "different"
+        ],
+        [
+            "on",
+            "if",
+            "all",
+            "different"
+        ],
+        [
+            "single",
+            "on",
+            "did",
+            "didn't"
+        ],
+        [
+            "subjects",
+            "a few",
+            "before",
+            "lot of"
+        ],
+        [
+            "different",
+            "finally",
+            "if",
+            "lot of"
+        ],
+        [
+            "visited",
+            "didn't",
+            "lot of",
+            "on"
+        ],
+        [
+            "lot of",
+            "a few",
+            "on",
+            "finally"
+        ],
+        [
+            "all",
+            "subjects",
+            "a few",
+            "single"
+        ],
+        [
+            "subjects",
+            "if",
+            "visited",
+            "different"
+        ],
+        [
+            "before",
+            "a few",
+            "different",
+            "visited"
+        ],
+        [
+            "before",
+            "single",
+            "on",
+            "lot of"
+        ],
+        [
+            "all",
+            "single",
+            "finally",
+            "if"
+        ],
+        [
+            "on",
+            "subjects",
+            "a few",
+            "finally"
+        ],
+        [
+            "nearly",
+            "quite",
+            "used",
+            "companions"
+        ],
+        [
+            "watch",
+            "close",
+            "friend",
+            "rarely"
+        ],
+        [
+            "close",
+            "used",
+            "every",
+            "friend"
+        ],
+        [
+            "used",
+            "close",
+            "watch",
+            "friend"
+        ],
+        [
+            "nearly",
+            "close",
+            "used",
+            "friend"
+        ],
+        [
+            "watch",
+            "rarely",
+            "companions",
+            "close"
+        ],
+        [
+            "companions",
+            "watch",
+            "nearly",
+            "friend"
+        ],
+        [
+            "watch",
+            "friend",
+            "companions",
+            "close"
+        ],
+        [
+            "companions",
+            "nearly",
+            "used",
+            "quite"
+        ],
+        [
+            "on",
+            "at",
+            "in",
+            "to"
+        ],
+        [
+            "on",
+            "at",
+            "in",
+            "to"
+        ],
+        [
+            "at",
+            "to",
+            "on",
+            "in"
+        ],
+        [
+            "in",
+            "at",
+            "to",
+            "on"
+        ],
+        [
+            "in",
+            "at",
+            "on",
+            "to"
+        ],
+        [
+            "on",
+            "to",
+            "in",
+            "at"
+        ],
+        [
+            "in",
+            "on",
+            "to",
+            "at"
+        ],
+        [
+            "on",
+            "in",
+            "at",
+            "to"
+        ],
+        [
+            "in, at",
+            "to, on",
+            "on, in",
+            "at, to"
+        ],
+        [
+            "on",
+            "to",
+            "in",
+            "at"
+        ]
+    ],
+    "ans": [
+        3,
+        2,
+        1,
+        1,
+        4,
+        3,
+        4,
+        1,
+        2,
+        2,
+        1,
+        3,
+        4,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        4,
+        1,
+        3,
+        4,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        4,
+        3,
+        1,
+        3,
+        4,
+        2,
+        3,
+        1,
+        2,
+        2,
+        3,
+        1,
+        4,
+        1,
+        2,
+        3,
+        4,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        1,
+        4,
+        1,
+        2,
+        1,
+        4,
+        1,
+        3,
+        1,
+        4,
+        2,
+        1,
+        3,
+        1,
+        1,
+        2,
+        3,
+        4,
+        2,
+        3,
+        4,
+        1,
+        3,
+        4,
+        1,
+        1,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        1,
+        4,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        1,
+        4,
+        1,
+        2,
+        3,
+        4,
+        2,
+        2,
+        1,
+        4,
+        2,
+        3
+    ],
+    "explanation": [
+        "\"Glass\" is the correct option because it is common to ask for a glass of milk. \"Cup\" is typically used for hot beverages like tea or coffee.",
+        "\"Some\" is the correct option as it is used to offer or ask for an indefinite quantity of something.",
+        "\"Which\" is the correct option because it is used to ask about one or more items from a definite set.",
+        "\"Look\" is the correct option because it fits the sentence structure indicating the appearance of familiarity.",
+        "\"Rather\" is the correct option because it expresses a preference.",
+        "\"Mind\" is the correct option as it is used to ask if someone has an objection.",
+        "\"Left\" is the correct option as it indicates position or direction.",
+        "\"Matter\" is the correct option because it is used to express indifference.",
+        "\"A cup\" is the correct option because it is common to serve tea in a cup.",
+        "\"Few\" is the correct option as it refers to a small number of books.",
+        "\"In the middle\" is the correct prepositional phrase indicating position.",
+        "\"On the right\" is the correct prepositional phrase indicating position.",
+        "\"In a few minutes\" is the correct prepositional phrase indicating time.",
+        "\"Over there\" is the correct phrase indicating location.",
+        "\"On the left\" is the correct prepositional phrase indicating position.",
+        "\"With\" is the correct preposition for indicating conversation with someone.",
+        "\"Fluently\" is the correct adverb indicating a high level of skill in speaking French.",
+        "\"Often\" is the correct adverb indicating frequency.",
+        "\"Extremely\" is the correct adverb indicating a high degree of skill.",
+        "\"Trouble\" is the correct noun indicating difficulties or problems.",
+        "\"Mistakes\" is the correct noun referring to errors. The sentence means he makes several errors in Russian.",
+        "\"A lot of\" is the correct phrase indicating a significant amount of trouble with spelling.",
+        "\"Pronunciation\" is the correct noun referring to the way in which a word is spoken. The sentence means her pronunciation is very good.",
+        "\"Once in a while\" is the correct phrase indicating infrequency. The sentence means I speak German occasionally.",
+        "\"Native\" is the correct adjective indicating the first language learned. The sentence means Spanish is George's first language.",
+        "\"Accent\" is the correct noun referring to the way someone pronounces words. The sentence means I speak English with a Greek pronunciation.",
+        "\"Understands\" is the correct verb indicating comprehension. The sentence means Paul comprehends Japanese.",
+        "\"Read\" is the correct verb indicating the ability to interpret written text. The sentence means they can interpret Italian text very well.",
+        "\"A little\" is the correct phrase indicating a small amount. The sentence means he speaks a small amount of Spanish.",
+        "\"Pretty\" is the correct adverb indicating a moderate degree. The sentence means we understand Arabic moderately well.",
+        "\"His\" is the correct possessive pronoun indicating ownership. The sentence means he is writing to a friend of his.",
+        "\"Hers\" is the correct possessive pronoun indicating ownership. The sentence means Martha is a good friend of hers.",
+        "\"Theirs\" is the correct possessive pronoun indicating ownership. The sentence means those people are friends of theirs.",
+        "\"Yours\" is the correct possessive pronoun indicating ownership. The sentence means here is a friend of yours.",
+        "\"Ours\" is the correct possessive pronoun indicating ownership. The sentence means Bill is an old friend of ours.",
+        "\"Looking at\" is the correct phrasal verb indicating the act of directing one's gaze towards something. The sentence means what are you directing your gaze towards?",
+        "\"Too\" is the correct adverb indicating inclusion. The sentence means do you also want to go with them?",
+        "\"To\" is the correct preposition indicating direction. The sentence means he is writing a message directed to a friend of his.",
+        "\"Just\" is the correct adverb indicating the present moment. The sentence means we are currently talking to Mr. Sullivan.",
+        "\"Anything\" is the correct pronoun indicating an indefinite object. The sentence means I do not want any object or thing at the present moment.",
+        "\"By the way\" is a phrase used to introduce a new topic or to ask for additional information. The sentence means \"By the way, who are you waiting for?\"",
+        "\"Something\" is the correct option because it indicates that she is engaged in an activity at the moment.",
+        "\"Sure\" is the correct option as it indicates uncertainty about the correct time. The sentence means \"I'm not certain of the correct time.\"",
+        "\"Either\" is the correct option because it is used to agree with a negative statement. The sentence means \"Leo isn't certain either.\"",
+        "\"At the moment\" is the correct phrase indicating the present time. The sentence means \"They're thinking about the geography lesson currently.\"",
+        "\"Absolutely\" is the correct adverb emphasizing certainty. The sentence means \"She's not completely sure what time she'll come back.\"",
+        "\"For\" is the correct preposition indicating purpose. The sentence means \"Are you waiting for the teacher?\"",
+        "\"In\" is the correct preposition indicating age range. The sentence means \"Is Mr. Jones in his sixties?\"",
+        "\"Quite\" is the correct adverb indicating the degree. The sentence means \"My sister is not quite fifteen.\"",
+        "\"Guess\" is the correct verb indicating estimation. The sentence means \"Guess how old he is.\"",
+        "\"About\" is the correct adverb indicating approximation. The sentence means \"I'd say she's approximately fifty.\"",
+        "\"Last\" is the correct adjective indicating the most recent. The sentence means \"How old was he on his most recent birthday?\"",
+        "\"His\" is the correct possessive pronoun indicating ownership. The sentence means \"John is in his teens.\"",
+        "\"Next\" is the correct adjective indicating the upcoming one. The sentence means \"He's going to be thirty-nine on his next birthday.\"",
+        "\"Youngest\" is the correct adjective indicating the one with the least age. The sentence means \"I'm the youngest in my family.\"",
+        "\"Altogether\" is the correct adverb indicating the total number. The sentence means \"There are eight of us in total.\"",
+        "\"Many\" is the correct determiner indicating quantity. The sentence means \"How many are there in your class?\"",
+        "\"What age\" is the correct phrase indicating a request for specific information about age. The sentence means \"We'd like to know what age he is.\"",
+        "\"Next to\" is the correct phrase indicating the position relative to others. The sentence means \"She's the one right before the youngest in our class.\"",
+        "\"About\" is the correct preposition indicating approximation. The sentence means \"I go to bed at approximately midnight.\"",
+        "\"Usually\" is the correct adverb indicating a habitual action. The sentence means \"He usually has orange juice every day.\"",
+        "\"Wakes\" is the correct verb indicating the action of getting up. The sentence means \"Frank wakes up at 7 o'clock on Monday.\"",
+        "\"The telephone\" is the correct noun indicating the device used for communication. The sentence means \"We talk on the telephone every day.\"",
+        "\"Eating\" is the correct verb indicating the action of consuming food. The sentence means \"They finish eating at 8:30 p.m.\"",
+        "\"Television\" is the correct noun indicating the device used for watching shows. The sentence means \"We watch television much later than you do.\"",
+        "\"The radio\" is the correct noun indicating the device used for listening to programs. The sentence means \"After dinner, they listen to the radio for a while.\"",
+        "\"Breakfast\" is the correct noun indicating the morning meal. The sentence means \"She has breakfast at the same time every day.\"",
+        "\"Light\" is the correct adjective indicating a small or not heavy meal. The sentence means \"My uncle has a light lunch on Tuesday.\"",
+        "\"Buttered\" is the correct adjective indicating toast with butter on it. The sentence means \"I'd like some buttered toast, please.\"",
+        "\"Until\" is the correct preposition indicating the time up to which he works. The sentence means \"Sometimes, he works until 9:45 p.m.\"",
+        "\"Some\" is the correct adjective indicating an indefinite quantity of days. The sentence means \"Some days we go out for lunch at about 12:30.\"",
+        "\"Until\" is the correct preposition indicating the time up to which she worked. The sentence means \"She worked from early morning until late at night.\"",
+        "\"Around\" is the correct preposition indicating an approximate time. The sentence means \"It is around one o'clock.\"",
+        "\"Immediately\" is the correct adverb indicating the action happening without delay. The sentence means \"They went home immediately after work.\"",
+        "\"Noon\" is the correct noun indicating 12:00 p.m. The sentence means \"Jonathan was here at noon for lunch.\"",
+        "\"Close\" is the correct adjective indicating proximity to a certain time. The sentence means \"We went to bed close to 11:30 p.m.\"",
+        "\"Soundly\" is the correct adverb indicating a good quality of sleep. The sentence means \"Did you sleep soundly last night?\"",
+        "\"Day\" is the correct noun indicating the entire period of daylight. The sentence means \"I read books and magazines all day yesterday.\"",
+        "\"Sharp\" is the correct adjective indicating exactly at the stated time. The sentence means \"She was here at ten o'clock sharp.\"",
+        "\"Sort\" is the correct noun indicating a type or kind. The sentence means \"What sort of lunch do you want?\"",
+        "\"Woke\" is the correct verb indicating the action of getting up from sleep. The sentence means \"He woke up late yesterday.\"",
+        "\"O'clock\" is the correct noun indicating the hour of the day. The sentence means \"I'll meet you at exactly two o'clock.\"",
+        "\"Wife\" is the correct noun indicating the speaker's spouse. The sentence means \"My wife makes breakfast for our daughters.\"",
+        "\"Subjects\" is the correct noun indicating the topics of conversation. The sentence means \"What subjects did you talk about yesterday?\"",
+        "\"If\" is the correct conjunction used to introduce a question. The sentence means \"I asked him if he knew Jim Stone.\"",
+        "\"Did\" is the correct auxiliary verb used to form the past tense question. The sentence means \"Where did you go last week?\"",
+        "\"Lot of\" is the correct phrase indicating a large quantity. The sentence means \"We saw a lot of things there.\"",
+        "\"Different\" is the correct adjective indicating a variety. The sentence means \"They answered several different questions.\"",
+        "\"Didn't\" is the correct contraction of \"did not\" used to form a negative sentence. The sentence means \"Nancy said she'd rather have tea if I didn't mind.\"",
+        "\"On\" is the correct preposition used in the phrase \"call on\" meaning to visit. The sentence means \"We went to call on a friend last night.\"",
+        "\"Single\" is the correct adjective indicating each one individually. The sentence means \"I answered every single one of those questions.\"",
+        "\"Visited\" is the correct verb indicating the action of going to see someone. The sentence means \"Jim visited Ed in the hospital last year.\"",
+        "\"A few\" is the correct phrase indicating a small number. The sentence means \"He knew a few of those people.\"",
+        "\"Before\" is the correct preposition indicating the day preceding yesterday. The sentence means \"She made breakfast the day before yesterday.\"",
+        "\"All\" is the correct pronoun indicating the entirety. The sentence means \"They asked almost all of the questions in the book.\"",
+        "\"Finally\" is the correct adverb indicating the end of a process. The sentence means \"Finally, I said I'd come.\"",
+        "\"Nearly\" is the correct adverb indicating an approximate time. The sentence means \"It is nearly six o'clock.\"",
+        "\"Close\" is the correct adjective indicating proximity in time. The sentence means \"She leaves the office close to seven o'clock.\"",
+        "\"Every\" is the correct adjective indicating all instances. The sentence means \"They dressed every morning.\"",
+        "\"Friend\" is the correct noun indicating a person with whom one has a bond of mutual affection. The sentence means \"John has an interesting friend.\"",
+        "\"Used\" is the correct verb indicating a habitual action in the past. The sentence means \"We used to go to the movies with them all the time.\"",
+        "\"Rarely\" is the correct adverb indicating infrequency. The sentence means \"I rarely have time to read.\"",
+        "\"Companions\" is the correct noun indicating friends or associates. The sentence means \"That young boy has many companions.\"",
+        "\"Watch\" is the correct verb indicating the action of viewing. The sentence means \"You almost always watch television.\"",
+        "\"Quite\" is the correct adverb indicating a significant degree. The sentence means \"Jack goes to work quite early in the morning.\"",
+        "\"On\" is the correct preposition indicating location along a street. The sentence means \"I live on Washington Street.\"",
+        "\"At\" is the correct preposition indicating a specific address. The sentence means \"Mr. Smith lives at 1203 Washington Street.\"",
+        "\"On\" is the correct preposition indicating location along a boulevard. The sentence means \"My brother lives on Jones Boulevard.\"",
+        "\"On\" is the correct preposition indicating location along a drive. The sentence means \"My father and mother live on University Drive.\"",
+        "\"At\" is the correct preposition indicating a specific address. The sentence means \"Do you live at 9601 Miller Lane?\"",
+        "\"To\" is the correct preposition indicating direction towards a destination. The sentence means \"I go to the movies every week.\"",
+        "\"In\" is the correct preposition indicating location within a city. The sentence means \"You live here in the city, don't you?\"",
+        "\"To\" is the correct preposition indicating direction towards a destination. The sentence means \"Are you going to the restaurant?\"",
+        "\"To\" and \"on\" are the correct prepositions indicating direction towards a destination and location along a street. The sentence means \"Yes. I'm going to the restaurant on Washington Street.\"",
+        "\"In\" is the correct preposition indicating location within a city. The sentence means \"How long have you lived in New York?\""
+    ],
+    "valores": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

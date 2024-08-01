@@ -1,0 +1,562 @@
+{
+    "ques": [
+        "_______ was a beautiful day and my friend and I decided to have a picnic.",
+        "A picnic _______ on a summer day can be a wonderful experience.",
+        "A _______ happened to us on the way to the picnic.",
+        "_______ was driving to the picnic when I had trouble with my tire.",
+        "A _______ on a busy road can be a terrible experience.",
+        "Fortunately, we didn\u2019t have an _______",
+        "_______ were worn-out after changing the tire.",
+        "A _______ would have been wonderful, but we couldn\u2019t find one near the road.",
+        "I need the suit _______ is in the cleaners.",
+        "The boy _______ needed new clothes went shopping.",
+        "This jacket, _______ is too small for me, needs to be tailored.",
+        "Teachers _______ classes are interesting have many students.",
+        "Students _______ study hard are usually successful.",
+        "We do not agree. We have conflicting _______",
+        "Our points of view are close together; we are more or less in _______",
+        "The liberal\u2019s opinion did not agree with the _______",
+        "I must know if you\u2019re on my _______",
+        "You are entitled to your opinion. I do not wish to start an _______",
+        "If you agree with me, there is no reason for a _______",
+        "You have your opinion, and they have _______",
+        "The speaker had his point of view, and I had _______",
+        "Just as you have a right to your ideas, we have a right to _______",
+        "I presented my beliefs, and he presented _______",
+        "If you\u2019ll think about my viewpoint, I\u2019ll consider _______",
+        "The man and woman were able to settle their quarrel, but his views were different from _______",
+        "We are entitled to _______ own opinions.",
+        "They finally resolved _______ differences.",
+        "I think I'll attend the club meeting _______ (every day, last week, tomorrow)",
+        "Did you wear formal clothes to the banquet _______ (last night, all the time, later)",
+        "Does he come home for Christmas _______ ? (in 1954, every year, next year)",
+        "I think I'll change jobs _______ (a year ago, one of these days, on Sundays)",
+        "We're going to take a trip around the world _______ (on Sundays, the day before yesterday, someday)",
+        "I have to borrow some money _______ (yesterday, in 1954, every month)",
+        "An astronaut will go to the moon _______ (the day before yesterday, in the near future, all the time)",
+        "I went to the beauty parlor to get my hair set _______ (The day before yesterday, later, every day)",
+        "I take a vacation _______ (every year, last year, next year)",
+        "Don\u2019t get mad _______ me. I only wanted to help.",
+        "I must figure _______ the problem by myself.",
+        "I suggest you tear _______ the letter and begin again.",
+        "Please don\u2019t interfere _______ my affairs.",
+        "If you don\u2019t agree _______ me, I wish you would say so.",
+        "If you don\u2019t listen _______ me, you'll regret it later.",
+        "Take my advice and start the letter _______",
+        "If you care _______ my opinion, I don\u2019t think you should go.",
+        "I\u2019m depending _______ you to help me.",
+        "Please come in and sit _______",
+        "What point are you trying to get _______ ?",
+        "I haven\u2019t thanked you for your kindness _______",
+        "You've _______ thanked me many times.",
+        "But I _______ haven't thanked you enough.",
+        "That\u2019s all right. You don\u2019t have to thank me _______",
+        "Has he shown his appreciation _______ ?",
+        "Yes, he\u2019s _______ shown his gratitude.",
+        "Does he _______ worry you with his problems?",
+        "No, he doesn\u2019t bother me _______"
+    ],
+    "options": [
+        [
+            "Yesterday",
+            "Tomorrow",
+            "Last week",
+            "Later"
+        ],
+        [
+            "event",
+            "lunch",
+            "trip",
+            "gathering"
+        ],
+        [
+            "minor inconvenience",
+            "slight detour",
+            "peculiar thing",
+            "small incident"
+        ],
+        [
+            "My friend",
+            "We",
+            "They",
+            "I"
+        ],
+        [
+            "blowout",
+            "delay",
+            "stop",
+            "traffic jam"
+        ],
+        [
+            "incident",
+            "argument",
+            "accident",
+            "inconvenience"
+        ],
+        [
+            "They",
+            "We",
+            "You",
+            "I"
+        ],
+        [
+            "shady place",
+            "cool breeze",
+            "nearby restaurant",
+            "comfortable seat"
+        ],
+        [
+            "which",
+            "who",
+            "where",
+            "what"
+        ],
+        [
+            "which",
+            "who",
+            "whom",
+            "whose"
+        ],
+        [
+            "where",
+            "what",
+            "which",
+            "who"
+        ],
+        [
+            "which",
+            "who",
+            "that",
+            "whose"
+        ],
+        [
+            "which",
+            "who",
+            "whose",
+            "where"
+        ],
+        [
+            "viewpoints",
+            "perspectives",
+            "ideas",
+            "opinions"
+        ],
+        [
+            "debate",
+            "agreement",
+            "conflict",
+            "opposition"
+        ],
+        [
+            "progressive's",
+            "moderate's",
+            "conservative's",
+            "radical's"
+        ],
+        [
+            "opinion",
+            "perspective",
+            "view",
+            "side"
+        ],
+        [
+            "discussion",
+            "argument",
+            "agreement",
+            "arrangement"
+        ],
+        [
+            "conflict",
+            "debate",
+            "compromise",
+            "solution"
+        ],
+        [
+            "theirs",
+            "yours",
+            "his",
+            "hers"
+        ],
+        [
+            "yours",
+            "mine",
+            "his",
+            "theirs"
+        ],
+        [
+            "ours",
+            "theirs",
+            "yours",
+            "his"
+        ],
+        [
+            "yours",
+            "theirs",
+            "his",
+            "mine"
+        ],
+        [
+            "theirs",
+            "his",
+            "yours",
+            "mine"
+        ],
+        [
+            "yours",
+            "hers",
+            "theirs",
+            "ours"
+        ],
+        [
+            "our",
+            "theirs",
+            "yours",
+            "his"
+        ],
+        [
+            "their",
+            "ours",
+            "his",
+            "hers"
+        ],
+        [
+            "tomorrow",
+            "last week",
+            "every day",
+            "later"
+        ],
+        [
+            "every day",
+            "last night",
+            "later",
+            "last week"
+        ],
+        [
+            "next year",
+            "in 1954",
+            "every year",
+            "yesterday"
+        ],
+        [
+            "a year ago",
+            "on Sundays",
+            "every day",
+            "one of these days"
+        ],
+        [
+            "on Sundays",
+            "the day before yesterday",
+            "someday",
+            "later"
+        ],
+        [
+            "yesterday",
+            "in 1954",
+            "every month",
+            "every day"
+        ],
+        [
+            "the day before yesterday",
+            "in the near future",
+            "all the time",
+            "tomorrow"
+        ],
+        [
+            "every day",
+            "the day before yesterday",
+            "later",
+            "last week"
+        ],
+        [
+            "every year",
+            "last year",
+            "next year",
+            "someday"
+        ],
+        [
+            "at",
+            "with",
+            "in",
+            "on"
+        ],
+        [
+            "in",
+            "out",
+            "on",
+            "over"
+        ],
+        [
+            "in",
+            "down",
+            "up",
+            "out"
+        ],
+        [
+            "on",
+            "at",
+            "with",
+            "in"
+        ],
+        [
+            "with",
+            "to",
+            "at",
+            "on"
+        ],
+        [
+            "at",
+            "to",
+            "with",
+            "on"
+        ],
+        [
+            "in",
+            "from",
+            "over",
+            "at"
+        ],
+        [
+            "for",
+            "about",
+            "with",
+            "on"
+        ],
+        [
+            "in",
+            "on",
+            "with",
+            "at"
+        ],
+        [
+            "on",
+            "at",
+            "in",
+            "down"
+        ],
+        [
+            "in",
+            "at",
+            "through",
+            "across"
+        ],
+        [
+            "yet",
+            "still",
+            "already",
+            "now"
+        ],
+        [
+            "never",
+            "already",
+            "yet",
+            "still"
+        ],
+        [
+            "yet",
+            "already",
+            "still",
+            "never"
+        ],
+        [
+            "anymore",
+            "still",
+            "yet",
+            "again"
+        ],
+        [
+            "already",
+            "still",
+            "now",
+            "yet"
+        ],
+        [
+            "yet",
+            "still",
+            "already",
+            "never"
+        ],
+        [
+            "never",
+            "now",
+            "already",
+            "still"
+        ],
+        [
+            "yet",
+            "anymore",
+            "already",
+            "still"
+        ]
+    ],
+    "ans": [
+        1,
+        2,
+        3,
+        4,
+        1,
+        3,
+        2,
+        1,
+        1,
+        2,
+        3,
+        4,
+        2,
+        1,
+        2,
+        3,
+        4,
+        2,
+        1,
+        1,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1,
+        1,
+        1,
+        2,
+        3,
+        4,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        1,
+        2,
+        4,
+        3,
+        1,
+        2,
+        3,
+        1,
+        4,
+        3,
+        4,
+        2
+    ],
+    "explanation": [
+        "\"Yesterday\" refers to the day before today. It fits the context of a past event where a beautiful day led to the decision to have a picnic.",
+        "\"Lunch\" refers to a meal eaten in the middle of the day. In the context of a picnic, it specifically highlights the meal aspect of the outing.",
+        "\"Peculiar thing\" refers to something unusual or strange. This fits the context of something unexpected happening on the way to the picnic.",
+        "\"I\" is the correct subject pronoun to indicate the speaker was the one driving when the trouble occurred.",
+        "\"Blowout\" refers to a sudden bursting of a tire. It fits the context of an unexpected and potentially dangerous event on a busy road.",
+        "\"Accident\" refers to an unfortunate event, often involving injury or damage. It fits the context of avoiding a serious problem on the road.",
+        "\"We\" indicates that both the speaker and their friend were tired after the effort of changing the tire.",
+        "\"Shady place\" refers to a spot protected from the sun by shade. It fits the context of needing a comfortable place to rest after changing the tire.",
+        "\"Which\" is used to add information about the noun \"suit\". It introduces a relative clause specifying the suit that is in the cleaners.",
+        "\"Who\" is a relative pronoun that refers to the subject \"boy\" and connects the relative clause \"who needed new clothes\" to the main clause.",
+        "\"Which\" is used to introduce a non-restrictive relative clause, providing additional information about the jacket being too small.",
+        "\"Whose\" is a possessive relative pronoun that indicates the teachers possess the interesting classes. It links the noun \"teachers\" to the noun \"classes\".",
+        "\"Who\" is a relative pronoun used to refer to the subject \"students\" and connects the relative clause \"who study hard\" to the main clause.",
+        "\"Viewpoints\" refers to the particular attitudes or ways of considering something. In this context, it highlights the differing perspectives that lead to disagreement.",
+        "\"Agreement\" means a mutual arrangement or understanding. Here, it indicates that the points of view are aligned.",
+        "\"Conservative's\" refers to a person with conservative views, typically opposing liberal views. This fits the context of differing political opinions.",
+        "\"Side\" means being aligned or in support of someone or something. Here, it indicates needing to know if the other person is supportive.",
+        "\"Argument\" refers to a heated or contentious exchange of views. It fits the context of wanting to avoid a conflict.",
+        "\"Conflict\" refers to a serious disagreement or argument. If there is agreement, there is no need for conflict.",
+        "\"Theirs\" is a possessive pronoun referring to something belonging to them. It fits the context of contrasting opinions.",
+        "\"Mine\" is a possessive pronoun referring to something belonging to the speaker. It fits the context of contrasting viewpoints.",
+        "\"Ours\" is a possessive pronoun referring to something belonging to us. It fits the context of contrasting rights to opinions.",
+        "\"His\" is a possessive pronoun referring to something belonging to him. It fits the context of contrasting beliefs.",
+        "\"Yours\" is a possessive pronoun referring to something belonging to you. It fits the context of mutual consideration of viewpoints.",
+        "\"Hers\" is a possessive pronoun referring to something belonging to her. It fits the context of contrasting views.",
+        "\"Our\" is a possessive pronoun referring to something belonging to us. It fits the context of the right to opinions.",
+        "\"Their\" is a possessive pronoun referring to something belonging to them. It fits the context of resolving differences.",
+        "\"Tomorrow\" refers to the day after today. It fits the context of planning to attend a meeting in the future.",
+        "\"Last night\" refers to the previous evening. It fits the context of asking about a past event.",
+        "\"Every year\" indicates a recurring event. It fits the context of asking about a regular occurrence during Christmas.",
+        "\"One of these days\" means at some unspecified time in the future. It fits the context of planning to change jobs soon.",
+        "\"Someday\" refers to an unspecified time in the future. It fits the context of planning to take a trip around the world eventually.",
+        "\"Every month\" indicates a recurring event. It fits the context of regularly needing to borrow money.",
+        "\"In the near future\" refers to a time soon to come. It fits the context of a planned space mission to the moon.",
+        "\"The day before yesterday\" refers to two days ago. It fits the context of a past event.",
+        "\"Every year\" indicates a recurring event. It fits the context of regularly taking vacations annually.",
+        "\"At\" is used to indicate the target of the emotion. In this context, it means not to be angry with the speaker.",
+        "\"Out\" is used to indicate solving or understanding something. In this context, it means to solve the problem.",
+        "\"Up\" means to tear something into pieces. In this context, it means to destroy the letter.",
+        "\"In\" is used to indicate involvement or meddling. In this context, it means not to meddle in someone's affairs.",
+        "\"With\" is used to indicate agreement or alignment. In this context, it means to have the same opinion as the speaker.",
+        "\"To\" is used to indicate the direction of attention. In this context, it means to pay attention to the speaker's advice.",
+        "\"Over\" means to start again from the beginning. In this context, it means to rewrite the letter.",
+        "\"For\" is used to indicate interest or concern. In this context, it means to value the speaker's opinion.",
+        "\"On\" is used to indicate reliance or trust. In this context, it means to rely on someone for help.",
+        "\"Down\" is used to indicate the action of taking a seat. In this context, it means to sit on a chair or sofa.",
+        "\"Across\" means to convey or communicate an idea clearly. In this context, it means to make a point understood.",
+        "\"Yet\" is used in negative sentences to indicate that something has not happened up to the present time. It fits the context of not having thanked someone.",
+        "\"Already\" is used to indicate that something has happened before now. It fits the context of having thanked someone multiple times.",
+        "\"Still\" is used to indicate that something continues to be the case. It fits the context of feeling that more thanks are due.",
+        "\"Anymore\" is used to indicate that something is no longer the case. It fits the context of no longer needing to thank someone.",
+        "\"Yet\" is used in questions to indicate that something is expected to happen. It fits the context of asking if appreciation has been shown.",
+        "\"Already\" indicates that something has happened before now. It fits the context of having shown gratitude.",
+        "\"Still\" indicates that something continues to happen. It fits the context of ongoing worry caused by someone's problems.",
+        "\"Anymore\" indicates that something no longer happens. It fits the context of not being bothered by someone any longer."
+    ],
+    "valores": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

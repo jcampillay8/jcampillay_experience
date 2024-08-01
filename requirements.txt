@@ -1,7 +1,6 @@
 arabic-reshaper==3.0.0
 asgiref==3.8.1
 asn1crypto==1.5.1
-backports.zoneinfo==0.2.1
 beautifulsoup4==4.12.3
 blinker==1.7.0
 bootstrap4==0.1.0

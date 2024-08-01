@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{%block content%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body #features-page .subsection1 .flip .icon-color.card .back {
+            color: #fff;
+        }
+        body #features-page .subsection1 .flip {
+            perspective: 800px;
+            width: 100%;
+            min-height: 200px;
+            height: 200px;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+        }
+        body #features-page .subsection1 .flip .card {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        body #features-page .subsection1 .flip .card .face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            text-align: center;
+            border-radius: 4px;
+        }
+        body #features-page .subsection1 .flip .card .front {
+            background: #f9f9f9;
+            z-index: 2;
+        }
+        body #features-page .subsection1 .flip .card .back {
+            background: #333;
+            color: #fff;
+            transform: rotateY(180deg);
+        }
+        body #features-page .subsection1 .flip:hover .card {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body >
+    <!-- Our Skills -->
+    
+        <div class="col-md-12 text-center" style="padding-top: 80px;">
+            <h2 class="title-section"><span class="title-regular">{% translate "English" %}</span><br/>{% translate "Diagnostic Test" %}</h2>
+            <hr class="title-underline mx-auto" />
+        </div> 
+    
+
+<!-- Contact Section -->
+<section class="container py-2" id="goals">
+
+  <div class="row justify-content-around">
+      <div class="col-10">
+          <div class="card">
+              <div class="card-body">
+                <br>
+                <h1>{% translate "Instruction" %}</h1>
+                  <br>
+                  <p class="card-text"><i class="fa fa-check"></i>{% translate " Learning and using Machine Learning and Artificial Intelligence is one of my main objectives. I strive to master these emerging technologies to develop solutions that transform and improve people's quality of life." %}</p>
+                  <p class="card-text"><i class="fa fa-check"></i>{% translate " Mastering the English language to collaborate effectively on a global level. I constantly work on improving my language skills to communicate and work alongside professionals from all over the world." %}</p>
+                  <p class="card-text"><i class="fa fa-check"></i>{% translate " Meeting and working with people from different places, cultures, and backgrounds who love what they do and contribute to creating a respectful, responsible, and fertile environment enriches experiences and skills." %}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="container py-2" id="whatamistudy">
+
+    
+    <!-- Cards -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">{% translate "Option 1" %}</h3>
+                        <p class="card-text">{% translate "I am currently studying Deep Learning and Artificial Intelligence, focusing on understanding and applying advanced algorithms and techniques. My goal is to leverage these technologies to develop innovative solutions and enhance my expertise in this cutting-edge field." %}</p>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.name }}
+                            {{ form.email }}
+                            <div class="d-grid">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">{% translate "Option 2" %}</h3>
+                        <p class="card-text">{% translate "I am currently studying Deep Learning and Artificial Intelligence, focusing on understanding and applying advanced algorithms and techniques. My goal is to leverage these technologies to develop innovative solutions and enhance my expertise in this cutting-edge field." %}</p>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.name }}
+                            <div class="d-grid">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!-- Footer -->
+
+<!-- </footer> -->
+
+<!-- Bootstrap script link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+
+    {%endblock%}

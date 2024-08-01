@@ -9,7 +9,7 @@ from functools import wraps
 from django.contrib.auth.models import AnonymousUser
 from django.views.generic import (View, TemplateView)
 #from apps.contact.forms import ContactForm
-from .forms import ContactForm
+from .forms import ContactForm,DiagnosticForm
 import traceback
 from django.utils.translation import gettext as _
 from django.contrib import messages
@@ -24,8 +24,7 @@ from django.template.loader import get_template
 from django.http import HttpResponse
 from weasyprint import HTML
 from django.http import FileResponse
-
-
+from apps.Quizzes.english_quiz.app import app
 
 class GuestUser:
     is_guest = True
@@ -277,3 +276,31 @@ def download_cv_eng(request):
 
 def download_cv_esp(request):
     return download_cv(request, 'jcampillay_cv_esp')
+
+
+
+def english_diagnostic(request):
+    if request.method == 'POST':
+        form = DiagnosticForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            # Redirigir a la vista del test con los datos del formulario
+            return redirect(reverse('english_diagnostic_test') + f'?name={name}&email={email}')
+    else:
+        form = DiagnosticForm()
+
+    return render(request, 'english_diagnostic/english_diagnostic.html', {'form': form})
+
+def english_diagnostic_test(request):
+    name = request.GET.get('name')
+    email = request.GET.get('email')
+    context = {
+        'name': name, 
+        'email': email,
+        'EnglishQuizApp': 'EnglishQuizApp',
+    }
+    return render(request, 'english_diagnostic/english_diagnostic_test.html', )
+
+
+

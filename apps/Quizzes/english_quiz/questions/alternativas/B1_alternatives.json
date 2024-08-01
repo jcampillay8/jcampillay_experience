@@ -1,0 +1,1412 @@
+{
+    "ques": [
+        "The _______ of this book is blue.",
+        "The _______ of this table is round.",
+        "The _______ of this suitcase is 20 lbs.",
+        "This suitcase is a small _______",
+        "This window is high. Its _______ is three feet.",
+        "This is a wide street. Its _______ is 36 feet.",
+        "This _______ feels soft.",
+        "This suitcase is awfully heavy. It is not _______",
+        "This table is pretty small. It is not _______",
+        "This material feels fairly soft. It is not _______",
+        "Jones Boulevard is very wide. It is not _______",
+        "The window was wet. It was not _______",
+        "These walls are two feet thick. They are not _______",
+        "This street is very long. It is not _______",
+        "This is a thin book. It is not _______",
+        "This is a narrow window. It is not _______",
+        "This is a light briefcase. It is not _______",
+        "This is a hard bed. It is not _______",
+        "This street is dry. It is not _______",
+        "This table is short. It is not _______",
+        "_______ is that wall? It is three feet thick.",
+        "_______ of that street? It is 36 feet wide.",
+        "_______ is this book than that one? They are the same weight.",
+        "_______ is your book? It is red and blue.",
+        "_______ are your suitcases? One is small and the other is medium.",
+        "_______ is that table? It is round.",
+        "_______ of that material? It is three yards long.",
+        "_______ is John? His height is exactly six feet.",
+        "How many pounds do you _______ ?",
+        "I don\u2019t know how many pounds I _______",
+        "John _______ one hundred and fifty pounds.",
+        "You _______ your suitcase to see what size it is.",
+        "My mother _______ the windows to see how wide they are.",
+        "I _______ heavier than my sister.",
+        "These windows _______ wider than those.",
+        "Dogs _______ smaller than elephants.",
+        "How much does that typewriter _______ ?",
+        "They are _______ the windows now to see how high they are.",
+        "I am _______ my suitcase to see what its weight is.",
+        "The boulevard _______ only three miles long.",
+        "That man is _______ the boulevard now to see what its width is.",
+        "That street _______ longer than this one.",
+        "Will you _______ the length of this material for me, please?",
+        "Please ask John to _______ the lights _______ It\u2019s dark in here.",
+        "_______ your books _______ on the table, please.",
+        "_______ my coat _______ in the closet, will you?",
+        "Please don\u2019t _______ me, I'll be busy all afternoon.",
+        "Would you mind _______ a favor _______ me?",
+        "Would you please _______ those cups and saucers from the table?",
+        "I Would you mind _______ these books _______ to the library?",
+        "Tell him to _______ the lights _______ when he goes to bed.",
+        "Which _______ is it to the post office?",
+        "Go _______ for three blocks.",
+        "How _______ is it to the hotel?",
+        "Turn left and you can\u2019t _______ it.",
+        "The theater is _______ the street.",
+        "The airport is a _______ from here.",
+        "The bank is five _______ from the church.",
+        "Excuse me, is this seat _______ ?",
+        "I should turn _______ at this corner.",
+        "The house is around the _______",
+        "I grew _______ in a small country town.",
+        "There used to be a grocery store _______ the corner.",
+        "A young married couple moved _______ next door.",
+        "We bought the new house two blocks _______ you.",
+        "He lived in Texas _______ he was seventeen.",
+        "An elderly man rented the house _______ us.",
+        "I spent my childhood _______ a farm.",
+        "Many of those houses have been built _______ the last ten years.",
+        "The movie theater is _______ the street from me.",
+        "(leave)",
+        "I _______ the house at 8:00 every day. (leave)",
+        "I _______ the house at 8:00 tomorrow. (leave)",
+        "I _______ to work last week. (go)",
+        "I _______ to work today. (go)",
+        "I _______ to work tomorrow morning. (go)",
+        "I _______ late yesterday. (be)",
+        "If I don\u2019t hurry, I _______ late today. (be)",
+        "John _______ in the middle of last night. (wake up)",
+        "I _______ television last Saturday, (watch)",
+        "I _______ television next Tuesday morning. (watch)",
+        "Yesterday it _______ all night. (hailed, hail)",
+        "It\u2019s _______ now. (snow, snowing)",
+        "The weather\u2019s getting _______ (hotter, more hotter)",
+        "Is it _______? (rain, raining)",
+        "The weather was very _______ (nicer, nice)",
+        "I'll probably be _______ all afternoon. (drizzle, drizzling)",
+        "There\u2019s a strong _______ this evening. (wind, windy)",
+        "The weather will be _______ tomorrow. (cloudy, clouds)",
+        "Has it _______ yet? (clearing up, cleared up)",
+        "The weather was _______ last week. (terribly, terrible)",
+        "I _______ feel well today. (doesn\u2019t, don\u2019t, am not)",
+        "My headache _______ gone. (are, do, is)",
+        "My sister _______ a fever. (have, has, makes)",
+        "My arm _______ (hurt, hurts, do hurt)",
+        "Did you _______ your arm? (broke, breaks, break)",
+        "I _______ and fell down. (slip, slips, slipped)",
+        "She often _______ and falls. (slip, slips, slipped)",
+        "Mary _______ you'll feel better soon. (hope, hopes, hopes to)",
+        "My leg _______ bleeding. (are, is, aren\u2019t)",
+        "Have you ever _______ your leg? (break, broke, broken)",
+        "I _______ go with her. (hope to, hopes to, hopes)",
+        "I've _______ a pain in my back. (get, got, getting)",
+        "You'd _______ go see a doctor. (good, better, well)",
+        "Your thumb is _______ (swells, swell, swollen)",
+        "My friend slipped and _______ down the stairs.",
+        "His leg was _______ and _______",
+        "I told him he _______ see a doctor.",
+        "He said to the doctor, \u201cMy leg _______ very much.\u201d",
+        "He said to the doctor, \u201cMy leg _______ very much.\u201d",
+        "He feels better today, but he still has a _______ in his leg.",
+        "I _______ of bed at 7 a.m.",
+        "After _______, I take a shower.",
+        "After that, I _______ my clothes.",
+        "Before I leave the house, I _______ my brother.",
+        "When he is dressed, we _______ the kitchen for breakfast.",
+        "At bedtime, I _______ my clothes and put on my pajamas.",
+        "After that, I go upstairs and _______ bed.",
+        "I usually _______ right _______ to sleep.",
+        "I take off _______ clothes before I go to bed.",
+        "My little brother tried to button _______ own shirt.",
+        "He can\u2019t dress _______ yet.",
+        "She usually combs _______ own hair.",
+        "She still cannot bathe _______",
+        "The children tried to put their jackets on _______",
+        "You can dress _______ , can\u2019t you?",
+        "In the morning the children took off _______ own pajamas.",
+        "Do you eat _______ breakfast in the dining room?",
+        "After the boys get up, _______ shave and brush their teeth.",
+        "John goes downstairs where _______ fixes breakfast.",
+        "After John and I get dressed, _______ eat breakfast together in the kitchen.",
+        "Then _______ go back upstairs to wake up my sister.",
+        "I help her get dressed because _______ is still too young to dress herself.",
+        "You help your little brother, don\u2019t _______ ?",
+        "Give me your opinion. I really want to know your _______",
+        "We prefer sunshine. We _______ hot weather best.",
+        "I think finishing work early before a holiday is an excellent idea. In my opinion, that will be _______",
+        "I think John is mistaken about that. Do you also believe he is _______?",
+        "Your conclusion is absolutely right about that. I know you are _______",
+        "Of course I will give you my frank opinion. _______ , I will be honest with you."
+    ],
+    "options": [
+        [
+            "color",
+            "material",
+            "weight",
+            "shape"
+        ],
+        [
+            "length",
+            "shape",
+            "material",
+            "color"
+        ],
+        [
+            "material",
+            "shape",
+            "weight",
+            "length"
+        ],
+        [
+            "material",
+            "color",
+            "size",
+            "weight"
+        ],
+        [
+            "material",
+            "color",
+            "shape",
+            "height"
+        ],
+        [
+            "width",
+            "material",
+            "shape",
+            "height"
+        ],
+        [
+            "color",
+            "length",
+            "weight",
+            "material"
+        ],
+        [
+            "light",
+            "thick",
+            "wet",
+            "narrow"
+        ],
+        [
+            "thin",
+            "large",
+            "short",
+            "light"
+        ],
+        [
+            "long",
+            "wide",
+            "hard",
+            "heavy"
+        ],
+        [
+            "soft",
+            "wet",
+            "heavy",
+            "narrow"
+        ],
+        [
+            "dry",
+            "soft",
+            "heavy",
+            "wide"
+        ],
+        [
+            "long",
+            "thin",
+            "narrow",
+            "light"
+        ],
+        [
+            "wide",
+            "thick",
+            "short",
+            "heavy"
+        ],
+        [
+            "wide",
+            "soft",
+            "long",
+            "thick"
+        ],
+        [
+            "thick",
+            "soft",
+            "wide",
+            "long"
+        ],
+        [
+            "wet",
+            "heavy",
+            "wide",
+            "thick"
+        ],
+        [
+            "soft",
+            "long",
+            "narrow",
+            "dry"
+        ],
+        [
+            "thick",
+            "hard",
+            "narrow",
+            "wet"
+        ],
+        [
+            "heavy",
+            "long",
+            "dry",
+            "narrow"
+        ],
+        [
+            "how thick",
+            "what color",
+            "how tall",
+            "what shape"
+        ],
+        [
+            "how thick",
+            "what is the width",
+            "what color",
+            "what shape"
+        ],
+        [
+            "how tall",
+            "what color",
+            "how much heavier",
+            "what is the width"
+        ],
+        [
+            "how thick",
+            "what is the weight",
+            "how tall",
+            "what color"
+        ],
+        [
+            "what sizes",
+            "what color",
+            "what shape",
+            "how tall"
+        ],
+        [
+            "what sizes",
+            "what shape",
+            "what is the width",
+            "how thick"
+        ],
+        [
+            "what is the thickness",
+            "what shape",
+            "what color",
+            "what is the length"
+        ],
+        [
+            "what sizes",
+            "what color",
+            "how tall",
+            "what is the width"
+        ],
+        [
+            "weigh",
+            "am",
+            "measures",
+            "measure"
+        ],
+        [
+            "measure",
+            "weigh",
+            "am",
+            "measures"
+        ],
+        [
+            "weighs",
+            "measuring",
+            "is",
+            "are"
+        ],
+        [
+            "am",
+            "weighs",
+            "measuring",
+            "measure"
+        ],
+        [
+            "is",
+            "measures",
+            "are",
+            "weigh"
+        ],
+        [
+            "weighs",
+            "measure",
+            "am",
+            "measuring"
+        ],
+        [
+            "weigh",
+            "measures",
+            "are",
+            "am"
+        ],
+        [
+            "are",
+            "measures",
+            "measuring",
+            "am"
+        ],
+        [
+            "measures",
+            "are",
+            "am",
+            "weigh"
+        ],
+        [
+            "measures",
+            "measuring",
+            "weigh",
+            "am"
+        ],
+        [
+            "weighing",
+            "measures",
+            "are",
+            "weigh"
+        ],
+        [
+            "measures",
+            "are",
+            "measuring",
+            "is"
+        ],
+        [
+            "weighing",
+            "measuring",
+            "measures",
+            "are"
+        ],
+        [
+            "is",
+            "measures",
+            "am",
+            "weigh"
+        ],
+        [
+            "measures",
+            "weighing",
+            "are",
+            "measure"
+        ],
+        [
+            "turn, on",
+            "hang, up",
+            "pick, up",
+            "turn, off"
+        ],
+        [
+            "turn, on",
+            "Put, down",
+            "wait, for",
+            "pick, up"
+        ],
+        [
+            "turn, on",
+            "put, down",
+            "Hang, up",
+            "wait, for"
+        ],
+        [
+            "pick up",
+            "hang up",
+            "turn off",
+            "wait for"
+        ],
+        [
+            "pick, up",
+            "hang, up",
+            "doing, for",
+            "wait, for"
+        ],
+        [
+            "turn, on",
+            "pick up",
+            "hang up",
+            "put down"
+        ],
+        [
+            "turn, off",
+            "taking, back",
+            "put, down",
+            "hang, up"
+        ],
+        [
+            "turn, off",
+            "wait, for",
+            "put, down",
+            "pick, up"
+        ],
+        [
+            "way",
+            "far",
+            "miles",
+            "long drive"
+        ],
+        [
+            "corner",
+            "straight ahead",
+            "right",
+            "across"
+        ],
+        [
+            "corner",
+            "long drive",
+            "far",
+            "way"
+        ],
+        [
+            "way",
+            "taken",
+            "right",
+            "miss"
+        ],
+        [
+            "across",
+            "corner",
+            "far",
+            "miles"
+        ],
+        [
+            "far",
+            "long drive",
+            "corner",
+            "way"
+        ],
+        [
+            "taken",
+            "right",
+            "miles",
+            "across"
+        ],
+        [
+            "taken",
+            "corner",
+            "far",
+            "way"
+        ],
+        [
+            "straight ahead",
+            "miles",
+            "right",
+            "taken"
+        ],
+        [
+            "straight ahead",
+            "corner",
+            "far",
+            "taken"
+        ],
+        [
+            "up",
+            "in",
+            "from",
+            "on"
+        ],
+        [
+            "from",
+            "on",
+            "in",
+            "until"
+        ],
+        [
+            "from",
+            "up",
+            "in",
+            "until"
+        ],
+        [
+            "on",
+            "in",
+            "up",
+            "from"
+        ],
+        [
+            "on",
+            "until",
+            "in",
+            "from"
+        ],
+        [
+            "from",
+            "until",
+            "in",
+            "on"
+        ],
+        [
+            "up",
+            "on",
+            "from",
+            "until"
+        ],
+        [
+            "from",
+            "up",
+            "on",
+            "in"
+        ],
+        [
+            "in",
+            "on",
+            "up",
+            "from"
+        ],
+        [
+            "left",
+            "leaving",
+            "leave",
+            "will leave"
+        ],
+        [
+            "left",
+            "leave",
+            "leaving",
+            "will leave"
+        ],
+        [
+            "left",
+            "leaving",
+            "will leave",
+            "leave"
+        ],
+        [
+            "go",
+            "going",
+            "gone",
+            "went"
+        ],
+        [
+            "gone",
+            "go",
+            "will go",
+            "am going"
+        ],
+        [
+            "will go",
+            "went",
+            "going",
+            "gone"
+        ],
+        [
+            "am",
+            "was",
+            "will be",
+            "being"
+        ],
+        [
+            "am",
+            "being",
+            "will be",
+            "was"
+        ],
+        [
+            "wake up",
+            "waking up",
+            "will wake up",
+            "wakes up"
+        ],
+        [
+            "watching",
+            "will watch",
+            "watch",
+            "watched"
+        ],
+        [
+            "watching",
+            "watched",
+            "will watch",
+            "watch"
+        ],
+        [
+            "hailed",
+            "hail",
+            "hailing",
+            "will hail"
+        ],
+        [
+            "snow",
+            "snowing",
+            "snowed",
+            "will snow"
+        ],
+        [
+            "more hotter",
+            "hottest",
+            "hotter",
+            "most hot"
+        ],
+        [
+            "rain",
+            "rains",
+            "rained",
+            "raining"
+        ],
+        [
+            "nicer",
+            "nicely",
+            "nice",
+            "more nice"
+        ],
+        [
+            "drizzle",
+            "drizzling",
+            "drizzles",
+            "drizzled"
+        ],
+        [
+            "windy",
+            "wind",
+            "windily",
+            "winds"
+        ],
+        [
+            "clouds",
+            "cloudy",
+            "clouding",
+            "clouded"
+        ],
+        [
+            "cleared up",
+            "clearing up",
+            "clears up",
+            "clear up"
+        ],
+        [
+            "terribly",
+            "terribleness",
+            "terrible",
+            "more terrible"
+        ],
+        [
+            "don't",
+            "am not",
+            "doesn\u2019t",
+            "aren\u2019t"
+        ],
+        [
+            "do",
+            "is",
+            "are",
+            "does"
+        ],
+        [
+            "have",
+            "makes",
+            "has",
+            "is"
+        ],
+        [
+            "do hurt",
+            "hurt",
+            "does hurt",
+            "hurts"
+        ],
+        [
+            "broke",
+            "breaks",
+            "breaking",
+            "break"
+        ],
+        [
+            "slip",
+            "slips",
+            "slipping",
+            "slipped"
+        ],
+        [
+            "slips",
+            "slip",
+            "slipping",
+            "slipped"
+        ],
+        [
+            "hope",
+            "hopes",
+            "hope to",
+            "hoping"
+        ],
+        [
+            "are",
+            "aren\u2019t",
+            "is",
+            "am"
+        ],
+        [
+            "break",
+            "broken",
+            "broke",
+            "breaking"
+        ],
+        [
+            "hopes",
+            "hopes to",
+            "hoping",
+            "hope to"
+        ],
+        [
+            "get",
+            "getting",
+            "got",
+            "gets"
+        ],
+        [
+            "good",
+            "better",
+            "well",
+            "best"
+        ],
+        [
+            "swollen",
+            "swells",
+            "swell",
+            "swelling"
+        ],
+        [
+            "fell",
+            "fall",
+            "falling",
+            "falls"
+        ],
+        [
+            "falling, broken",
+            "swollen, bleeding",
+            "slip, hurting",
+            "swelled, hurts"
+        ],
+        [
+            "ought",
+            "oughts",
+            "ought to",
+            "oughted"
+        ],
+        [
+            "hurting",
+            "hurt",
+            "breaks",
+            "hurts"
+        ],
+        [
+            "break",
+            "hurting",
+            "broken",
+            "hurting"
+        ],
+        [
+            "hurt",
+            "pain",
+            "ache",
+            "break"
+        ],
+        [
+            "get out",
+            "getting",
+            "get",
+            "got out"
+        ],
+        [
+            "got out",
+            "getting up",
+            "get up",
+            "got up"
+        ],
+        [
+            "put",
+            "putting",
+            "put on",
+            "puts on"
+        ],
+        [
+            "waking",
+            "woken",
+            "wakes",
+            "wake up"
+        ],
+        [
+            "goes to",
+            "go in",
+            "go into",
+            "gone into"
+        ],
+        [
+            "takes off",
+            "take off",
+            "taking off",
+            "taken off"
+        ],
+        [
+            "get into",
+            "gets into",
+            "getting in",
+            "got into"
+        ],
+        [
+            "goes, on",
+            "go, off",
+            "went, up",
+            "get, out"
+        ],
+        [
+            "my",
+            "mine",
+            "me",
+            "myself"
+        ],
+        [
+            "my",
+            "his",
+            "her",
+            "their"
+        ],
+        [
+            "herself",
+            "their",
+            "himself",
+            "me"
+        ],
+        [
+            "their",
+            "himself",
+            "his",
+            "her"
+        ],
+        [
+            "herself",
+            "himself",
+            "yourself",
+            "theirselves"
+        ],
+        [
+            "himself",
+            "themselves",
+            "herself",
+            "ourself"
+        ],
+        [
+            "their",
+            "myself",
+            "yourself",
+            "himself"
+        ],
+        [
+            "her",
+            "himself",
+            "our",
+            "their"
+        ],
+        [
+            "her",
+            "your",
+            "mine",
+            "their"
+        ],
+        [
+            "they",
+            "he",
+            "she",
+            "it"
+        ],
+        [
+            "their",
+            "her",
+            "our",
+            "he"
+        ],
+        [
+            "their",
+            "him",
+            "we",
+            "they"
+        ],
+        [
+            "their",
+            "I",
+            "me",
+            "us"
+        ],
+        [
+            "himself",
+            "their",
+            "you",
+            "she"
+        ],
+        [
+            "you",
+            "me",
+            "her",
+            "they"
+        ],
+        [
+            "judgment",
+            "mind",
+            "statement",
+            "answer"
+        ],
+        [
+            "dislike",
+            "like",
+            "tolerate",
+            "avoid"
+        ],
+        [
+            "dreadful",
+            "boring",
+            "wonderful",
+            "unpleasant"
+        ],
+        [
+            "right",
+            "certain",
+            "sure",
+            "wrong"
+        ],
+        [
+            "mistaken",
+            "correct",
+            "confused",
+            "unclear"
+        ],
+        [
+            "naturally",
+            "secretly",
+            "strangely",
+            "accidentally"
+        ]
+    ],
+    "ans": [
+        1,
+        2,
+        3,
+        3,
+        4,
+        1,
+        4,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        4,
+        2,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        4,
+        3,
+        1,
+        2,
+        1,
+        4,
+        2,
+        3,
+        3,
+        1,
+        4,
+        2,
+        1,
+        4,
+        2,
+        1,
+        4,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        2,
+        1,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2,
+        1,
+        2,
+        3,
+        4,
+        2,
+        1,
+        2,
+        4,
+        3,
+        1,
+        2,
+        3,
+        4,
+        4,
+        1,
+        2,
+        3,
+        1,
+        4,
+        3,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        2,
+        2,
+        1,
+        3,
+        1,
+        2,
+        3,
+        4,
+        4,
+        4,
+        1,
+        2,
+        3,
+        2,
+        4,
+        3,
+        2,
+        1,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        2,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        2,
+        1,
+        4,
+        3,
+        2,
+        4,
+        1,
+        1,
+        2,
+        3,
+        4,
+        2,
+        1
+    ],
+    "explanation": [
+        "\"Color\" refers to the hue or shade of an object. In this context, the statement is about the blue color of the book.",
+        "\"Shape\" refers to the form or outline of an object. In this context, the table is described as round, which is a shape.",
+        "\"Weight\" refers to how heavy an object is. In this context, the suitcase weighs 20 pounds.",
+        "\"Size\" refers to the dimensions or magnitude of an object. In this context, the suitcase is small in size.",
+        "\"Height\" refers to the measurement from the base to the top of an object. In this context, the window's height is three feet.",
+        "\"Width\" refers to the measurement from side to side. In this context, the street's width is 36 feet.",
+        "\"Material\" refers to the substance from which an object is made. In this context, the material feels soft.",
+        "\"Light\" is the opposite of heavy. In this context, the suitcase being heavy means it is not light.",
+        "\"Large\" is the opposite of small. In this context, the table being small means it is not large.",
+        "\"Hard\" is the opposite of soft. In this context, the material being soft means it is not hard.",
+        "\"Narrow\" is the opposite of wide. In this context, the boulevard being wide means it is not narrow.",
+        "\"Dry\" is the opposite of wet. In this context, the window being wet means it is not dry.",
+        "\"Thin\" is the opposite of thick. In this context, the walls being thick means they are not thin.",
+        "\"Short\" is the opposite of long. In this context, the street being long means it is not short.",
+        "\"Thick\" is the opposite of thin. In this context, the book being thin means it is not thick.",
+        "\"Wide\" is the opposite of narrow. In this context, the window being narrow means it is not wide.",
+        "\"Heavy\" is the opposite of light. In this context, the briefcase being light means it is not heavy.",
+        "\"Soft\" is the opposite of hard. In this context, the bed being hard means it is not soft.",
+        "\"Wet\" is the opposite of dry. In this context, the street being dry means it is not wet.",
+        "\"Long\" is the opposite of short. In this context, the table being short means it is not long.",
+        "\"How thick\" is the correct question to ask about the measurement of the wall's thickness. The answer indicates the thickness of the wall.",
+        "\"What is the width\" is the correct question to ask about the measurement of the street's width. The answer indicates the width of the street.",
+        "\"How much heavier\" is the correct question to ask about the weight comparison between two objects. The context specifies that the books are the same weight.",
+        "\"What color\" is the correct question to ask about the color of the book. The answer indicates the colors red and blue.",
+        "\"What sizes\" is the correct question to ask about the sizes of the suitcases. The answer indicates one is small and the other is medium.",
+        "\"What shape\" is the correct question to ask about the form of the table. The answer indicates that the table is round.",
+        "\"What is the length\" is the correct question to ask about the measurement of the material's length. The answer indicates it is three yards long.",
+        "\"How tall\" is the correct question to ask about the height of a person. The answer indicates John's height is six feet.",
+        "\"Weigh\" is the correct verb to use when asking about someone's weight. The question is asking for the weight in pounds.",
+        "\"Weigh\" is the correct verb to use when talking about one's own weight. The statement indicates uncertainty about the weight.",
+        "\"Weighs\" is the correct verb to use when stating someone's weight. The sentence specifies John's weight.",
+        "\"Measure\" is the correct verb to use when determining the size of an object. The context is about finding out the suitcase's size.",
+        "\"Measures\" is the correct verb to use when determining the width of the windows. The sentence describes an action taken by the mother.",
+        "\"Am\" is the correct verb to use in this context, as it links the subject \"I\" with the predicate \"heavier than my sister.\"",
+        "\"Are\" is the correct verb to use to indicate the state of the windows. The sentence compares the width of two sets of windows.",
+        "\"Are\" is the correct verb to use to indicate the state of being. The sentence compares the size of dogs and elephants.",
+        "\"Weigh\" is the correct verb to use when asking about the weight of an object. The question is asking for the typewriter's weight.",
+        "\"Measuring\" is the correct verb to use when determining the height of the windows. The sentence describes the action being taken.",
+        "\"Weighing\" is the correct verb to use when determining the weight of an object. The sentence describes the action being taken.",
+        "\"Is\" is the correct verb to use to describe the state of being. The sentence specifies the length of the boulevard.",
+        "\"Measuring\" is the correct verb to use when determining the width of the boulevard. The sentence describes the action being taken by the man.",
+        "\"Is\" is the correct verb to use to describe the state of being. The sentence compares the length of two streets.",
+        "\"Measure\" is the correct verb to use when determining the length of an object. The sentence is a request to measure the material.",
+        "\"Turn on\" means to activate or switch on an electrical appliance. In this context, it means to turn on the lights because it's dark.",
+        "\"Put down\" means to place something in a lower position. In this context, it means to put the books on the table.",
+        "\"Hang up\" means to suspend or hang something. In this context, it means to hang the coat in the closet.",
+        "\"Wait for\" means to remain in expectation of someone or something. In this context, it means not to wait for the person because they will be busy.",
+        "\"Doing a favor for\" means to perform a helpful act for someone. In this context, it means asking someone to do a favor.",
+        "\"Pick up\" means to lift or take something from a surface. In this context, it means to remove the cups and saucers from the table.",
+        "\"Taking back\" means to return something to its original place. In this context, it means returning the books to the library.",
+        "\"Turn off\" means to deactivate or switch off an electrical appliance. In this context, it means to turn off the lights before going to bed.",
+        "\"Way\" refers to the direction or path to a location. In this context, it means asking for the direction to the post office.",
+        "\"Straight ahead\" means to continue in a direct line. In this context, it means to keep going straight for three blocks.",
+        "\"Far\" refers to the distance to a location. In this context, it means asking for the distance to the hotel.",
+        "\"Miss\" means to fail to see or notice something. In this context, it means that if you turn left, you will definitely see it and not miss it.",
+        "\"Across\" means on the other side of something. In this context, it means the theater is on the other side of the street.",
+        "\"Long drive\" refers to a considerable distance to travel by car. In this context, it means the airport is a considerable distance from here.",
+        "\"Miles\" is a unit of distance. In this context, it means the bank is five miles away from the church.",
+        "\"Taken\" means occupied. In this context, it means asking if the seat is already occupied by someone else.",
+        "\"Right\" refers to the direction to turn. In this context, it means to turn right at the corner.",
+        "\"Corner\" refers to the place where two streets meet, indicating that the house is nearby, just around the corner.",
+        "\"Grew up\" is a phrasal verb that means to develop or mature in a particular place. It fits the context of spending one's childhood in a small country town.",
+        "\"On the corner\" means located at the intersection of two streets. It fits the context of where the grocery store was located.",
+        "\"Moved in\" means to begin living in a new place. It fits the context of the couple starting to live next door.",
+        "\"From\" indicates the starting point of measurement. It fits the context of the distance between the new house and \"you.\"",
+        "\"Until\" indicates the end point of a period of time. It fits the context of living in Texas up to the age of seventeen.",
+        "\"From\" indicates the source. It fits the context of renting the house from an elderly man.",
+        "\"On\" is used to indicate location. It fits the context of spending childhood on a farm.",
+        "\"In\" indicates the time period during which something happened. It fits the context of houses being built in the last ten years.",
+        "\"Up the street\" means further along the street in a particular direction. It fits the context of the movie theater's location.",
+        "\"Left\" is the past tense of \"leave,\" fitting the context of an action that happened yesterday.",
+        "\"Leave\" is the present tense, fitting the context of a habitual action that happens every day.",
+        "\"Will leave\" is the future tense, fitting the context of an action that will happen tomorrow.",
+        "\"Went\" is the past tense of \"go,\" fitting the context of an action that happened last week.",
+        "\"Am going\" is the present continuous tense, fitting the context of an action happening today.",
+        "\"Will go\" is the future tense, fitting the context of an action that will happen tomorrow morning.",
+        "\"Was\" is the past tense of \"be,\" fitting the context of an action that happened yesterday.",
+        "\"Will be\" is the future tense, fitting the context of a conditional action that may happen today.",
+        "\"Wake up\" is the base form, but the correct answer should be \"woke up\" to fit the past tense. The correct form should be reviewed.",
+        "\"Watched\" is the past tense of \"watch,\" fitting the context of an action that happened last Saturday.",
+        "\"Will watch\" is the future tense, fitting the context of an action that will happen next Tuesday morning.",
+        "\"Hailed\" is the past tense of \"hail,\" fitting the context of an action that happened yesterday.",
+        "\"Snowing\" is the present continuous tense, fitting the context of an action that is happening right now.",
+        "\"Hotter\" is the correct comparative form of \"hot.\" \"More hotter\" is incorrect because \"hotter\" already implies a comparison.",
+        "\"Raining\" is the present continuous form, fitting the context of asking about the current weather condition.",
+        "\"Nice\" is the correct adjective to describe the weather. \"Nicer\" is comparative and \"nicely\" is an adverb, neither of which fit this context.",
+        "\"Drizzling\" is the present continuous form, fitting the context of an action that will likely happen throughout the afternoon.",
+        "\"Wind\" is the noun that describes the phenomenon. \"Windy\" is an adjective and does not fit the context of \"a strong _______.\"",
+        "\"Cloudy\" is the adjective that describes the weather condition. \"Clouds\" is a noun and does not fit this context.",
+        "\"Cleared up\" is the past participle form used in perfect tenses, fitting the context of asking if the action is completed.",
+        "\"Terrible\" is the correct adjective to describe the weather. \"Terribly\" is an adverb and does not fit this context.",
+        "\"Don't\" is the correct negative form to use with \"I.\" The sentence means \"I do not feel well today.\"",
+        "\"Is\" is the correct verb form to use with the singular subject \"headache.\" The sentence means \"My headache is gone.\"",
+        "\"Has\" is the correct verb form to use with the singular subject \"sister.\" The sentence means \"My sister has a fever.\"",
+        "\"Hurts\" is the correct verb form to use with the singular subject \"arm.\" The sentence means \"My arm hurts.\"",
+        "\"Break\" is the correct base form to use after \"Did you.\" The sentence is asking if the person broke their arm.",
+        "\"Slipped\" is the past tense of \"slip,\" fitting the context of an action that happened in the past.",
+        "\"Slips\" is the correct present tense form to use with the singular subject \"She.\" The sentence describes a habitual action.",
+        "\"Hopes\" is the correct verb form to use with the singular subject \"Mary.\" The sentence means \"Mary hopes you'll feel better soon.\"",
+        "\"Is\" is the correct verb form to use with the singular subject \"leg.\" The sentence means \"My leg is bleeding.\"",
+        "\"Broken\" is the past participle form used with \"have\" to form the present perfect tense, fitting the context of asking if the action has ever happened.",
+        "\"Hope to\" is the correct form to use with \"I\" to express a desire to do something in the future.",
+        "\"Got\" is the past participle form used with \"have\" to form the present perfect tense, fitting the context of describing a condition that exists.",
+        "\"Better\" is the correct form to use after \"you'd\" (short for \"you had\") to give advice, meaning it would be advisable to see a doctor.",
+        "\"Swollen\" is the past participle form used to describe the state of the thumb. It fits the context of describing a condition.",
+        "\"Fell\" is the past tense of \"fall,\" fitting the context of an action that happened in the past.",
+        "\"Swollen\" and \"bleeding\" are adjectives describing the condition of his leg. They fit the context of an injury.",
+        "\"Ought to\" is a modal verb phrase used to give advice, meaning he should see a doctor.",
+        "\"Hurts\" is the present tense form of \"hurt,\" fitting the context of describing ongoing pain.",
+        "This sentence seems to repeat the previous one, and \"hurts\" would be the correct answer, but the provided option doesn't match.",
+        "\"Pain\" is the correct noun to describe a feeling of discomfort or soreness, fitting the context of an injury.",
+        "\"Get out\" is a phrasal verb meaning to leave a bed. It fits the context of describing a morning routine.",
+        "\"Getting up\" is a gerund phrase describing the action before taking a shower.",
+        "\"Put on\" is a phrasal verb meaning to dress in clothes. It fits the context of describing a routine.",
+        "\"Wake up\" is a phrasal verb meaning to awaken someone. It fits the context of describing a morning routine.",
+        "\"Go into\" is a phrasal verb meaning to enter a place. It fits the context of describing a routine.",
+        "\"Take off\" is a phrasal verb meaning to remove clothes. It fits the context of describing a bedtime routine.",
+        "\"Get into\" is a phrasal verb meaning to lie down in bed. It fits the context of describing a bedtime routine.",
+        "\"Go off\" is a phrasal verb meaning to fall asleep quickly. It fits the context of describing a bedtime routine.",
+        "\"My\" is the correct possessive adjective to use with \"clothes.\" The sentence describes a personal action before bedtime.",
+        "\"His\" is the correct possessive pronoun to match \"little brother\" and \"shirt.\" The sentence means that the brother tried to button his own shirt.",
+        "\"Himself\" is the correct reflexive pronoun to match \"he.\" The sentence means he cannot dress himself yet.",
+        "\"Her\" is the correct possessive pronoun to match \"she.\" The sentence means she usually combs her own hair.",
+        "\"Herself\" is the correct reflexive pronoun to match \"she.\" The sentence means she still cannot bathe herself.",
+        "\"Themselves\" is the correct reflexive pronoun to match \"the children.\" The sentence means the children tried to put their jackets on themselves.",
+        "\"Yourself\" is the correct reflexive pronoun to match \"you.\" The sentence means you can dress yourself.",
+        "\"Their\" is the correct possessive pronoun to match \"the children.\" The sentence means the children took off their own pajamas.",
+        "\"Your\" is the correct possessive pronoun to match \"you.\" The sentence means do you eat your breakfast in the dining room.",
+        "\"They\" is the correct subject pronoun to match \"the boys.\" The sentence means after the boys get up, they shave and brush their teeth.",
+        "\"He\" is the correct subject pronoun to match \"John.\" The sentence means John goes downstairs where he fixes breakfast.",
+        "\"We\" is the correct subject pronoun to match \"John and I.\" The sentence means after John and I get dressed, we eat breakfast together in the kitchen.",
+        "\"I\" is the correct subject pronoun to match the speaker. The sentence means then I go back upstairs to wake up my sister.",
+        "\"She\" is the correct subject pronoun to match \"her.\" The sentence means I help her get dressed because she is still too young to dress herself.",
+        "\"You\" is the correct pronoun to match the subject in a tag question. The sentence means you help your little brother, don\u2019t you?",
+        "\"Judgment\" is the correct noun meaning an opinion or conclusion. The sentence means I really want to know your judgment.",
+        "\"Like\" is the correct verb meaning to enjoy or prefer. The sentence means we like hot weather best.",
+        "\"Wonderful\" is the correct adjective meaning very good. The sentence means in my opinion, that will be wonderful.",
+        "\"Wrong\" is the correct adjective meaning not correct. The sentence means do you also believe he is wrong?",
+        "\"Correct\" is the correct adjective meaning accurate. The sentence means I know you are correct.",
+        "\"Naturally\" is the correct adverb meaning in a normal or expected way. The sentence means naturally, I will be honest with you."
+    ],
+    "valores": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

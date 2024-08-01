@@ -1,0 +1,792 @@
+{
+    "ques": [
+        "I'm _______ to know what you decided.",
+        "She'll _______ your judgment.",
+        "They\u2019ve _______ decided not to go.",
+        "You can leave _______ you want.",
+        "We know it\u2019s _______ but we\u2019re going anyway.",
+        "I _______ you made your decision.",
+        "_______ to Mr. Cooper, I can\u2019t go.",
+        "I tried to _______ her to change her mind.",
+        "John _______ to make a decision.",
+        "It doesn\u2019t make any _______",
+        "Will you accept my _______ ?",
+        "I gather you\u2019ve decided _______ going to the movies.",
+        "I\u2019ve always wanted to _______ abroad.",
+        "Last summer, I _______ to go to Europe.",
+        "_______ may be faster, but I prefer a leisurely boat ride.",
+        "It was difficult to decide what to _______ in my suitcases.",
+        "On the way to the pier, I was almost _______ in a collision.",
+        "After a comfortable trip, the ship _______ at the pier in Naples.",
+        "I _______ a bus to my hotel.",
+        "The bus _______ in just at dinner time.",
+        "I _______ my hotel room ready for me.",
+        "I _______ all through the Mediterranean countries that summer.",
+        "I'm going _______ a trip to New York. (on, by, with)",
+        "I prefer to go _______ sea. (in, by, with)",
+        "I like traveling _______ a boat. (on, with, for)",
+        "My brother isn\u2019t going _______ me. (on, by, with)",
+        "He likes to go _______ air. (in, by, for)",
+        "He prefers traveling _______ a plane. (by, for, on)",
+        "My sister plans to take a trip _______ car. (by, for, on)",
+        "She enjoys riding _______ an automobile. (by, in, for)",
+        "My friend intends to travel _______ rail. (by, in, for)",
+        "He usually travels _______ the train. (for, on, to)",
+        "After we arrive, we will travel around the city _______ bus (for, by, to)",
+        "I went _______ last week.",
+        "The clothes I wanted were on _______",
+        "The clerk asked me what _______ suit I wear.",
+        "I didn\u2019t _______ the pants or the shirt.",
+        "I hope they both _______ well.",
+        "If they don\u2019t fit, I can get a _______",
+        "I was _______ in an overcoat, also.",
+        "I saw one that fit, but it was too _______",
+        "I want high _______ merchandise at a low price.",
+        "Everything I liked _______ too much money.",
+        "We _______ some friends out to dinner.",
+        "The menu had complete dinners as well as a la carte _______",
+        "For the _______, we each had a steak.",
+        "Our friends ordered theirs well-done, but we like ours _______",
+        "Wine was _______ with the steaks.",
+        "We each had a _______ of mashed potatoes and a salad with the main course.",
+        "For _______, we all had vanilla ice cream.",
+        "A bowl of fresh _______ was served after our coffee.",
+        "No one was in a _______ and we had a leisurely dinner.",
+        "Everyone _______ to enjoy the meal.",
+        "I'd like to ask _______ an appointment.",
+        "I can come any day _______ Thursday.",
+        "Please fill _______ this application form.",
+        "Have you written _______ an employment agency?",
+        "Were you interviewed _______ Mr. Cooper?",
+        "Did you change your appointment _______ Monday to Wednesday?",
+        "Did you put your signature _______ this application form?",
+        "Did you glance _______ the application form before you signed it?",
+        "Please make an appointment _______ you come.",
+        "Please lock _______ the office when you leave.",
+        "Please call before you come; _______ we might not be home.",
+        "I was forced to cancel my appointment _______ Mr. Cooper.",
+        "I went to see my doctor for an _______ check-up.",
+        "He told me I was spending too much time indoors and not getting enough _______",
+        "As a result, I was a little _______",
+        "He prescribed _______ of exercise",
+        "He also told me to stop _______ cigarettes",
+        "I told the doctor I'd had a slight _______ last summer.",
+        "I was under the care of a heart _______",
+        "The doctor took my _______",
+        "He told me I was _______",
+        "He gave me a _______ which showed I was anemic.",
+        "The doctor then _______ my eyes.",
+        "I asked the doctor if I should take any _______ for my bad health.",
+        "He told me that if I took care of myself, I would have nothing to _______ about."
+    ],
+    "options": [
+        [
+            "anxious",
+            "relaxing",
+            "carefree",
+            "disinterested"
+        ],
+        [
+            "deny",
+            "accept",
+            "reject",
+            "oppose"
+        ],
+        [
+            "doubtfully",
+            "probably",
+            "definitely",
+            "hesitantly"
+        ],
+        [
+            "wherever",
+            "however",
+            "whatever",
+            "whenever"
+        ],
+        [
+            "dangerous",
+            "safe",
+            "harmless",
+            "fun"
+        ],
+        [
+            "doubt",
+            "assume",
+            "ignore",
+            "reject"
+        ],
+        [
+            "besides",
+            "because",
+            "according",
+            "despite"
+        ],
+        [
+            "force",
+            "ignore",
+            "oppose",
+            "persuade"
+        ],
+        [
+            "agrees",
+            "tries",
+            "refuses",
+            "wants"
+        ],
+        [
+            "sense",
+            "difference",
+            "noise",
+            "problem"
+        ],
+        [
+            "explanation",
+            "excuse",
+            "denial",
+            "rejection"
+        ],
+        [
+            "for",
+            "with",
+            "against",
+            "in"
+        ],
+        [
+            "travel",
+            "stay",
+            "remain",
+            "leave"
+        ],
+        [
+            "considered",
+            "decided",
+            "thought",
+            "rejected"
+        ],
+        [
+            "Driving",
+            "Walking",
+            "Flying",
+            "Sailing"
+        ],
+        [
+            "carry",
+            "drop",
+            "fill",
+            "pack"
+        ],
+        [
+            "left",
+            "unhurt",
+            "injured",
+            "unnoticed"
+        ],
+        [
+            "floated",
+            "docked",
+            "sailed",
+            "flew"
+        ],
+        [
+            "took",
+            "walked",
+            "drove",
+            "rode"
+        ],
+        [
+            "ran",
+            "flew",
+            "drifted",
+            "pulled"
+        ],
+        [
+            "found",
+            "left",
+            "cleaned",
+            "prepared"
+        ],
+        [
+            "traveled",
+            "stayed",
+            "wandered",
+            "worked"
+        ],
+        [
+            "on",
+            "by",
+            "with",
+            "in"
+        ],
+        [
+            "in",
+            "by",
+            "with",
+            "on"
+        ],
+        [
+            "with",
+            "for",
+            "on",
+            "in"
+        ],
+        [
+            "on",
+            "by",
+            "in",
+            "with"
+        ],
+        [
+            "in",
+            "for",
+            "on",
+            "by"
+        ],
+        [
+            "on",
+            "for",
+            "in",
+            "by"
+        ],
+        [
+            "for",
+            "on",
+            "in",
+            "by"
+        ],
+        [
+            "by",
+            "for",
+            "in",
+            "on"
+        ],
+        [
+            "by",
+            "for",
+            "in",
+            "on"
+        ],
+        [
+            "for",
+            "on",
+            "in",
+            "by"
+        ],
+        [
+            "for",
+            "on",
+            "in",
+            "by"
+        ],
+        [
+            "working",
+            "shopping",
+            "resting",
+            "traveling"
+        ],
+        [
+            "display",
+            "sale",
+            "rent",
+            "clearance"
+        ],
+        [
+            "color",
+            "brand",
+            "size",
+            "style"
+        ],
+        [
+            "buy",
+            "choose",
+            "wash",
+            "try on"
+        ],
+        [
+            "match",
+            "look",
+            "fit",
+            "suit"
+        ],
+        [
+            "replacement",
+            "voucher",
+            "refund",
+            "exchange"
+        ],
+        [
+            "uninterested",
+            "indifferent",
+            "disinterested",
+            "interested"
+        ],
+        [
+            "cheap",
+            "expensive",
+            "affordable",
+            "reasonable"
+        ],
+        [
+            "value",
+            "grade",
+            "quality",
+            "status"
+        ],
+        [
+            "needed",
+            "required",
+            "spent",
+            "cost"
+        ],
+        [
+            "invited",
+            "took",
+            "called",
+            "asked"
+        ],
+        [
+            "dishes",
+            "selections",
+            "courses",
+            "options"
+        ],
+        [
+            "appetizer",
+            "dessert",
+            "main course",
+            "drink"
+        ],
+        [
+            "rare",
+            "medium",
+            "slightly cooked",
+            "medium rare"
+        ],
+        [
+            "given",
+            "offered",
+            "chosen",
+            "served"
+        ],
+        [
+            "helping",
+            "serving",
+            "generous portion",
+            "side"
+        ],
+        [
+            "dessert",
+            "snack",
+            "drink",
+            "course"
+        ],
+        [
+            "cookies",
+            "fruit",
+            "salad",
+            "nuts"
+        ],
+        [
+            "hurry",
+            "rush",
+            "state",
+            "speed"
+        ],
+        [
+            "tried",
+            "pretended",
+            "appeared",
+            "seemed"
+        ],
+        [
+            "for",
+            "to",
+            "of",
+            "about"
+        ],
+        [
+            "except",
+            "besides",
+            "beyond",
+            "above"
+        ],
+        [
+            "in",
+            "up",
+            "out",
+            "down"
+        ],
+        [
+            "of",
+            "with",
+            "from",
+            "to"
+        ],
+        [
+            "with",
+            "at",
+            "by",
+            "for"
+        ],
+        [
+            "from",
+            "of",
+            "with",
+            "to"
+        ],
+        [
+            "on",
+            "at",
+            "in",
+            "of"
+        ],
+        [
+            "over",
+            "at",
+            "in",
+            "on"
+        ],
+        [
+            "before",
+            "when",
+            "after",
+            "if"
+        ],
+        [
+            "out",
+            "up",
+            "in",
+            "on"
+        ],
+        [
+            "unless",
+            "so",
+            "otherwise",
+            "because"
+        ],
+        [
+            "at",
+            "to",
+            "of",
+            "with"
+        ],
+        [
+            "annual",
+            "frequent",
+            "occasional",
+            "urgent"
+        ],
+        [
+            "rest",
+            "exercise",
+            "food",
+            "sleep"
+        ],
+        [
+            "tired",
+            "healthy",
+            "overweight",
+            "underweight"
+        ],
+        [
+            "little",
+            "some",
+            "moderate",
+            "plenty"
+        ],
+        [
+            "lighting",
+            "buying",
+            "smoking",
+            "carrying"
+        ],
+        [
+            "cough",
+            "heart attack",
+            "cold",
+            "fever"
+        ],
+        [
+            "specialist",
+            "generalist",
+            "therapist",
+            "nutritionist"
+        ],
+        [
+            "temperature",
+            "blood sugar",
+            "blood pressure",
+            "pulse"
+        ],
+        [
+            "near-sighted",
+            "far-sighted",
+            "color-blind",
+            "blind"
+        ],
+        [
+            "scan",
+            "x-ray",
+            "blood test",
+            "urinalysis"
+        ],
+        [
+            "examined",
+            "tested",
+            "scanned",
+            "treated"
+        ],
+        [
+            "medicine",
+            "advice",
+            "tests",
+            "supplements"
+        ],
+        [
+            "worry",
+            "complain",
+            "stress",
+            "think"
+        ]
+    ],
+    "ans": [
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        3,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        4,
+        1,
+        1,
+        1,
+        2,
+        3,
+        4,
+        4,
+        1,
+        4,
+        3,
+        1,
+        2,
+        4,
+        2,
+        1,
+        3,
+        4,
+        3,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        3,
+        4,
+        3,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        3,
+        1,
+        3,
+        1,
+        1,
+        4
+    ],
+    "explanation": [
+        "\"Anxious\" means feeling worried or eager about something. It fits the context of wanting to know a decision, indicating eagerness or concern.",
+        "\"Accept\" means to agree with or receive something willingly. In this context, it means she will agree with or follow your judgment.",
+        "\"Definitely\" indicates certainty and finality in a decision, which fits the context of having made a clear decision not to go.",
+        "\"Whenever\" refers to any time, fitting the context of being able to leave at any time desired.",
+        "\"Dangerous\" fits the context of acknowledging a risk but deciding to proceed regardless.",
+        "\"Assume\" means to suppose something is true without evidence. In this context, it fits the idea of believing a decision has been made.",
+        "\"According\" is used to refer to someone's statement or opinion. Here, it indicates that Mr. Cooper has said something that affects the speaker's ability to go.",
+        "\"Persuade\" means to convince someone to do or believe something. It fits the context of trying to change someone's mind.",
+        "\"Refuses\" means to decline or reject something. In this context, it indicates John's unwillingness to make a decision.",
+        "\"Difference\" means a distinction or change. The phrase \"doesn't make any difference\" means it doesn't matter or change anything.",
+        "\"Explanation\" means a statement that makes something clear. In this context, it refers to providing a reason or justification that needs to be accepted.",
+        "\"Against\" means in opposition to. Here, it indicates deciding not to go to the movies.",
+        "\"Travel\" means to go from one place to another, especially over a long distance. It fits the context of wanting to go abroad.",
+        "\"Decided\" means to make a choice or come to a conclusion. In this context, it indicates making the choice to go to Europe.",
+        "\"Flying\" is often the fastest mode of travel, contrasting with the preference for a leisurely boat ride.",
+        "\"Pack\" means to put items into a container, especially for traveling. It fits the context of preparing suitcases for a trip.",
+        "\"Injured\" means to be hurt or harmed. It fits the context of being almost involved in a collision.",
+        "\"Docked\" means to bring a ship into a dock. It fits the context of the ship arriving at the pier.",
+        "\"Took\" means to use a mode of transport. In this context, it fits the action of using a bus to get to the hotel.",
+        "\"Pulled in\" means to arrive at a destination. It fits the context of the bus arriving at the hotel at dinner time.",
+        "\"Found\" means to discover something. In this context, it indicates discovering that the hotel room was ready.",
+        "\"Traveled\" means to go from one place to another. It fits the context of moving through different Mediterranean countries.",
+        "\"On\" is used to indicate being part of an event or activity. In this context, it fits the phrase \"going on a trip.\"",
+        "\"By\" is used to indicate the means or method of travel. Here, it specifies traveling by sea.",
+        "\"On\" is used to indicate being on a mode of transport. Here, it refers to being on a boat.",
+        "\"With\" indicates companionship or being together with someone. Here, it means the brother is not accompanying the speaker.",
+        "\"By\" is used to indicate the method of travel. Here, it means traveling by air.",
+        "\"On\" is used to indicate being on a mode of transport. Here, it refers to being on a plane.",
+        "\"By\" is used to indicate the method of travel. Here, it means traveling by car.",
+        "\"In\" is used to indicate being inside a vehicle. Here, it refers to being in an automobile.",
+        "\"By\" is used to indicate the method of travel. Here, it means traveling by rail.",
+        "\"On\" is used to indicate being on a mode of transport. Here, it refers to being on the train.",
+        "\"By\" is used to indicate the method of travel. Here, it means traveling by bus.",
+        "\"Shopping\" fits the context as it refers to the activity of buying things, which aligns with the idea of clothes being on sale.",
+        "\"Sale\" means the items are being sold at a reduced price, which is why the speaker wanted them.",
+        "\"Size\" refers to the dimensions of clothing, which is essential for ensuring a proper fit.",
+        "\"Try on\" means to put on clothes to see if they fit or look good, which is typically done before purchasing.",
+        "\"Fit\" refers to whether the clothes are the right size and shape for the person, which is the concern when trying on clothing.",
+        "\"Refund\" means getting your money back, which is what you would seek if the clothes do not fit.",
+        "\"Interested\" indicates the speaker's desire or curiosity about the overcoat.",
+        "\"Expensive\" means costing a lot of money, indicating why the speaker did not purchase the overcoat.",
+        "\"Quality\" refers to the standard of something as measured against other things of a similar kind, indicating the speaker's desire for well-made merchandise.",
+        "\"Cost\" refers to the amount of money needed to buy something, indicating that the items were too expensive for the speaker.",
+        "\"Invited\" means to ask someone to join you for an event or activity. In this context, it indicates asking friends to join for dinner.",
+        "\"Selections\" refers to the various individual items available on the menu. It fits the context of a la carte items.",
+        "\"Main course\" refers to the primary dish in a meal. In this context, it indicates that steak was the main dish.",
+        "\"Medium rare\" is a specific level of doneness for steak, which fits the context of how the speaker likes their steak cooked.",
+        "\"Served\" means to present or provide food or drink to someone. In this context, it indicates that wine was provided with the meal.",
+        "\"Generous portion\" means a large amount of food. It fits the context of having a substantial amount of mashed potatoes and salad.",
+        "\"Dessert\" is the sweet course typically eaten at the end of a meal. In this context, it refers to the vanilla ice cream.",
+        "\"Fruit\" refers to the edible, sweet product of a plant. In this context, it indicates what was served after the coffee.",
+        "\"Hurry\" means to move or act with urgency. In this context, it indicates that everyone took their time during dinner.",
+        "\"Seemed\" means to give the impression of having a particular quality. In this context, it indicates that everyone appeared to enjoy the meal.",
+        "\"For\" is used to indicate the purpose of the request. In this context, it means to ask for the purpose of scheduling an appointment.",
+        "\"Besides\" means in addition to; except for. In this context, it indicates that Thursday is the only day not available.",
+        "\"Fill out\" means to complete a form by providing the required information. It fits the context of completing an application form.",
+        "\"To\" is used to indicate the recipient of the action. In this context, it means to send a written communication to an employment agency.",
+        "\"By\" indicates the person who conducts the interview. Here, it specifies that Mr. Cooper is the interviewer.",
+        "\"From\" indicates the starting point of the change, and \"to\" indicates the ending point. It shows that the appointment was rescheduled from Monday to Wednesday.",
+        "\"On\" is used to indicate placement or location. In this context, it means placing a signature on the application form.",
+        "\"At\" is used to indicate the direction of a brief look. In this context, it means to look quickly at the application form.",
+        "\"When\" is used to indicate the time of an action. Here, it means to make an appointment at the time you plan to come.",
+        "\"Lock up\" means to secure a place by locking all doors and windows. It fits the context of securing the office when leaving.",
+        "\"Otherwise\" indicates a consequence if the previous condition is not met. Here, it means that without calling, you might find no one home.",
+        "\"With\" is used to indicate the person involved in the action. In this context, it means to cancel an appointment that was scheduled with Mr. Cooper.",
+        "\"Annual\" means occurring once every year. In this context, it refers to a yearly medical examination.",
+        "\"Exercise\" refers to physical activity that is done to stay healthy. The context suggests a lack of physical activity.",
+        "\"Overweight\" means having more body weight than is considered healthy. This fits the context of not getting enough exercise.",
+        "\"Plenty\" means a large or sufficient amount. In this context, it suggests a significant amount of exercise is needed.",
+        "\"Smoking\" refers to inhaling and exhaling the smoke of burning tobacco. It fits the context of a doctor's advice for better health.",
+        "\"Heart attack\" refers to a medical emergency where the blood flow to the heart is blocked. It fits the context of a serious health condition mentioned to a doctor.",
+        "\"Specialist\" means a doctor who is an expert in a particular area of medicine. In this context, it refers to a doctor who specializes in heart health.",
+        "\"Blood pressure\" refers to the force of blood against the walls of arteries. It's a common measure taken during a check-up.",
+        "\"Near-sighted\" means having difficulty seeing distant objects clearly. It fits the context of a common vision issue diagnosed by a doctor.",
+        "\"Blood test\" is a laboratory analysis performed on a blood sample. It can reveal conditions like anemia.",
+        "\"Examined\" means to inspect or investigate thoroughly. In this context, it refers to a close inspection of the eyes by the doctor.",
+        "\"Medicine\" refers to drugs or remedies used to treat or prevent illness. It fits the context of asking about treatment for health issues.",
+        "\"Worry\" means to feel anxious or troubled about actual or potential problems. It fits the context of assuring someone about their health."
+    ],
+    "valores": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

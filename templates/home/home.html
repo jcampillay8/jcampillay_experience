@@ -59,189 +59,195 @@
 <!-- header-slider-area start -->
 <!-- header-slider-area start -->
 <section class="header-slider-area">
-    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+    
   
-      
-               
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class="single-slide-item slide-1">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="single-slide-item-content">
-                    <h2 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">{% translate "Bienvenido" %}<br> {{ request.user.first_name }} {{ request.user.last_name }}</h2>
-                    <p>
-                      {% blocktranslate %}Fostering Innovation in Technology and Unlocking Potential Through Teamwork are some of my main life goals.{% endblocktranslate %}
-                    </p>
+    <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="fill" style="background-image:url('{% static 'images/banner/Mont-Rainer.png' %}')"></div>
                     
-                  </div><!-- /.single-slide-item-content-->
-                </div><!-- /.col-->
-              </div><!-- /.row-->
-            </div><!-- /.container-->
-          </div><!-- /.single-slide-item-->
-        </div><!-- /.item .active-->
-  
+                    <div class="carousel-caption slide-up">
+                        <h1 class="banner_heading">{% translate "Bienvenido" %} <br><span>{{ request.user.first_name }} {{ request.user.last_name }}</span></h1>
+                        <p class="banner_txt">{% blocktranslate %}Fostering Innovation in Technology and Unlocking Potential Through Teamwork are some of my main life goals.{% endblocktranslate %}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
 
   
   </section><!-- /.header-slider-area-->
-
-  <!-- Intro -->
-<section class="page-section" id="intro">
-    <div class="container intro">
-        <div class="row margin-bottom-50">
-            <div class="col-md-12 text-center">
-                <h1 class="title-section"><span class="title-regular">{% translate "Hello, I'm " %}<strong>Jaime Campillay</strong></span><br/>{% translate "Passionate about technology, programming, and machine learning" %}</h1>
-                <hr class="title-underline-center mx-auto">
-                <p class="lead">{% translate "Exploring innovative solutions at the intersection of code, data, and in pro of improving people's quality of life." %}</p>
+  <div class="container" style="margin-top: 20px;"></div>
+  <div class="container intro">
+    <div class="row margin-bottom-50">
+        <div class="col-md-12 text-center">
+            <h1 class="title-section"><span class="title-regular">{% translate "Hello, I'm " %}<strong>Jaime Campillay</strong></span><br/>{% translate "Passionate about technology, programming, and machine learning" %}</h1>
+            <hr class="title-underline-center mx-auto">
+            <p class="lead">{% translate "Exploring innovative solutions at the intersection of code, data, and in pro of improving people's quality of life." %}</p>
+        </div>
+    </div>
+</div>
+      <!-- About Start -->
+      <div class="container-fluid py-5">
+        <div class="container py-2">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'images/home/book_course.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+                        <h1>{% translate "Pon a prueba tu inlgés" %}</h1>
+                    </div>
+                    <p>Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet</p>
+                    <a href="{% url 'english_diagnostic' %}"><button type="button" class="btn" style="background: #ff561e; color:white"><strong>{% translate "Go to English Quiz" %}</strong><i class="fa fa-arrow-right"></i></button></a>
+                </div>
             </div>
         </div>
     </div>
     
-
-    </div>
-
-            <div class="container" style="margin-top: 50px;">
-                <div class="service-details" id="skills">
-                    <div class="section-header text-center">
-                        <div class="container">
-                            <div class="filter-section">
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12">
-                                        <h1>{% translate "Technical Knowledge and Skills" %}</h1>
-                                    </div>
+    <!-- About End -->
+  <!-- Intro -->
+    
+        <div class="service-details" id="skills">
+                <div class="section-header text-center">
+                    <div class="container">
+                        <div class="filter-section">
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12">
+                                    <h1>{% translate "Technical Knowledge and Skills" %}</h1>
                                 </div>
                             </div>
+                        </div>
+                
                     
-                        
-                    </div><!--/.section-header-->
-                    <div class="service-content-one">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="service-single text-center">
-                                    <div class="service-img">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-                                    </div><!--/.service-img-->
-                                    <div class="service-txt">
-                                        <h2>
-                                            <a href="#">Python</a>
-                                        </h2>
-                                        <p>
-                                            {% blocktranslate %} Python, my main tool for bringing projects to life, from interactive web applications to machine learning models that turn data into insights. {% endblocktranslate %}
-                                        </p>
-                                        <a href="#" class="service-btn">
-                                            {% translate "learn more" %}
-                                        </a>
-                                    </div><!--/.service-txt-->
-                                </div><!--/.service-single-->
-                            </div><!--/.col-->
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="service-single text-center">
-                                    <div class="service-img">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
-                                    </div><!--/.service-img-->
-                                    <div class="service-txt">
-                                        <h2>
-                                            <a href="#">PostgreSQL</a>
-                                        </h2>
-                                        <p>
-                                            {% blocktranslate %} My preferred choice for storing structured data, it's highly secure, open-source, and fits projects of any size or scale {% endblocktranslate %}
-                                        </p>
-                                        <a href="#" class="service-btn">
-                                            {% translate "learn more" %}
-                                        </a>
-                                    </div><!--/.service-txt-->
-                                </div><!--/.service-single-->
-                            </div><!--/.col-->
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="service-single text-center">
-                                    <div class="service-img">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
-                                    </div><!--/.service-img-->
-                                    <div class="service-txt">
-                                        <h2>
-                                            <a href="#">Django Framework</a>
-                                        </h2>
-                                        <p>
-                                            {% blocktranslate %} Django, the agile web framework preferred for its robustness, security, power, flexibility, and efficiency in fully scalable applications and websites. {% endblocktranslate %}
-                                        </p>
-                                        <a href="#" class="service-btn">
-                                            {% translate "learn more" %}
-                                        </a>
-                                    </div><!--/.service-txt-->
-                                </div><!--/.service-single-->
-                            </div><!--/.col-->
-                        </div><!--/.row-->
-                    </div><!--/.service-content-one-->
-                    <div class="service-content-two">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="service-single text-center">
-                                    <div class="service-img">
+                </div><!--/.section-header-->
+                <div class="service-content-one">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Python</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Python, my main tool for bringing projects to life, from interactive web applications to machine learning models that turn data into insights. {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">PostgreSQL</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} My preferred choice for storing structured data, it's highly secure, open-source, and fits projects of any size or scale {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Django Framework</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Django, the agile web framework preferred for its robustness, security, power, flexibility, and efficiency in fully scalable applications and websites. {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-one-->
+                <div class="service-content-two">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                
                                     
-                                        
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
-                                    </div><!--/.service-img-->
-                                    <div class="service-txt">
-                                        <h2>
-                                            <a href="#">{% translate "Pandas" %}</a>
-                                        </h2>
-                                        <p>
-                                            {% blocktranslate %} Pandas, the indispensable library for any data science project, known for its power and flexibility in the manipulation and exploration of tabular data. {% endblocktranslate %}
-                                        </p>
-                                        <a href="#" class="service-btn">
-                                            {% translate "learn more" %}
-                                        </a>
-                                    </div><!--/.service-txt-->
-                                </div><!--/.service-single-->
-                            </div><!--/.col-->
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">{% translate "Pandas" %}</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Pandas, the indispensable library for any data science project, known for its power and flexibility in the manipulation and exploration of tabular data. {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
 
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="service-single text-center">
-                                    <div class="service-img">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg" />
-                                    </div><!--/.service-img-->
-                                    <div class="service-txt">
-                                        <h2>
-                                            <a href="#">{% translate "Arch Linux" %}</a>
-                                        </h2>
-                                        <p>
-                                            {% blocktranslate %} Arch Linux intrigued me with its "do-it-yourself" approach and the possibility of building a tailor-made operating system, from installation to fine-tuning configuration. {% endblocktranslate %}
-                                        </p>
-                                        <a href="#" class="service-btn">
-                                            {% translate "learn more" %}
-                                        </a>
-                                    </div><!--/.service-txt-->
-                                </div><!--/.service-single-->
-                            </div><!--/.col-->
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="service-single text-center">
-                                    <div class="service-img">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                                    </div><!--/.service-img-->
-                                    <div class="service-txt">
-                                        <h2>
-                                            <a href="#">{% translate "Git" %}</a>
-                                        </h2>
-                                        <p>
-                                            {% blocktranslate %} Opting for Git as my version control system was an obvious choice due to its industry leadership and effective management of the development workflow. {% endblocktranslate %}
-                                        </p>
-                                        <a href="#" class="service-btn">
-                                            {% translate "learn more" %}
-                                        </a>
-                                    </div><!--/.service-txt-->
-                                </div><!--/.service-single-->
-                            </div><!--/.col-->
-                        </div><!--/.row-->
-                    </div><!--/.service-content-two-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">{% translate "Arch Linux" %}</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Arch Linux intrigued me with its "do-it-yourself" approach and the possibility of building a tailor-made operating system, from installation to fine-tuning configuration. {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">{% translate "Git" %}</a>
+                                    </h2>
+                                    <p>
+                                        {% blocktranslate %} Opting for Git as my version control system was an obvious choice due to its industry leadership and effective management of the development workflow. {% endblocktranslate %}
+                                    </p>
+                                    <a href="#" class="service-btn">
+                                        {% translate "learn more" %}
+                                    </a>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!--/.service-content-two-->
 
-                </div><!--/.service-details-->
-            </div><!--/.container-->
-            <div class="text-center" style="margin-top: 70px;">
-                <a href="{% url 'knowledge_skills' %}"><button type="button" class="btn" style="background: #ff561e; color:white"><strong>{% translate "VIEW MORE" %}</strong><i class="fa fa-arrow-right"></i></button></a>
-            </div>
-
-    </section><!--/.service-->
+            </div><!--/.service-details-->
+        </div><!--/.container-->
+        <div class="text-center" style="margin-top: 70px;">
+            <a href="{% url 'knowledge_skills' %}"><button type="button" class="btn" style="background: #ff561e; color:white"><strong>{% translate "VIEW MORE" %}</strong><i class="fa fa-arrow-right"></i></button></a>
+        </div>
+    
     <!--service end-->
 
 
