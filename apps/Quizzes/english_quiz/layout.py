@@ -1,12 +1,9 @@
 import dash_bootstrap_components as dbc
 from dash import html, dcc
-from apps.Quizzes.english_quiz.data import initialize_quiz, select_questions, get_initial_question
-
-
-import dash_bootstrap_components as dbc
-from dash import html, dcc
+from apps.Quizzes.english_quiz.data import initialize_quiz, question_translation, opts_translation, index_translation
 
 def serve_layout():
+    initialize_quiz()
     return dbc.Container(
         [
             dbc.Row([
@@ -32,8 +29,8 @@ def serve_layout():
                         ]
                     ),
                     html.Div(id="quiz-content", style={'display': 'none'}, children=[
-                        html.Div(id="title-container", className="text-center my-4"),
-                        html.Div(id="question-container", className="my-4", children=html.H3(id="question-text")),
+                        html.Div(id="title-container", className="text-center my-4", children=html.H1(f"English Level Quiz")),
+                        html.Div(id="question-container", className="my-4", children=html.H3(f"Q{index_translation + 1}: {opts_translation}")),
                         dcc.Textarea(id='student-input', style={'display': 'block', 'width': '100%', 'height': 100}),
                         dbc.Button("Next", id="next-button", color="primary", className="me-2"),
                         html.Div(id="alert-container"),
@@ -44,4 +41,3 @@ def serve_layout():
         ],
         fluid=True
     )
-

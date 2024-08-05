@@ -144,13 +144,6 @@ def initialize_quiz():
     question_alternatives = questions_alternatives[index_alternatives]
     opts_alternatives = options_alternatives[index_alternatives]
 
-    # Definir RadioItems para las opciones de respuesta de alternativas
-    radio_items_alternatives = dbc.RadioItems(
-        options=[{'label': opt, 'value': i} for i, opt in enumerate(opts_alternatives)],
-        id='radio-options',
-        inline=False
-    )
-
 def get_initial_question():
     global question_translation, index_translation
     question_translation = list(final_dict_translation['Spanish'].keys())[index_translation]
