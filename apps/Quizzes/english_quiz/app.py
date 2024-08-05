@@ -11,7 +11,6 @@ from sentence_transformers import SentenceTransformer, util
 from openai import OpenAI
 from difflib import ndiff
 import os
-
 import environ
 from django_plotly_dash import DjangoDash
 from django.conf import settings
@@ -22,15 +21,13 @@ import matplotlib.pyplot as plt
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
-import environ
 
 
 
-# Inicializar `environ`
+# Cargar el archivo .env
 env = environ.Env()
+environ.Env.read_env(os.path.join(os.path.dirname(__file__), '../../core/.env'))
 
-
-# Configurar cliente de OpenAI y modelo de SentenceTransformer
 client = OpenAI(api_key=env('OPENAI_API_KEY'))
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -45,7 +42,6 @@ quiz_paths_alternatives = {
     'B2': 'apps/Quizzes/english_quiz/questions/alternativas/B2_alternatives.json',
     'C1': 'apps/Quizzes/english_quiz/questions/alternativas/C1_alternatives.json',
     'C2': 'apps/Quizzes/english_quiz/questions/alternativas/C2_alternatives.json'
-    
 }
 
 # Definir las rutas de los archivos JSON para las traducciones
@@ -77,6 +73,20 @@ def select_questions(file_path, key_type):
     
     return selected_questions
 
+# Diccionario final para las traducciones
+final_dict_translation = {'Spanish': {}, 'English': {}, 'Score': {}}
+
+# Iterar sobre los niveles y seleccionar preguntas para las traducciones
+for level, path in quiz_paths_translation.items():
+    with open(path, 'r') as file:
+        data = json.load(file)
+    indices = random.sample(range(len(data['Spanish'])), 2)
+    for i in indices:
+        new_key = f"{level}_{i+1}"
+        final_dict_translation['Spanish'][new_key] = data['Spanish'][str(i+1)].rstrip('.')
+        final_dict_translation['English'][new_key] = data['English'][str(i+1)].rstrip('.')
+        final_dict_translation['Score'][new_key] = data['Score'][str(i+1)]
+
 # Diccionario final para las alternativas
 final_dict_alternatives = {}
 
@@ -91,9 +101,6 @@ for level, path in quiz_paths_alternatives.items():
 
 # Crear el DataFrame para las alternativas
 df_alternatives = pd.DataFrame(final_dict_alternatives)
-
-# Inicializar la aplicación Dash
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"], suppress_callback_exceptions=True)
 
 # Variables globales para el control de la secuencia de preguntas y tiempos
 questions_alternatives = []
@@ -116,32 +123,6 @@ index_translation = 0
 start_time_alternatives = time.time()
 start_time_translation = time.time()
 
-# Crear la primera pregunta y opciones para las alternativas
-question_alternatives = questions_alternatives[index_alternatives]
-opts_alternatives = options_alternatives[index_alternatives]
-level_alternatives = levels_alternatives[index_alternatives]
-
-# Definir RadioItems para las opciones de respuesta
-radio_items = dbc.RadioItems(
-    options=[{'label': opt, 'value': i} for i, opt in enumerate(opts_alternatives)],
-    id='radio-options',
-    inline=False
-)
-
-# Diccionario final para las traducciones
-final_dict_translation = {'Spanish': {}, 'English': {}, 'Score': {}}
-
-# Iterar sobre los niveles y seleccionar preguntas para las traducciones
-for level, path in quiz_paths_translation.items():
-    with open(path, 'r') as file:
-        data = json.load(file)
-    indices = random.sample(range(len(data['Spanish'])), 2)
-    for i in indices:
-        new_key = f"{level}_{i+1}"
-        final_dict_translation['Spanish'][new_key] = data['Spanish'][str(i+1)].rstrip('.')
-        final_dict_translation['English'][new_key] = data['English'][str(i+1)].rstrip('.')
-        final_dict_translation['Score'][new_key] = data['Score'][str(i+1)]
-
 # Inicializar listas para las traducciones
 respuestas_alumno = []
 respuestas_correctas_list = []
@@ -151,16 +132,31 @@ sugerencias_ia_list = []
 correct_incorrect_list = []
 times_translation = []
 
+# Crear la primera pregunta y opciones para las traducciones
+question_translation = list(final_dict_translation['Spanish'].keys())[index_translation]
+opts_translation = final_dict_translation['Spanish'][question_translation]
+
+# Crear la primera pregunta y opciones para las alternativas
+question_alternatives = questions_alternatives[index_alternatives]
+opts_alternatives = options_alternatives[index_alternatives]
+
+# Definir RadioItems para las opciones de respuesta de alternativas
+radio_items_alternatives = dbc.RadioItems(
+    options=[{'label': opt, 'value': i} for i, opt in enumerate(opts_alternatives)],
+    id='radio-options',
+    inline=False
+)
+
 # Layout de la aplicación
 app.layout = dbc.Container(
     [
         dbc.Row([
             dbc.Col(width=1),  # Columna a la izquierda
             dbc.Col([
-                html.Div(id="title-container", className="text-center my-4", children=html.H1(f"English {level_alternatives} Level Quiz")),
-                html.Div(id="question-container", className="my-4", children=html.H3(f"Q{index_alternatives + 1}: {question_alternatives}")),
-                html.Div(id="options-container", className="my-4", children=radio_items),
-                dcc.Textarea(id='student-input', style={'display': 'none', 'width': '100%', 'height': 100}),  # Textarea para traducciones, inicialmente oculto
+                html.Div(id="title-container", className="text-center my-4", children=html.H1(f"English Level Quiz")),
+                html.Div(id="question-container", className="my-4", children=html.H3(f"Q{index_translation + 1}: {opts_translation}")),
+                html.Div(id="options-container", className="my-4", children=radio_items_alternatives, style={'display': 'none'}),
+                dcc.Textarea(id='student-input', style={'display': 'block', 'width': '100%', 'height': 100}),  # Textarea para traducciones, inicialmente visible
                 dbc.Button("Next", id="next-button", color="primary", className="me-2"),
                 html.Div(id="alert-container"),
                 html.Div(id="completion-message", className="text-center my-4"),
@@ -204,6 +200,7 @@ def highlight_differences(user_answer, correct_answer):
         Output("question-container", "children"),
         Output("options-container", "children"),
         Output("completion-message", "children"),
+        Output("options-container", "style"),
         Output("student-input", "style"),
         Output("time-graph", "figure"),
         Output("time-graph", "style"),
@@ -239,12 +236,74 @@ def update_question(n_clicks, selected_option, student_input):
 
     ctx = dash.callback_context
     if not ctx.triggered:
-        return dash.no_update, dash.no_update, dash.no_update, dash.no_update, {'display': 'none'},\
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", \
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update, dash.no_update,''
+        return dash.no_update, dash.no_update, dash.no_update, dash.no_update, {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update,''
+
+    if index_translation < len(final_dict_translation['Spanish']):
+        # Lógica para las preguntas de traducción
+        selected_sentence = list(final_dict_translation['Spanish'].keys())[index_translation]
+        correct_sentence = final_dict_translation['English'][selected_sentence]
+
+        # Calcular la similitud semántica utilizando BERT
+        student_embedding = model.encode(student_input, convert_to_tensor=True)
+        correct_embedding = model.encode(correct_sentence, convert_to_tensor=True)
+        similarity_score = util.pytorch_cos_sim(student_embedding, correct_embedding).item() * 100
+
+        # Evaluar la oración del estudiante
+        accuracy = similarity_score
+
+        # Obtener feedback y sugerencias específicas usando la API de OpenAI
+        messages = [
+            {"role": "system", "content": "You are an English tutor"},
+            {"role": "user", "content": f"Correct the following sentence: {student_input}. The correct sentence is: {correct_sentence}."}
+        ]
+        completion = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=messages,
+            max_tokens=100
+        )
+        suggestions = completion.choices[0].message.content
+
+        # Resaltar diferencias entre la respuesta del usuario y la correcta
+        highlighted_differences = highlight_differences(student_input, correct_sentence)
+
+        # Guardar las respuestas y detalles
+        respuestas_alumno.append(student_input)
+        respuestas_correctas_list.append(correct_sentence)
+        diferencias_resaltadas_list.append(highlighted_differences)
+        similaridad_list.append(f"{similarity_score:.2f}%")
+        sugerencias_ia_list.append(suggestions)
+        correct_incorrect_list.append("Correcto" if accuracy > 85 else "Incorrecto")
+
+        # Calcular el tiempo tomado para responder la pregunta
+        end_time = time.time()
+        duration = end_time - start_time_translation
+        times_translation.append(duration)
+        start_time_translation = end_time
+
+        # Obtener el siguiente índice de la pregunta
+        current_index = index_translation
+        index_translation += 1
+
+        if index_translation < len(final_dict_translation['Spanish']):
+            next_key = list(final_dict_translation['Spanish'].keys())[index_translation]
+            selected_sentence = next_key
+
+            return html.H1(f"English Level Quiz"), html.H3(f"Q{index_translation + 1}: {final_dict_translation['Spanish'][selected_sentence]}"), dash.no_update, "", {'display': 'none'}, {'display': 'block','width': '100%', 'height': 100}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update,''
+
+        else:
+            # Cambiar a las preguntas de alternativas
+            index_alternatives = 0
+            question = questions_alternatives[index_alternatives]
+            opts = options_alternatives[index_alternatives]
+
+            # Actualizar los RadioItems para la primera pregunta de alternativas
+            radio_items = dbc.RadioItems(
+                options=[{'label': opt, 'value': i} for i, opt in enumerate(opts)],
+                id='radio-options',
+                inline=False
+            )
+
+            return html.H1(f"English Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {question}"), radio_items, "", {'display': 'block'}, {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update,dash.no_update,''
 
     if index_alternatives < len(questions_alternatives):
         # Validar si se ha seleccionado una opción
@@ -257,11 +316,7 @@ def update_question(n_clicks, selected_option, student_input):
                 color="warning", 
                 style={"overflow": "auto", "whiteSpace": "pre-wrap", "fontSize": "larger", "font-family": "Calibri"}
             )
-            return dash.no_update, dash.no_update, dash.no_update, dash.no_update, {'display': 'none'},\
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            alert, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update
+            return dash.no_update, dash.no_update, dash.no_update, dash.no_update, {'display': 'block'}, {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, alert, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update
 
         # Almacenar la opción seleccionada en selected_answers
         selected_answers.append(selected_option)
@@ -277,7 +332,6 @@ def update_question(n_clicks, selected_option, student_input):
         if index_alternatives < len(questions_alternatives):
             question = questions_alternatives[index_alternatives]
             opts = options_alternatives[index_alternatives]
-            level = levels_alternatives[index_alternatives]
 
             # Actualizar los RadioItems para la siguiente pregunta
             radio_items = dbc.RadioItems(
@@ -286,75 +340,11 @@ def update_question(n_clicks, selected_option, student_input):
                 inline=False
             )
 
-            return html.H1(f"English {level} Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {question}"), radio_items, "", \
-            {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", \
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update,''
+            return html.H1(f"English Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {question}"), radio_items, "", {'display': 'block'}, {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update,dash.no_update,dash.no_update,''
 
         else:
-            # Comenzar con las preguntas de traducción
-            selected_sentence = list(final_dict_translation['Spanish'].keys())[index_translation]
-            level = selected_sentence.split('_')[0]
-
-            return html.H1(f"English {level} Level Quiz"), html.H3(f"Q{index_translation + 13}: {final_dict_translation['Spanish'][selected_sentence]}"), "", "", \
-            {'display': 'block','width': '100%', 'height': 100}, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, "", dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-            dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update,''
-
-    # Lógica para las preguntas de traducción
-    selected_sentence = list(final_dict_translation['Spanish'].keys())[index_translation]
-    correct_sentence = final_dict_translation['English'][selected_sentence]
-
-    # Calcular la similitud semántica utilizando BERT
-    student_embedding = model.encode(student_input, convert_to_tensor=True)
-    correct_embedding = model.encode(correct_sentence, convert_to_tensor=True)
-    similarity_score = util.pytorch_cos_sim(student_embedding, correct_embedding).item() * 100
-
-    # Evaluar la oración del estudiante
-    accuracy = similarity_score
-
-    # Obtener feedback y sugerencias específicas usando la API de OpenAI
-    messages = [
-        {"role": "system", "content": "You are an English tutor"},
-        {"role": "user", "content": f"Correct the following sentence: {student_input}. The correct sentence is: {correct_sentence}."}
-    ]
-    completion = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=messages,
-        max_tokens=100
-    )
-    suggestions = completion.choices[0].message.content
-
-    # Resaltar diferencias entre la respuesta del usuario y la correcta
-    highlighted_differences = highlight_differences(student_input, correct_sentence)
-
-    # Guardar las respuestas y detalles
-    respuestas_alumno.append(student_input)
-    respuestas_correctas_list.append(correct_sentence)
-    diferencias_resaltadas_list.append(highlighted_differences)
-    similaridad_list.append(f"{similarity_score:.2f}%")
-    sugerencias_ia_list.append(suggestions)
-    correct_incorrect_list.append("Correcto" if accuracy > 85 else "Incorrecto")
-
-    # Calcular el tiempo tomado para responder la pregunta
-    end_time = time.time()
-    duration = end_time - start_time_translation
-    times_translation.append(duration)
-    start_time_translation = end_time
-
-    # Obtener el siguiente índice de la pregunta
-    current_index = index_translation
-    index_translation += 1
-
-    if current_index + 1 < len(final_dict_translation['Spanish']):
-        next_key = list(final_dict_translation['Spanish'].keys())[current_index + 1]
-        selected_sentence = next_key
-    else:
-        # Mostrar resultados al final
-        times = times_alternatives + times_translation
+            # Mostrar resultados al final
+          times = times_alternatives + times_translation
         results_df_alternatives = pd.DataFrame({
             'Question': questions_alternatives,
             'Selected Answer': [options_alternatives[i][ans] for i, ans in enumerate(selected_answers)],
@@ -401,18 +391,32 @@ def update_question(n_clicks, selected_option, student_input):
             'Outcome': ['Correcto', 'Incorrecto'],
             'Count': [total_correct_translation, total_incorrect_translation]
         })
-        pie_fig_translation = px.pie(pie_df_translation, values='Count', names='Outcome', title='Correct vs Incorrect Answers (Translation)', color_discrete_sequence=['#007bff','#dc3545'])
+        pie_fig_translation = px.pie(pie_df_translation, values='Count', names='Outcome', title='Correct vs Incorrect Answers (Translation)', color_discrete_sequence=['#dc3545','#007bff'])
 
         # Calcular el promedio de tiempos de respuesta
-        # Calcular el promedio de tiempos de respuesta para alternativas y traducción por separado
         avg_time_alternatives = sum(times_alternatives) / len(times_alternatives)
         avg_time_translation = sum(times_translation) / len(times_translation)
+
+        # Crear las tarjetas de tiempo promedio como imágenes
+        def create_time_card_image(title, value, file_path):
+            fig, ax = plt.subplots(figsize=(6, 2))  # Aumentar la altura de la figura
+            ax.text(0.5, 0.75, title, ha='center', va='center', fontsize=14)  # Ajustar el título
+            ax.text(0.5, 0.25, value, ha='center', va='center', fontsize=24, weight='bold')  # Ajustar el valor
+            ax.axis('off')
+            fig.savefig(file_path, bbox_inches='tight')
+            plt.close(fig)
+
+        avg_time_card_alternatives_image_path = "avg_time_card_alternatives.png"
+        avg_time_card_translation_image_path = "avg_time_card_translation.png"
+
+        create_time_card_image("Average Time per Question (Alternatives)", f"{avg_time_alternatives:.2f} seconds", avg_time_card_alternatives_image_path)
+        create_time_card_image("Average Time per Question (Translation)", f"{avg_time_translation:.2f} seconds", avg_time_card_translation_image_path)
 
         avg_time_card_alternatives = dbc.Card(
             dbc.CardBody(
                 [
                     html.H4("Average Time per Question (Alternatives)", className="card-title"),
-                    html.P(f"{avg_time_alternatives:.2f} seconds", className="card-text")
+                    html.P(f"{avg_time_alternatives:.2f} seconds", style={"font-size": "24px", "font-weight": "bold"}, className="card-text")
                 ]
             )
         )
@@ -420,7 +424,7 @@ def update_question(n_clicks, selected_option, student_input):
             dbc.CardBody(
                 [
                     html.H4("Average Time per Question (Translation)", className="card-title"),
-                    html.P(f"{avg_time_translation:.2f} seconds", className="card-text")
+                    html.P(f"{avg_time_translation:.2f} seconds", style={"font-size": "24px", "font-weight": "bold"}, className="card-text")
                 ]
             )
         )
@@ -433,16 +437,51 @@ def update_question(n_clicks, selected_option, student_input):
         time_fig = px.line(time_df, x='Pregunta', y='Tiempo (s)', title='Time Spent on Each Question')
         time_table = dbc.Table.from_dataframe(time_df, striped=True, bordered=True, hover=True)
 
-        return '', '', '', '', {'display': 'none'}, time_fig, {'display': 'block'}, time_table, {'display': 'block'}, "", \
-        results_table_alternatives, {'display': 'block'}, bar_fig_alternatives, {'display': 'block'}, pie_fig_alternatives, \
-        {'display': 'block'}, avg_time_card_alternatives, {'display': 'block'}, results_table_translation, {'display': 'block'}, \
-        bar_fig_translation, {'display': 'block'}, pie_fig_translation, {'display': 'block'}, avg_time_card_translation, {'display': 'block'},''
+        # Guardar las imágenes de los gráficos usando Plotly
+        bar_fig_alternatives.write_image("bar_fig_alternatives.png")
+        pie_fig_alternatives.write_image("pie_fig_alternatives.png")
+        bar_fig_translation.write_image("bar_fig_translation.png")
+        pie_fig_translation.write_image("pie_fig_translation.png")
+        time_fig.write_image("time_fig.png")
 
-    return html.H1(f"English Level Quiz"), html.H3(f"Q{index_translation + 13}: {final_dict_translation['Spanish'][selected_sentence]}"), "", "", \
-    {'display': 'block','width': '100%', 'height': 100}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", \
-    dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-    dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-    dash.no_update, dash.no_update,''
+        # # Asegurar que los archivos de imagen se guarden correctamente
+        # avg_time_card_alternatives_image_path = "avg_time_card_alternatives.png"
+        # avg_time_card_translation_image_path = "avg_time_card_translation.png"
+
+        # Crear las tarjetas de tiempo promedio como imágenes
+        fig, ax = plt.subplots(figsize=(6, 1))
+        ax.text(0.5, 0.5, f"Average Time per Question (Alternatives): {avg_time_alternatives:.2f} seconds", ha='center', va='center', wrap=True)
+        ax.axis('off')
+        fig.savefig(avg_time_card_alternatives_image_path, bbox_inches='tight')
+        plt.close(fig)
+
+        fig, ax = plt.subplots(figsize=(6, 1))
+        ax.text(0.5, 0.5, f"Average Time per Question (Translation): {avg_time_translation:.2f} seconds", ha='center', va='center', wrap=True)
+        ax.axis('off')
+        fig.savefig(avg_time_card_translation_image_path, bbox_inches='tight')
+        plt.close(fig)
+
+        # Enviar el correo
+        send_email(
+            to_name='Jaime',
+            to_email="jgcampill@gmail.com",
+            bar_fig_alternatives="bar_fig_alternatives.png",
+            pie_fig_alternatives="pie_fig_alternatives.png",
+            bar_fig_translation="bar_fig_translation.png",
+            pie_fig_translation="pie_fig_translation.png",
+            time_fig="time_fig.png",
+            avg_time_card_alternatives=avg_time_card_alternatives_image_path,
+            avg_time_card_translation=avg_time_card_translation_image_path,
+            results_df_alternatives=results_df_alternatives,
+            results_df_translation=results_df_translation
+        )
+
+
+        return '', '', '', '', {'display': 'none'}, {'display': 'block'}, time_fig, {'display': 'block'}, time_table, {'display': 'block'}, "", results_table_alternatives, {'display': 'block'}, bar_fig_alternatives, {'display': 'block'}, pie_fig_alternatives, {'display': 'block'}, avg_time_card_alternatives, {'display': 'block'}, results_table_translation, {'display': 'block'}, bar_fig_translation, {'display': 'block'}, pie_fig_translation, {'display': 'block'}, avg_time_card_translation, {'display': 'block'},''
+
+
+
+    return html.H1(f"English Level Quiz"), html.H3(f"Q{index_translation + 13}: {final_dict_translation['Spanish'][selected_sentence]}"), "", "", {'display': 'block','width': '100%', 'height': 100}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update,''
 
 if __name__ == "__main__":
     app.run_server(debug=True)

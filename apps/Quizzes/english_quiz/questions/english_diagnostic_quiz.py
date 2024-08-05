@@ -22,6 +22,8 @@ from reportlab.lib.pagesizes import letter, landscape
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
 
+
+
 # Cargar el archivo .env
 env = environ.Env()
 environ.Env.read_env(os.path.join(os.path.dirname(__file__), '../../core/.env'))
@@ -32,38 +34,25 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 # Inicializar la aplicación Dash
 app = DjangoDash('EnglishQuizApp', external_stylesheets=[dbc.themes.BOOTSTRAP, "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"], suppress_callback_exceptions=True)
 
-# Variable global para almacenar el email del estudiante
-email_estudiante = None
-nombre_estudiante = None
+# Definir las rutas de los archivos JSON para las alternativas
+quiz_paths_alternatives = {
+    'A1': 'apps/Quizzes/english_quiz/questions/alternativas/A1_alternatives.json',
+    'A2': 'apps/Quizzes/english_quiz/questions/alternativas/A2_alternatives.json',
+    'B1': 'apps/Quizzes/english_quiz/questions/alternativas/B1_alternatives.json',
+    'B2': 'apps/Quizzes/english_quiz/questions/alternativas/B2_alternatives.json',
+    'C1': 'apps/Quizzes/english_quiz/questions/alternativas/C1_alternatives.json',
+    'C2': 'apps/Quizzes/english_quiz/questions/alternativas/C2_alternatives.json'
+}
 
-# Variables globales para la secuencia del quiz
-questions_alternatives = []
-options_alternatives = []
-levels_alternatives = []
-times_alternatives = []
-selected_answers = []
-correct_answers = []
-explanations = []
-
-index_alternatives = 0
-index_translation = 0
-start_time_alternatives = time.time()
-start_time_translation = time.time()
-
-# Inicializar listas para las traducciones
-respuestas_alumno = []
-respuestas_correctas_list = []
-diferencias_resaltadas_list = []
-similaridad_list = []
-sugerencias_ia_list = []
-correct_incorrect_list = []
-times_translation = []
-
-question_translation = None
-opts_translation = None
-question_alternatives = None
-opts_alternatives = None
-radio_items_alternatives = None
+# Definir las rutas de los archivos JSON para las traducciones
+quiz_paths_translation = {
+    'A1': 'apps/Quizzes/english_quiz/questions/traducciones/A1_translate.json',
+    'A2': 'apps/Quizzes/english_quiz/questions/traducciones/A2_translate.json',
+    'B1': 'apps/Quizzes/english_quiz/questions/traducciones/B1_translate.json',
+    'B2': 'apps/Quizzes/english_quiz/questions/traducciones/B2_translate.json',
+    'C1': 'apps/Quizzes/english_quiz/questions/traducciones/C1_translate.json',
+    'C2': 'apps/Quizzes/english_quiz/questions/traducciones/C2_translate.json'
+}
 
 # Función para leer el archivo JSON y seleccionar 2 preguntas aleatorias
 def select_questions(file_path, key_type):
@@ -84,188 +73,113 @@ def select_questions(file_path, key_type):
     
     return selected_questions
 
-def initialize_quiz():
-    global questions_alternatives, options_alternatives, levels_alternatives, times_alternatives, selected_answers, correct_answers, explanations
-    global respuestas_alumno, respuestas_correctas_list, diferencias_resaltadas_list, similaridad_list, sugerencias_ia_list, correct_incorrect_list, times_translation
-    global index_alternatives, index_translation, start_time_alternatives, start_time_translation
-    global question_translation, opts_translation, question_alternatives, opts_alternatives, radio_items_alternatives
+# Diccionario final para las traducciones
+final_dict_translation = {'Spanish': {}, 'English': {}, 'Score': {}}
 
-    # Definir las rutas de los archivos JSON para las alternativas
-    quiz_paths_alternatives = {
-        'A1': 'apps/Quizzes/english_quiz/questions/alternativas/A1_alternatives.json',
-        'A2': 'apps/Quizzes/english_quiz/questions/alternativas/A2_alternatives.json',
-        'B1': 'apps/Quizzes/english_quiz/questions/alternativas/B1_alternatives.json',
-        'B2': 'apps/Quizzes/english_quiz/questions/alternativas/B2_alternatives.json',
-        'C1': 'apps/Quizzes/english_quiz/questions/alternativas/C1_alternatives.json',
-        'C2': 'apps/Quizzes/english_quiz/questions/alternativas/C2_alternatives.json'
-    }
+# Iterar sobre los niveles y seleccionar preguntas para las traducciones
+for level, path in quiz_paths_translation.items():
+    with open(path, 'r') as file:
+        data = json.load(file)
+    indices = random.sample(range(len(data['Spanish'])), 2)
+    for i in indices:
+        new_key = f"{level}_{i+1}"
+        final_dict_translation['Spanish'][new_key] = data['Spanish'][str(i+1)].rstrip('.')
+        final_dict_translation['English'][new_key] = data['English'][str(i+1)].rstrip('.')
+        final_dict_translation['Score'][new_key] = data['Score'][str(i+1)]
 
-    # Definir las rutas de los archivos JSON para las traducciones
-    quiz_paths_translation = {
-        'A1': 'apps/Quizzes/english_quiz/questions/traducciones/A1_translate.json',
-        'A2': 'apps/Quizzes/english_quiz/questions/traducciones/A2_translate.json',
-        'B1': 'apps/Quizzes/english_quiz/questions/traducciones/B1_translate.json',
-        'B2': 'apps/Quizzes/english_quiz/questions/traducciones/B2_translate.json',
-        'C1': 'apps/Quizzes/english_quiz/questions/traducciones/C1_translate.json',
-        'C2': 'apps/Quizzes/english_quiz/questions/traducciones/C2_translate.json'
-    }
+# Diccionario final para las alternativas
+final_dict_alternatives = {}
 
-    # Diccionario final para las traducciones
-    final_dict_translation = {'Spanish': {}, 'English': {}, 'Score': {}}
+# Iterar sobre los niveles y seleccionar preguntas
+for level, path in quiz_paths_alternatives.items():
+    selected_questions = select_questions(path, 'ques')
+    final_dict_alternatives[f'{level}_ques'] = selected_questions['ques']
+    final_dict_alternatives[f'{level}_options'] = selected_questions['options']
+    final_dict_alternatives[f'{level}_ans'] = selected_questions['ans']
+    final_dict_alternatives[f'{level}_explanation'] = selected_questions['explanation']
+    final_dict_alternatives[f'{level}_valores'] = selected_questions['valores']
 
-    # Iterar sobre los niveles y seleccionar preguntas para las traducciones
-    for level, path in quiz_paths_translation.items():
-        with open(path, 'r') as file:
-            data = json.load(file)
-        indices = random.sample(range(len(data['Spanish'])), 2)
-        for i in indices:
-            new_key = f"{level}_{i+1}"
-            final_dict_translation['Spanish'][new_key] = data['Spanish'][str(i+1)].rstrip('.')
-            final_dict_translation['English'][new_key] = data['English'][str(i+1)].rstrip('.')
-            final_dict_translation['Score'][new_key] = data['Score'][str(i+1)]
+# Crear el DataFrame para las alternativas
+df_alternatives = pd.DataFrame(final_dict_alternatives)
 
-    # Diccionario final para las alternativas
-    final_dict_alternatives = {}
+# Variables globales para el control de la secuencia de preguntas y tiempos
+questions_alternatives = []
+options_alternatives = []
+levels_alternatives = []
+times_alternatives = []
+selected_answers = []
+correct_answers = []
+explanations = []
 
-    # Iterar sobre los niveles y seleccionar preguntas
-    for level, path in quiz_paths_alternatives.items():
-        selected_questions = select_questions(path, 'ques')
-        final_dict_alternatives[f'{level}_ques'] = selected_questions['ques']
-        final_dict_alternatives[f'{level}_options'] = selected_questions['options']
-        final_dict_alternatives[f'{level}_ans'] = selected_questions['ans']
-        final_dict_alternatives[f'{level}_explanation'] = selected_questions['explanation']
-        final_dict_alternatives[f'{level}_valores'] = selected_questions['valores']
+for level in ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']:
+    questions_alternatives.extend(df_alternatives[f'{level}_ques'])
+    options_alternatives.extend(df_alternatives[f'{level}_options'])
+    levels_alternatives.extend([level] * len(df_alternatives[f'{level}_ques']))
+    correct_answers.extend(df_alternatives[f'{level}_ans'])
+    explanations.extend(df_alternatives[f'{level}_explanation'])
 
-    # Crear el DataFrame para las alternativas
-    df_alternatives = pd.DataFrame(final_dict_alternatives)
+index_alternatives = 0
+index_translation = 0
+start_time_alternatives = time.time()
+start_time_translation = time.time()
 
-    # Variables globales para el control de la secuencia de preguntas y tiempos
-    questions_alternatives = []
-    options_alternatives = []
-    levels_alternatives = []
-    times_alternatives = []
-    selected_answers = []
-    correct_answers = []
-    explanations = []
+# Inicializar listas para las traducciones
+respuestas_alumno = []
+respuestas_correctas_list = []
+diferencias_resaltadas_list = []
+similaridad_list = []
+sugerencias_ia_list = []
+correct_incorrect_list = []
+times_translation = []
 
-    for level in ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']:
-        questions_alternatives.extend(df_alternatives[f'{level}_ques'])
-        options_alternatives.extend(df_alternatives[f'{level}_options'])
-        levels_alternatives.extend([level] * len(df_alternatives[f'{level}_ques']))
-        correct_answers.extend(df_alternatives[f'{level}_ans'])
-        explanations.extend(df_alternatives[f'{level}_explanation'])
+# Crear la primera pregunta y opciones para las traducciones
+question_translation = list(final_dict_translation['Spanish'].keys())[index_translation]
+opts_translation = final_dict_translation['Spanish'][question_translation]
 
-    index_alternatives = 0
-    index_translation = 0
-    start_time_alternatives = time.time()
-    start_time_translation = time.time()
+# Crear la primera pregunta y opciones para las alternativas
+question_alternatives = questions_alternatives[index_alternatives]
+opts_alternatives = options_alternatives[index_alternatives]
 
-    # Inicializar listas para las traducciones
-    respuestas_alumno = []
-    respuestas_correctas_list = []
-    diferencias_resaltadas_list = []
-    similaridad_list = []
-    sugerencias_ia_list = []
-    correct_incorrect_list = []
-    times_translation = []
-
-    # Crear la primera pregunta y opciones para las traducciones
-    question_translation = list(final_dict_translation['Spanish'].keys())[index_translation]
-    opts_translation = final_dict_translation['Spanish'][question_translation]
-
-    # Crear la primera pregunta y opciones para las alternativas
-    question_alternatives = questions_alternatives[index_alternatives]
-    opts_alternatives = options_alternatives[index_alternatives]
-
-    # Definir RadioItems para las opciones de respuesta de alternativas
-    radio_items_alternatives = dbc.RadioItems(
-        options=[{'label': opt, 'value': i} for i, opt in enumerate(opts_alternatives)],
-        id='radio-options',
-        inline=False
-    )
+# Definir RadioItems para las opciones de respuesta de alternativas
+radio_items_alternatives = dbc.RadioItems(
+    options=[{'label': opt, 'value': i} for i, opt in enumerate(opts_alternatives)],
+    id='radio-options',
+    inline=False
+)
 
 # Layout de la aplicación
-def serve_layout(): 
-    initialize_quiz()
-    return dbc.Container(
-        [
-            dbc.Row([
-                dbc.Col(width=1),  # Columna a la izquierda
-                dbc.Col([
-                    dbc.Form(
-                        [
-                            dbc.Row(
-                                [
-                                    dbc.Label("Ingresar Nombre del Estudiante", id="nombre-label"),
-                                    dbc.Input(type="text", id="nombre-input", placeholder="Nombre")
-                                ],
-                                className="mb-3"
-                            ),
-                            dbc.Row(
-                                [
-                                    dbc.Label("Ingresar Email si desea recibir un reporte del quiz", id="email-label"),
-                                    dbc.Input(type="email", id="email-input", placeholder="Email")
-                                ],
-                                className="mb-3"
-                            ),
-                            dbc.Button("Iniciar Quiz", id="start-button", color="success", className="mb-4"),
-                        ]
-                    ),
-                    html.Div(id="quiz-content", style={'display': 'none'}, children=[
-                        html.Div(id="title-container", className="text-center my-4", children=html.H1(f"English Level Quiz")),
-                        html.Div(id="question-container", className="my-4", children=html.H3(f"Q{index_translation + 1}: {opts_translation}")),
-                        html.Div(id="options-container", className="my-4", children=radio_items_alternatives, style={'display': 'none'}),
-                        dcc.Textarea(id='student-input', style={'display': 'block', 'width': '100%', 'height': 100}),  # Textarea para traducciones, inicialmente visible
-                        dbc.Button("Next", id="next-button", color="primary", className="me-2"),
-                        html.Div(id="alert-container"),
-                        html.Div(id="completion-message", className="text-center my-4"),
-                        dcc.Graph(id="bar-graph-alternatives", style={'display': 'none'}),
-                        html.Div(id="results-table-alternatives", style={'display': 'none'}),
-                        dcc.Graph(id="bar-graph-translation", style={'display': 'none'}),
-                        html.Div(id="results-table-translation", style={'display': 'none'}),
-                        dbc.Row([
-                            dbc.Col(dcc.Graph(id="pie-graph-alternatives", style={'display': 'none','width': '50%', 'height': '50%'}), width=6),
-                            dbc.Col(html.Div(id="average-time-card-alternatives", style={'display': 'none','font-size': '4em', 'font-weight': 'bold','padding-top':'30px'}, className="d-flex align-items-center justify-content-center"), width=6)
-                        ]),
-                        dbc.Row([
-                            dbc.Col(dcc.Graph(id="pie-graph-translation", style={'display': 'none','width': '50%', 'height': '50%'}), width=6),
-                            dbc.Col(html.Div(id="average-time-card-translation", style={'display': 'none','font-size': '4em', 'font-weight': 'bold','padding-top':'30px'}, className="d-flex align-items-center justify-content-center"), width=6)
-                        ]),
-                        dcc.Graph(id="time-graph", style={'display': 'none'}),
-                        html.Div(id="time-table", style={'display': 'none'})             
-                    ])
-                ], width=10),  # Contenedor principal
-                dbc.Col(width=1)  # Columna a la derecha
-            ])
-        ],
-        fluid=True
-    )
-
-app.layout = serve_layout
-# Callback para mostrar el contenido del quiz al hacer clic en el botón "Iniciar Quiz"
-@app.callback(
-    [Output("quiz-content", "style"),
-     Output("start-button", "style"),
-     Output("email-input", "style"),
-     Output("email-label", "style"),
-     Output("nombre-input", "style"),
-     Output("nombre-label", "style"),
-     Output("email-input", "value")],
-    Input("start-button", "n_clicks"),
-    State("email-input", "value"),
-    State("nombre-input", "value"),
-    prevent_initial_call=True
+app.layout = dbc.Container(
+    [
+        dbc.Row([
+            dbc.Col(width=1),  # Columna a la izquierda
+            dbc.Col([
+                html.Div(id="title-container", className="text-center my-4", children=html.H1(f"English Level Quiz")),
+                html.Div(id="question-container", className="my-4", children=html.H3(f"Q{index_translation + 1}: {opts_translation}")),
+                html.Div(id="options-container", className="my-4", children=radio_items_alternatives, style={'display': 'none'}),
+                dcc.Textarea(id='student-input', style={'display': 'block', 'width': '100%', 'height': 100}),  # Textarea para traducciones, inicialmente visible
+                dbc.Button("Next", id="next-button", color="primary", className="me-2"),
+                html.Div(id="alert-container"),
+                html.Div(id="completion-message", className="text-center my-4"),
+                dcc.Graph(id="bar-graph-alternatives", style={'display': 'none'}),
+                html.Div(id="results-table-alternatives", style={'display': 'none'}),
+                dcc.Graph(id="bar-graph-translation", style={'display': 'none'}),
+                html.Div(id="results-table-translation", style={'display': 'none'}),
+                dbc.Row([
+                    dbc.Col(dcc.Graph(id="pie-graph-alternatives", style={'display': 'none','width': '50%', 'height': '50%'}), width=6),
+                    dbc.Col(html.Div(id="average-time-card-alternatives", style={'display': 'none','font-size': '4em', 'font-weight': 'bold','padding-top':'30px'}, className="d-flex align-items-center justify-content-center"), width=6)
+                ]),
+                dbc.Row([
+                    dbc.Col(dcc.Graph(id="pie-graph-translation", style={'display': 'none','width': '50%', 'height': '50%'}), width=6),
+                    dbc.Col(html.Div(id="average-time-card-translation", style={'display': 'none','font-size': '4em', 'font-weight': 'bold','padding-top':'30px'}, className="d-flex align-items-center justify-content-center"), width=6)
+                ]),
+                dcc.Graph(id="time-graph", style={'display': 'none'}),
+                html.Div(id="time-table", style={'display': 'none'})             
+            ], width=10),  # Contenedor principal
+            dbc.Col(width=1)  # Columna a la derecha
+        ])
+    ],
+    fluid=True
 )
-def show_quiz_content(n_clicks, email_value, nombre_value):
-    global email_estudiante, nombre_estudiante
-    if email_value:
-        email_estudiante = email_value
-    if nombre_value:
-        nombre_estudiante = nombre_value
-    return {'display': 'block'}, {'display': 'none'}, {'display': 'none'}, {'display': 'none'}, {'display': 'none'}, {'display': 'none'}, ""
-
-
-
 
 def highlight_differences(user_answer, correct_answer):
     diff = list(ndiff(user_answer.split(), correct_answer.split()))
@@ -318,7 +232,7 @@ def highlight_differences(user_answer, correct_answer):
 )
 def update_question(n_clicks, selected_option, student_input):
     global index_alternatives, index_translation, start_time_alternatives, start_time_translation, times_alternatives, times_translation, selected_answers
-    global respuestas_alumno, respuestas_correctas_list, diferencias_resaltadas_list, similaridad_list, sugerencias_ia_list, correct_incorrect_list, email_estudiante, nombre_estudiante
+    global respuestas_alumno, respuestas_correctas_list, diferencias_resaltadas_list, similaridad_list, sugerencias_ia_list, correct_incorrect_list
 
     ctx = dash.callback_context
     if not ctx.triggered:
@@ -547,21 +461,19 @@ def update_question(n_clicks, selected_option, student_input):
         fig.savefig(avg_time_card_translation_image_path, bbox_inches='tight')
         plt.close(fig)
 
-        if email_estudiante is not None:
-            # Enviar el correo
-            send_email(
-                to_name=nombre_estudiante,
-                to_email=email_estudiante,
-                bar_fig_alternatives="bar_fig_alternatives.png",
-                pie_fig_alternatives="pie_fig_alternatives.png",
-                bar_fig_translation="bar_fig_translation.png",
-                pie_fig_translation="pie_fig_translation.png",
-                time_fig="time_fig.png",
-                avg_time_card_alternatives=avg_time_card_alternatives_image_path,
-                avg_time_card_translation=avg_time_card_translation_image_path,
-                results_df_alternatives=results_df_alternatives,
-                results_df_translation=results_df_translation
-            )
+        # Enviar el correo
+        send_email(
+            to_email="jgcampill@gmail.com",
+            bar_fig_alternatives="bar_fig_alternatives.png",
+            pie_fig_alternatives="pie_fig_alternatives.png",
+            bar_fig_translation="bar_fig_translation.png",
+            pie_fig_translation="pie_fig_translation.png",
+            time_fig="time_fig.png",
+            avg_time_card_alternatives=avg_time_card_alternatives_image_path,
+            avg_time_card_translation=avg_time_card_translation_image_path,
+            results_df_alternatives=results_df_alternatives,
+            results_df_translation=results_df_translation
+        )
 
 
         return '', '', '', '', {'display': 'none'}, {'display': 'block'}, time_fig, {'display': 'block'}, time_table, {'display': 'block'}, "", results_table_alternatives, {'display': 'block'}, bar_fig_alternatives, {'display': 'block'}, pie_fig_alternatives, {'display': 'block'}, avg_time_card_alternatives, {'display': 'block'}, results_table_translation, {'display': 'block'}, bar_fig_translation, {'display': 'block'}, pie_fig_translation, {'display': 'block'}, avg_time_card_translation, {'display': 'block'},''
