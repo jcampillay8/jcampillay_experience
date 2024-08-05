@@ -4,10 +4,10 @@ from django.contrib.messages import constants as messages
 import dj_database_url
 from dotenv import load_dotenv
 import json
+import dj_database_url
 import environ
 
-load_dotenv()
-
+# Inicializa la carga de entorno
 env = environ.Env()
 environ.Env.read_env()
 
@@ -18,17 +18,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG = env.bool('DEBUG', default=False)
 
-environ.Env.read_env(os.path.join(os.path.dirname(__file__), '../../core/.env'))
-OPENAI_API_KEY = env('OPENAI_API_KEY')
-
-# ALLOWED_HOSTS = env.list('ALLOWED_HOST_DEV')
+# Lista de hosts permitidos
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['0.0.0.0', '*', 'localhost', '127.0.0.1', 'web-production-299a1.up.railway.app'])
 
+# Otras configuraciones
 CSRF_TRUSTED_ORIGINS = ['http://*', 'https://web-production-299a1.up.railway.app']
 
 

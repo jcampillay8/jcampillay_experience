@@ -12,6 +12,8 @@ from openai import OpenAI
 from difflib import ndiff
 import os
 import environ
+from openai import OpenAI
+from sentence_transformers import SentenceTransformer
 from django_plotly_dash import DjangoDash
 from django.conf import settings
 from apps.Quizzes.models import StructuredEnglishGrammarCourse, Translation
@@ -22,13 +24,15 @@ from reportlab.lib.pagesizes import letter, landscape
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
 
-
-
-# Cargar el archivo .env
+# Inicializa la carga de entorno
 env = environ.Env()
-environ.Env.read_env(os.path.join(os.path.dirname(__file__), '../../core/.env'))
+environ.Env.read_env()
 
-client = OpenAI(api_key=env('OPENAI_API_KEY'))
+# Obtener la clave de API de OpenAI
+OPENAI_API_KEY = env('OPENAI_API_KEY')
+
+# Inicializar cliente de OpenAI y modelo
+client = OpenAI(api_key=OPENAI_API_KEY)
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Inicializar la aplicación Dash
