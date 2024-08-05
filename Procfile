@@ -1,1 +1,2 @@
-web: python manage.py collectstatic && gunicorn core.wsgi
+web: sh start.sh
+

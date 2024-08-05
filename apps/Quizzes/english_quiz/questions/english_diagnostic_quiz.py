@@ -21,6 +21,7 @@ import matplotlib.pyplot as plt
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
+from dotenv import load_dotenv
 
 
 
