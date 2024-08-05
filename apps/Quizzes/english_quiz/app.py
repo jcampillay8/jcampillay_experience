@@ -35,22 +35,23 @@ app = DjangoDash('EnglishQuizApp', external_stylesheets=[dbc.themes.BOOTSTRAP, "
 
 # Definir las rutas de los archivos JSON para las alternativas
 quiz_paths_alternatives = {
-    'A1': 'questions/alternativas/A1_alternatives.json',
-    'A2': 'questions/alternativas/A2_alternatives.json',
-    'B1': 'questions/alternativas/B1_alternatives.json',
-    'B2': 'questions/alternativas/B2_alternatives.json',
-    'C1': 'questions/alternativas/C1_alternatives.json',
-    'C2': 'questions/alternativas/C2_alternatives.json'
+    'A1': 'apps/Quizzes/english_quiz/questions/alternativas/A1_alternatives.json',
+    'A2': 'apps/Quizzes/english_quiz/questions/alternativas/A2_alternatives.json',
+    'B1': 'apps/Quizzes/english_quiz/questions/alternativas/B1_alternatives.json',
+    'B2': 'apps/Quizzes/english_quiz/questions/alternativas/B2_alternatives.json',
+    'C1': 'apps/Quizzes/english_quiz/questions/alternativas/C1_alternatives.json',
+    'C2': 'apps/Quizzes/english_quiz/questions/alternativas/C2_alternatives.json'
+    
 }
 
 # Definir las rutas de los archivos JSON para las traducciones
 quiz_paths_translation = {
-    'A1': 'questions/traducciones/A1_translate.json',
-    'A2': 'questions/traducciones/A2_translate.json',
-    'B1': 'questions/traducciones/B1_translate.json',
-    'B2': 'questions/traducciones/B2_translate.json',
-    'C1': 'questions/traducciones/C1_translate.json',
-    'C2': 'questions/traducciones/C2_translate.json'
+    'A1': 'apps/Quizzes/english_quiz/questions/traducciones/A1_translate.json',
+    'A2': 'apps/Quizzes/english_quiz/questions/traducciones/A2_translate.json',
+    'B1': 'apps/Quizzes/english_quiz/questions/traducciones/B1_translate.json',
+    'B2': 'apps/Quizzes/english_quiz/questions/traducciones/B2_translate.json',
+    'C1': 'apps/Quizzes/english_quiz/questions/traducciones/C1_translate.json',
+    'C2': 'apps/Quizzes/english_quiz/questions/traducciones/C2_translate.json'
 }
 
 # Función para leer el archivo JSON y seleccionar 2 preguntas aleatorias
