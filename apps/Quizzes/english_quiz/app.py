@@ -26,6 +26,11 @@ import environ
 
 
 
+# Inicializar `environ`
+env = environ.Env()
+
+
+# Configurar cliente de OpenAI y modelo de SentenceTransformer
 client = OpenAI(api_key=env('OPENAI_API_KEY'))
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
