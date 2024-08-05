@@ -4,4 +4,4 @@
 python manage.py collectstatic --noinput
 
 # Iniciar Gunicorn
-gunicorn core.wsgi
+gunicorn core.wsgi:application --bind 0.0.0.0:$PORT
