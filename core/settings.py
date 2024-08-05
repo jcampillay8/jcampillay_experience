@@ -25,6 +25,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
+environ.Env.read_env(os.path.join(os.path.dirname(__file__), '../../core/.env'))
+OPENAI_API_KEY = env('OPENAI_API_KEY')
+
 # ALLOWED_HOSTS = env.list('ALLOWED_HOST_DEV')
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['0.0.0.0','*','localhost', '127.0.0.1', 'web-production-299a1.up.railway.app'])
 #ALLOWED_HOSTS = []

@@ -22,10 +22,9 @@ import matplotlib.pyplot as plt
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
+import environ
 
-# Cargar el archivo .env
-env = environ.Env()
-environ.Env.read_env(os.path.join(os.path.dirname(__file__), '../../core/.env'))
+
 
 client = OpenAI(api_key=env('OPENAI_API_KEY'))
 model = SentenceTransformer('all-MiniLM-L6-v2')
