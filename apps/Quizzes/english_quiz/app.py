@@ -30,7 +30,7 @@ env = environ.Env()
 environ.Env.read_env()  # Esto permite cargar las variables de entorno directamente
 
 # Obtén la clave de API de OpenAI desde las variables de entorno
-OPENAI_API_KEY = env('OPENAI_API_KEY')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 # Inicializar cliente de OpenAI y modelo
 client = OpenAI(api_key=OPENAI_API_KEY)
