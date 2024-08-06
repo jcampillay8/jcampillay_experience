@@ -4,7 +4,6 @@ from django.contrib.messages import constants as messages
 import dj_database_url
 from dotenv import load_dotenv
 import json
-import dj_database_url
 import environ
 
 # Inicializa la carga de entorno

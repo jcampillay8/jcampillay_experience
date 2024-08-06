@@ -23,17 +23,28 @@ import matplotlib.pyplot as plt
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
+from dotenv import load_dotenv
 
 # Inicializa la carga de entorno
 env = environ.Env()
-environ.Env.read_env()
+environ.Env.read_env()  # Esto permite cargar las variables de entorno directamente
 
-# Obtener la clave de API de OpenAI
+# Obtén la clave de API de OpenAI desde las variables de entorno
 OPENAI_API_KEY = env('OPENAI_API_KEY')
 
 # Inicializar cliente de OpenAI y modelo
 client = OpenAI(api_key=OPENAI_API_KEY)
 model = SentenceTransformer('all-MiniLM-L6-v2')
+
+# Resto del código...
+
+# Si necesitas cargar el archivo .env solo para desarrollo local, puedes hacerlo condicionalmente:
+if os.getenv('RAILWAY_ENV') is None:
+    # Cargar el archivo .env solo si no estás en Railway
+    load_dotenv(os.path.join(os.path.dirname(__file__), '../../core/.env'))
+    # Reasignar la clave de API en caso de que se haya cargado de .env
+    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', OPENAI_API_KEY)
+    client.api_key = OPENAI_API_KEY
 
 # Inicializar la aplicación Dash
 app = DjangoDash('EnglishQuizApp', external_stylesheets=[dbc.themes.BOOTSTRAP, "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"], suppress_callback_exceptions=True)
