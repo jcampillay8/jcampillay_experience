@@ -12,7 +12,6 @@ from openai import OpenAI
 from difflib import ndiff
 import os
 import environ
-from openai import OpenAI
 from sentence_transformers import SentenceTransformer
 from django_plotly_dash import DjangoDash
 from django.conf import settings
@@ -35,6 +34,8 @@ OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 # Inicializar cliente de OpenAI y modelo
 client = OpenAI(api_key=OPENAI_API_KEY)
 model = SentenceTransformer('all-MiniLM-L6-v2')
+
+
 
 # Resto del código...
 

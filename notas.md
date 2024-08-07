@@ -158,3 +158,22 @@ To ensure the quality of the final product, it's essential to do exhaustive test
 "Mastering modern technology tools is essential to improve efficiency and job quality."
 
 
+# Obtén la clave de API de OpenAI desde las variables de entorno
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
+
+# Inicializar cliente de OpenAI y modelo
+client = OpenAI(api_key=OPENAI_API_KEY)
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+
+# Obtener feedback y sugerencias específicas usando la API de OpenAI
+messages = [
+    {"role": "system", "content": "You are an English tutor"},
+    {"role": "user", "content": f"Correct the following sentence: {student_input}. The correct sentence is: {correct_sentence}."}
+]
+completion = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=messages,
+    max_tokens=100
+)
+suggestions = completion.choices[0].message.content
