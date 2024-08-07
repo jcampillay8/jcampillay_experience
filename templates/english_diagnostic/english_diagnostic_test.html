@@ -7,8 +7,8 @@
     <body>
         {% if user.is_authenticated %}
             <body>
-                <h2>Name: {{ name }}</h2>
-                <h2>Email: {{ email }}</h2>
+                <h2></h2>
+                <h2></h2>
                 <div class="{% plotly_class name='EnglishQuizApp' %}">
                     {% if screen_width > 800 %}
                         {% plotly_app name='EnglishQuizApp' ratio=1.45 %}
