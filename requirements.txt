@@ -8,6 +8,8 @@ blinker
 bootstrap4
 Brotli
 cachelib
+cairocffi
+CairoSVG
 certifi
 cffi
 channels
@@ -21,6 +23,7 @@ cycler
 dash
 dash-bootstrap-components
 dash-core-components
+dash-extensions
 dash-html-components
 dash-table
 dash_renderer
@@ -112,7 +115,7 @@ pydyf
 pyHanko
 pyhanko-certvalidator
 pyparsing
-pypdf
+pypdf==0.1.0
 PyPDF2
 pyphen
 pypng
@@ -152,11 +155,11 @@ tzlocal
 uritools
 urllib3
 validate_email
-weasyprint
-webencodings
-Werkzeug
-whitenoise
-xhtml2pdf
-zipp
-zopfli
-zstandard
+WeasyPrint
+webencoding
+Werkzeu
+whitenois
+xhtml2pd
+zip
+zopfl
+zstandar
