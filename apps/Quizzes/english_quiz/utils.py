@@ -12,3 +12,11 @@ def highlight_differences(user_answer, correct_answer):
         else:
             diff_html.append(html.Span(part[2:] + ' '))
     return diff_html
+
+
+
+
+
+
+
+
