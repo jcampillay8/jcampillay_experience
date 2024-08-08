@@ -87,27 +87,12 @@
     <!-- Cards -->
     <div class="container">
         <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3 class="card-title">{% translate "Option 1" %}</h3>
-                        <p class="card-text">{% translate "I am currently studying Deep Learning and Artificial Intelligence, focusing on understanding and applying advanced algorithms and techniques. My goal is to leverage these technologies to develop innovative solutions and enhance my expertise in this cutting-edge field." %}</p>
-                        <form method="post">
-                            {% csrf_token %}
-                            {{ form.name }}
-                            {{ form.email }}
-                            <div class="d-grid">
-                                <button class="btn btn-primary" type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+
             
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h3 class="card-title">{% translate "Option 2" %}</h3>
+                        <h3 class="card-title">{% translate "Option 1" %}</h3>
                         <p class="card-text">{% translate "I am currently studying Deep Learning and Artificial Intelligence, focusing on understanding and applying advanced algorithms and techniques. My goal is to leverage these technologies to develop innovative solutions and enhance my expertise in this cutting-edge field." %}</p>
                         <form method="post">
                             {% csrf_token %}
