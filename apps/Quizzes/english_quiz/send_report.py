@@ -3,8 +3,8 @@ import tempfile
 from django.template.loader import get_template
 from weasyprint import HTML
 from django.core.mail import EmailMessage
-from PyPDF2 import PdfReader, PdfWriter
 from django.conf import settings
+from PyPDF2 import PdfReader, PdfWriter
 
 def generate_pdf_from_template(template_paths, context_dict):
     pdf_files = []
@@ -17,6 +17,7 @@ def generate_pdf_from_template(template_paths, context_dict):
 
 def merge_pdfs(pdf_files, output_path):
     pdf_writer = PdfWriter()
+
     for pdf_bytes in pdf_files:
         with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
             tmp_file.write(pdf_bytes)
@@ -28,6 +29,7 @@ def merge_pdfs(pdf_files, output_path):
             pdf_writer.add_page(page)
         
         os.remove(tmp_file_path)
+
     with open(output_path, 'wb') as output_pdf:
         pdf_writer.write(output_pdf)
 
@@ -64,6 +66,7 @@ Saludos cordiales,'''
                 email.attach("English_Quiz_Report.pdf", pdf.read(), "application/pdf")
             email.send()
 
+            # Eliminar las imágenes después de enviar el correo
             for image_path in [
                 bar_fig_alternatives,
                 pie_fig_alternatives,
@@ -75,10 +78,13 @@ Saludos cordiales,'''
             ]:
                 if os.path.exists(image_path):
                     os.remove(image_path)
+
+            # Eliminar el archivo PDF combinado
             if os.path.exists(combined_pdf_path):
                 os.remove(combined_pdf_path)
         else:
             raise Exception('Hubo un error al generar el PDF.')
+
     except Exception as e:
         print(f'Error al enviar el correo: {str(e)}')
         raise

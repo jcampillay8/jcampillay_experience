@@ -331,6 +331,7 @@ def update_question(next_clicks, start_clicks, selected_option, student_input, e
     triggered_id = ctx.triggered[0]['prop_id'].split('.')[0]
 
     if triggered_id == 'start-button':
+
         initialize_quiz()
         if email_value:
             email_estudiante = email_value
@@ -602,20 +603,24 @@ def update_question(next_clicks, start_clicks, selected_option, student_input, e
                 fig.savefig(avg_time_card_translation_image_path, bbox_inches='tight')
                 plt.close(fig)
 
-                # Enviar el correo
-                send_email(
-                    to_name = nombre_estudiante,
-                    to_email= email_estudiante,
-                    bar_fig_alternatives="bar_fig_alternatives.png",
-                    pie_fig_alternatives="pie_fig_alternatives.png",
-                    bar_fig_translation="bar_fig_translation.png",
-                    pie_fig_translation="pie_fig_translation.png",
-                    time_fig="time_fig.png",
-                    avg_time_card_alternatives=avg_time_card_alternatives_image_path,
-                    avg_time_card_translation=avg_time_card_translation_image_path,
-                    results_df_alternatives=results_df_alternatives,
-                    results_df_translation=results_df_translation
-                )
+                if email_estudiante and nombre_estudiante:
+                    try:
+                        # Enviar el correo
+                        send_email(
+                            to_name=nombre_estudiante,
+                            to_email=email_estudiante,
+                            bar_fig_alternatives="bar_fig_alternatives.png",
+                            pie_fig_alternatives="pie_fig_alternatives.png",
+                            bar_fig_translation="bar_fig_translation.png",
+                            pie_fig_translation="pie_fig_translation.png",
+                            time_fig="time_fig.png",
+                            avg_time_card_alternatives=avg_time_card_alternatives_image_path,
+                            avg_time_card_translation=avg_time_card_translation_image_path,
+                            results_df_alternatives=results_df_alternatives,
+                            results_df_translation=results_df_translation
+                        )
+                    except Exception as e:
+                        print(f"Error al enviar el correo: {str(e)}")
 
                 return dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
                        '', '', '', '', {'display': 'none'}, time_fig, {'display': 'block'}, time_table, {'display': 'block'}, "", \
