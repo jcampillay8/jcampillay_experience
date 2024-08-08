@@ -115,7 +115,7 @@ pydyf
 pyHanko
 pyhanko-certvalidator
 pyparsing
-pypdf==0.1.0
+pypdf
 PyPDF2
 pyphen
 pypng
