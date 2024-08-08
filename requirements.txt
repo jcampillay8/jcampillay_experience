@@ -156,10 +156,10 @@ uritools
 urllib3
 validate_email
 WeasyPrint
-webencoding
-Werkzeu
-whitenois
-xhtml2pd
-zip
-zopfl
-zstandar
+webencodings
+Werkzeug
+whitenoise
+xhtml2pdf
+zipp
+zopfli
+zstandard
