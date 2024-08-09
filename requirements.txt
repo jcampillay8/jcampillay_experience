@@ -23,7 +23,6 @@ cycler
 dash
 dash-bootstrap-components
 dash-core-components
-dash-extensions
 dash-html-components
 dash-table
 dash_renderer
