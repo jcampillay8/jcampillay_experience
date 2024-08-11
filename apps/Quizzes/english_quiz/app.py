@@ -580,11 +580,11 @@ def update_question(next_clicks, start_clicks, selected_option, student_input, e
                 time_table = dbc.Table.from_dataframe(time_df, striped=True, bordered=True, hover=True)
 
                 # Guardar las imágenes de los gráficos usando Plotly
-                bar_fig_alternatives.write_image("img/bar_fig_alternatives.png")
-                pie_fig_alternatives.write_image("img/pie_fig_alternatives.png")
-                bar_fig_translation.write_image("img/bar_fig_translation.png")
-                pie_fig_translation.write_image("img/pie_fig_translation.png")
-                time_fig.write_image("img/time_fig.png")
+                bar_fig_alternatives.write_image("bar_fig_alternatives.png")
+                pie_fig_alternatives.write_image("pie_fig_alternatives.png")
+                bar_fig_translation.write_image("bar_fig_translation.png")
+                pie_fig_translation.write_image("pie_fig_translation.png")
+                time_fig.write_image("time_fig.png")
 
                 # # Asegurar que los archivos de imagen se guarden correctamente
                 # avg_time_card_alternatives_image_path = "avg_time_card_alternatives.png"
@@ -614,11 +614,11 @@ def update_question(next_clicks, start_clicks, selected_option, student_input, e
                         send_email(
                             to_name=nombre_estudiante,
                             to_email=email_estudiante,
-                            bar_fig_alternatives="img/bar_fig_alternatives.png",
-                            pie_fig_alternatives="img/pie_fig_alternatives.png",
-                            bar_fig_translation="img/bar_fig_translation.png",
-                            pie_fig_translation="img/pie_fig_translation.png",
-                            time_fig="img/time_fig.png",
+                            bar_fig_alternatives="bar_fig_alternatives.png",
+                            pie_fig_alternatives="pie_fig_alternatives.png",
+                            bar_fig_translation="bar_fig_translation.png",
+                            pie_fig_translation="pie_fig_translation.png",
+                            time_fig="time_fig.png",
                             avg_time_card_alternatives=avg_time_card_alternatives_image_path,
                             avg_time_card_translation=avg_time_card_translation_image_path,
                             results_df_alternatives=results_df_alternatives,
