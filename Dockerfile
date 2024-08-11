@@ -13,7 +13,11 @@ RUN apt-get update && apt-get install -y \
     libxslt1.1 \
     libjpeg62-turbo \
     libgdk-pixbuf2.0-dev \
-    libpangocairo-1.0-0
+    libpangocairo-1.0-0 \
+    curl \
+    && apt-get purge -y --auto-remove build-essential \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Crea y activa un entorno virtual
 RUN python -m venv /opt/venv

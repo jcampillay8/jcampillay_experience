@@ -195,9 +195,9 @@ def generate_pdf_from_template(template_path, context_dict, output_path=None):
             return HTML(string=html_content).write_pdf()
 
     except Exception as e:
-        # Puedes manejar el error como sea necesario, como registrar el error
         print(f"Error al generar el PDF: {e}")
         return None
+
 
 
 def contact(request):
