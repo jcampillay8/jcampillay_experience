@@ -226,7 +226,11 @@ def contact(request):
 
             try:
                 # Ruta de salida para el PDF
-                output_path = os.path.join(settings.MEDIA_ROOT, f'{name}_cv.pdf')
+                if language == 'english':
+                    output_path = os.path.join(settings.MEDIA_ROOT, f'jcampillay_cv_eng.pdf')
+                elif language == 'spanish':
+                    output_path = os.path.join(settings.MEDIA_ROOT, f'jcampillay_cv_esp.pdf')
+                
 
                 # Generar y guardar el PDF desde la plantilla
                 generate_pdf_from_template(template_path, context, output_path)
