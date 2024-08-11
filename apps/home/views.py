@@ -180,19 +180,15 @@ def send_email_with_pdf(user, user_email, message_sent, pdf, language):
     email.send(fail_silently=False)
 
 
-def generate_pdf_from_template(template_paths, context):
-    pdf_files = []
-    for template_path in template_paths:
-        try:
-            template = get_template(template_path)
-            html_content = template.render(context)
-            pdf_file = HTML(string=html_content).write_pdf()
-            pdf_files.append(pdf_file)
-        except Exception as e:
-            print(f"Error al generar PDF para {template_path}: {e}")
-            # O manejar el error de otra forma, por ejemplo, agregar un PDF vacío o un marcador de error.
-            pdf_files.append(None)
-    return pdf_files
+def generate_pdf_from_template(template_path, context):
+    try:
+        template = get_template(template_path)
+        html_content = template.render(context)
+        pdf_file = HTML(string=html_content).write_pdf()
+        return pdf_file
+    except Exception as e:
+        print(f"Error al generar PDF para {template_path}: {e}")
+        return None
 
 def contact(request):
     if request.method == 'POST':
@@ -231,7 +227,6 @@ def contact(request):
         except Exception as e:
             messages.error(request, f'Hubo un error al enviar tu mensaje: {str(e)}')
 
-        #return render(request, 'contact/contact_home.html',{'current_page','contact_home'})
         return redirect('home')
 
     return render(request, "home/home.html", {'current_page': 'home'})
@@ -239,7 +234,8 @@ def contact(request):
 
 
 
-def generate_pdf_from_template(template_path, context_dict, output_path=None):
+
+def generate_pdf_from_template2(template_path, context_dict, output_path=None):
     try:
         # Renderizar la plantilla HTML con el contexto
         template = get_template(template_path)
@@ -274,7 +270,7 @@ def download_cv(request, template_name):
     output_path = os.path.join(settings.MEDIA_ROOT, f'{template_name}.pdf')
 
     # Generar y guardar el PDF desde la plantilla
-    generate_pdf_from_template(template_path, context, output_path)
+    generate_pdf_from_template2(template_path, context, output_path)
 
     # Devolver el PDF como respuesta
     return FileResponse(open(output_path, 'rb'), content_type='application/pdf')
