@@ -25,7 +25,6 @@ from django.http import HttpResponse
 from weasyprint import HTML
 from django.http import FileResponse
 from apps.Quizzes.english_quiz.app import app
-from django.http import HttpResponseServerError
 
 
 class GuestUser:
@@ -180,15 +179,26 @@ def send_email_with_pdf(user, user_email, message_sent, pdf, language):
     email.send(fail_silently=False)
 
 
-def generate_pdf_from_template(template_path, context):
+def generate_pdf_from_template(template_path, context_dict, output_path=None):
     try:
+        # Renderizar la plantilla HTML con el contexto
         template = get_template(template_path)
-        html_content = template.render(context)
-        pdf_file = HTML(string=html_content).write_pdf()
-        return pdf_file
+        html_content = template.render(context_dict)
+
+        # Crear el archivo PDF usando WeasyPrint
+        if output_path:
+            # Guardar el PDF en el path especificado
+            HTML(string=html_content).write_pdf(output_path)
+            return output_path
+        else:
+            # Devolver el PDF en memoria
+            return HTML(string=html_content).write_pdf()
+
     except Exception as e:
-        print(f"Error al generar PDF para {template_path}: {e}")
+        # Puedes manejar el error como sea necesario, como registrar el error
+        print(f"Error al generar el PDF: {e}")
         return None
+
 
 def contact(request):
     if request.method == 'POST':
@@ -232,28 +242,6 @@ def contact(request):
     return render(request, "home/home.html", {'current_page': 'home'})
 
 
-
-
-
-def generate_pdf_from_template2(template_path, context_dict, output_path=None):
-    try:
-        # Renderizar la plantilla HTML con el contexto
-        template = get_template(template_path)
-        html_content = template.render(context_dict)
-
-        # Crear el archivo PDF usando WeasyPrint
-        pdf_file = HTML(string=html_content).write_pdf()
-
-        if output_path:
-            HTML(string=html_content).write_pdf(output_path)
-            return output_path
-        else:
-            return pdf_file
-
-    except Exception as e:
-        return HttpResponseServerError(str(e))
-
-
 def download_cv(request, template_name):
     if template_name == 'jcampillay_cv_eng':
         template_path = 'home/jcampillay_cv_eng.html'
@@ -270,7 +258,7 @@ def download_cv(request, template_name):
     output_path = os.path.join(settings.MEDIA_ROOT, f'{template_name}.pdf')
 
     # Generar y guardar el PDF desde la plantilla
-    generate_pdf_from_template2(template_path, context, output_path)
+    generate_pdf_from_template(template_path, context, output_path)
 
     # Devolver el PDF como respuesta
     return FileResponse(open(output_path, 'rb'), content_type='application/pdf')
