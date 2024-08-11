@@ -60,14 +60,20 @@ Saludos cordiales,'''
         pdf_files = []
         for template_name in ['english_diagnostic/english_quiz_report.html', 'english_diagnostic/english_quiz_report2.html']:
             output_pdf_path = os.path.join(settings.MEDIA_ROOT, f'{template_name}.pdf')
-            generate_pdf_from_template(template_name, context, output_pdf_path)
-            pdf_files.append(output_pdf_path)
+            print(f"Generando PDF para la plantilla: {template_name}")
+            pdf_path = generate_pdf_from_template(template_name, context, output_pdf_path)
+            if pdf_path:
+                pdf_files.append(pdf_path)
+            else:
+                raise Exception(f"No se pudo generar el PDF para la plantilla: {template_name}")
 
         # Combinar los PDFs en un solo archivo
         combined_pdf_path = os.path.join(settings.MEDIA_ROOT, 'combined_report.pdf')
+        print(f"Combinando PDFs en: {combined_pdf_path}")
         merge_pdfs(pdf_files, combined_pdf_path)
 
         if os.path.exists(combined_pdf_path):
+            print(f"Enviando correo a {to_email} con el archivo adjunto: {combined_pdf_path}")
             email = EmailMessage(subject, message, settings.DEFAULT_FROM_EMAIL, [to_email])
             with open(combined_pdf_path, 'rb') as pdf:
                 email.attach("English_Quiz_Report.pdf", pdf.read(), "application/pdf")
@@ -84,13 +90,16 @@ Saludos cordiales,'''
                 avg_time_card_translation
             ]:
                 if os.path.exists(image_path):
+                    print(f"Eliminando imagen temporal: {image_path}")
                     os.remove(image_path)
 
             # Eliminar los archivos PDF combinados y temporales
             for pdf_file in pdf_files:
                 if os.path.exists(pdf_file):
+                    print(f"Eliminando PDF temporal: {pdf_file}")
                     os.remove(pdf_file)
             if os.path.exists(combined_pdf_path):
+                print(f"Eliminando PDF combinado: {combined_pdf_path}")
                 os.remove(combined_pdf_path)
         else:
             raise Exception('Hubo un error al generar el PDF.')
@@ -98,3 +107,4 @@ Saludos cordiales,'''
     except Exception as e:
         print(f'Error al enviar el correo: {str(e)}')
         raise
+
