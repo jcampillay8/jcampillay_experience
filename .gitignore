@@ -41,7 +41,7 @@ coverage/
 
 # Ignore static and media files
 staticfiles/
-media/
+
 
 # Ignore translations
 *.mo

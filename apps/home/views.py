@@ -154,7 +154,7 @@ def send_email_with_pdf(user, user_email, message_sent, pdf, language):
         message = f"""
         Estimado(a) {name},
 
-        Me complace informarle que su solicitud de contactarme ha sido generada y enviada con éxito. Agradezco su interés en mis habilidades y servicios. Siempre me esfuerzo por cumplir con las expectativas y dar lo mejor de mí.
+        Agradezco su interés en mis habilidades y servicios. Siempre me esfuerzo por cumplir con las expectativas y dar lo mejor de mí.
 
         Pronto me pondré en contacto con usted para estar a su disposición. Si tiene alguna pregunta o necesita más información, no dude en ponerse en contacto conmigo.
 
