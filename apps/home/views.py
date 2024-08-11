@@ -25,6 +25,8 @@ from django.http import HttpResponse
 from weasyprint import HTML
 from django.http import FileResponse
 from apps.Quizzes.english_quiz.app import app
+from django.http import HttpResponseServerError
+
 
 class GuestUser:
     is_guest = True
