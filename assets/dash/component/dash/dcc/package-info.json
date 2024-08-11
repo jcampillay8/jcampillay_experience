@@ -1,6 +1,6 @@
 {
   "name": "dash-core-components",
-  "version": "2.9.2",
+  "version": "2.9.0",
   "description": "Core component suite for Dash",
   "repository": {
     "type": "git",
@@ -102,6 +102,6 @@
     "react-dom": ">=16"
   },
   "browserslist": [
-    "last 8 years and not dead"
+    "last 7 years and not dead"
   ]
 }

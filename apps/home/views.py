@@ -181,22 +181,20 @@ def send_email_with_pdf(user, user_email, message_sent, pdf, language):
 
 def generate_pdf_from_template(template_path, context_dict, output_path=None):
     try:
-        # Renderizar la plantilla HTML con el contexto
         template = get_template(template_path)
         html_content = template.render(context_dict)
 
-        # Crear el archivo PDF usando WeasyPrint
         if output_path:
-            # Guardar el PDF en el path especificado
             HTML(string=html_content).write_pdf(output_path)
             return output_path
         else:
-            # Devolver el PDF en memoria
             return HTML(string=html_content).write_pdf()
 
     except Exception as e:
+        # Log detallado del error
         print(f"Error al generar el PDF: {e}")
         return None
+
 
 
 

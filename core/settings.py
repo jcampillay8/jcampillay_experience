@@ -93,6 +93,10 @@ MIDDLEWARE = [
     'django_plotly_dash.middleware.ExternalRedirectionMiddleware',
 ]
 
+
+WHITENOISE_SKIP_COMPRESS_EXTENSIONS = (".js.map", ".css.map")
+
+
 ROOT_URLCONF = "core.urls"
 
 TEMPLATES = [
@@ -186,10 +190,12 @@ STATICFILES_DIRS = [
 STORAGES = {
     # ...
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
 
+
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 PLOTLY_DASH = {
 
