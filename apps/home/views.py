@@ -180,23 +180,19 @@ def send_email_with_pdf(user, user_email, message_sent, pdf, language):
     email.send(fail_silently=False)
 
 
-def generate_pdf_from_template(template_path, context_dict, output_path=None):
-    try:
-        # Renderizar la plantilla HTML con el contexto
-        template = get_template(template_path)
-        html_content = template.render(context_dict)
-
-        # Crear el archivo PDF usando WeasyPrint
-        pdf_file = HTML(string=html_content).write_pdf()
-
-        if output_path:
-            HTML(string=html_content).write_pdf(output_path)
-            return output_path
-        else:
-            return pdf_file
-
-    except Exception as e:
-        return HttpResponseServerError(str(e))
+def generate_pdf_from_template(template_paths, context_dict):
+    pdf_files = []
+    for template_path in template_paths:
+        try:
+            template = get_template(template_path)
+            html_content = template.render(context_dict)
+            pdf_file = HTML(string=html_content).write_pdf()
+            pdf_files.append(pdf_file)
+        except Exception as e:
+            print(f"Error al generar PDF para {template_path}: {e}")
+            # O manejar el error de otra forma, por ejemplo, agregar un PDF vacío o un marcador de error.
+            pdf_files.append(None)
+    return pdf_files
 
 def contact(request):
     if request.method == 'POST':
