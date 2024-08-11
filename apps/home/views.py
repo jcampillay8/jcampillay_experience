@@ -180,12 +180,12 @@ def send_email_with_pdf(user, user_email, message_sent, pdf, language):
     email.send(fail_silently=False)
 
 
-def generate_pdf_from_template(template_paths, context_dict):
+def generate_pdf_from_template(template_paths, context):
     pdf_files = []
     for template_path in template_paths:
         try:
             template = get_template(template_path)
-            html_content = template.render(context_dict)
+            html_content = template.render(context)
             pdf_file = HTML(string=html_content).write_pdf()
             pdf_files.append(pdf_file)
         except Exception as e:
