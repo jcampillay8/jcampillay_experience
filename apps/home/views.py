@@ -221,16 +221,20 @@ def contact(request):
             context = {'name': name, 'email': email, 'message': message}
 
             # Agregar la ruta de la imagen al contexto
-            image_path = os.path.abspath('core/assets/img/qr_website.png')
+            image_path = os.path.join(settings.STATIC_ROOT, 'img/qr_website.png')
             context['qr_image'] = image_path
 
-            pdf = generate_pdf_from_template(template_path, context)
 
-            if pdf:
-                send_email_with_pdf(user, email, message, pdf, language)
-                messages.success(request, 'Tu mensaje ha sido enviado con éxito.')
-            else:
-                messages.error(request, 'Hubo un error al generar el PDF.')
+            try:
+                pdf = generate_pdf_from_template(template_path, context)
+
+                if pdf:
+                    send_email_with_pdf(user, email, message, pdf, language)
+                    messages.success(request, 'Tu mensaje ha sido enviado con éxito.')
+                else:
+                    messages.error(request, 'Hubo un error al generar el PDF.')
+            except Exception as e:
+                messages.error(request, f'Hubo un error al generar el PDF: {str(e)}')
 
         except Exception as e:
             messages.error(request, f'Hubo un error al enviar tu mensaje: {str(e)}')
