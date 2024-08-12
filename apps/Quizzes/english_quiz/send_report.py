@@ -10,8 +10,16 @@ def generate_pdf_from_template(template_paths, context_dict):
     pdf_files = []
     for template_path in template_paths:
         try:
+            # Asegúrate de que la plantilla se carga correctamente
             template = get_template(template_path)
+            # Renderiza la plantilla con el contexto proporcionado
             html_content = template.render(context_dict)
+            
+            # Verifica que html_content es un string
+            if not isinstance(html_content, str):
+                raise ValueError("El contenido HTML no es un string válido.")
+            
+            # Genera el PDF
             pdf_file = HTML(string=html_content).write_pdf()
             pdf_files.append(pdf_file)
         except Exception as e:
