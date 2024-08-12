@@ -69,7 +69,12 @@ Saludos cordiales,'''
         merge_pdfs(pdf_files, combined_pdf_path)
 
         if os.path.exists(combined_pdf_path):
-            email = EmailMessage(subject, message, settings.DEFAULT_FROM_EMAIL, [to_email])
+            email = EmailMessage(
+                subject=subject, 
+                body=message, 
+                from_email=settings.DEFAULT_FROM_EMAIL, 
+                to=[to_email]
+            )
             with open(combined_pdf_path, 'rb') as pdf:
                 email.attach("English_Quiz_Report.pdf", pdf.read(), "application/pdf")
             email.send()
