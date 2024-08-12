@@ -285,24 +285,19 @@ def english_diagnostic(request):
     if request.method == 'POST':
         form = DiagnosticForm(request.POST)
         if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            # Redirigir a la vista del test con los datos del formulario
-            return redirect(reverse('english_diagnostic_test') + f'?name={name}&email={email}')
+            # Redirigir a la vista del test sin pasar parámetros adicionales
+            return redirect(reverse('english_diagnostic_test'))
     else:
         form = DiagnosticForm()
 
     return render(request, 'english_diagnostic/english_diagnostic.html', {'form': form})
 
 def english_diagnostic_test(request):
-    name = request.GET.get('name')
-    email = request.GET.get('email')
     context = {
-        'name': name, 
-        'email': email,
         'EnglishQuizApp': 'EnglishQuizApp',
     }
-    return render(request, 'english_diagnostic/english_diagnostic_test.html', )
+    return render(request, 'english_diagnostic/english_diagnostic_test.html', context)
+
 
 
 

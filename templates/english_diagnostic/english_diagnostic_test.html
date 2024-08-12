@@ -5,11 +5,11 @@
 {% block content %}
     <title>TITULO {% block title %}{% endblock %}</title>
     <body>
-        {% if user.is_authenticated %}
+        <div style="height: 20px;"></div>
+        
             <body>
-                <h2></h2>
-                <h2></h2>
-                <div class="{% plotly_class name='EnglishQuizApp' %}">
+                
+                <div class="{% plotly_class name='EnglishQuizApp' %}" >
                     {% if screen_width > 800 %}
                         {% plotly_app name='EnglishQuizApp' ratio=1.45 %}
                     {% else %}
@@ -19,8 +19,6 @@
             </body>
             <section class="position-relative py-4">
             </section>
-        {% else %}
-            <h1>Necesita <a href="/login">Iniciar sesión</a> para ver este curso</h1>
-        {% endif %}
+
     </body>
 {% endblock %}

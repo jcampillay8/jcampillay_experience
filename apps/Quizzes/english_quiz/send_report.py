@@ -6,29 +6,29 @@ from django.core.mail import EmailMessage
 from django.conf import settings
 from PyPDF2 import PdfReader, PdfWriter
 
-def generate_pdf_from_template(template_path, context_dict, output_path=None):
-    try:
+def generate_pdf_from_template(template_paths, context_dict):
+    pdf_files = []
+    for template_path in template_paths:
         template = get_template(template_path)
         html_content = template.render(context_dict)
-
-        if output_path:
-            HTML(string=html_content).write_pdf(output_path)
-            return output_path
-        else:
-            return HTML(string=html_content).write_pdf()
-
-    except Exception as e:
-        print(f"Error al generar el PDF: {e}")
-        return None
+        pdf_file = HTML(string=html_content).write_pdf()
+        pdf_files.append(pdf_file)
+    return pdf_files
 
 def merge_pdfs(pdf_files, output_path):
     pdf_writer = PdfWriter()
 
-    for pdf_file in pdf_files:
-        pdf_reader = PdfReader(pdf_file)
+    for pdf_bytes in pdf_files:
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
+            tmp_file.write(pdf_bytes)
+            tmp_file_path = tmp_file.name
+
+        pdf_reader = PdfReader(tmp_file_path)
         for page_num in range(len(pdf_reader.pages)):
             page = pdf_reader.pages[page_num]
             pdf_writer.add_page(page)
+        
+        os.remove(tmp_file_path)
 
     with open(output_path, 'wb') as output_pdf:
         pdf_writer.write(output_pdf)
@@ -56,24 +56,11 @@ Saludos cordiales,'''
     }
 
     try:
-        # Generar los PDFs de las plantillas
-        pdf_files = []
-        for template_name in ['english_diagnostic/english_quiz_report.html', 'english_diagnostic/english_quiz_report2.html']:
-            output_pdf_path = os.path.join(settings.MEDIA_ROOT, f'{template_name}.pdf')
-            print(f"Generando PDF para la plantilla: {template_name}")
-            pdf_path = generate_pdf_from_template(template_name, context, output_pdf_path)
-            if pdf_path:
-                pdf_files.append(pdf_path)
-            else:
-                raise Exception(f"No se pudo generar el PDF para la plantilla: {template_name}")
-
-        # Combinar los PDFs en un solo archivo
-        combined_pdf_path = os.path.join(settings.MEDIA_ROOT, 'combined_report.pdf')
-        print(f"Combinando PDFs en: {combined_pdf_path}")
+        pdf_files = generate_pdf_from_template(['english_diagnostic/english_quiz_report.html', 'english_diagnostic/english_quiz_report2.html'], context)
+        combined_pdf_path = "combined_report.pdf"
         merge_pdfs(pdf_files, combined_pdf_path)
 
         if os.path.exists(combined_pdf_path):
-            print(f"Enviando correo a {to_email} con el archivo adjunto: {combined_pdf_path}")
             email = EmailMessage(subject, message, settings.DEFAULT_FROM_EMAIL, [to_email])
             with open(combined_pdf_path, 'rb') as pdf:
                 email.attach("English_Quiz_Report.pdf", pdf.read(), "application/pdf")
@@ -90,16 +77,10 @@ Saludos cordiales,'''
                 avg_time_card_translation
             ]:
                 if os.path.exists(image_path):
-                    print(f"Eliminando imagen temporal: {image_path}")
                     os.remove(image_path)
 
-            # Eliminar los archivos PDF combinados y temporales
-            for pdf_file in pdf_files:
-                if os.path.exists(pdf_file):
-                    print(f"Eliminando PDF temporal: {pdf_file}")
-                    os.remove(pdf_file)
+            # Eliminar el archivo PDF combinado
             if os.path.exists(combined_pdf_path):
-                print(f"Eliminando PDF combinado: {combined_pdf_path}")
                 os.remove(combined_pdf_path)
         else:
             raise Exception('Hubo un error al generar el PDF.')
@@ -107,4 +88,3 @@ Saludos cordiales,'''
     except Exception as e:
         print(f'Error al enviar el correo: {str(e)}')
         raise
-
