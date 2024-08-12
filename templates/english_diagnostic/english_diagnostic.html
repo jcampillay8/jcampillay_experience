@@ -71,9 +71,14 @@
                 <br>
                 <h1>{% translate "Instruction" %}</h1>
                   <br>
-                  <p class="card-text"><i class="fa fa-check"></i>{% translate " Learning and using Machine Learning and Artificial Intelligence is one of my main objectives. I strive to master these emerging technologies to develop solutions that transform and improve people's quality of life." %}</p>
-                  <p class="card-text"><i class="fa fa-check"></i>{% translate " Mastering the English language to collaborate effectively on a global level. I constantly work on improving my language skills to communicate and work alongside professionals from all over the world." %}</p>
-                  <p class="card-text"><i class="fa fa-check"></i>{% translate " Meeting and working with people from different places, cultures, and backgrounds who love what they do and contribute to creating a respectful, responsible, and fertile environment enriches experiences and skills." %}</p>
+                  <p class="card-text" style="color: #333333; font-size: 1.3em; text-align: justify; text-justify: inter-word;"><i class="fa fa-check"></i>{% translate " El quiz consta de 24 preguntas: 12 preguntas de alternativas y 12 preguntas de traducción." %}</p>
+                  <p class="card-text" style="color: #333333; font-size: 1.3em; text-align: justify; text-justify: inter-word;"><i class="fa fa-check"></i>{% translate " No hay un límite de tiempo para responder, lo que permite que completes el quiz a tu propio ritmo." %}</p>
+                  <p class="card-text" style="color: #333333; font-size: 1.3em; text-align: justify; text-justify: inter-word;"><i class="fa fa-check"></i>{% translate " Tienes intentos ilimitados para responder cada pregunta, lo que te da la oportunidad de mejorar tus respuestas. Ten en cuenta que las preguntas son aleatorias y serán distintas cada vez que realices el quiz" %}</p>
+                  <p class="card-text" style="color: #333333; font-size: 1.3em; text-align: justify; text-justify: inter-word;"><i class="fa fa-check"></i>{% translate " Después de ingresar tu respuesta, asegúrate de hacer clic en el botón 'Next' para pasar a la siguiente pregunta." %}</p>
+                  <p class="card-text" style="color: #333333; font-size: 1.3em; text-align: justify; text-justify: inter-word;"><i class="fa fa-check"></i>{% translate " Una vez que completes las 24 preguntas, se generará un informe detallado de tus resultados, el cual se mostrará en pantalla. Ten en cuenta que este proceso puede tomar un tiempo adicional debido a la generación del reporte." %}</p>
+                  <p class="card-text" style="color: #333333; font-size: 1.3em; text-align: justify; text-justify: inter-word;"><i class="fa fa-check"></i>{% translate " El informe incluirá retroalimentación sobre tus respuestas, destacando los aciertos y sugiriendo mejoras para las respuestas incorrectas." %}</p>
+
+                  
               </div>
           </div>
       </div>
@@ -85,28 +90,25 @@
 
     
     <!-- Cards -->
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-
-            
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3 class="card-title">{% translate "Option 1" %}</h3>
-                        <p class="card-text">{% translate "I am currently studying Deep Learning and Artificial Intelligence, focusing on understanding and applying advanced algorithms and techniques. My goal is to leverage these technologies to develop innovative solutions and enhance my expertise in this cutting-edge field." %}</p>
-                        <form method="post" action="{% url 'english_diagnostic_test' %}">
-                            {% csrf_token %}
-                            <div class="d-grid">
-                                <button class="btn btn-primary" type="submit">Submit</button>
-                            </div>
-                        </form>
-                        
-                        
-                    </div>
+    <!-- Contact Section -->
+<section class="container py-2" id="whatamistudy">
+    <div class="d-flex justify-content-center">
+        <div class="col-md-8">
+            <div class="card h-100 text-center d-flex align-items-center justify-content-center">
+                <div class="card-body">
+                    <h3 class="card-title">{% translate "Pasar a Quiz" %}</h3>
+                    <form method="post" action="{% url 'english_diagnostic_test' %}">
+                        {% csrf_token %}
+                        <div class="d-grid">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
 
 </section>
 

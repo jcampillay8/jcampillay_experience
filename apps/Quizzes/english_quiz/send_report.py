@@ -9,10 +9,15 @@ from PyPDF2 import PdfReader, PdfWriter
 def generate_pdf_from_template(template_paths, context_dict):
     pdf_files = []
     for template_path in template_paths:
-        template = get_template(template_path)
-        html_content = template.render(context_dict)
-        pdf_file = HTML(string=html_content).write_pdf()
-        pdf_files.append(pdf_file)
+        try:
+            template = get_template(template_path)
+            html_content = template.render(context_dict)
+            pdf_file = HTML(string=html_content).write_pdf()
+            pdf_files.append(pdf_file)
+        except Exception as e:
+            print(f"Error al generar el PDF para la plantilla: {template_path}")
+            print(f"Error: {str(e)}")
+            raise
     return pdf_files
 
 def merge_pdfs(pdf_files, output_path):
@@ -56,7 +61,10 @@ Saludos cordiales,'''
     }
 
     try:
-        pdf_files = generate_pdf_from_template(['english_diagnostic/english_quiz_report.html', 'english_diagnostic/english_quiz_report2.html'], context)
+        pdf_files = generate_pdf_from_template(
+            ['english_diagnostic/english_quiz_report.html', 'english_diagnostic/english_quiz_report2.html'],
+            context
+        )
         combined_pdf_path = "combined_report.pdf"
         merge_pdfs(pdf_files, combined_pdf_path)
 
