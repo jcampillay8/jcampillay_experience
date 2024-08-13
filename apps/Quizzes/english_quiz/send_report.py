@@ -12,8 +12,6 @@ def generate_pdf_from_template(template_paths, context_dict):
         try:
             template = get_template(template_path)
             html_content = template.render(context_dict)
-            if not isinstance(html_content, str):
-                raise ValueError("El contenido HTML no es un string válido.")
             pdf_file = HTML(string=html_content).write_pdf()
             pdf_files.append(pdf_file)
         except Exception as e:
@@ -71,13 +69,7 @@ Saludos cordiales,'''
         merge_pdfs(pdf_files, combined_pdf_path)
 
         if os.path.exists(combined_pdf_path):
-            # Asegurarte de que EmailMessage esté correctamente importado y utilizado
-            email = EmailMessage(
-                subject=subject, 
-                body=message, 
-                from_email=settings.DEFAULT_FROM_EMAIL, 
-                to=[to_email]
-            )
+            email = EmailMessage(subject, message, settings.DEFAULT_FROM_EMAIL, [to_email])
             with open(combined_pdf_path, 'rb') as pdf:
                 email.attach("English_Quiz_Report.pdf", pdf.read(), "application/pdf")
             email.send()
