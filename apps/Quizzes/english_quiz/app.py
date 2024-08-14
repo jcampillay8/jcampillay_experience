@@ -432,7 +432,7 @@ def update_question(next_clicks, start_clicks, selected_option, student_input, e
                 )
 
                 return dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-                       html.H1(f"English {level} Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {question}"), radio_items, "", {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", \
+                       html.H1(f"English Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {question}"), radio_items, "", {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", \
                        dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
                        dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update
 
@@ -480,7 +480,7 @@ def update_question(next_clicks, start_clicks, selected_option, student_input, e
                 )
 
                 return dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-                       html.H1(f"English {level} Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {question}"), radio_items, "", {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", \
+                       html.H1(f"English Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {question}"), radio_items, "", {'display': 'none'}, dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", \
                        dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
                        dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update
 
@@ -634,7 +634,7 @@ def update_question(next_clicks, start_clicks, selected_option, student_input, e
                        bar_fig_translation, {'display': 'block'}, pie_fig_translation, {'display': 'block'}, avg_time_card_translation, {'display': 'block'}, ''
 
         return dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
-               html.H1(f"English {level} Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {questions_alternatives[index_alternatives]}"), radio_items, "", {'display': 'none'}, \
+               html.H1(f"English Level Quiz"), html.H3(f"Q{index_alternatives + 1}: {questions_alternatives[index_alternatives]}"), radio_items, "", {'display': 'none'}, \
                dash.no_update, dash.no_update, dash.no_update, dash.no_update, "", \
                dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, \
                dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update
